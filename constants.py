@@ -1,0 +1,6 @@
+# START_DATE_VECTOR_DEFAULT = '2017-07-01'
+# END_DATE_VECTOR_DEFAULT = '2024-06-30'
+
+import datetime
+START_DATE_VECTOR_DEFAULT = datetime.datetime(2017,7,1)
+END_DATE_VECTOR_DEFAULT = datetime.datetime(2024,6,30)
