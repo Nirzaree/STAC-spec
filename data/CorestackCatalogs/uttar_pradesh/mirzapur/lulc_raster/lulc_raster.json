@@ -123,7 +123,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/vishnus4059/STAC_common/master/data/CorestackCatalogs/gobindpur/CorestackCatalogs/raster/mirzapur_raster_thumbnail.png",
+      "href": "https://raw.githubusercontent.com/vishnus4059/STAC_common/master//CorestackCatalogs/raster/CorestackCatalogs/uttar_pradesh/mirzapur/raster/mirzapur_raster_thumbnail.png",
       "type": "image/png",
       "title": "Raster Thumbnail",
       "roles": [
@@ -131,7 +131,7 @@
       ]
     },
     "legend": {
-      "href": "https://raw.githubusercontent.com/vishnus4059/STAC_common/master/data/CorestackCatalogs/gobindpur/CorestackCatalogs/raster/legend.json",
+      "href": "https://raw.githubusercontent.com/vishnus4059/STAC_common/master//CorestackCatalogs/raster/legend.json",
       "type": "application/json",
       "title": "Legend JSON",
       "roles": [
@@ -139,7 +139,7 @@
       ]
     },
     "style": {
-      "href": "https://raw.githubusercontent.com/vishnus4059/STAC_common/master/data/CorestackCatalogs/gobindpur/CorestackCatalogs/raster/style_file.qml",
+      "href": "https://raw.githubusercontent.com/vishnus4059/STAC_common/master//CorestackCatalogs/raster/style_file.qml",
       "type": "application/xml",
       "title": "Raster Style (QML)",
       "roles": [
