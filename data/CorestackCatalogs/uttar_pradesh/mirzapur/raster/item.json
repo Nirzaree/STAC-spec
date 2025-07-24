@@ -133,23 +133,26 @@
       "type": "image/png",
       "title": "Raster Thumbnail",
       "roles": [
-        "thumbnail"
+        "thumbnail",
+        "overview"
       ]
     },
     "legend": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common//CorestackCatalogs/raster/legend.json",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common//CorestackCatalogs/uttar_pradesh/mirzapur/raster/legend.json",
       "type": "application/json",
       "title": "Legend JSON",
       "roles": [
-        "metadata"
+        "metadata",
+        "visualisation"
       ]
     },
     "style": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common//CorestackCatalogs/raster/style_file.qml",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common//CorestackCatalogs/uttar_pradesh/mirzapur/raster/style_file.qml",
       "type": "application/xml",
       "title": "Raster Style (QML)",
       "roles": [
-        "metadata"
+        "metadata",
+        "styling"
       ]
     }
   }
