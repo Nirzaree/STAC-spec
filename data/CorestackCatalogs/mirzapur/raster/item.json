@@ -10,33 +10,33 @@
     "coordinates": [
       [
         [
-          86.20458045231958,
-          22.432459780447456
+          82.85368477949694,
+          24.911270975446865
         ],
         [
-          86.20458045231958,
-          22.762860141946614
+          82.85368477949694,
+          25.30230761862409
         ],
         [
-          85.8297134842565,
-          22.762860141946614
+          82.20662828034565,
+          25.30230761862409
         ],
         [
-          85.8297134842565,
-          22.432459780447456
+          82.20662828034565,
+          24.911270975446865
         ],
         [
-          86.20458045231958,
-          22.432459780447456
+          82.85368477949694,
+          24.911270975446865
         ]
       ]
     ]
   },
   "bbox": [
-    85.8297134842565,
-    22.432459780447456,
-    86.20458045231958,
-    22.762860141946614
+    82.20662828034565,
+    24.911270975446865,
+    82.85368477949694,
+    25.30230761862409
   ],
   "properties": {
     "title": "Raster layer",
@@ -48,13 +48,13 @@
   "links": [
     {
       "rel": "self",
-      "href": "/home/vishnu/STAC-spec-raster/STAC-spec/data/CorestackCatalogs/gobindpur/raster/item.json",
+      "href": "/home/vishnu/STAC-spec-raster/STAC-spec/data/CorestackCatalogs/mirzapur/raster/item.json",
       "type": "application/json"
     }
   ],
   "assets": {
     "data": {
-      "href": "https://raw.githubusercontent.com/vishnus4059/STAC_common/master/data//saraikela-kharsawan_gobindpur_2023-07-01_2024-06-30_LULCmap_10m.tif",
+      "href": "https://raw.githubusercontent.com/vishnus4059/STAC_common/master/data//Mirzapur_Mirzapur_2023-07-01_2024-06-30_LULCmap_10m.tif",
       "type": "image/tiff; application=geotiff",
       "title": "Raster Layer",
       "classification:classes": [
@@ -116,7 +116,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/vishnus4059/STAC_common/master/data/CorestackCatalogs/gobindpur/CorestackCatalogs/raster/gobindpur_raster_thumbnail.png",
+      "href": "https://raw.githubusercontent.com/vishnus4059/STAC_common/master/data/CorestackCatalogs/gobindpur/CorestackCatalogs/raster/mirzapur_raster_thumbnail.png",
       "type": "image/png",
       "title": "Raster Thumbnail",
       "roles": [

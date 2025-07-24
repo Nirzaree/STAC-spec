@@ -48,7 +48,7 @@
   "links": [
     {
       "rel": "self",
-      "href": "/home/vishnu/STAC-spec-raster/STAC-spec/data/CorestackCatalogs/gobindpur/raster/item.json",
+      "href": "/home/vishnu/STAC-spec-raster/STAC-spec/data/CorestackCatalogs/jharkhand/gobindpur/raster/item.json",
       "type": "application/json"
     }
   ],

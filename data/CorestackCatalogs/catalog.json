@@ -2,7 +2,7 @@
   "type": "Catalog",
   "id": "corestack",
   "stac_version": "1.1.0",
-  "description": "Root catalog containing all subcatalogs",
+  "description": "Root catalog containing all location-based sub-catalogs",
   "links": [
     {
       "rel": "root",
@@ -12,9 +12,21 @@
     },
     {
       "rel": "child",
-      "href": "./gobindpur/catalog.json",
+      "href": "./jharkhand/catalog.json",
       "type": "application/json",
-      "title": "GobindpurCatalog"
+      "title": "STAC for jharkhand"
+    },
+    {
+      "rel": "child",
+      "href": "./uttar_pradesh/catalog.json",
+      "type": "application/json",
+      "title": "STAC for uttar_pradesh"
+    },
+    {
+      "rel": "child",
+      "href": "./odisha/catalog.json",
+      "type": "application/json",
+      "title": "STAC for odisha"
     }
   ],
   "title": "CorestackCatalogs"
