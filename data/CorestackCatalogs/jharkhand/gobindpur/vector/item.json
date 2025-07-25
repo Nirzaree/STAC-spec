@@ -4,7 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
-  "id": "SWB vector",
+  "id": "swb_vector",
   "geometry": {
     "type": "MultiPolygon",
     "coordinates": [
@@ -195863,17 +195863,15 @@
       "type": "image/png",
       "title": "Vector Thumbnail",
       "roles": [
-        "thumbnail",
-        "overview"
+        "thumbnail"
       ]
     },
     "style": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common//CorestackCatalogs/jharkhand/gobindpur/vector/swb_style.qml",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/swb_style.qml",
       "type": "application/xml",
       "title": "Vector Style",
       "roles": [
-        "metadata",
-        "styling"
+        "metadata"
       ]
     }
   }

@@ -140,26 +140,23 @@
       "type": "image/png",
       "title": "Raster Thumbnail",
       "roles": [
-        "thumbnail",
-        "overview"
+        "thumbnail"
       ]
     },
     "legend": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common//CorestackCatalogs/odisha/koraput/raster/legend.json",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/CorestackCatalogs/odisha/koraput/raster/legend.json",
       "type": "application/json",
       "title": "Legend JSON",
       "roles": [
-        "metadata",
-        "visualisation"
+        "metadata"
       ]
     },
     "style": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common//CorestackCatalogs/odisha/koraput/raster/style_file.qml",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/style_file.qml",
       "type": "application/xml",
       "title": "Raster Style (QML)",
       "roles": [
-        "metadata",
-        "styling"
+        "metadata"
       ]
     }
   }
