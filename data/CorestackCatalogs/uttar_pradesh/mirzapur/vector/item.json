@@ -6319,7 +6319,7 @@
   "links": [
     {
       "rel": "self",
-      "href": "/home/vishnu/STAC-spec-raster/STAC-spec/data/CorestackCatalogs/uttar_pradesh/mirzapur/vector/item.json",
+      "href": "/home/nirzaree/Code/GitClones/STAC-spec/data/CorestackCatalogs/uttar_pradesh/mirzapur/vector/item.json",
       "type": "application/json"
     }
   ],

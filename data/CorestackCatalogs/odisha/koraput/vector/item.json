@@ -11689,7 +11689,7 @@
   "links": [
     {
       "rel": "self",
-      "href": "/home/vishnu/STAC-spec-raster/STAC-spec/data/CorestackCatalogs/odisha/koraput/vector/item.json",
+      "href": "/home/nirzaree/Code/GitClones/STAC-spec/data/CorestackCatalogs/odisha/koraput/vector/item.json",
       "type": "application/json"
     }
   ],
