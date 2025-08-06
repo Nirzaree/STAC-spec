@@ -11,14 +11,16 @@
       "title": "CorestackCatalogs"
     },
     {
-      "rel": "item",
-      "href": "./lulc_raster/lulc_raster.json",
-      "type": "application/geo+json"
+      "rel": "child",
+      "href": "./raster/catalog.json",
+      "type": "application/json",
+      "title": "Raster"
     },
     {
-      "rel": "item",
-      "href": "./swb_vector/swb_vector.json",
-      "type": "application/geo+json"
+      "rel": "child",
+      "href": "./vector/catalog.json",
+      "type": "application/json",
+      "title": "vector"
     },
     {
       "rel": "parent",

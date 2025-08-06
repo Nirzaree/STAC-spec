@@ -4,7 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
-  "id": "swb_vector",
+  "id": "swb2_saraikela-kharsawan_gobindpur",
   "geometry": {
     "type": "MultiPolygon",
     "coordinates": [
@@ -195687,9 +195687,8 @@
     22.761334210815875
   ],
   "properties": {
-    "title": "SWB Vector",
-    "description": "SWB vector layer",
-    "stac_version": "1.0.0",
+    "title": "Vector Layer",
+    "description": "Vector data for swb2_saraikela-kharsawan_gobindpur in gobindpur of jharkhand",
     "start_datetime": "2017-07-01T00:00:00Z",
     "end_datetime": "2024-06-30T00:00:00Z",
     "table:columns": [
@@ -195701,7 +195700,7 @@
       {
         "name": "MWS_UID",
         "type": "object",
-        "description": "microwatershed id"
+        "description": ""
       },
       {
         "name": "UID",
@@ -195761,17 +195760,17 @@
       {
         "name": "k_17-18",
         "type": "float64",
-        "description": "kharif water presence in 2017 2018"
+        "description": ""
       },
       {
         "name": "k_18-19",
         "type": "float64",
-        "description": "kharif water presence in 2018 2019"
+        "description": ""
       },
       {
         "name": "k_19-20",
         "type": "float64",
-        "description": "kharif water presence in 2019 2020"
+        "description": ""
       },
       {
         "name": "k_20-21",
@@ -195867,17 +195866,19 @@
         "name": "water",
         "type": "int32",
         "description": ""
+      },
+      {
+        "name": "geometry",
+        "type": "geometry",
+        "description": ""
       }
     ],
-    "table:summary": {
-      "number_of_records": 2306
-    },
     "datetime": "2017-07-01T00:00:00Z"
   },
   "links": [
     {
       "rel": "root",
-      "href": "../../../catalog.json",
+      "href": "../../../../catalog.json",
       "type": "application/json",
       "title": "CorestackCatalogs"
     },
@@ -195885,12 +195886,12 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "STAC for gobindpur"
+      "title": "vector"
     }
   ],
   "assets": {
     "data": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data//swb2_saraikela-kharsawan_gobindpur.geojson",
+      "href": "../../../../swb2_saraikela-kharsawan_gobindpur.geojson",
       "type": "application/geo+json",
       "title": "Vector Layer",
       "roles": [
@@ -195898,7 +195899,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/CorestackCatalogs/jharkhand/gobindpur/vector/gobindpur_vector_thumbnail.png",
+      "href": "../vector/gobindpur_swb2_saraikela-kharsawan_gobindpur_thumbnail.png",
       "type": "image/png",
       "title": "Vector Thumbnail",
       "roles": [
@@ -195906,7 +195907,7 @@
       ]
     },
     "style": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/swb_style.qml",
+      "href": "../../../../swb_style.qml",
       "type": "application/xml",
       "title": "Vector Style",
       "roles": [
