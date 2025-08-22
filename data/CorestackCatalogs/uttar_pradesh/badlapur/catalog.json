@@ -12,17 +12,7 @@
     },
     {
       "rel": "item",
-      "href": "./LULC_raster_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/jaunpur_badlapur_2019-07-01_2020-06-30_LULCmap_10m/LULC_raster_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/jaunpur_badlapur_2019-07-01_2020-06-30_LULCmap_10m.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
       "href": "./admin_boundary_admin_boundary_jaunpur_badlapur/admin_boundary_admin_boundary_jaunpur_badlapur.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./nrega_assets_jaunpur_badlapur/nrega_assets_jaunpur_badlapur.json",
       "type": "application/geo+json"
     },
     {
@@ -52,12 +42,12 @@
     },
     {
       "rel": "item",
-      "href": "./Change_detection_raster_Afforestation_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/change_jaunpur_badlapur_Afforestation/Change_detection_raster_Afforestation_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/change_jaunpur_badlapur_Afforestation.json",
+      "href": "./Cropping_intensity_cropping_intensity_jaunpur_badlapur_2017-23/Cropping_intensity_cropping_intensity_jaunpur_badlapur_2017-23.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./Cropping_intensity_cropping_intensity_jaunpur_badlapur_2017-23/Cropping_intensity_cropping_intensity_jaunpur_badlapur_2017-23.json",
+      "href": "./Tree_health_ccd_raster_2022_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/tree_health_ccd_raster_jaunpur_badlapur_2022/Tree_health_ccd_raster_2022_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/tree_health_ccd_raster_jaunpur_badlapur_2022.json",
       "type": "application/geo+json"
     },
     {
@@ -92,26 +82,6 @@
     },
     {
       "rel": "item",
-      "href": "./change_detection_raster_CropIntensity_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/change_jaunpur_badlapur_CropIntensity/change_detection_raster_CropIntensity_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/change_jaunpur_badlapur_CropIntensity.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./change_detection_raster_Deforestation_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/change_jaunpur_badlapur_Deforestation/change_detection_raster_Deforestation_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/change_jaunpur_badlapur_Deforestation.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./change_detection_raster_Degradation_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/change_jaunpur_badlapur_Degradation/change_detection_raster_Degradation_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/change_jaunpur_badlapur_Degradation.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./change_detection_raster_Urbanization_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/change_jaunpur_badlapur_Urbanization/change_detection_raster_Urbanization_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/change_jaunpur_badlapur_Urbanization.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
       "href": "./drought_frequency_drought_jaunpur_badlapur_2017_2022/drought_frequency_drought_jaunpur_badlapur_2017_2022.json",
       "type": "application/geo+json"
     },
@@ -133,11 +103,6 @@
     {
       "rel": "item",
       "href": "./deltaG_fortnight_filtered_delta_g_fortnight_jaunpur_badlapur_uid/deltaG_fortnight_filtered_delta_g_fortnight_jaunpur_badlapur_uid.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./lulc_raster_2017_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/jaunpur_badlapur_2017-07-01_2018-06-30_LULCmap_10m/lulc_raster_2017_projects/ee-corestackdev/assets/apps/mws/uttar_pradesh/jaunpur/badlapur/jaunpur_badlapur_2017-07-01_2018-06-30_LULCmap_10m.json",
       "type": "application/geo+json"
     },
     {
