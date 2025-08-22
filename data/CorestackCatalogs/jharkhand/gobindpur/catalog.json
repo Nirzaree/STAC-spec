@@ -12,12 +12,12 @@
     },
     {
       "rel": "item",
-      "href": "./Raster_saraikela-kharsawan_gobindpur_2023-07-01_2024-06-30_LULCmap_10m/Raster_saraikela-kharsawan_gobindpur_2023-07-01_2024-06-30_LULCmap_10m.json",
+      "href": "./saraikela-kharsawan_gobindpur_2023-07-01_2024-06-30_LULCmap_10m/saraikela-kharsawan_gobindpur_2023-07-01_2024-06-30_LULCmap_10m.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./vector_swb2_saraikela-kharsawan_gobindpur/vector_swb2_saraikela-kharsawan_gobindpur.json",
+      "href": "./swb2_saraikela-kharsawan_gobindpur/swb2_saraikela-kharsawan_gobindpur.json",
       "type": "application/geo+json"
     },
     {
