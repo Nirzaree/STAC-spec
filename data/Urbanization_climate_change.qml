@@ -146,7 +146,7 @@
               <Option name="stops" value="0.25;255,0,0,255,rgb:1,0,0,1;rgb;ccw:0.5;28,163,236,255,rgb:0.10980392156862745,0.63921568627450975,0.92549019607843142,1;rgb;ccw:0.75;115,187,83,255,rgb:0.45098039215686275,0.73333333333333328,0.32549019607843138,1;rgb;ccw" type="QString"/>
             </Option>
           </colorramp>
-          <item alpha="0" label="Background" value="0" color="#ff00ff"/>
+          <item alpha="0" label="Background" value="0" color="#ffffff"/> //color="#ff00ff"
           <item alpha="255" label="Built Up - Built Up" value="1" color="#ff0000"/>
           <item alpha="255" label="Water - Built Up" value="2" color="#1ca3ec"/>
           <item alpha="255" label="Tree/Farm - Built Up" value="3" color="#73bb53"/>

@@ -53,7 +53,7 @@
         <paletteEntry value="9" label="Local ridge/hilltops within broad valleys" color="#91bfdb" alpha="255"/>
         <paletteEntry value="10" label="Lateral midslope drainage divides, Local ridges in plains" color="#800000" alpha="255"/>
         <paletteEntry value="11" label="Mountain tops, high ridges" color="#4d0000" alpha="255"/>
-        <paletteEntry value="12" color="#ffffff" alpha="255"/>
+        <paletteEntry value="12" label="No data" color="#ffffff" alpha="255"/>
       </colorPalette>
       <colorramp type="randomcolors" name="[source]">
         <Option/>
