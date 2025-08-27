@@ -9,7 +9,7 @@ SRTM_DEM_START_DATE = datetime(2020,2,11) #used for terrain raster as it
 # https://www.earthdata.nasa.gov/data/catalog/lpcloud-srtmgl1-003
 SRTM_DEM_END_DATE = datetime(2020,2,21)
 
-no_data_classnames_list = ['clear','background']
+no_data_classnames_list = ['clear','background','No data']
 
 base_url="https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/"
 data_url="https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/"

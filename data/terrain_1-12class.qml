@@ -42,6 +42,7 @@
         <stdDevFactor>2</stdDevFactor>
       </minMaxOrigin>
       <colorPalette>
+        <paletteEntry value="0" label="No data" alpha="0" color="#ffffff"/>
         <paletteEntry value="1" label="V-shape river valleys, Deep narrow canyons" color="#313695" alpha="255"/>
         <paletteEntry value="2" label="Lateral midslope incised drainages, Local valleys in plains" color="#4575b4" alpha="255"/>
         <paletteEntry value="3" label="Upland incised drainages, Stream headwaters" color="#a50026" alpha="255"/>
@@ -53,7 +54,7 @@
         <paletteEntry value="9" label="Local ridge/hilltops within broad valleys" color="#91bfdb" alpha="255"/>
         <paletteEntry value="10" label="Lateral midslope drainage divides, Local ridges in plains" color="#800000" alpha="255"/>
         <paletteEntry value="11" label="Mountain tops, high ridges" color="#4d0000" alpha="255"/>
-        <paletteEntry value="12" label="No data" color="#ffffff" alpha="255"/>
+        //<paletteEntry value="12" label="No data" color="#ffffff" alpha="255"/>
       </colorPalette>
       <colorramp type="randomcolors" name="[source]">
         <Option/>
