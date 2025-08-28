@@ -57,7 +57,7 @@
       3155,
       5446
     ],
-    "datetime": "2025-08-27T09:37:04.900660Z"
+    "datetime": "2025-08-28T05:44:55.667582Z"
   },
   "links": [
     {
@@ -79,6 +79,12 @@
         }
       ],
       "classification:classes": [
+        {
+          "value": 0,
+          "name": "No data",
+          "description": "No data",
+          "color_hint": "ffffff"
+        },
         {
           "value": 1,
           "name": "V-shape river valleys, Deep narrow canyons",
@@ -147,7 +153,8 @@
         },
         {
           "value": 12,
-          "name": "Class 12",
+          "name": "No data",
+          "description": "No data",
           "color_hint": "ffffff"
         }
       ],

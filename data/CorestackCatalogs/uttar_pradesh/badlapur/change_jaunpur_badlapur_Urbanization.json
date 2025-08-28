@@ -57,7 +57,7 @@
       3150,
       5442
     ],
-    "datetime": "2025-08-27T09:38:37.804014Z"
+    "datetime": "2025-08-28T05:46:42.005148Z"
   },
   "links": [
     {
@@ -83,7 +83,7 @@
           "value": 0,
           "name": "Background",
           "description": "Background",
-          "color_hint": "ff00ff"
+          "color_hint": "ffffff"
         },
         {
           "value": 1,
