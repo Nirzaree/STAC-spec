@@ -48818,14 +48818,14 @@
         "description": ""
       }
     ],
-    "datetime": "2025-08-28T06:17:48.124787Z"
+    "datetime": "2025-08-28T08:09:35.360252Z"
   },
   "links": [
     {
       "rel": "root",
-      "href": "../catalog.json",
+      "href": "../../../catalog.json",
       "type": "application/json",
-      "title": "STAC for badlapur"
+      "title": "CorestackCatalogs"
     },
     {
       "rel": "parent",

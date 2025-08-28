@@ -6,9 +6,9 @@
   "links": [
     {
       "rel": "root",
-      "href": "./catalog.json",
+      "href": "../../catalog.json",
       "type": "application/json",
-      "title": "STAC for badlapur"
+      "title": "CorestackCatalogs"
     },
     {
       "rel": "item",
@@ -48,11 +48,6 @@
     {
       "rel": "item",
       "href": "./drainage_lines_jaunpur_badlapur/drainage_lines_jaunpur_badlapur.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./change_jaunpur_badlapur_Afforestation/change_jaunpur_badlapur_Afforestation.json",
       "type": "application/geo+json"
     },
     {
@@ -139,6 +134,12 @@
       "rel": "item",
       "href": "./filtered_delta_g_fortnight_jaunpur_badlapur_uid/filtered_delta_g_fortnight_jaunpur_badlapur_uid.json",
       "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "STAC for uttar_pradesh"
     }
   ],
   "title": "STAC for badlapur"
