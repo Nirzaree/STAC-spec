@@ -6,7 +6,7 @@
   "links": [
     {
       "rel": "root",
-      "href": "../catalog.json",
+      "href": "./catalog.json",
       "type": "application/json",
       "title": "CorestackCatalogs"
     },
@@ -15,11 +15,6 @@
       "href": "./uttar_pradesh/catalog.json",
       "type": "application/json",
       "title": "STAC for uttar_pradesh"
-    },
-    {
-      "rel": "self",
-      "href": "../catalog.json",
-      "type": "application/json"
     }
   ],
   "title": "CorestackCatalogs"
