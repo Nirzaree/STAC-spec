@@ -57,7 +57,7 @@
       3164,
       5450
     ],
-    "datetime": "2025-08-29T09:53:23.026618Z"
+    "datetime": "2025-08-29T12:10:53.944052Z"
   },
   "links": [
     {
@@ -88,8 +88,8 @@
       "classification:classes": [
         {
           "value": 0,
-          "name": "0",
-          "description": "0",
+          "name": "Excluded",
+          "description": "Excluded",
           "color_hint": "d2d2d2"
         },
         {

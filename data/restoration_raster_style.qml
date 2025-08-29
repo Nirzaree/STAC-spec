@@ -134,7 +134,7 @@
         <stdDevFactor>2</stdDevFactor>
       </minMaxOrigin>
       <colorPalette>
-        <paletteEntry color="#d2d2d2" value="0" label="0" alpha="0"/>
+        <paletteEntry color="#d2d2d2" value="0" label="Excluded" alpha="0"/>
         <paletteEntry color="#d79b0f" value="1" label="Mosain Restoration" alpha="255"/>
         <paletteEntry color="#0f077c" value="2" label="Wide scale Restoration" alpha="255"/>
         <paletteEntry color="#4fbc14" value="3" label="Protection" alpha="255"/>
