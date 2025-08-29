@@ -57,14 +57,14 @@
       3154,
       5444
     ],
-    "datetime": "2025-08-28T10:52:53.475270Z"
+    "datetime": "2025-08-29T09:53:15.321711Z"
   },
   "links": [
     {
       "rel": "root",
-      "href": "../../../catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
-      "title": "CorestackCatalogs"
+      "title": "STAC for badlapur"
     },
     {
       "rel": "parent",

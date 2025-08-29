@@ -57,14 +57,14 @@
       3164,
       5450
     ],
-    "datetime": "2025-08-28T10:52:55.866955Z"
+    "datetime": "2025-08-29T09:53:23.026618Z"
   },
   "links": [
     {
       "rel": "root",
-      "href": "../../../catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
-      "title": "CorestackCatalogs"
+      "title": "STAC for badlapur"
     },
     {
       "rel": "parent",
@@ -88,27 +88,27 @@
       "classification:classes": [
         {
           "value": 0,
-          "name": "Protection",
-          "description": "Protection",
-          "color_hint": "ffa500"
+          "name": "0",
+          "description": "0",
+          "color_hint": "d2d2d2"
         },
         {
           "value": 1,
-          "name": "Wide-scale Restoration",
-          "description": "Wide-scale Restoration",
-          "color_hint": "007500"
+          "name": "Mosain Restoration",
+          "description": "Mosain Restoration",
+          "color_hint": "d79b0f"
         },
         {
           "value": 2,
-          "name": "Mosaic Restoration",
-          "description": "Mosaic Restoration",
-          "color_hint": "000000"
+          "name": "Wide scale Restoration",
+          "description": "Wide scale Restoration",
+          "color_hint": "0f077c"
         },
         {
           "value": 3,
-          "name": "Excluded Areas",
-          "description": "Excluded Areas",
-          "color_hint": "ffff00"
+          "name": "Protection",
+          "description": "Protection",
+          "color_hint": "4fbc14"
         }
       ],
       "roles": [
@@ -124,7 +124,7 @@
       ]
     },
     "legend": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/Restoration_style.json",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/restoration_raster_style.json",
       "type": "application/json",
       "title": "Legend JSON",
       "roles": [
@@ -132,7 +132,7 @@
       ]
     },
     "style": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/Restoration_style.qml",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/restoration_raster_style.qml",
       "type": "application/xml",
       "title": "Raster Style (QML)",
       "roles": [
