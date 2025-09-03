@@ -403,18 +403,24 @@
         "description": ""
       }
     ],
-    "datetime": "2025-09-02T09:12:59.240220Z"
+    "datetime": "2025-09-03T06:11:46.661332Z"
   },
   "links": [
     {
       "rel": "root",
-      "href": "../catalog.json",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "CorestackCatalogs"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
       "type": "application/json",
       "title": "STAC for badlapur"
     },
     {
       "rel": "parent",
-      "href": "../catalog.json",
+      "href": "../collection.json",
       "type": "application/json",
       "title": "STAC for badlapur"
     }
@@ -444,5 +450,6 @@
         "metadata"
       ]
     }
-  }
+  },
+  "collection": "badlapur"
 }
