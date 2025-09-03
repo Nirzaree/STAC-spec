@@ -1,0 +1,71 @@
+{
+  "type": "Collection",
+  "id": "uttar_pradesh",
+  "stac_version": "1.1.0",
+  "description": "STAC Collection for data in uttar_pradesh.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "CorestackCatalogs"
+    },
+    {
+      "rel": "child",
+      "href": "./jaunpur/catalog.json",
+      "type": "application/json",
+      "title": "STAC for jaunpur"
+    },
+    {
+      "rel": "child",
+      "href": "./jaunpur/catalog.json",
+      "type": "application/json",
+      "title": "STAC for jaunpur"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "CorestackCatalogs"
+    }
+  ],
+  "title": "STAC for uttar_pradesh",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+  "keywords": [
+    "geospatial",
+    "remote sensing",
+    "badlapur",
+    "jaunpur",
+    "uttar_pradesh"
+  ],
+  "providers": [
+    {
+      "name": "Corestack",
+      "roles": [
+        "producer",
+        "processor"
+      ],
+      "url": "https://core-stack.org/"
+    }
+  ]
+}
