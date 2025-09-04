@@ -12,12 +12,6 @@
     },
     {
       "rel": "child",
-      "href": "./jaunpur/catalog.json",
-      "type": "application/json",
-      "title": "Jaunpur"
-    },
-    {
-      "rel": "child",
       "href": "./mirzapur/catalog.json",
       "type": "application/json",
       "title": "Mirzapur"
@@ -60,8 +54,8 @@
   "keywords": [
     "geospatial",
     "remote sensing",
-    "badlapur",
-    "jaunpur",
+    "mirzapur",
+    "mirzapur",
     "uttar_pradesh"
   ],
   "providers": [
