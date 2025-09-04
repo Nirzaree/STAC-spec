@@ -15,6 +15,24 @@
       "href": "./uttar_pradesh/collection.json",
       "type": "application/json",
       "title": "Uttar Pradesh"
+    },
+    {
+      "rel": "child",
+      "href": "./jharkhand/collection.json",
+      "type": "application/json",
+      "title": "Jharkhand"
+    },
+    {
+      "rel": "child",
+      "href": "./uttar_pradesh/collection.json",
+      "type": "application/json",
+      "title": "Uttar Pradesh"
+    },
+    {
+      "rel": "child",
+      "href": "./odisha/collection.json",
+      "type": "application/json",
+      "title": "Odisha"
     }
   ],
   "title": "CoreStack Spatio Temporal Asset Catalog"

@@ -1,8 +1,8 @@
 {
   "type": "Collection",
-  "id": "uttar_pradesh",
+  "id": "odisha",
   "stac_version": "1.1.0",
-  "description": "STAC Collection for data of uttar_pradesh state.",
+  "description": "STAC Collection for data of odisha state.",
   "links": [
     {
       "rel": "root",
@@ -12,21 +12,9 @@
     },
     {
       "rel": "child",
-      "href": "./jaunpur/catalog.json",
+      "href": "./koraput/catalog.json",
       "type": "application/json",
-      "title": "Jaunpur"
-    },
-    {
-      "rel": "child",
-      "href": "./mirzapur/catalog.json",
-      "type": "application/json",
-      "title": "Mirzapur"
-    },
-    {
-      "rel": "child",
-      "href": "./jaunpur/catalog.json",
-      "type": "application/json",
-      "title": "Jaunpur"
+      "title": "Koraput"
     },
     {
       "rel": "parent",
@@ -35,7 +23,7 @@
       "title": "CoreStack Spatio Temporal Asset Catalog"
     }
   ],
-  "title": "Uttar Pradesh",
+  "title": "Odisha",
   "extent": {
     "spatial": {
       "bbox": [
@@ -60,9 +48,9 @@
   "keywords": [
     "geospatial",
     "remote sensing",
-    "badlapur",
-    "jaunpur",
-    "uttar_pradesh"
+    "koraput",
+    "koraput",
+    "odisha"
   ],
   "providers": [
     {
