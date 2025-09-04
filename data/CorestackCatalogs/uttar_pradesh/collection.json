@@ -2,34 +2,28 @@
   "type": "Collection",
   "id": "uttar_pradesh",
   "stac_version": "1.1.0",
-  "description": "STAC Collection for data in uttar_pradesh.",
+  "description": "STAC Collection for data of uttar_pradesh state.",
   "links": [
     {
       "rel": "root",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "CorestackCatalogs"
+      "title": "CoreStack Spatio Temporal Asset Catalog"
     },
     {
       "rel": "child",
       "href": "./jaunpur/catalog.json",
       "type": "application/json",
-      "title": "STAC for jaunpur"
-    },
-    {
-      "rel": "child",
-      "href": "./jaunpur/catalog.json",
-      "type": "application/json",
-      "title": "STAC for jaunpur"
+      "title": "Jaunpur"
     },
     {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "CorestackCatalogs"
+      "title": "CoreStack Spatio Temporal Asset Catalog"
     }
   ],
-  "title": "STAC for uttar_pradesh",
+  "title": "Uttar Pradesh",
   "extent": {
     "spatial": {
       "bbox": [

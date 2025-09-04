@@ -8,7 +8,7 @@
       "rel": "root",
       "href": "../../../catalog.json",
       "type": "application/json",
-      "title": "CorestackCatalogs"
+      "title": "CoreStack Spatio Temporal Asset Catalog"
     },
     {
       "rel": "item",
@@ -139,8 +139,8 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "STAC for jaunpur"
+      "title": "Jaunpur"
     }
   ],
-  "title": "STAC for badlapur"
+  "title": "Badlapur"
 }

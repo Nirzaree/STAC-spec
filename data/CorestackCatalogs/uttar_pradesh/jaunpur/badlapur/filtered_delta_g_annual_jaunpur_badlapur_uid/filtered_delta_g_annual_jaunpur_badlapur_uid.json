@@ -48818,20 +48818,20 @@
         "description": ""
       }
     ],
-    "datetime": "2025-09-03T10:47:27.725663Z"
+    "datetime": "2025-09-04T05:12:55.106261Z"
   },
   "links": [
     {
       "rel": "root",
       "href": "../../../../catalog.json",
       "type": "application/json",
-      "title": "CorestackCatalogs"
+      "title": "CoreStack Spatio Temporal Asset Catalog"
     },
     {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "STAC for badlapur"
+      "title": "Badlapur"
     }
   ],
   "assets": {
