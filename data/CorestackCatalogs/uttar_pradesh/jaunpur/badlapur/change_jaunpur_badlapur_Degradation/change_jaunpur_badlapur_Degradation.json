@@ -57,7 +57,7 @@
       3150,
       5442
     ],
-    "datetime": "2025-09-04T07:11:49.420744Z"
+    "datetime": "2025-09-04T07:39:30.916467Z"
   },
   "links": [
     {
@@ -127,14 +127,6 @@
       "title": "Raster Thumbnail",
       "roles": [
         "thumbnail"
-      ]
-    },
-    "legend": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/Degradation_climate_change.json",
-      "type": "application/json",
-      "title": "Legend JSON",
-      "roles": [
-        "metadata"
       ]
     },
     "style": {

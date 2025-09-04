@@ -57,7 +57,7 @@
       3154,
       5444
     ],
-    "datetime": "2025-09-04T07:09:49.203255Z"
+    "datetime": "2025-09-04T07:37:34.995190Z"
   },
   "links": [
     {
@@ -145,14 +145,6 @@
       "title": "Raster Thumbnail",
       "roles": [
         "thumbnail"
-      ]
-    },
-    "legend": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/Tree_health_style_oac.json",
-      "type": "application/json",
-      "title": "Legend JSON",
-      "roles": [
-        "metadata"
       ]
     },
     "style": {

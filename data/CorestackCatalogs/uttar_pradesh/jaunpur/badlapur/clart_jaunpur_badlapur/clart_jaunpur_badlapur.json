@@ -57,7 +57,7 @@
       3155,
       5446
     ],
-    "datetime": "2025-09-04T07:07:23.767203Z"
+    "datetime": "2025-09-04T07:35:22.583640Z"
   },
   "links": [
     {
@@ -127,14 +127,6 @@
       "title": "Raster Thumbnail",
       "roles": [
         "thumbnail"
-      ]
-    },
-    "legend": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/CLART-Layer-Style.json",
-      "type": "application/json",
-      "title": "Legend JSON",
-      "roles": [
-        "metadata"
       ]
     },
     "style": {

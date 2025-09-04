@@ -57,7 +57,7 @@
       3678,
       4173
     ],
-    "datetime": "2025-09-04T07:03:00.473058Z"
+    "datetime": "2025-09-04T07:31:27.764130Z"
   },
   "links": [
     {
@@ -175,14 +175,6 @@
       "title": "Raster Thumbnail",
       "roles": [
         "thumbnail"
-      ]
-    },
-    "legend": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/style_file.json",
-      "type": "application/json",
-      "title": "Legend JSON",
-      "roles": [
-        "metadata"
       ]
     },
     "style": {

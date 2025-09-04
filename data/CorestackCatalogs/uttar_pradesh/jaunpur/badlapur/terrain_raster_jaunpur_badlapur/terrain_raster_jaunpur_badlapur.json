@@ -57,7 +57,7 @@
       3155,
       5446
     ],
-    "datetime": "2025-09-04T07:06:40.362352Z"
+    "datetime": "2025-09-04T07:34:48.130806Z"
   },
   "links": [
     {
@@ -175,14 +175,6 @@
       "title": "Raster Thumbnail",
       "roles": [
         "thumbnail"
-      ]
-    },
-    "legend": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/terrain_1-12class.json",
-      "type": "application/json",
-      "title": "Legend JSON",
-      "roles": [
-        "metadata"
       ]
     },
     "style": {

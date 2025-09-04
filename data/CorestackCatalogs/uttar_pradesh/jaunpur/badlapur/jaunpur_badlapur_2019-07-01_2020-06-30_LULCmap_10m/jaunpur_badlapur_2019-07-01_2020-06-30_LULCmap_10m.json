@@ -57,7 +57,7 @@
       3150,
       5442
     ],
-    "datetime": "2025-09-04T07:06:08.460165Z"
+    "datetime": "2025-09-04T07:34:23.743710Z"
   },
   "links": [
     {
@@ -175,14 +175,6 @@
       "title": "Raster Thumbnail",
       "roles": [
         "thumbnail"
-      ]
-    },
-    "legend": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/LULC0_12class.json",
-      "type": "application/json",
-      "title": "Legend JSON",
-      "roles": [
-        "metadata"
       ]
     },
     "style": {

@@ -11343,7 +11343,7 @@
     18.95157635
   ],
   "properties": {
-    "title": "vector",
+    "title": "Surface_Water_bodies",
     "description": "Vector data for surface_waterbodies_koraput_narayanpatana in koraput of odisha",
     "start_datetime": "2017-07-01T00:00:00Z",
     "end_datetime": "2024-06-30T00:00:00Z",
@@ -11764,7 +11764,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-09-04T07:05:29.221734Z"
+    "datetime": "2025-09-04T07:33:43.377991Z"
   },
   "links": [
     {

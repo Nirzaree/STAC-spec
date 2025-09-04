@@ -57,7 +57,7 @@
       3154,
       5444
     ],
-    "datetime": "2025-09-04T07:08:34.068022Z"
+    "datetime": "2025-09-04T07:36:26.023291Z"
   },
   "links": [
     {
@@ -115,14 +115,6 @@
       "title": "Raster Thumbnail",
       "roles": [
         "thumbnail"
-      ]
-    },
-    "legend": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/ccd_style.json",
-      "type": "application/json",
-      "title": "Legend JSON",
-      "roles": [
-        "metadata"
       ]
     },
     "style": {

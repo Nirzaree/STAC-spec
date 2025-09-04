@@ -57,7 +57,7 @@
       3150,
       5442
     ],
-    "datetime": "2025-09-04T07:10:51.429239Z"
+    "datetime": "2025-09-04T07:38:35.071770Z"
   },
   "links": [
     {
@@ -145,14 +145,6 @@
       "title": "Raster Thumbnail",
       "roles": [
         "thumbnail"
-      ]
-    },
-    "legend": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/Cropping_Intensity_climate_change.json",
-      "type": "application/json",
-      "title": "Legend JSON",
-      "roles": [
-        "metadata"
       ]
     },
     "style": {
