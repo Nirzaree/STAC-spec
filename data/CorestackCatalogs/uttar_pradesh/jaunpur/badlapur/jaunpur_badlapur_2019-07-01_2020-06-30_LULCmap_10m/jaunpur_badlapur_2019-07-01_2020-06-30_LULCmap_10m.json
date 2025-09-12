@@ -64,7 +64,7 @@
       "rel": "root",
       "href": "../../../../catalog.json",
       "type": "application/json",
-      "title": "CoreStack Spatio Temporal Asset Catalog"
+      "title": "CoREStack Spatio Temporal Asset Catalog"
     },
     {
       "rel": "parent",
