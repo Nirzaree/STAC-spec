@@ -4,7 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
-  "id": "swb3_jaunpur_badlapur",
+  "id": "input/vector_files/swb3_jaunpur_badlapur",
   "geometry": {
     "type": "MultiPolygon",
     "coordinates": [
@@ -108398,7 +108398,7 @@
   ],
   "properties": {
     "title": "Uttar Pradesh",
-    "description": "Vector data for swb3_jaunpur_badlapur in Badlapur of Uttar Pradesh",
+    "description": "Vector data for input/vector_files/swb3_jaunpur_badlapur in Badlapur of Uttar Pradesh",
     "start_datetime": "2017-07-01T00:00:00Z",
     "end_datetime": "2024-06-30T00:00:00Z",
     "table:columns": [
@@ -108833,20 +108833,20 @@
   "links": [
     {
       "rel": "root",
-      "href": "../../../../catalog.json",
+      "href": "../../../../../../../../catalog.json",
       "type": "application/json",
       "title": "CoreStack Spatio Temporal Asset Catalog"
     },
     {
       "rel": "parent",
-      "href": "../catalog.json",
+      "href": "../../../../../catalog.json",
       "type": "application/json",
       "title": "Badlapur"
     }
   ],
   "assets": {
     "data": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/swb3_jaunpur_badlapur.geojson",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/input/vector_files/swb3_jaunpur_badlapur.geojson",
       "type": "application/geo+json",
       "title": "Vector Layer",
       "roles": [
@@ -108854,7 +108854,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_swb3_jaunpur_badlapur_thumbnail.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_input/vector_files/swb3_jaunpur_badlapur_thumbnail.png",
       "type": "image/png",
       "title": "Vector Thumbnail",
       "roles": [
@@ -108862,7 +108862,7 @@
       ]
     },
     "style": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/Surface-Waterbody-style.qml",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/input/style_files/Surface-Waterbody-style.qml",
       "type": "application/xml",
       "title": "Vector Style",
       "roles": [
