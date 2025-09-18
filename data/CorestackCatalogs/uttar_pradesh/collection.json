@@ -44,10 +44,11 @@
       ]
     }
   },
-  "license": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "keywords": [
-    "geospatial",
-    "remote sensing",
+    "social-ecological",
+    "sustainability",
+    "CoRE stack",
     "badlapur",
     "jaunpur",
     "uttar_pradesh"
@@ -57,7 +58,9 @@
       "name": "CoRE Stack",
       "roles": [
         "producer",
-        "processor"
+        "processor",
+        "host",
+        "licensor"
       ],
       "url": "https://core-stack.org/"
     }
