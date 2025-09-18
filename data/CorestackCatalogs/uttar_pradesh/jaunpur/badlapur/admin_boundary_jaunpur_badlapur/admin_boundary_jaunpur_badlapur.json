@@ -8371,7 +8371,7 @@
       {
         "name": "id",
         "type": "object",
-        "description": "id"
+        "description": ""
       },
       {
         "name": "ADI_2001",
@@ -8571,7 +8571,7 @@
       {
         "name": "geometry",
         "type": "geometry",
-        "description": "geometry"
+        "description": ""
       }
     ],
     "datetime": "2017-07-01T00:00:00Z"

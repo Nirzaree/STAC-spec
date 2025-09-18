@@ -1,5 +1,4 @@
 Sno.,layer_name,dataset_name (from DB),column_name,column_name_description,comments
-,admin_boundary,Admin Boundary,id,id,
 0,admin_boundary,Admin Boundary,ASSET_2001,household assets 2001,
 1,admin_boundary,Admin Boundary,TOT_M,total male population,
 2,admin_boundary,Admin Boundary,dist_cen,district census code,
@@ -40,7 +39,6 @@ Sno.,layer_name,dataset_name (from DB),column_name,column_name_description,comme
 37,admin_boundary,Admin Boundary,FC_2011,Percentage of households in a village with different levels of Fuel of Cooking 2011,
 38,admin_boundary,Admin Boundary,M_ILL,illiterate male population,
 39,admin_boundary,Admin Boundary,system:index,,
-,admin_boundary,admin_boundary,geometry,geometry,
 40,aquifer_vector,Aquifer,weighted_contribution,final contributions of each factor after mutiplying by its y_value,
 41,aquifer_vector,Aquifer,aquifer_count,Count of unique aquifers,
 42,aquifer_vector,Aquifer,m2_perday,transmissivity (in m2/day),
