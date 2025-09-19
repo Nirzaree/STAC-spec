@@ -16,7 +16,7 @@ These are the classes in the current version of LULC:
 11. tripple cropping
 12. shrubs and scrubs
 
-Input to the model is Dynamic World output, and timeseries data from Landsat-7, Landsat-8, Sentinel-2, Sentinel-1 and MODIS. Details of methodology can be found in our technical manual and the codebase on github
+Input to the model is Dynamic World output, and timeseries data from Landsat-7, Landsat-8, Sentinel-2, Sentinel-1 and MODIS. Details of methodology can be found in our [technical manual](https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view) and the codebase on [github](https://github.com/ICTD-IITD/IndiaSAT_LULC_Deliverables)
 "
 terrain_raster,"Terrain classification map at 30m resolution for India built by ACT4D research group at IIT Delhi. The map is based on Topographic Position Index (TPI) and slope. The algorithm is based on a landform classification method by The Nature Conservency (https://www.jennessent.com/downloads/TPI-poster-TNC_18x22.pdf), with fine tuning of the thresholds done for Indian landscapes.
 
