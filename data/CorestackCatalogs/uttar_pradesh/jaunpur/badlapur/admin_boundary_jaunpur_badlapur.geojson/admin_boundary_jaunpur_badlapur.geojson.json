@@ -8366,170 +8366,211 @@
     "table:columns": [
       {
         "name": "id",
-        "type": "object"
+        "type": "object",
+        "description": ""
       },
       {
         "name": "ADI_2001",
-        "type": "int32"
+        "type": "int32",
+        "description": "Aggregate Development Index (2001)"
       },
       {
         "name": "ADI_2011",
-        "type": "int32"
+        "type": "int32",
+        "description": "Aggregate Development Index (2011)"
       },
       {
         "name": "ADI_2019",
-        "type": "int32"
+        "type": "int32",
+        "description": "Aggregate Development Index (2019)"
       },
       {
         "name": "ASSET_2001",
-        "type": "int32"
+        "type": "int32",
+        "description": "household assets 2001"
       },
       {
         "name": "ASSET_2011",
-        "type": "int32"
+        "type": "int32",
+        "description": "Percentage of household in a village with different levels of assets 2011"
       },
       {
         "name": "ASSET_2019",
-        "type": "int32"
+        "type": "int32",
+        "description": "household assets 2019"
       },
       {
         "name": "BF_2001",
-        "type": "object"
+        "type": "object",
+        "description": "Percentage of households in a village with different levels of Bathroom Facility 2001"
       },
       {
         "name": "BF_2011",
-        "type": "int32"
+        "type": "int32",
+        "description": "Percentage of households in a village with different levels of Bathroom Facility 2011"
       },
       {
         "name": "BF_2019",
-        "type": "int32"
+        "type": "int32",
+        "description": "Percentage of households in a village with different levels of Bathroom Facility 2019"
       },
       {
         "name": "FC_2001",
-        "type": "int32"
+        "type": "int32",
+        "description": "Percentage of households in a village with different levels of Fuel of Cooking 2001"
       },
       {
         "name": "FC_2011",
-        "type": "int32"
+        "type": "int32",
+        "description": "Percentage of households in a village with different levels of Fuel of Cooking 2011"
       },
       {
         "name": "FC_2019",
-        "type": "int32"
+        "type": "int32",
+        "description": "Percentage of households in a village with different levels of Fuel of Cooking 2019"
       },
       {
         "name": "F_ILL",
-        "type": "int32"
+        "type": "int32",
+        "description": "illiterate female population"
       },
       {
         "name": "F_LIT",
-        "type": "int32"
+        "type": "int32",
+        "description": "literate female population"
       },
       {
         "name": "F_SC",
-        "type": "int32"
+        "type": "int32",
+        "description": "SC female population"
       },
       {
         "name": "F_ST",
-        "type": "int32"
+        "type": "int32",
+        "description": "ST female population"
       },
       {
         "name": "MSW_2001",
-        "type": "int32"
+        "type": "int32",
+        "description": "Percentage of households in a village with different levels of Main Source of Water 2001"
       },
       {
         "name": "MSW_2011",
-        "type": "int32"
+        "type": "int32",
+        "description": "Percentage of households in a village with different levels of Main Source of Water 2011"
       },
       {
         "name": "MSW_2019",
-        "type": "int32"
+        "type": "int32",
+        "description": "Percentage of households in a village with different levels of Main Source of Water 2019"
       },
       {
         "name": "M_ILL",
-        "type": "int32"
+        "type": "int32",
+        "description": "illiterate male population"
       },
       {
         "name": "M_LIT",
-        "type": "int32"
+        "type": "int32",
+        "description": "literate male population"
       },
       {
         "name": "M_SC",
-        "type": "int32"
+        "type": "int32",
+        "description": "SC male population"
       },
       {
         "name": "M_ST",
-        "type": "int32"
+        "type": "int32",
+        "description": "ST male population"
       },
       {
         "name": "No_HH",
-        "type": "int32"
+        "type": "int32",
+        "description": "number of households"
       },
       {
         "name": "P_ILL",
-        "type": "int32"
+        "type": "int32",
+        "description": "total illiterate population"
       },
       {
         "name": "P_LIT",
-        "type": "int32"
+        "type": "int32",
+        "description": "total literate population"
       },
       {
         "name": "P_SC",
-        "type": "int32"
+        "type": "int32",
+        "description": "total SC population"
       },
       {
         "name": "P_ST",
-        "type": "int32"
+        "type": "int32",
+        "description": "total ST population"
       },
       {
         "name": "TOT_F",
-        "type": "int32"
+        "type": "int32",
+        "description": "total female population"
       },
       {
         "name": "TOT_M",
-        "type": "int32"
+        "type": "int32",
+        "description": "total male population"
       },
       {
         "name": "TOT_P",
-        "type": "int32"
+        "type": "int32",
+        "description": "total population"
       },
       {
         "name": "block_cen",
-        "type": "int32"
+        "type": "int32",
+        "description": "subdistrict census code"
       },
       {
         "name": "dist_cen",
-        "type": "int32"
+        "type": "int32",
+        "description": "district census code"
       },
       {
         "name": "district",
-        "type": "object"
+        "type": "object",
+        "description": "district name"
       },
       {
         "name": "state",
-        "type": "object"
+        "type": "object",
+        "description": "state name"
       },
       {
         "name": "state_cen",
-        "type": "int32"
+        "type": "int32",
+        "description": "state census code"
       },
       {
         "name": "tehsil",
-        "type": "object"
+        "type": "object",
+        "description": "tehsil name"
       },
       {
         "name": "vill_ID",
-        "type": "int32"
+        "type": "int32",
+        "description": "village ID"
       },
       {
         "name": "vill_name",
-        "type": "object"
+        "type": "object",
+        "description": "village name"
       },
       {
         "name": "geometry",
-        "type": "geometry"
+        "type": "geometry",
+        "description": ""
       }
     ],
-    "datetime": "2025-09-22T12:53:39.663238Z"
+    "datetime": "2025-09-22T13:41:12.967012Z"
   },
   "links": [
     {
