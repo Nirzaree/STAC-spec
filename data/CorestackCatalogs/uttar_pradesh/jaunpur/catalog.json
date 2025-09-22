@@ -14,14 +14,14 @@
       "rel": "child",
       "href": "./badlapur/catalog.json",
       "type": "application/json",
-      "title": "Badlapur"
+      "title": "badlapur"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Uttar Pradesh"
+      "title": "uttar_pradesh"
     }
   ],
-  "title": "Jaunpur"
+  "title": "jaunpur"
 }

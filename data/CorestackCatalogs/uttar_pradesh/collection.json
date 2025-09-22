@@ -14,7 +14,7 @@
       "rel": "child",
       "href": "./jaunpur/catalog.json",
       "type": "application/json",
-      "title": "Jaunpur"
+      "title": "jaunpur"
     },
     {
       "rel": "parent",
@@ -23,7 +23,7 @@
       "title": "CoREStack Spatio Temporal Asset Catalog"
     }
   ],
-  "title": "Uttar Pradesh",
+  "title": "uttar_pradesh",
   "extent": {
     "spatial": {
       "bbox": [
@@ -44,23 +44,20 @@
       ]
     }
   },
-  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
+  "license": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
   "keywords": [
-    "social-ecological",
-    "sustainability",
-    "CoRE stack",
+    "geospatial",
+    "remote sensing",
     "badlapur",
     "jaunpur",
     "uttar_pradesh"
   ],
   "providers": [
     {
-      "name": "CoRE Stack",
+      "name": "Corestack",
       "roles": [
         "producer",
-        "processor",
-        "host",
-        "licensor"
+        "processor"
       ],
       "url": "https://core-stack.org/"
     }
