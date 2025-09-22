@@ -8372,197 +8372,197 @@
       {
         "name": "ADI_2001",
         "type": "int32",
-        "description": "Aggregate Development Index (2001)"
+        "description": ""
       },
       {
         "name": "ADI_2011",
         "type": "int32",
-        "description": "Aggregate Development Index (2011)"
+        "description": ""
       },
       {
         "name": "ADI_2019",
         "type": "int32",
-        "description": "Aggregate Development Index (2019)"
+        "description": ""
       },
       {
         "name": "ASSET_2001",
         "type": "int32",
-        "description": "household assets 2001"
+        "description": ""
       },
       {
         "name": "ASSET_2011",
         "type": "int32",
-        "description": "Percentage of household in a village with different levels of assets 2011"
+        "description": ""
       },
       {
         "name": "ASSET_2019",
         "type": "int32",
-        "description": "household assets 2019"
+        "description": ""
       },
       {
         "name": "BF_2001",
         "type": "object",
-        "description": "Percentage of households in a village with different levels of Bathroom Facility 2001"
+        "description": ""
       },
       {
         "name": "BF_2011",
         "type": "int32",
-        "description": "Percentage of households in a village with different levels of Bathroom Facility 2011"
+        "description": ""
       },
       {
         "name": "BF_2019",
         "type": "int32",
-        "description": "Percentage of households in a village with different levels of Bathroom Facility 2019"
+        "description": ""
       },
       {
         "name": "FC_2001",
         "type": "int32",
-        "description": "Percentage of households in a village with different levels of Fuel of Cooking 2001"
+        "description": ""
       },
       {
         "name": "FC_2011",
         "type": "int32",
-        "description": "Percentage of households in a village with different levels of Fuel of Cooking 2011"
+        "description": ""
       },
       {
         "name": "FC_2019",
         "type": "int32",
-        "description": "Percentage of households in a village with different levels of Fuel of Cooking 2019"
+        "description": ""
       },
       {
         "name": "F_ILL",
         "type": "int32",
-        "description": "illiterate female population"
+        "description": ""
       },
       {
         "name": "F_LIT",
         "type": "int32",
-        "description": "literate female population"
+        "description": ""
       },
       {
         "name": "F_SC",
         "type": "int32",
-        "description": "SC female population"
+        "description": ""
       },
       {
         "name": "F_ST",
         "type": "int32",
-        "description": "ST female population"
+        "description": ""
       },
       {
         "name": "MSW_2001",
         "type": "int32",
-        "description": "Percentage of households in a village with different levels of Main Source of Water 2001"
+        "description": ""
       },
       {
         "name": "MSW_2011",
         "type": "int32",
-        "description": "Percentage of households in a village with different levels of Main Source of Water 2011"
+        "description": ""
       },
       {
         "name": "MSW_2019",
         "type": "int32",
-        "description": "Percentage of households in a village with different levels of Main Source of Water 2019"
+        "description": ""
       },
       {
         "name": "M_ILL",
         "type": "int32",
-        "description": "illiterate male population"
+        "description": ""
       },
       {
         "name": "M_LIT",
         "type": "int32",
-        "description": "literate male population"
+        "description": ""
       },
       {
         "name": "M_SC",
         "type": "int32",
-        "description": "SC male population"
+        "description": ""
       },
       {
         "name": "M_ST",
         "type": "int32",
-        "description": "ST male population"
+        "description": ""
       },
       {
         "name": "No_HH",
         "type": "int32",
-        "description": "number of households"
+        "description": ""
       },
       {
         "name": "P_ILL",
         "type": "int32",
-        "description": "total illiterate population"
+        "description": ""
       },
       {
         "name": "P_LIT",
         "type": "int32",
-        "description": "total literate population"
+        "description": ""
       },
       {
         "name": "P_SC",
         "type": "int32",
-        "description": "total SC population"
+        "description": ""
       },
       {
         "name": "P_ST",
         "type": "int32",
-        "description": "total ST population"
+        "description": ""
       },
       {
         "name": "TOT_F",
         "type": "int32",
-        "description": "total female population"
+        "description": ""
       },
       {
         "name": "TOT_M",
         "type": "int32",
-        "description": "total male population"
+        "description": ""
       },
       {
         "name": "TOT_P",
         "type": "int32",
-        "description": "total population"
+        "description": ""
       },
       {
         "name": "block_cen",
         "type": "int32",
-        "description": "subdistrict census code"
+        "description": ""
       },
       {
         "name": "dist_cen",
         "type": "int32",
-        "description": "district census code"
+        "description": ""
       },
       {
         "name": "district",
         "type": "object",
-        "description": "district name"
+        "description": ""
       },
       {
         "name": "state",
         "type": "object",
-        "description": "state name"
+        "description": ""
       },
       {
         "name": "state_cen",
         "type": "int32",
-        "description": "state census code"
+        "description": ""
       },
       {
         "name": "tehsil",
         "type": "object",
-        "description": "tehsil name"
+        "description": ""
       },
       {
         "name": "vill_ID",
         "type": "int32",
-        "description": "village ID"
+        "description": ""
       },
       {
         "name": "vill_name",
         "type": "object",
-        "description": "village name"
+        "description": ""
       },
       {
         "name": "geometry",
@@ -8570,7 +8570,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-09-22T13:41:12.967012Z"
+    "datetime": "2025-09-22T15:03:23.199603Z"
   },
   "links": [
     {
@@ -8596,7 +8596,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_admin_boundary_jaunpur_badlapur_thumbnail.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/admin_boundary_jaunpur_badlapur_thumbnail.png",
       "type": "image/png",
       "title": "Vector Thumbnail",
       "roles": [
@@ -8604,7 +8604,7 @@
       ]
     },
     "style": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/LULC0_12class.qml",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/Administrative-Boundary-Style.qml",
       "type": "application/xml",
       "title": "Vector Style (QML)",
       "roles": [

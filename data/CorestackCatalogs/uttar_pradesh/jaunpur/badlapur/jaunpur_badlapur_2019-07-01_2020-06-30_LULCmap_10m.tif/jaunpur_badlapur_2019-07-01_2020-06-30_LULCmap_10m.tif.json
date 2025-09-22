@@ -46,7 +46,7 @@
       3150,
       5442
     ],
-    "datetime": "2025-09-22T13:41:08.840699Z"
+    "datetime": "2025-09-22T15:03:18.255440Z"
   },
   "links": [
     {
@@ -166,7 +166,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_jaunpur_badlapur_2019-07-01_2020-06-30_LULCmap_10m_thumbnail.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/jaunpur_badlapur_2019-07-01_2020-06-30_LULCmap_10m_thumbnail.png",
       "type": "image/png",
       "title": "Raster Thumbnail (QML)",
       "roles": [
