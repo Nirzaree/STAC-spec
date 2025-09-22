@@ -15,12 +15,6 @@
       "href": "./uttar_pradesh/collection.json",
       "type": "application/json",
       "title": "uttar_pradesh"
-    },
-    {
-      "rel": "child",
-      "href": "./uttar_pradesh/collection.json",
-      "type": "application/json",
-      "title": "uttar_pradesh"
     }
   ],
   "title": "CoREStack Spatio Temporal Asset Catalog"
