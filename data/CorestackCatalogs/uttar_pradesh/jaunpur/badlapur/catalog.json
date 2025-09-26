@@ -12,7 +12,7 @@
     },
     {
       "rel": "item",
-      "href": "./terrain_raster_jaunpur_badlapur.tif/terrain_raster_jaunpur_badlapur.tif.json",
+      "href": "./jaunpur_badlapur_2019-07-01_2020-06-30_LULCmap_10m.tif/jaunpur_badlapur_2019-07-01_2020-06-30_LULCmap_10m.tif.json",
       "type": "application/geo+json"
     },
     {
