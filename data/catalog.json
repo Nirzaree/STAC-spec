@@ -1,40 +1,20 @@
 {
   "type": "Catalog",
-  "id": "root",
+  "id": "PANindia",
   "stac_version": "1.1.0",
-  "description": "Root catalog for all data",
+  "description": "STAC items for PAN india.",
   "links": [
     {
-      "rel": "self",
-      "href": "/home/vishnu/STAC-spec-raster/STAC-spec/data/catalog.json",
-      "type": "application/json"
-    },
-    {
       "rel": "root",
-      "href": "/home/vishnu/STAC-spec-raster/STAC-spec/data/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "/home/vishnu/STAC-spec-raster/STAC-spec/data/uttar_pradesh/catalog.json",
+      "href": "./catalog.json",
       "type": "application/json",
-      "title": "STAC for uttar_pradesh"
+      "title": "STAC Catalog for PAN India"
     },
     {
-      "rel": "child",
-      "href": "/home/vishnu/STAC-spec-raster/STAC-spec/data/uttar_pradesh/catalog.json",
-      "type": "application/json",
-      "title": "STAC for uttar_pradesh"
-    },
-    {
-      "rel": "child",
-      "href": "/home/vishnu/STAC-spec-raster/STAC-spec/data/uttar_pradesh/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "/home/vishnu/STAC-spec-raster/STAC-spec/data/uttar_pradesh/catalog.json",
-      "type": "application/json"
+      "rel": "item",
+      "href": "./Landscape-Restoration-WRI/Landscape-Restoration-WRI.json",
+      "type": "application/geo+json"
     }
-  ]
+  ],
+  "title": "STAC Catalog for PAN India"
 }
