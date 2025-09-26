@@ -24,7 +24,7 @@
     },
     {
       "rel": "documentation",
-      "href": "https://github.com/Nirzaree/STAC-spec/tree/stac-spec-common",
+      "href": "https://github.com/orgs/core-stack-org/repositories",
       "type": "application/pdf",
       "title": "Github link"
     },
@@ -64,8 +64,9 @@
   },
   "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "keywords": [
-    "geospatial",
-    "remote sensing",
+    "social-ecological",
+    "sustainability",
+    "CoRE stack",
     "badlapur",
     "jaunpur",
     "uttar_pradesh"
@@ -75,7 +76,9 @@
       "name": "Corestack",
       "roles": [
         "producer",
-        "processor"
+        "processor",
+        "host",
+        "licensor"
       ],
       "url": "https://core-stack.org/"
     }
