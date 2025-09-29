@@ -22,3 +22,5 @@ swb_vector_description="SWB vector layer"
 stac_version="1.0.0"
 root_catalog_title="CoREStack Spatio Temporal Asset Catalog"
 root_catalog_description="This spatio temporal asset catalog contains all data layers of CoREStack (https://core-stack.org/). The data layers are generated at an administrative block level, and some layers are available for Pan India."
+
+GEOSERVER_BASE_URL = "https://geoserver.core-stack.org:8443/geoserver"
