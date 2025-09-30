@@ -5,22 +5,17 @@ DEFAULT_START_DATE = datetime(2017, 7, 1)
 DEFAULT_END_DATE = datetime(2024, 6, 30)
 
 SRTM_DEM_START_DATE = datetime(2020,2,11) #used for terrain raster as it 
-#uses SRTMGL1_003 product 
+#uses SRTMGL1_003 product
 # https://www.earthdata.nasa.gov/data/catalog/lpcloud-srtmgl1-003
 SRTM_DEM_END_DATE = datetime(2020,2,21)
 
-no_data_classnames_list = ['clear','background','No data']
+NO_DATA_CLASSNAMES_LIST = ['clear','background','No data']
 
-base_url="https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/"
-data_url="https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/"
-raster_lulc_id="lulc_raster"
-raster_lulc_description="Land Use Land Cover raster map"
-raster_lulc_title="Raster layer"
-swb_vector_id="swb_vector"
-swb_vector_title="SWB Vector"
-swb_vector_description="SWB vector layer"
-stac_version="1.0.0"
-root_catalog_title="CoREStack Spatio Temporal Asset Catalog"
-root_catalog_description="This spatio temporal asset catalog contains all data layers of CoREStack (https://core-stack.org/). The data layers are generated at an administrative block level, and some layers are available for Pan India."
+BASE_URL="https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/"
+DATA_URL="https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/"
+
+STAC_VERSION="1.0.0"
+ROOT_CATALOG_TITLE="CoREStack Spatio Temporal Asset Catalog"
+ROOT_CATALOG_DESCRIPTION="This spatio temporal asset catalog contains all data layers of CoREStack (https://core-stack.org/). The data layers are generated at an administrative block level, and some layers are available for Pan India."
 
 GEOSERVER_BASE_URL = "https://geoserver.core-stack.org:8443/geoserver"
