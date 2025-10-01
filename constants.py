@@ -12,7 +12,7 @@ SRTM_DEM_END_DATE = datetime(2020,2,21)
 NO_DATA_CLASSNAMES_LIST = ['clear','background','No data']
 
 BASE_URL="https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/"
-DATA_URL="https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/"
+GITHUB_DATA_URL="https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/"
 
 STAC_VERSION="1.0.0"
 ROOT_CATALOG_TITLE="CoREStack Spatio Temporal Asset Catalog"
