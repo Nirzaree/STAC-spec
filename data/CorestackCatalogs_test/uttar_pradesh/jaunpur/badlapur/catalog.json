@@ -30,6 +30,41 @@
       "rel": "item",
       "href": "./tree_health_ccd_raster_jaunpur_badlapur_2022/tree_health_ccd_raster_jaunpur_badlapur_2022.json",
       "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_health_ch_raster_jaunpur_badlapur_2018/tree_health_ch_raster_jaunpur_badlapur_2018.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_health_ch_raster_jaunpur_badlapur_2019/tree_health_ch_raster_jaunpur_badlapur_2019.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./change_jaunpur_badlapur_Degradation/change_jaunpur_badlapur_Degradation.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jaunpur_badlapur_terrain_raster/jaunpur_badlapur_terrain_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jaunpur_badlapur_clart/jaunpur_badlapur_clart.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_health_overall_change_raster_jaunpur_badlapur/tree_health_overall_change_raster_jaunpur_badlapur.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./change_jaunpur_badlapur_CropIntensity/change_jaunpur_badlapur_CropIntensity.json",
+      "type": "application/geo+json"
     }
   ],
   "title": "STAC for badlapur"

@@ -46,7 +46,7 @@
       1052,
       1816
     ],
-    "datetime": "2025-10-08T09:53:08.417885Z"
+    "datetime": "2025-10-08T12:26:21.331100Z"
   },
   "links": [
     {
@@ -159,7 +159,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_terrain_raster.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_terrain_raster.png",
       "type": "image/png",
       "title": "Raster Thumbnail (QML)",
       "roles": [
