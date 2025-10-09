@@ -16,12 +16,6 @@
       "type": "application/geo+json"
     },
     {
-      "rel": "parent",
-      "href": "../catalog.json",
-      "type": "application/json",
-      "title": "jaunpur"
-    },
-    {
       "rel": "item",
       "href": "./LULC_18_19_badlapur_level_3/LULC_18_19_badlapur_level_3.json",
       "type": "application/geo+json"
@@ -145,6 +139,12 @@
       "rel": "item",
       "href": "./LULC_22_23_badlapur_level_3/LULC_22_23_badlapur_level_3.json",
       "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "jaunpur"
     }
   ],
   "title": "STAC for badlapur"
