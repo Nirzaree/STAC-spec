@@ -12,7 +12,7 @@
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_badlapur/land_use_land_cover_raster_badlapur.json",
+      "href": "./LULC_22_23_badlapur_level_3/LULC_22_23_badlapur_level_3.json",
       "type": "application/geo+json"
     },
     {
@@ -23,12 +23,12 @@
     },
     {
       "rel": "item",
-      "href": "./tree_canopy_cover_density_raster_badlapur/tree_canopy_cover_density_raster_badlapur.json",
+      "href": "./jaunpur_badlapur_terrain_raster/jaunpur_badlapur_terrain_raster.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./terrain_raster_badlapur/terrain_raster_badlapur.json",
+      "href": "./tree_health_ccd_raster_jaunpur_badlapur_2022/tree_health_ccd_raster_jaunpur_badlapur_2022.json",
       "type": "application/geo+json"
     }
   ],

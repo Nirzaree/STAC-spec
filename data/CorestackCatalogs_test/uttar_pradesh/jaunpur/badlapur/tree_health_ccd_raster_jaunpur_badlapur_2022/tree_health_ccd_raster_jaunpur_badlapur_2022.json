@@ -5,7 +5,7 @@
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
-  "id": "tree_canopy_cover_density_raster_badlapur",
+  "id": "tree_health_ccd_raster_jaunpur_badlapur_2022",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -40,14 +40,14 @@
     26.027787042079016
   ],
   "properties": {
-    "title": "24    Tree canopy cover density\nName: display_name, dtype: object : badlapur",
+    "title": "Tree canopy cover density : badlapur",
     "description": "Tree canopy cover density map for India built by ACT4D research group at IIT Delhi. Tree canopy cover density (CCD) indicates the density of tree cover in a given area, with higher canopy cover percentages signifying a denser canopy and more shade on the ground and vice versa. \n\nThe Pan India map (except ACZ 12-15 currently missing due to insufficient data points for training the respective models)  is available from 2017 onwards at 25m resolution.\nThese are the classes in the current version of the map: \nLow density \nHigh density\nMissing data \n\nInput to the model is Dynamic World output, and timeseries data from Sentinel-2, Sentinel-1 and GEDI as ground truth. Details of methodology can be found  in the technical manual and the codebase at https://github.com/Dhruvi-Goyal/Tree-Health-Monitoring/",
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       1262,
       2178
     ],
-    "datetime": "2025-10-09T09:39:28.185621Z"
+    "datetime": "2025-10-09T09:47:35.764616Z"
   },
   "links": [
     {
