@@ -120,6 +120,31 @@
       "rel": "item",
       "href": "./tree_health_ccd_raster_jaunpur_badlapur_2018/tree_health_ccd_raster_jaunpur_badlapur_2018.json",
       "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_health_ccd_raster_jaunpur_badlapur_2019/tree_health_ccd_raster_jaunpur_badlapur_2019.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_health_ccd_raster_jaunpur_badlapur_2020/tree_health_ccd_raster_jaunpur_badlapur_2020.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_health_ccd_raster_jaunpur_badlapur_2021/tree_health_ccd_raster_jaunpur_badlapur_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_health_ccd_raster_jaunpur_badlapur_2022/tree_health_ccd_raster_jaunpur_badlapur_2022.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LULC_22_23_badlapur_level_3/LULC_22_23_badlapur_level_3.json",
+      "type": "application/geo+json"
     }
   ],
   "title": "STAC for badlapur"
