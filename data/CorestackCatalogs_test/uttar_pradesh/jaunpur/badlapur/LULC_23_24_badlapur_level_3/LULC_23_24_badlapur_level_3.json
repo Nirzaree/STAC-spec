@@ -5,7 +5,7 @@
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
-  "id": "LULC_22_23_badlapur_level_3",
+  "id": "LULC_23_24_badlapur_level_3",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -40,14 +40,14 @@
     26.02751754749378
   ],
   "properties": {
-    "title": "Land Use Land Cover : 2022",
+    "title": "Land Use Land Cover : 2023",
     "description": "Land Use Land Cover (LULC) map for India built by ACT4D research group at IIT Delhi. Novelty of this approach is intra-annual classes for agriculture and water availability aligned to the agriculture seasons of India.\n\nThe Pan India map is available from 2017 onwards at 10m resolution.\nThese are the classes in the current version of LULC:\n1. builtup\n2. water in kharif only\n3. water in kharif and rabi only\n4. water in kharif, rabi and zaid (perennial water)\n5. cropland\n6. trees and forest\n7. barren land\n8. single kharif cropping\n9. single non-kharif cropping\n10. double cropping\n11. tripple cropping\n12. shrubs and scrubs\n\nInput to the model is Dynamic World output, and timeseries data from Landsat-7, Landsat-8, Sentinel-2, Sentinel-1 and MODIS. Details of methodology can be found in our technical manual and the codebase on github\n",
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       3150,
       5442
     ],
-    "datetime": "2025-10-09T10:17:25.396562Z"
+    "datetime": "2025-10-09T13:21:48.727443Z"
   },
   "links": [
     {
@@ -65,7 +65,7 @@
   ],
   "assets": {
     "data": {
-      "href": "https://geoserver.core-stack.org:8443/geoserver/LULC_level_3/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=LULC_level_3:LULC_22_23_badlapur_level_3&format=geotiff",
+      "href": "https://geoserver.core-stack.org:8443/geoserver/LULC_level_3/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=LULC_level_3:LULC_23_24_badlapur_level_3&format=geotiff",
       "title": "Raster Layer",
       "classification:classes": [
         {
@@ -160,7 +160,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_land_use_land_cover_raster_2022.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_land_use_land_cover_raster_2023.png",
       "type": "image/png",
       "title": "Raster Thumbnail (QML)",
       "roles": [
