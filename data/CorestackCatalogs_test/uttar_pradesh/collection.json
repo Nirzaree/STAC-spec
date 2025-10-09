@@ -11,6 +11,24 @@
       "title": "CoREStack Spatio Temporal Asset Catalog"
     },
     {
+      "rel": "documentation",
+      "href": "https://core-stack.org/",
+      "type": "application/pdf",
+      "title": "CoRE stack"
+    },
+    {
+      "rel": "documentation",
+      "href": "https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view",
+      "type": "application/pdf",
+      "title": "Technical Manual"
+    },
+    {
+      "rel": "documentation",
+      "href": "https://github.com/orgs/core-stack-org/repositories",
+      "type": "application/pdf",
+      "title": "Github link"
+    },
+    {
       "rel": "child",
       "href": "./jaunpur/catalog.json",
       "type": "application/json",
