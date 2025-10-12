@@ -1,0 +1,123 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "change_jaunpur_badlapur_Urbanization",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          82.15758026583272,
+          25.74454823299613
+        ],
+        [
+          82.15758026583272,
+          26.02751754749378
+        ],
+        [
+          82.64644344345056,
+          26.02751754749378
+        ],
+        [
+          82.64644344345056,
+          25.74454823299613
+        ],
+        [
+          82.15758026583272,
+          25.74454823299613
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    82.15758026583272,
+    25.74454823299613,
+    82.64644344345056,
+    26.02751754749378
+  ],
+  "properties": {
+    "title": "Land use change : Urbanization",
+    "description": "Change detection map for India built by ACT4D research group at IIT Delhi. The various change detection maps are Change in Land use layers are computing by using IndiaSAT Land Use Land Cover outputs and computing the change in pixel classes across the years. \nCurrently the layer is computed for the period of 2017-2022 and two composite images are generated using the mode of the first three years (2017-2019) and the last three years (2020-2022) and a transition matrix is prepared for the classes for these outputs. \n\nUrbanization layer includes the transition of built-up, green, water, and barren areas to built-up. Following are the classes in this layer: \nBuilt Up - Built Up\nWater - Built Up\nTrees/Crops - Built Up\nBarren/Shrubs and Scrubs - Built Up",
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      3150,
+      5442
+    ],
+    "datetime": "2025-10-09T13:26:25.426978Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoREStack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "STAC for badlapur"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/change_detection/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=change_detection:change_jaunpur_badlapur_Urbanization&format=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "Background",
+          "description": "Background",
+          "color_hint": "ffffff"
+        },
+        {
+          "value": 1,
+          "name": "Built Up - Built Up",
+          "description": "Built Up - Built Up",
+          "color_hint": "ff0000"
+        },
+        {
+          "value": 2,
+          "name": "Water - Built Up",
+          "description": "Water - Built Up",
+          "color_hint": "1ca3ec"
+        },
+        {
+          "value": 3,
+          "name": "Tree/Farm - Built Up",
+          "description": "Tree/Farm - Built Up",
+          "color_hint": "73bb53"
+        },
+        {
+          "value": 4,
+          "name": "Barren/Shrub - Built Up",
+          "description": "Barren/Shrub - Built Up",
+          "color_hint": "a9a9a9"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Restoration/Urbanization_climate_change.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_change_urbanization_raster.png",
+      "type": "image/png",
+      "title": "Raster Thumbnail (QML)",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

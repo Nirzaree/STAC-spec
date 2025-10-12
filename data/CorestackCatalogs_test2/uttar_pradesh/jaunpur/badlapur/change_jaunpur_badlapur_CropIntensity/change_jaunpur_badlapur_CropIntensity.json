@@ -1,0 +1,141 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "change_jaunpur_badlapur_CropIntensity",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          82.15758026583272,
+          25.74454823299613
+        ],
+        [
+          82.15758026583272,
+          26.02751754749378
+        ],
+        [
+          82.64644344345056,
+          26.02751754749378
+        ],
+        [
+          82.64644344345056,
+          25.74454823299613
+        ],
+        [
+          82.15758026583272,
+          25.74454823299613
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    82.15758026583272,
+    25.74454823299613,
+    82.64644344345056,
+    26.02751754749378
+  ],
+  "properties": {
+    "title": "Land Use Change : Cropping intensity",
+    "description": "",
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      3150,
+      5442
+    ],
+    "datetime": "2025-10-09T13:26:46.091607Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoREStack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "STAC for badlapur"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/change_detection/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=change_detection:change_jaunpur_badlapur_CropIntensity&format=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "Background",
+          "description": "Background",
+          "color_hint": "f7fcf5"
+        },
+        {
+          "value": 1,
+          "name": "Double - Single",
+          "description": "Double - Single",
+          "color_hint": "ff6347"
+        },
+        {
+          "value": 2,
+          "name": "Triple - Single",
+          "description": "Triple - Single",
+          "color_hint": "ff4500"
+        },
+        {
+          "value": 3,
+          "name": "Triple - Double",
+          "description": "Triple - Double",
+          "color_hint": "ff0000"
+        },
+        {
+          "value": 4,
+          "name": "Single - Double",
+          "description": "Single - Double",
+          "color_hint": "00ff00"
+        },
+        {
+          "value": 5,
+          "name": "Single - Triple",
+          "description": "Single - Triple",
+          "color_hint": "32cd32"
+        },
+        {
+          "value": 6,
+          "name": "Double - Triple",
+          "description": "Double - Triple",
+          "color_hint": "228b22"
+        },
+        {
+          "value": 7,
+          "name": "As it is",
+          "description": "As it is",
+          "color_hint": "712103"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Restoration/Cropping_Intensity_climate_change.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_change_cropping_intensity_raster.png",
+      "type": "image/png",
+      "title": "Raster Thumbnail (QML)",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

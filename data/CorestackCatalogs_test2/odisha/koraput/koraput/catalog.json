@@ -1,0 +1,36 @@
+{
+  "type": "Catalog",
+  "id": "koraput",
+  "stac_version": "1.1.0",
+  "description": "STAC catalog for koraput block data in koraput, odisha",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "CoREStack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./koraput_koraput_terrain_raster/koraput_koraput_terrain_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./koraput_koraput_clart/koraput_koraput_clart.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_health_overall_change_raster_koraput_koraput/tree_health_overall_change_raster_koraput_koraput.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "koraput"
+    }
+  ],
+  "title": "STAC for koraput"
+}
