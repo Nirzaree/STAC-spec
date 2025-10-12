@@ -1,4 +1,4 @@
-display name,layer_type,layer_name,ee_layer_name,db_dataset_name,geoserver_workspace_name,start_year,end_year,geoserver_layer_name,style_file_url
+display_name,layer_type,layer_name,ee_layer_name,db_dataset_name,geoserver_workspace_name,start_year,end_year,geoserver_layer_name,style_file_url
 the name which will be displayed on the dashboard,raster or vector layer,layer name which will be the common link across the various components,name of the layer in earthengine,dataset name of the layer in the database,workspace name of the layer in geoserver,start year of the data layer,end year of the data layer,name of the layer in geoserver,github link of the associated style file
 Admin Boundaries,vector,admin_boundaries_vector,admin_boundary,Admin Boundary,panchayat_boundaries,,,{district}_{block},https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Demographic/Administrative-Boundary-Style.qml
 Aquifer,vector,aquifer_vector,aquifer_vector,Aquifer,aquifer,,,aquifer_vector_{district}_{block},https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Hydrology/Aquifer_style.qml
