@@ -1,0 +1,124 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "uttar_pradesh_jaunpur_badlapur_change_cropping_reduction_raster",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          82.15758026583272,
+          25.74454823299613
+        ],
+        [
+          82.15758026583272,
+          26.02751754749378
+        ],
+        [
+          82.64644344345056,
+          26.02751754749378
+        ],
+        [
+          82.64644344345056,
+          25.74454823299613
+        ],
+        [
+          82.15758026583272,
+          25.74454823299613
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    82.15758026583272,
+    25.74454823299613,
+    82.64644344345056,
+    26.02751754749378
+  ],
+  "properties": {
+    "title": "Land Use change : Cropping reduction",
+    "description": "Change detection map for India built by ACT4D research group at IIT Delhi. The various change detection maps are Change in Land use layers are computing by using IndiaSAT Land Use Land Cover outputs and computing the change in pixel classes across the years. \nCurrently the layer is computed for the period of 2017-2022 and two composite images are generated using the mode of the first three years (2017-2019) and the last three years (2020-2022) and a transition matrix is prepared for the classes for these outputs. \nDegradation layer includes the transition of crops area into built-up, barren and shrubs. Following are the classes in this layer: \nCrops - Crops\nCrops - Built Up\nCrops - Barren\nCrops - Shrubs and Scrubs",
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      3150,
+      5442
+    ],
+    "datetime": "2025-10-13T11:59:42.906915Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoREStack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "STAC for badlapur"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/change_detection/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=change_detection:change_jaunpur_badlapur_Degradation&format=geotiff",
+      "type": "image/tiff; application=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "Background",
+          "description": "Background",
+          "color_hint": "f7fcf5"
+        },
+        {
+          "value": 1,
+          "name": "Crops - Crops",
+          "description": "Crops - Crops",
+          "color_hint": "eee05d"
+        },
+        {
+          "value": 2,
+          "name": "Crops - Built Up",
+          "description": "Crops - Built Up",
+          "color_hint": "ff0000"
+        },
+        {
+          "value": 3,
+          "name": "Crops - Barren",
+          "description": "Crops - Barren",
+          "color_hint": "a9a9a9"
+        },
+        {
+          "value": 4,
+          "name": "Crops - Shrubs and Scrubs",
+          "description": "Crops - Shrubs and Scrubs",
+          "color_hint": "eaa4f0"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Restoration/cropping_reduction.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_change_cropping_reduction_raster.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

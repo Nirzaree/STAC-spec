@@ -4,7 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
-  "id": "uttar_pradesh_jaunpur_badlapur_aquifer_vector",
+  "id": "uttar_pradesh_jaunpur_badlapur_drought_frequency_vector",
   "geometry": {
     "type": "MultiPolygon",
     "coordinates": [
@@ -32875,10 +32875,6 @@
         ],
         [
           [
-            82.2935527,
-            25.81124781
-          ],
-          [
             82.29328072,
             25.81124783
           ],
@@ -32893,6 +32889,10 @@
           [
             82.2935527,
             25.81124781
+          ],
+          [
+            82.29328072,
+            25.81124783
           ]
         ],
         [
@@ -33404,10 +33404,6 @@
         [
           [
             82.32508304,
-            25.89991255
-          ],
-          [
-            82.32508304,
             25.89964057
           ],
           [
@@ -33421,6 +33417,10 @@
           [
             82.32508304,
             25.89991255
+          ],
+          [
+            82.32508304,
+            25.89964057
           ]
         ],
         [
@@ -48753,158 +48753,1258 @@
     26.02738048
   ],
   "properties": {
-    "title": "Aquifer",
-    "description": "Aquifer map for India generated with data from India Water Resources Information System (WRIS) ArcGIS portal. Ground water is the water present beneath the Earth\u2019s surface in rock and soil pore spaces and in the fractures of rock formation. A unit of rock or an unconsolidated deposit is called an aquifer when it can yield a usable quantity of water. \n\nBased on the hydrogeological characteristics, the entire nation is divided into 14 principal aquifers: \n\nAlluvium\nLaterite\nBasalt\nSandstone\nShale\nLimestone\nGranite\nSchist\nQuartzite\nCharnockite\nKhondalite\nBanded Gneissic Complex\nGneiss\nIntrusive\n\nEach major aquifer is uniquely identified by its region-specific aquifer properties such as aquifer thickness, specific yield, transmissivity and whether it is an unconfined and confined aquifer.",
+    "title": "Drought frequency",
+    "description": "Drought frequency map for India built by ACT4D research group at IIT Delhi. The Department of Agriculture, Cooperation & Farmers Welfare under the Ministry of Agriculture & Farmers Welfare, Government of India released the \"Manual for Drought Management\" in 2016 for the pre-\nvention, mitigation and management of droughts in India. The manual introduces scientific\nindices and parameters such as Vegetation Condition Index (VCI) for more accurate determi-\nnation and assessment of drought. This map is an attempt to implement the methodology of the drought manual using various remote sensing products.\n\nFollowing are the output classes in the model: \nSevere\nModerate\nMild\n\nInput to the model is Rainfall data  (CHIRPS), Vegetation data (Landsat), Crop data (MODIS), Land use land cover (IndiaSAT). Details of methodology can be found in the technical manual and the codebase on github.",
     "table:columns": [
       {
-        "name": "%_area_aquifer",
-        "type": "int32",
-        "description": "area of aquifer in percentage"
-      },
-      {
-        "name": "Age",
+        "name": "id",
         "type": "object",
-        "description": "age of lithology"
-      },
-      {
-        "name": "Lithology_",
-        "type": "int32",
-        "description": "lithology type"
-      },
-      {
-        "name": "Major_Aq_1",
-        "type": "object",
-        "description": "major aquifer 1"
-      },
-      {
-        "name": "Major_Aqui",
-        "type": "object",
-        "description": "major aquifer"
-      },
-      {
-        "name": "Principal_",
-        "type": "object",
-        "description": "principal aquifer system name"
-      },
-      {
-        "name": "Recommende",
-        "type": "int32",
-        "description": "recommended groundwater management interventions"
-      },
-      {
-        "name": "aquifer_class",
-        "type": "object",
-        "description": "aquifer class "
-      },
-      {
-        "name": "aquifer_count",
-        "type": "int32",
-        "description": "Count of unique aquifers"
+        "description": ""
       },
       {
         "name": "area_in_ha",
         "type": "float64",
-        "description": "area in hectares"
+        "description": ""
       },
       {
-        "name": "area_re",
-        "type": "int32",
-        "description": "area in km2"
-      },
-      {
-        "name": "avg_mbgl",
-        "type": "object",
-        "description": "decadal average depth (in meters below ground level)"
-      },
-      {
-        "name": "id",
-        "type": "int32",
-        "description": "id"
-      },
-      {
-        "name": "intersection_area_ha",
+        "name": "avg_dryspell",
         "type": "float64",
-        "description": "area of intersection under aquifer"
-      },
-      {
-        "name": "m2_perday",
-        "type": "object",
-        "description": "transmissivity (in m2/day)"
-      },
-      {
-        "name": "m3_per_day",
-        "type": "object",
-        "description": "Yield (in m3/day)"
-      },
-      {
-        "name": "mbgl",
-        "type": "object",
-        "description": "Fractures encountered (in m bgl)"
-      },
-      {
-        "name": "newcode14",
-        "type": "object",
-        "description": "principal aquifer alphabet code"
-      },
-      {
-        "name": "newcode43",
-        "type": "object",
-        "description": "major aquifer code"
-      },
-      {
-        "name": "objectid",
-        "type": "int32",
         "description": ""
       },
       {
-        "name": "pa_order",
-        "type": "int32",
-        "description": "principal aquifer numeric code"
-      },
-      {
-        "name": "per_cm",
-        "type": "object",
-        "description": "Quality (EC in Micromhos/cm)"
-      },
-      {
-        "name": "state",
-        "type": "object",
-        "description": "state name "
-      },
-      {
-        "name": "system",
+        "name": "drlb_2017",
         "type": "object",
         "description": ""
       },
       {
-        "name": "test",
+        "name": "drlb_2018",
         "type": "object",
-        "description": "codes identifying aquifer/lithology test units"
+        "description": ""
+      },
+      {
+        "name": "drlb_2019",
+        "type": "object",
+        "description": ""
+      },
+      {
+        "name": "drlb_2020",
+        "type": "object",
+        "description": ""
+      },
+      {
+        "name": "drlb_2021",
+        "type": "object",
+        "description": ""
+      },
+      {
+        "name": "drlb_2022",
+        "type": "object",
+        "description": ""
+      },
+      {
+        "name": "drysp_2017",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "drysp_2018",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "drysp_2019",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "drysp_2020",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "drysp_2021",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "drysp_2022",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth0_2017",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth0_2018",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth0_2019",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth0_2020",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth0_2021",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth0_2022",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth1_2017",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth1_2018",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth1_2019",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth1_2020",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth1_2021",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth1_2022",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth2_2017",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth2_2018",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth2_2019",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth2_2020",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth2_2021",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth2_2022",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth3_2017",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth3_2018",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth3_2019",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth3_2020",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth3_2021",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "frth3_2022",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "inth0_2017",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "inth0_2018",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "inth0_2019",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "inth0_2020",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "inth0_2021",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "inth0_2022",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "inth1_2017",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "inth1_2018",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "inth1_2019",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "inth1_2020",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "inth1_2021",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "inth1_2022",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "inth2_2017",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "inth2_2018",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "inth2_2019",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "inth2_2020",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "inth2_2021",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "inth2_2022",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "inth3_2017",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "inth3_2018",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "inth3_2019",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "inth3_2020",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "inth3_2021",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "inth3_2022",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "kh_cr_2017",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "kh_cr_2018",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "kh_cr_2019",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "kh_cr_2020",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "kh_cr_2021",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "kh_cr_2022",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "m_ons_2017",
+        "type": "object",
+        "description": ""
+      },
+      {
+        "name": "m_ons_2018",
+        "type": "object",
+        "description": ""
+      },
+      {
+        "name": "m_ons_2019",
+        "type": "object",
+        "description": ""
+      },
+      {
+        "name": "m_ons_2020",
+        "type": "object",
+        "description": ""
+      },
+      {
+        "name": "m_ons_2021",
+        "type": "object",
+        "description": ""
+      },
+      {
+        "name": "m_ons_2022",
+        "type": "object",
+        "description": ""
+      },
+      {
+        "name": "pcr_k_2017",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "pcr_k_2018",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "pcr_k_2019",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "pcr_k_2020",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "pcr_k_2021",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "pcr_k_2022",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-10-1",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-10-15",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-10-22",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-10-29",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-10-8",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-5-28",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-6-11",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-6-18",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-6-25",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-6-4",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-7-16",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-7-2",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-7-23",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-7-30",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-7-9",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-8-13",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-8-20",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-8-27",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-8-6",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-9-10",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-9-17",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-9-24",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd17-9-3",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-10-10",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-10-17",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-10-24",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-10-3",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-10-31",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "rd18-5-30",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-6-13",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-6-20",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-6-27",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-6-6",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-7-11",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-7-18",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-7-25",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-7-4",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-8-1",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-8-15",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-8-22",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-8-29",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-8-8",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-9-12",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-9-19",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-9-26",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd18-9-5",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-10-16",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-10-2",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-10-23",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-10-30",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-10-9",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "rd19-5-29",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-6-12",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-6-19",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-6-26",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-6-5",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-7-10",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-7-17",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-7-24",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-7-3",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-7-31",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-8-14",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-8-21",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-8-28",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-8-7",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-9-11",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-9-18",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-9-25",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd19-9-4",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-10-16",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-10-2",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-10-23",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-10-30",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-10-9",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-5-29",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-6-12",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-6-19",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-6-26",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-6-5",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-7-10",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-7-17",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-7-24",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-7-3",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-7-31",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-8-14",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-8-21",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-8-28",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-8-7",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-9-11",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-9-18",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-9-25",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd20-9-4",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-10-16",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-10-2",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-10-23",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "rd21-10-30",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "rd21-10-9",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-5-29",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-6-12",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-6-19",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-6-26",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-6-5",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-7-10",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-7-17",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-7-24",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-7-3",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-7-31",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-8-14",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-8-21",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-8-28",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-8-7",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-9-11",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-9-18",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-9-25",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd21-9-4",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-10-16",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "rd22-10-2",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-10-23",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "rd22-10-30",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "rd22-10-9",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-5-29",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-6-12",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-6-19",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-6-26",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-6-5",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-7-10",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-7-17",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-7-24",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-7-3",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-7-31",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-8-14",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-8-21",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-8-28",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-8-7",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-9-11",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-9-18",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-9-25",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "rd22-9-4",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "t_wks_2017",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "t_wks_2018",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "t_wks_2019",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "t_wks_2020",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "t_wks_2021",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "t_wks_2022",
+        "type": "int32",
+        "description": ""
       },
       {
         "name": "uid",
         "type": "object",
-        "description": "unique identifier"
+        "description": ""
       },
       {
-        "name": "weighted_contribution",
-        "type": "float64",
-        "description": "final contributions of each factor after mutiplying by its y_value"
+        "name": "w_mld_2017",
+        "type": "int32",
+        "description": ""
       },
       {
-        "name": "y_value",
-        "type": "float64",
-        "description": "base weights assigned to each criteria in aquifer assessment"
+        "name": "w_mld_2018",
+        "type": "int32",
+        "description": ""
       },
       {
-        "name": "yeild__",
-        "type": "object",
-        "description": "specific yield (in %)"
+        "name": "w_mld_2019",
+        "type": "int32",
+        "description": ""
       },
       {
-        "name": "zone_m",
-        "type": "object",
-        "description": "thickness of weathered zone (in m)"
+        "name": "w_mld_2020",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_mld_2021",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_mld_2022",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_mod_2017",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_mod_2018",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_mod_2019",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_mod_2020",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_mod_2021",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_mod_2022",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_no_2017",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_no_2018",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_no_2019",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_no_2020",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_no_2021",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_no_2022",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_sev_2017",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_sev_2018",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_sev_2019",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_sev_2020",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_sev_2021",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "w_sev_2022",
+        "type": "int32",
+        "description": ""
       },
       {
         "name": "geometry",
@@ -48912,7 +50012,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-10-13T11:32:57.104869Z"
+    "datetime": "2025-10-13T11:33:21.967765Z"
   },
   "links": [
     {
@@ -48930,7 +50030,7 @@
   ],
   "assets": {
     "data": {
-      "href": "https://geoserver.core-stack.org:8443/geoserver/aquifer/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=aquifer:aquifer_vector_jaunpur_badlapur&outputFormat=application/json",
+      "href": "https://geoserver.core-stack.org:8443/geoserver/cropping_drought/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cropping_drought:jaunpur_badlapur_drought&outputFormat=application/json",
       "type": "application/geo+json",
       "title": "Vector Layer",
       "roles": [
@@ -48938,7 +50038,7 @@
       ]
     },
     "style": {
-      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Hydrology/Aquifer_style.qml",
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Agriculture/Drought_style.qml",
       "type": "application/xml",
       "title": "QGIS Style file",
       "roles": [
@@ -48946,7 +50046,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_aquifer_vector.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_drought_frequency_vector.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [
