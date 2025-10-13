@@ -30,6 +30,46 @@
       "rel": "item",
       "href": "./uttar_pradesh_jaunpur_badlapur_drainage_lines_vector/uttar_pradesh_jaunpur_badlapur_drainage_lines_vector.json",
       "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_surface_water_bodies_vector/uttar_pradesh_jaunpur_badlapur_surface_water_bodies_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_nrega_vector/uttar_pradesh_jaunpur_badlapur_nrega_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_terrain_vector/uttar_pradesh_jaunpur_badlapur_terrain_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_cropping_intensity_vector/uttar_pradesh_jaunpur_badlapur_cropping_intensity_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_stage_of_groundwater_extraction_vector/uttar_pradesh_jaunpur_badlapur_stage_of_groundwater_extraction_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_drought_frequency_vector/uttar_pradesh_jaunpur_badlapur_drought_frequency_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_tree_cover_change_vector/uttar_pradesh_jaunpur_badlapur_tree_cover_change_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_land_use_land_cover_vector/uttar_pradesh_jaunpur_badlapur_land_use_land_cover_vector.json",
+      "type": "application/geo+json"
     }
   ],
   "title": "STAC for badlapur"
