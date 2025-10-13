@@ -22,3 +22,12 @@ GEOSERVER_BASE_URL = "https://geoserver.core-stack.org:8443/geoserver"
 
 AGRI_YEAR_START_DATE = '07-01'
 AGRI_YEAR_END_DATE = '06-30'
+
+#Ground sample distance (aka Raster spatial resolution) in meters for different layers 
+# specifying here because no easy way to get these from geoserver data
+# LULC_RASTER_GSD_M = 10
+# TERRAIN_RASTER_GSD_M = 30
+# TREE_CANOPY_HEIGHT_GSD_M = 25
+# TREE_CANOPY_COVER_DENSITY_GSD_M = 25
+# STREAM_ORDER_RASTER_GSD_M = 30
+# CLART_RASTER_GSD_M = 30
