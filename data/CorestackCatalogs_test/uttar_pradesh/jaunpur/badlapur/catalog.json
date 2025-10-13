@@ -20,6 +20,16 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "jaunpur"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_aquifer_vector/uttar_pradesh_jaunpur_badlapur_aquifer_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_drainage_lines_vector/uttar_pradesh_jaunpur_badlapur_drainage_lines_vector.json",
+      "type": "application/geo+json"
     }
   ],
   "title": "STAC for badlapur"
