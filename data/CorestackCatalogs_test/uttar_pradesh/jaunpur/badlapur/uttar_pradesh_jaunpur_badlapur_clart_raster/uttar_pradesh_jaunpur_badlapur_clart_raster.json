@@ -1,0 +1,124 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "uttar_pradesh_jaunpur_badlapur_clart_raster",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          82.1573107712475,
+          25.744278738410898
+        ],
+        [
+          82.1573107712475,
+          26.02778704207902
+        ],
+        [
+          82.6467129380358,
+          26.02778704207902
+        ],
+        [
+          82.6467129380358,
+          25.744278738410898
+        ],
+        [
+          82.1573107712475,
+          25.744278738410898
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    82.1573107712475,
+    25.744278738410898,
+    82.6467129380358,
+    26.02778704207902
+  ],
+  "properties": {
+    "title": "CLART",
+    "description": "Composite Land Assessment and Restoration Tool (CLART) is a tool built by the Foundation for Ecological Security (FES) with the goal of empowering rural communities for planning the sites for soil and water conservation measures. This map is intended to reproduce CLART in\na reprogrammable/reconfigurable manner to allow dynamic scoring based on community\nrequirements for their landscape. The recharge score is computed as a weighted index based on underlying layers.\n\nThe Pan India map has the following classes: \nGood recharge \nModerate recharge\nRegeneration\nHigh runoff zone \nSurface water harvesting \n\nDetails of methodology can be found in the technical manual and the codebase on github.",
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      1052,
+      1816
+    ],
+    "datetime": "2025-10-13T15:59:46.370703Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoREStack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "STAC for badlapur"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/clart/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=clart:jaunpur_badlapur_clart&format=geotiff",
+      "type": "image/tiff; application=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 1,
+          "name": "Good recharge",
+          "description": "Good recharge",
+          "color_hint": "4ee323"
+        },
+        {
+          "value": 2,
+          "name": "Moderate recharge",
+          "description": "Moderate recharge",
+          "color_hint": "f3ff33"
+        },
+        {
+          "value": 3,
+          "name": "Surface water harvesting",
+          "description": "Surface water harvesting",
+          "color_hint": "f21223"
+        },
+        {
+          "value": 4,
+          "name": "Regeneration",
+          "description": "Regeneration",
+          "color_hint": "b40f7d"
+        },
+        {
+          "value": 5,
+          "name": "High runoff zone",
+          "description": "High runoff zone",
+          "color_hint": "1774de"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Hydrology/CLART-Layer-Style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_clart_raster.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}
