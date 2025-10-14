@@ -48857,7 +48857,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-10-13T11:33:18.717269Z"
+    "datetime": "2025-10-14T09:09:49.061591Z"
   },
   "links": [
     {
@@ -48891,7 +48891,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_stage_of_groundwater_extraction_vector.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_stage_of_groundwater_extraction_vector.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [

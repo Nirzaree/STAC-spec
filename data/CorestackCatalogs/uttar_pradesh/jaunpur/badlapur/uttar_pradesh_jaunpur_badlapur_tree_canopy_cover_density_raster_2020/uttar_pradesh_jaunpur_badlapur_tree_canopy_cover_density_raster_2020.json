@@ -42,12 +42,15 @@
   "properties": {
     "title": "Tree canopy cover density : 2020",
     "description": "Tree canopy cover density map for India built by ACT4D research group at IIT Delhi. Tree canopy cover density (CCD) indicates the density of tree cover in a given area, with higher canopy cover percentages signifying a denser canopy and more shade on the ground and vice versa. \n\nThe Pan India map (except ACZ 12-15 currently missing due to insufficient data points for training the respective models)  is available from 2017 onwards at 25m resolution.\nThese are the classes in the current version of the map: \nLow density \nHigh density\nMissing data \n\nInput to the model is Dynamic World output, and timeseries data from Sentinel-2, Sentinel-1 and GEDI as ground truth. Details of methodology can be found  in the technical manual and the codebase at https://github.com/Dhruvi-Goyal/Tree-Health-Monitoring/",
+    "start_datetime": "2020-07-01T00:00:00Z",
+    "end_datetime": "2021-06-30T00:00:00Z",
+    "gsd": 25.0,
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       1262,
       2178
     ],
-    "datetime": "2025-10-13T11:57:06.534624Z"
+    "datetime": "2025-10-14T09:24:12.324149Z"
   },
   "links": [
     {
@@ -71,20 +74,20 @@
       "classification:classes": [
         {
           "value": 0,
-          "name": "0.0000",
-          "description": "0.0000",
+          "name": "Low Density",
+          "description": "Low Density",
           "color_hint": "ffa500"
         },
         {
           "value": 1,
-          "name": "1.0000",
-          "description": "1.0000",
+          "name": "High Density",
+          "description": "High Density",
           "color_hint": "007500"
         },
         {
           "value": 2,
-          "name": "2.0000",
-          "description": "2.0000",
+          "name": "Missing Data",
+          "description": "Missing Data",
           "color_hint": "000000"
         }
       ],
@@ -101,7 +104,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_tree_canopy_cover_density_raster_2020.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_tree_canopy_cover_density_raster_2020.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [

@@ -50012,7 +50012,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-10-13T11:33:21.967765Z"
+    "datetime": "2025-10-14T09:09:53.776737Z"
   },
   "links": [
     {
@@ -50046,7 +50046,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_drought_frequency_vector.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_drought_frequency_vector.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [

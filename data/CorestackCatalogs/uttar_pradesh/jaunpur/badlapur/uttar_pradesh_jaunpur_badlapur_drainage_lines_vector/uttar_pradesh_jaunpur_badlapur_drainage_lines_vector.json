@@ -175174,7 +175174,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-10-13T11:33:00.034947Z"
+    "datetime": "2025-10-14T09:09:22.079531Z"
   },
   "links": [
     {
@@ -175208,7 +175208,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_drainage_lines_vector.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_drainage_lines_vector.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [

@@ -108826,7 +108826,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-10-13T11:33:04.610533Z"
+    "datetime": "2025-10-14T09:09:29.154964Z"
   },
   "links": [
     {
@@ -108860,7 +108860,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_surface_water_bodies_vector.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_surface_water_bodies_vector.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [

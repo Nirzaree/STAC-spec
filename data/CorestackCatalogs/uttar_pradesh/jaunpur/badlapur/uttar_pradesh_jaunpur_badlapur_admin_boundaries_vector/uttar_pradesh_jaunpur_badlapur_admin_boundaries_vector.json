@@ -8572,7 +8572,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-10-13T11:32:54.392022Z"
+    "datetime": "2025-10-14T09:09:15.916006Z"
   },
   "links": [
     {
@@ -8606,7 +8606,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_admin_boundaries_vector.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_admin_boundaries_vector.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [

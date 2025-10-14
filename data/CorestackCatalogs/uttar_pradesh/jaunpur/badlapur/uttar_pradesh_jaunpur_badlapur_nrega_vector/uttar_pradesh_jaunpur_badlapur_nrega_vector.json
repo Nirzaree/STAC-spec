@@ -65277,7 +65277,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-10-13T11:33:15.354814Z"
+    "datetime": "2025-10-14T09:09:45.017993Z"
   },
   "links": [
     {
@@ -65311,7 +65311,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_nrega_vector.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_nrega_vector.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [

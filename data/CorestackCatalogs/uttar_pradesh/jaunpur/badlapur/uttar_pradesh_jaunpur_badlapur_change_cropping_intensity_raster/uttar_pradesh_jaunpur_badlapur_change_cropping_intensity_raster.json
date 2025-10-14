@@ -42,12 +42,13 @@
   "properties": {
     "title": "Land Use Change : Cropping intensity",
     "description": "",
+    "gsd": 10.0,
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       3150,
       5442
     ],
-    "datetime": "2025-10-13T12:00:35.384774Z"
+    "datetime": "2025-10-14T09:29:22.915005Z"
   },
   "links": [
     {
@@ -83,14 +84,14 @@
         },
         {
           "value": 2,
-          "name": "Triple - Single",
-          "description": "Triple - Single",
+          "name": "Tripple/annual/perennial - Single",
+          "description": "Tripple/annual/perennial - Single",
           "color_hint": "ff4500"
         },
         {
           "value": 3,
-          "name": "Triple - Double",
-          "description": "Triple - Double",
+          "name": "Tripple/annual/perennial - Double",
+          "description": "Tripple/annual/perennial - Double",
           "color_hint": "ff0000"
         },
         {
@@ -101,20 +102,20 @@
         },
         {
           "value": 5,
-          "name": "Single - Triple",
-          "description": "Single - Triple",
+          "name": "Single - Tripple/annual/perennial",
+          "description": "Single - Tripple/annual/perennial",
           "color_hint": "32cd32"
         },
         {
           "value": 6,
-          "name": "Double - Triple",
-          "description": "Double - Triple",
+          "name": "Double - Tripple/annual/perennial",
+          "description": "Double - Tripple/annual/perennial",
           "color_hint": "228b22"
         },
         {
           "value": 7,
-          "name": "As it is",
-          "description": "As it is",
+          "name": "No change",
+          "description": "No change",
           "color_hint": "712103"
         }
       ],
@@ -131,7 +132,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output/badlapur_change_cropping_intensity_raster.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_test/badlapur_change_cropping_intensity_raster.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [
