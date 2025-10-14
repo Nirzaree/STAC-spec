@@ -42,12 +42,13 @@
   "properties": {
     "title": "CLART",
     "description": "Composite Land Assessment and Restoration Tool (CLART) is a tool built by the Foundation for Ecological Security (FES) with the goal of empowering rural communities for planning the sites for soil and water conservation measures. This map is intended to reproduce CLART in\na reprogrammable/reconfigurable manner to allow dynamic scoring based on community\nrequirements for their landscape. The recharge score is computed as a weighted index based on underlying layers.\n\nThe Pan India map has the following classes: \nGood recharge \nModerate recharge\nRegeneration\nHigh runoff zone \nSurface water harvesting \n\nDetails of methodology can be found in the technical manual and the codebase on github.",
+    "gsd": 30.0,
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       1052,
       1816
     ],
-    "datetime": "2025-10-13T15:59:46.370703Z"
+    "datetime": "2025-10-14T09:28:49.420562Z"
   },
   "links": [
     {

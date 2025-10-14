@@ -42,12 +42,13 @@
   "properties": {
     "title": "Tree cover change",
     "description": "",
+    "gsd": 25.0,
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       1262,
       2178
     ],
-    "datetime": "2025-10-13T16:00:11.742461Z"
+    "datetime": "2025-10-14T09:29:08.803111Z"
   },
   "links": [
     {

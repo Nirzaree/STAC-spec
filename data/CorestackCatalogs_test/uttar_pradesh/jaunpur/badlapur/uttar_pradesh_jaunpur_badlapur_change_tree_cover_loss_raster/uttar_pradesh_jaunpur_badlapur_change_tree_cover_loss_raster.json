@@ -42,12 +42,13 @@
   "properties": {
     "title": "Land Use Change : Tree cover loss",
     "description": "Change detection map for India built by ACT4D research group at IIT Delhi. The various change detection maps are Change in Land use layers are computing by using IndiaSAT Land Use Land Cover outputs and computing the change in pixel classes across the years. \nCurrently the layer is computed for the period of 2017-2022 and two composite images are generated using the mode of the first three years (2017-2019) and the last three years (2020-2022) and a transition matrix is prepared for the classes for these outputs. \n\nDeforestation (tree cover loss) layer includes trees to built-up, barren, shrubs and Crops from the previous output to the current output. Following are the classes in this layer: \nTrees - Trees\nTrees - Built Up\nTrees - Crops\nTrees - Barren\nTrees - Shrubs and Scrubs\nDetails of methodology can be found in the technical manual and the codebase on github.",
+    "gsd": 10.0,
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       3150,
       5442
     ],
-    "datetime": "2025-10-13T15:58:52.768454Z"
+    "datetime": "2025-10-14T09:28:02.779732Z"
   },
   "links": [
     {

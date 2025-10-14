@@ -42,12 +42,15 @@
   "properties": {
     "title": "Tree canopy cover density : 2022",
     "description": "Tree canopy cover density map for India built by ACT4D research group at IIT Delhi. Tree canopy cover density (CCD) indicates the density of tree cover in a given area, with higher canopy cover percentages signifying a denser canopy and more shade on the ground and vice versa. \n\nThe Pan India map (except ACZ 12-15 currently missing due to insufficient data points for training the respective models)  is available from 2017 onwards at 25m resolution.\nThese are the classes in the current version of the map: \nLow density \nHigh density\nMissing data \n\nInput to the model is Dynamic World output, and timeseries data from Sentinel-2, Sentinel-1 and GEDI as ground truth. Details of methodology can be found  in the technical manual and the codebase at https://github.com/Dhruvi-Goyal/Tree-Health-Monitoring/",
+    "start_datetime": "2022-07-01T00:00:00Z",
+    "end_datetime": "2023-06-30T00:00:00Z",
+    "gsd": 25.0,
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       1262,
       2178
     ],
-    "datetime": "2025-10-13T15:57:06.769339Z"
+    "datetime": "2025-10-14T09:26:19.534911Z"
   },
   "links": [
     {

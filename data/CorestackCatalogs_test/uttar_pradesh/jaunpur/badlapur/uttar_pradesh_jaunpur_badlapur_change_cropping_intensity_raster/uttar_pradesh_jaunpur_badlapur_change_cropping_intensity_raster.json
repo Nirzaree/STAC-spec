@@ -42,12 +42,13 @@
   "properties": {
     "title": "Land Use Change : Cropping intensity",
     "description": "",
+    "gsd": 10.0,
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       3150,
       5442
     ],
-    "datetime": "2025-10-13T16:00:26.851835Z"
+    "datetime": "2025-10-14T09:29:22.915005Z"
   },
   "links": [
     {

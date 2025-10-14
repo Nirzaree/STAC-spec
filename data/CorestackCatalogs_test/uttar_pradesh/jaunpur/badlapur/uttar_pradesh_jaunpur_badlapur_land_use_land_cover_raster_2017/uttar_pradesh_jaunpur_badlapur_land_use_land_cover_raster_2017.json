@@ -43,13 +43,14 @@
     "title": "Land Use Land Cover : 2017",
     "description": "Land Use Land Cover (LULC) map for India built by ACT4D research group at IIT Delhi. Novelty of this approach is intra-annual classes for agriculture and water availability aligned to the agriculture seasons of India.\n\nThe Pan India map is available from 2017 onwards at 10m resolution.\nThese are the classes in the current version of LULC:\n1. builtup\n2. water in kharif only\n3. water in kharif and rabi only\n4. water in kharif, rabi and zaid (perennial water)\n5. cropland\n6. trees and forest\n7. barren land\n8. single kharif cropping\n9. single non-kharif cropping\n10. double cropping\n11. tripple cropping\n12. shrubs and scrubs\n\nInput to the model is Dynamic World output, and timeseries data from Landsat-7, Landsat-8, Sentinel-2, Sentinel-1 and MODIS. Details of methodology can be found in our technical manual and the codebase on github\n",
     "start_datetime": "2017-07-01T00:00:00Z",
-    "end_datetime": "2017-06-30T00:00:00Z",
+    "end_datetime": "2018-06-30T00:00:00Z",
+    "gsd": 10.0,
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       3150,
       5442
     ],
-    "datetime": "2025-10-13T15:49:03.709918Z"
+    "datetime": "2025-10-14T09:11:29.595692Z"
   },
   "links": [
     {
