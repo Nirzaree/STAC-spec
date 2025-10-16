@@ -1,1 +1,5 @@
-pystac
+numpy
+pandas
+geopandas
+matplotlib
+

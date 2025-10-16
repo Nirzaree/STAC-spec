@@ -57,14 +57,14 @@
             <prop v="gradient" k="rampType"/>
             <prop v="0.142857;255,165,0,255:0.285714;255,255,255,255:0.428571;138,255,138,255:0.571429;0,117,0,255:0.714286;222,230,76,255:0.857143;222,230,76,255" k="stops"/>
           </colorramp>
-          <item alpha="255" value="-2" color="#ff0000" label="-2.0000"/>
-          <item alpha="255" value="-1" color="#ffa500" label="-1.0000"/>
-          <item alpha="255" value="0" color="#ffffff" label="0.0000"/>
-          <item alpha="255" value="1" color="#8aff8a" label="1.0000"/>
-          <item alpha="255" value="2" color="#007500" label="2.0000"/>
-          <item alpha="255" value="3" color="#dee64c" label="3.0000"/>
-          <item alpha="255" value="4" color="#dee64c" label="4.0000"/>
-          <item alpha="255" value="5" color="#000000" label="5.0000"/>
+          <item alpha="255" value="-2" color="#ff0000" label="Deforestation"/>
+          <item alpha="255" value="-1" color="#ffa500" label="Degradation"/>
+          <item alpha="255" value="0" color="#ffffff" label="No Change"/>
+          <item alpha="255" value="1" color="#8aff8a" label="Improvement"/>
+          <item alpha="255" value="2" color="#007500" label="Afforestation"/>
+          <item alpha="255" value="3" color="#dee64c" label="Partially Degraded"/>
+          <item alpha="255" value="4" color="#dee64c" label="Partially Degraded"/>
+          <item alpha="255" value="5" color="#000000" label="Missing Data"/>
           <rampLegendSettings maximumLabel="" minimumLabel="" orientation="2" suffix="" prefix="" direction="0" useContinuousLegend="1">
             <numericFormat id="basic">
               <Option type="Map">

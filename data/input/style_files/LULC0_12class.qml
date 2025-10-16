@@ -47,14 +47,14 @@
         <paletteEntry value="2" label="kharif water" alpha="255" color="#74ccf4"/>
         <paletteEntry value="3" label="kharif and rabi water" alpha="255" color="#1ca3ec"/>
         <paletteEntry value="4" label="kharif and rabi and zaid water" alpha="255" color="#0f5e9c"/>
-        <paletteEntry value="5" label="croplands" alpha="255" color="#f1c232"/>
-        <paletteEntry value="6" label="Tree/Forests" alpha="255" color="#38761d"/>
-        <paletteEntry value="7" label="barren lands" alpha="255" color="#a9a9a9"/>
-        <paletteEntry value="8" label="Single Kharif Cropping" alpha="255" color="#bad93e"/>
-        <paletteEntry value="9" label="Single Non-Kharif Cropping" alpha="255" color="#f59d22"/>
-        <paletteEntry value="10" label="Double Cropping" alpha="255" color="#ff9371"/>
-        <paletteEntry value="11" label="Triple Cropping" alpha="255" color="#b3561d"/>
-        <paletteEntry value="12" label="Shrubs_Scrubs" alpha="255" color="#a9a9a9"/>
+        <paletteEntry value="5" label="crops" alpha="255" color="#f1c232"/>
+        <paletteEntry value="6" label="trees" alpha="255" color="#38761d"/>
+        <paletteEntry value="7" label="barren land" alpha="255" color="#a9a9a9"/>
+        <paletteEntry value="8" label="single kharif cropping" alpha="255" color="#bad93e"/>
+        <paletteEntry value="9" label="single non-kharif Cropping" alpha="255" color="#f59d22"/>
+        <paletteEntry value="10" label="double cropping" alpha="255" color="#ff9371"/>
+        <paletteEntry value="11" label="tripple/annual/perennial cropping" alpha="255" color="#b3561d"/>
+        <paletteEntry value="12" label="shrubs and scrubs" alpha="255" color="#a9a9a9"/>
       </colorPalette>
       <colorramp type="randomcolors" name="[source]">
         <Option/>
