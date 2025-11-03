@@ -1,7 +1,7 @@
 # constants.py
-from datetime import datetime
+from datetime import datetime , timezone
 
-DEFAULT_START_DATE = datetime(2017, 7, 1)
+DEFAULT_START_DATE = datetime(2017, 7, 1) 
 DEFAULT_END_DATE = datetime(2024, 6, 30)
 
 SRTM_DEM_START_DATE = datetime(2020,2,11) #used for terrain raster as it 
@@ -34,3 +34,5 @@ VECTOR_COLUMN_DESC_GITHUB_URL = 'https://github.com/core-stack-org/layers_metada
 # TREE_CANOPY_COVER_DENSITY_GSD_M = 25
 # STREAM_ORDER_RASTER_GSD_M = 30
 # CLART_RASTER_GSD_M = 30
+
+STAC_FILES_DIR='s3://spatio-temporal-asset-catalog/CorestackCatalogs_prod/'
