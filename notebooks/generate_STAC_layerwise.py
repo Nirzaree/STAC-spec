@@ -699,7 +699,7 @@ def update_STAC_files(state,
         print("created root catalog")
     root_catalog.add_child(state_collection)
     root_catalog.normalize_and_save(STAC_FILES_DIR, catalog_type=pystac.CatalogType.SELF_CONTAINED)
-    layer_STAC_generated = True
+    layer_STAC_generated = True 
     return layer_STAC_generated
 
 # %% [markdown]
@@ -1264,7 +1264,7 @@ def generate_raster_stac(state,
 
 # block_district_state_df
 
-# # %%
+# %%
 # block = 'badlapur'
 # district = block_district_state_df[block_district_state_df['block'] == block]['district'].iloc[0]
 # state = block_district_state_df[block_district_state_df['block'] == block]['state'].iloc[0]
