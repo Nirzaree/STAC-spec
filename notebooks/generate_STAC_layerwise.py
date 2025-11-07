@@ -51,9 +51,6 @@ GITHUB_DATA_URL = constants.GITHUB_DATA_URL
 # GITHUB_DATA_URL
 
 # %%
-RASTER_STYLE_PATH = '../data/LULC0_12class.qml'
-
-# %%
 LOCAL_DATA_DIR = '../data/'
 
 # %%
@@ -61,14 +58,14 @@ STYLE_FILE_DIR = os.path.join(LOCAL_DATA_DIR,'input/style_files/')
 
 # %%
 THUMBNAIL_DIR = os.path.join(LOCAL_DATA_DIR,
-                             'STAC_output_prod')
+                             'STAC_output_exception_handling')
 # THUMBNAIL_DIR
 
 
 # %%
 STAC_FILES_DIR = os.path.join(
     LOCAL_DATA_DIR,
-    'CorestackCatalogs_prod' #test folder
+    'CorestackCatalogs_exception_handling' #test folder
 )
 
 # STAC_FILES_DIR = 's3://spatio-temporal-asset-catalog/CorestackCatalogs_prod'
@@ -122,7 +119,14 @@ def read_raster_data(raster_url):
 
     #when reading from geoserver
     response = requests.get(raster_url, verify=False)
-    response.raise_for_status()
+
+    #exception handling: scenario 1: when fetching data from geoserver
+    try:
+        response.raise_for_status()
+    except requests.exceptions.HTTPError as e:
+        # Whoops it wasn't a 200
+        return "Error: " + str(e) + "when fetching data from geoserver for STAC generation"
+
     raster_data = BytesIO(response.content)
 
     #read the data and fetch the metadata
@@ -243,8 +247,12 @@ def parse_raster_style_file(style_file_url,
     if not os.path.exists(style_file_local_path):
             #TODO: try statement
             os.makedirs(os.path.dirname(style_file_local_path), exist_ok=True)
-            urllib.request.urlretrieve(style_file_url,
-                                       style_file_local_path)       
+            try:
+                urllib.request.urlretrieve(style_file_url,
+                                           style_file_local_path)  
+            #exception handling: scenario 2: when fetching style file from github
+            except Exception as e:
+                print("Could not retrieve style file from github. Error: " + str(e))
     
     tree = ET.parse(style_file_local_path)
     root = tree.getroot()
@@ -717,14 +725,18 @@ def generate_vector_url(workspace,
 def read_vector_data(vector_url,
                      target_crs='4326'
                      ):
-    vector_gdf = gpd.read_file(vector_url)
+    try:
+        vector_gdf = gpd.read_file(vector_url)
+    except Exception as e:
+        print("Could not fetch vector data from url. Error: " + str(e))
+
     vector_gdf = vector_gdf.to_crs(epsg=target_crs)
     #TODO: remove such constants like here in crs. make it standard. available in constants. 
     bounds = vector_gdf.total_bounds
     bbox = [float(b) for b in bounds] #footprint also in vector
-    geom = mapping(vector_gdf.union_all())
-    
+    geom = mapping(vector_gdf.union_all())    
     return (vector_gdf,bounds,bbox,geom)
+
 
 # %%
 def create_vector_item(vector_url,
@@ -870,8 +882,11 @@ def parse_vector_style_file(style_file_url,
     if not os.path.exists(style_file_local_path):
             #TODO: try statement
             os.makedirs(os.path.dirname(style_file_local_path), exist_ok=True)
-            urllib.request.urlretrieve(style_file_url,
-                                       style_file_local_path)       
+            try:
+                urllib.request.urlretrieve(style_file_url,
+                                           style_file_local_path)
+            except Exception as e:
+                print("Could not retrieve style file from url. Error: " + str(e))
     
     try:
         tree = ET.parse(style_file_local_path)
