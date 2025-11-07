@@ -58,14 +58,14 @@ STYLE_FILE_DIR = os.path.join(LOCAL_DATA_DIR,'input/style_files/')
 
 # %%
 THUMBNAIL_DIR = os.path.join(LOCAL_DATA_DIR,
-                             'STAC_output_prod')
+                             'STAC_output_exception_handling')
 # THUMBNAIL_DIR
 
 
 # %%
 STAC_FILES_DIR = os.path.join(
     LOCAL_DATA_DIR,
-    'CorestackCatalogs_prod' #test folder
+    'CorestackCatalogs_exception_handling' #test folder
 )
 
 # STAC_FILES_DIR = 's3://spatio-temporal-asset-catalog/CorestackCatalogs_prod'
@@ -79,6 +79,9 @@ LAYER_DESC_GITHUB_URL = constants.LAYER_DESC_GITHUB_URL
 # %%
 VECTOR_COLUMN_DESC_GITHUB_URL = constants.VECTOR_COLUMN_DESC_GITHUB_URL
 # VECTOR_COLUMN_DESC_GITHUB_URL
+
+# %%
+layer_STAC_generated = False #output flag
 
 # %% [markdown]
 # ### Raster flow
@@ -425,10 +428,10 @@ def generate_raster_item(state,
                          district,
                          block,
                          layer_name,
-                         layer_map_csv_path='../data/layer_mapping.csv',
-                         layer_desc_csv_path='../data/layer_descriptions.csv',
-                         start_year='',
-                         end_year=''
+                         layer_map_csv_path,
+                         layer_desc_csv_path,
+                         start_year,
+                         end_year
                          ):    
     
     #1. read layer description
@@ -696,7 +699,8 @@ def update_STAC_files(state,
         print("created root catalog")
     root_catalog.add_child(state_collection)
     root_catalog.normalize_and_save(STAC_FILES_DIR, catalog_type=pystac.CatalogType.SELF_CONTAINED)
-    return
+    layer_STAC_generated = True 
+    return layer_STAC_generated
 
 # %% [markdown]
 # ### Vector flow
@@ -1212,10 +1216,13 @@ def generate_vector_stac(state,
                                        layer_map_csv_path,
                                        layer_desc_csv_path,
                                        column_desc_csv_path)
-    update_STAC_files(state,
-                      district,
-                      block,
-                      STAC_item=vector_item)
+    
+    layer_STAC_generated = update_STAC_files(state,
+                                             district,
+                                             block,
+                                             STAC_item=vector_item)
+    
+    return layer_STAC_generated
 
 # %%
 def generate_raster_stac(state,
@@ -1236,29 +1243,32 @@ def generate_raster_stac(state,
                                        start_year,
                                        end_year)
     
-    update_STAC_files(state,
-                      district,
-                      block,
-                      STAC_item=raster_item
-                      )
+    layer_STAC_generated = update_STAC_files(state,
+                                             district,
+                                             block,
+                                             STAC_item=raster_item)
+    
+    return layer_STAC_generated
+    
+
 
 # %% [markdown]
 # Test the raster and vector flow 
 
 # %%
-# block_district_state_df = pd.DataFrame({
-#     'block' : ['gobindpur','mirzapur','koraput','badlapur'],
-#     'district' : ['saraikela-kharsawan','mirzapur','koraput','jaunpur'],
-#     'state' : ['jharkhand','uttar_pradesh','odisha','uttar_pradesh']
-# })
+block_district_state_df = pd.DataFrame({
+    'block' : ['gobindpur','mirzapur','koraput','badlapur'],
+    'district' : ['saraikela-kharsawan','mirzapur','koraput','jaunpur'],
+    'state' : ['jharkhand','uttar_pradesh','odisha','uttar_pradesh']
+})
 
-# block_district_state_df
+block_district_state_df
 
 # %%
-# block = 'badlapur'
-# district = block_district_state_df[block_district_state_df['block'] == block]['district'].iloc[0]
-# state = block_district_state_df[block_district_state_df['block'] == block]['state'].iloc[0]
-# print(state,district,block)
+block = 'badlapur'
+district = block_district_state_df[block_district_state_df['block'] == block]['district'].iloc[0]
+state = block_district_state_df[block_district_state_df['block'] == block]['state'].iloc[0]
+print(state,district,block)
 
 # %%
 # generate_vector_stac(state=state,
@@ -1281,13 +1291,13 @@ def generate_raster_stac(state,
 #                  )
 
 # %%
-# generate_raster_stac(state=state,
-#                      district=district,
-#                      block=block,
-#                      layer_name='tree_canopy_height_raster',
-#                     #  layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
-#                     #  layer_desc_csv_path='../data/input/metadata/layer_descriptions.csv',
-#                      start_year='2019'
-#                      )
+generate_raster_stac(state=state,
+                     district=district,
+                     block=block,
+                     layer_name='tree_canopy_height_raster',
+                    #  layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
+                    #  layer_desc_csv_path='../data/input/metadata/layer_descriptions.csv',
+                     start_year='2021'
+                     )
 
 
