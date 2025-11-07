@@ -58,14 +58,14 @@ STYLE_FILE_DIR = os.path.join(LOCAL_DATA_DIR,'input/style_files/')
 
 # %%
 THUMBNAIL_DIR = os.path.join(LOCAL_DATA_DIR,
-                             'STAC_output_exception_handling')
+                             'STAC_output_prod')
 # THUMBNAIL_DIR
 
 
 # %%
 STAC_FILES_DIR = os.path.join(
     LOCAL_DATA_DIR,
-    'CorestackCatalogs_exception_handling' #test folder
+    'CorestackCatalogs_prod' #test folder
 )
 
 # STAC_FILES_DIR = 's3://spatio-temporal-asset-catalog/CorestackCatalogs_prod'
