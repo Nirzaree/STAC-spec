@@ -699,7 +699,7 @@ def update_STAC_files(state,
         print("created root catalog")
     root_catalog.add_child(state_collection)
     root_catalog.normalize_and_save(STAC_FILES_DIR, catalog_type=pystac.CatalogType.SELF_CONTAINED)
-    layer_STAC_generated = True 
+    layer_STAC_generated = True
     return layer_STAC_generated
 
 # %% [markdown]
@@ -1256,19 +1256,19 @@ def generate_raster_stac(state,
 # Test the raster and vector flow 
 
 # %%
-block_district_state_df = pd.DataFrame({
-    'block' : ['gobindpur','mirzapur','koraput','badlapur'],
-    'district' : ['saraikela-kharsawan','mirzapur','koraput','jaunpur'],
-    'state' : ['jharkhand','uttar_pradesh','odisha','uttar_pradesh']
-})
+# block_district_state_df = pd.DataFrame({
+#     'block' : ['gobindpur','mirzapur','koraput','badlapur'],
+#     'district' : ['saraikela-kharsawan','mirzapur','koraput','jaunpur'],
+#     'state' : ['jharkhand','uttar_pradesh','odisha','uttar_pradesh']
+# })
 
-block_district_state_df
+# block_district_state_df
 
-# %%
-block = 'badlapur'
-district = block_district_state_df[block_district_state_df['block'] == block]['district'].iloc[0]
-state = block_district_state_df[block_district_state_df['block'] == block]['state'].iloc[0]
-print(state,district,block)
+# # %%
+# block = 'badlapur'
+# district = block_district_state_df[block_district_state_df['block'] == block]['district'].iloc[0]
+# state = block_district_state_df[block_district_state_df['block'] == block]['state'].iloc[0]
+# print(state,district,block)
 
 # %%
 # generate_vector_stac(state=state,
@@ -1291,13 +1291,13 @@ print(state,district,block)
 #                  )
 
 # %%
-generate_raster_stac(state=state,
-                     district=district,
-                     block=block,
-                     layer_name='tree_canopy_height_raster',
-                    #  layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
-                    #  layer_desc_csv_path='../data/input/metadata/layer_descriptions.csv',
-                     start_year='2021'
-                     )
+# generate_raster_stac(state=state,
+#                      district=district,
+#                      block=block,
+#                      layer_name='tree_canopy_height_raster',
+#                     #  layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
+#                     #  layer_desc_csv_path='../data/input/metadata/layer_descriptions.csv',
+#                      start_year='2021'
+#                      )
 
 
