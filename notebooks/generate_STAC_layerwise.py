@@ -577,7 +577,8 @@ def update_STAC_files(state,
         block_catalog.add_item(STAC_item)
         block_catalog.normalize_and_save(block_dir,
                                          catalog_type=pystac.CatalogType.SELF_CONTAINED)
-        return 
+        layer_STAC_generated = True
+        return layer_STAC_generated
     else:
         block_catalog = pystac.Catalog(
             id=block,
@@ -603,7 +604,8 @@ def update_STAC_files(state,
         #add block catalog to the district
         district_catalog.add_child(block_catalog)
         district_catalog.normalize_and_save(district_dir, catalog_type=pystac.CatalogType.SELF_CONTAINED)
-        return
+        layer_STAC_generated = True
+        return layer_STAC_generated
     else: 
         district_catalog = pystac.Catalog(
             id=district,
@@ -626,7 +628,8 @@ def update_STAC_files(state,
         print("loaded state collection")
         state_collection.add_child(district_catalog)
         state_collection.normalize_and_save(state_dir, catalog_type=pystac.CatalogType.SELF_CONTAINED)
-        return 
+        layer_STAC_generated = True
+        return True
     else:
         state_collection = pystac.Collection(
             id=state,
@@ -1269,6 +1272,11 @@ def generate_raster_stac(state,
 # district = block_district_state_df[block_district_state_df['block'] == block]['district'].iloc[0]
 # state = block_district_state_df[block_district_state_df['block'] == block]['state'].iloc[0]
 # print(state,district,block)
+
+# %%
+# state='uttar_pradesh'
+# district='jaunpur'
+# block='badlapur'
 
 # %%
 # generate_vector_stac(state=state,
