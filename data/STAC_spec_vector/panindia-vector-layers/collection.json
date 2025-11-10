@@ -18,21 +18,9 @@
     },
     {
       "rel": "child",
-      "href": "./nan/collection.json",
-      "type": "application/json",
-      "title": "nan"
-    },
-    {
-      "rel": "child",
       "href": "./hydrological-boundaries/collection.json",
       "type": "application/json",
       "title": "Hydrological boundaries"
-    },
-    {
-      "rel": "child",
-      "href": "./nan/collection.json",
-      "type": "application/json",
-      "title": "nan"
     },
     {
       "rel": "child",
@@ -42,21 +30,9 @@
     },
     {
       "rel": "child",
-      "href": "./nan/collection.json",
-      "type": "application/json",
-      "title": "nan"
-    },
-    {
-      "rel": "child",
       "href": "./waterbodies-layers/collection.json",
       "type": "application/json",
       "title": "Waterbodies Layers"
-    },
-    {
-      "rel": "child",
-      "href": "./nan/collection.json",
-      "type": "application/json",
-      "title": "nan"
     },
     {
       "rel": "child",
@@ -66,21 +42,9 @@
     },
     {
       "rel": "child",
-      "href": "./nan/collection.json",
-      "type": "application/json",
-      "title": "nan"
-    },
-    {
-      "rel": "child",
       "href": "./geological-and-geohydrological-layers/collection.json",
       "type": "application/json",
       "title": "Geological and geohydrological layers"
-    },
-    {
-      "rel": "child",
-      "href": "./nan/collection.json",
-      "type": "application/json",
-      "title": "nan"
     },
     {
       "rel": "child",
