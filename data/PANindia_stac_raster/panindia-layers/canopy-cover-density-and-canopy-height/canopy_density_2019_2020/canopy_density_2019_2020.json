@@ -46,7 +46,7 @@
       28,
       25
     ],
-    "datetime": "2025-11-10T08:06:45.303831Z"
+    "datetime": "2025-11-10T08:14:13.113790Z"
   },
   "links": [
     {
@@ -75,7 +75,7 @@
       "raster:bands": [
         {
           "data_type": "PixelType",
-          "spatial_resolution": 111319.49079327357
+          "spatial_resolution": 25.0
         }
       ],
       "classification:classes": [
