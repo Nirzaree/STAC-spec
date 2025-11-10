@@ -55,6 +55,15 @@
       "title": "Drainage layers"
     }
   ],
+  "assets": {
+    "data": {
+      "href": "/content/drive/MyDrive/Pan_india/pan_india_drainage_lines.geojson",
+      "type": "application/geo+json",
+      "title": "Vector GeoJSON File (Local/Hosted)",
+      "roles": [
+        "data"
+      ]
+    },
     "gee-asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/drainage-line/pan_india_drainage_lines",
       "type": "text/plain",
