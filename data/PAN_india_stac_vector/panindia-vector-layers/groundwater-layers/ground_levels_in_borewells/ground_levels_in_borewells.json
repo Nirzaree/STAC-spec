@@ -1,0 +1,52 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "ground_levels_in_borewells",
+  "geometry": {
+    "type": "MultiPoint",
+    "coordinates": []
+  },
+  "bbox": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "properties": {
+    "type": "vector",
+    "description": "Vector data for Ground Levels in Borewells",
+    "datetime": "2025-11-11T05:11:26.756976Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "STAC Catalog for PAN India Vector Layers"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Groundwater Layers"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Groundwater Layers"
+    }
+  ],
+  "assets": {
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1rps2DNzHqre7-5GGZ2Xj76iJ-n0Krkh_/view",
+      "type": "text/plain",
+      "title": "Vector File",
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "collection": "groundwater-layers"
+}

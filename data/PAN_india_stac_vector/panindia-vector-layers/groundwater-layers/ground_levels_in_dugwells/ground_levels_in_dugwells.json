@@ -1,0 +1,55 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "ground_levels_in_dugwells",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      81.18333464935793,
+      16.275000929807852
+    ]
+  },
+  "bbox": [
+    81.18333464935793,
+    16.275000929807852,
+    81.18333464935793,
+    16.275000929807852
+  ],
+  "properties": {
+    "type": "vector",
+    "description": "Vector data for Ground Levels in Dugwells",
+    "datetime": "2025-11-11T05:11:26.710475Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "STAC Catalog for PAN India Vector Layers"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Groundwater Layers"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Groundwater Layers"
+    }
+  ],
+  "assets": {
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1LwAQMq5POvr5Yw7UMq3bqHrqhZoLMlo8/view",
+      "type": "text/plain",
+      "title": "Vector File",
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "collection": "groundwater-layers"
+}
