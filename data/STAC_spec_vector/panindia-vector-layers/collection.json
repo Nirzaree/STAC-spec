@@ -18,9 +18,27 @@
     },
     {
       "rel": "child",
+      "href": "./drainage-layers/collection.json",
+      "type": "application/json",
+      "title": "Drainage layers"
+    },
+    {
+      "rel": "child",
       "href": "./hydrological-boundaries/collection.json",
       "type": "application/json",
       "title": "Hydrological boundaries"
+    },
+    {
+      "rel": "child",
+      "href": "./hydrological-boundaries/collection.json",
+      "type": "application/json",
+      "title": "Hydrological boundaries"
+    },
+    {
+      "rel": "child",
+      "href": "./administrative-boundaries/collection.json",
+      "type": "application/json",
+      "title": "Administrative boundaries"
     },
     {
       "rel": "child",
@@ -36,6 +54,18 @@
     },
     {
       "rel": "child",
+      "href": "./waterbodies-layers/collection.json",
+      "type": "application/json",
+      "title": "Waterbodies Layers"
+    },
+    {
+      "rel": "child",
+      "href": "./groundwater-layers/collection.json",
+      "type": "application/json",
+      "title": "Groundwater Layers"
+    },
+    {
+      "rel": "child",
       "href": "./groundwater-layers/collection.json",
       "type": "application/json",
       "title": "Groundwater Layers"
@@ -45,6 +75,18 @@
       "href": "./geological-and-geohydrological-layers/collection.json",
       "type": "application/json",
       "title": "Geological and geohydrological layers"
+    },
+    {
+      "rel": "child",
+      "href": "./geological-and-geohydrological-layers/collection.json",
+      "type": "application/json",
+      "title": "Geological and geohydrological layers"
+    },
+    {
+      "rel": "child",
+      "href": "./climatic-and-biophysical-zones/collection.json",
+      "type": "application/json",
+      "title": "Climatic and biophysical zones"
     },
     {
       "rel": "child",
@@ -75,7 +117,7 @@
       "interval": [
         [
           "2005-01-01T00:00:00Z",
-          "2025-12-31T00:00:00Z"
+          "2024-12-31T00:00:00Z"
         ]
       ]
     }
