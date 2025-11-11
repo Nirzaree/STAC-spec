@@ -1,10 +1,7 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
+  "stac_extensions": [],
   "id": "village",
   "geometry": {
     "type": "Polygon",
@@ -162,135 +159,7 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Village",
-    "proj:code": "EPSG:4326",
-    "table:columns": [
-      {
-        "name": "ADI 2011",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "ADI 2019",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Block Name",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "District N",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "Female_Ill",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Female_Lit",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Female_SC_",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Female_ST_",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Male_Illit",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Male_Liter",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Male_SC_Po",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Male_ST_Po",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Number_of_",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "State Name",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "Total_Fema",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Total_Illi",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Total_Lite",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Total_Male",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Total_Popu",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Total_SC_P",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Total_ST_P",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Village ID",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "Village Na",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "layer",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "path",
-        "type": "str",
-        "description": ""
-      }
-    ],
-    "datetime": "2025-11-10T03:04:12.571436Z"
+    "datetime": "2025-11-11T04:56:03.497670Z"
   },
   "links": [
     {
@@ -313,12 +182,12 @@
     }
   ],
   "assets": {
-    "data": {
-      "href": "/content/drive/MyDrive/Pan_india/Village_pan_india.geojson",
-      "type": "application/geo+json",
-      "title": "Vector Data Link",
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1-aLk8p_5DTwVoqLPGQW6vAKBg4NyunR-/view",
+      "type": "text/plain",
+      "title": "Vector File",
       "roles": [
-        "data"
+        "source"
       ]
     }
   },

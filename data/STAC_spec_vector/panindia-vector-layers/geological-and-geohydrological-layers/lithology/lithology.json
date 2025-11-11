@@ -1,10 +1,7 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
+  "stac_extensions": [],
   "id": "lithology",
   "geometry": {
     "type": "Polygon",
@@ -58,110 +55,7 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Lithology",
-    "proj:code": "EPSG:4326",
-    "table:columns": [
-      {
-        "name": "AGE",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "EDITION_NU",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "FORMATION",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "GROUP_NAME",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "INPUT_CENT",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "INTRUSIVE",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "LITHOLOGIC",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "MEMBER",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "NEW_GEOM_I",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "NOTATION",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "NOTATION12",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "OBJECTID",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "SCRIPT",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "STRATIGRAP",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "SUB_GROUP",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "SUPERGROUP",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "TOPOSHEET_",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "UID_NOTATI",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "layer",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "path",
-        "type": "str",
-        "description": ""
-      }
-    ],
-    "datetime": "2025-11-10T03:04:13.389337Z"
+    "datetime": "2025-11-11T04:56:04.881664Z"
   },
   "links": [
     {
@@ -184,12 +78,12 @@
     }
   ],
   "assets": {
-    "data": {
-      "href": "/content/drive/MyDrive/Pan_india/Lithology.geojson",
-      "type": "application/geo+json",
-      "title": "Vector Data Link",
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1XeP-vY48OjmQz-7W1IXVm5gZnKAvTC8r/view",
+      "type": "text/plain",
+      "title": "Vector File",
       "roles": [
-        "data"
+        "source"
       ]
     }
   },

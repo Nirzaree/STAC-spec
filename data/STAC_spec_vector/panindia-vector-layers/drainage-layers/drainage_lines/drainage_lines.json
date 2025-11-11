@@ -33,7 +33,7 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Drainage Lines",
-    "datetime": "2025-11-10T08:27:18.131427Z"
+    "datetime": "2025-11-11T04:56:01.670104Z"
   },
   "links": [
     {
@@ -56,21 +56,12 @@
     }
   ],
   "assets": {
-    "data": {
-      "href": "/content/drive/MyDrive/Pan_india/pan_india_drainage_lines.geojson",
-      "type": "application/geo+json",
-      "title": "Vector GeoJSON File (Local/Hosted)",
-      "roles": [
-        "data"
-      ]
-    },
-    "gee-asset": {
-      "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/drainage-line/pan_india_drainage_lines",
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1jNUbJj41qUJZjI_t4psPJsVp8TfBP7M4/view",
       "type": "text/plain",
-      "title": "Google Earth Engine Asset Link",
+      "title": "Vector File",
       "roles": [
-        "metadata",
-        "processing"
+        "source"
       ]
     }
   },

@@ -1,10 +1,7 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
+  "stac_extensions": [],
   "id": "stage_of_groundwater_extraction",
   "geometry": {
     "type": "Polygon",
@@ -2478,95 +2475,7 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Stage of Groundwater Extraction",
-    "proj:code": "EPSG:4326",
-    "table:columns": [
-      {
-        "name": "agwd_dom_i",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "agwd_irr",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "agwd_tot",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "ar_gwr_tot",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "block",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "class",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "code",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "district",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "gwr_2011_2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "na_gwa",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "nat_discha",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "objectid",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "sgw_dev_pe",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "st_area(sh",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "st_length(",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "state",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "tehsil",
-        "type": "str",
-        "description": ""
-      }
-    ],
-    "datetime": "2025-11-10T03:04:12.690827Z"
+    "datetime": "2025-11-11T04:56:03.624726Z"
   },
   "links": [
     {
@@ -2589,12 +2498,12 @@
     }
   ],
   "assets": {
-    "data": {
-      "href": "/content/drive/MyDrive/Pan_india/SOGE_vector_2020.geojson",
-      "type": "application/geo+json",
-      "title": "Vector Data Link",
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1DGdHOojdBqTO65YjPbcUW_cpotlTGFm9/view",
+      "type": "text/plain",
+      "title": "Vector File",
       "roles": [
-        "data"
+        "source"
       ]
     }
   },

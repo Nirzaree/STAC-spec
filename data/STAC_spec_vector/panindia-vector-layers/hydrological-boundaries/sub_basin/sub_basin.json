@@ -1,10 +1,7 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
+  "stac_extensions": [],
   "id": "sub_basin",
   "geometry": {
     "type": "Polygon",
@@ -64918,40 +64915,7 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Sub-basin",
-    "proj:code": "EPSG:4326",
-    "table:columns": [
-      {
-        "name": "ba_name",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "bacode",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "objectid",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "st_area(sh",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "st_length(",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "sub_basin",
-        "type": "str",
-        "description": ""
-      }
-    ],
-    "datetime": "2025-11-10T03:04:12.424485Z"
+    "datetime": "2025-11-11T04:56:01.725856Z"
   },
   "links": [
     {
@@ -64974,12 +64938,12 @@
     }
   ],
   "assets": {
-    "data": {
-      "href": "/content/drive/MyDrive/Pan_india/CWC_subbasin_pan_india.geojson",
-      "type": "application/geo+json",
-      "title": "Vector Data Link",
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1-q-angbycEG9ku1l2SD3mWZf07PHHyPP/view",
+      "type": "text/plain",
+      "title": "Vector File",
       "roles": [
-        "data"
+        "source"
       ]
     }
   },

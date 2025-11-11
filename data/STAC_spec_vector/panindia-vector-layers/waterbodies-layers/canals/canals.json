@@ -1,10 +1,7 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
+  "stac_extensions": [],
   "id": "canals",
   "geometry": {
     "type": "LineString",
@@ -976,90 +973,7 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Canals",
-    "proj:code": "EPSG:4326",
-    "table:columns": [
-      {
-        "name": "can_type",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "cancode",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "canname",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "cca",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "cn_hdc",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "cn_purp",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "cn_ss",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "cn_st",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "cn_type",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "objectid",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "potential",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "prjcode",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "prjname",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "st_length(",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "state",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "status_yr",
-        "type": "str",
-        "description": ""
-      }
-    ],
-    "datetime": "2025-11-10T03:04:12.602788Z"
+    "datetime": "2025-11-11T04:56:03.556569Z"
   },
   "links": [
     {
@@ -1082,12 +996,12 @@
     }
   ],
   "assets": {
-    "data": {
-      "href": "/content/drive/MyDrive/Pan_india/Canal_pan_india.geojson",
-      "type": "application/geo+json",
-      "title": "Vector Data Link",
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1c7A7_0EzkOzAAWL8evTdVSmQqzHwU-In/view",
+      "type": "text/plain",
+      "title": "Vector File",
       "roles": [
-        "data"
+        "source"
       ]
     }
   },

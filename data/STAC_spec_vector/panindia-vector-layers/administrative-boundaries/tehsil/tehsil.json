@@ -1,10 +1,7 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
+  "stac_extensions": [],
   "id": "tehsil",
   "geometry": {
     "type": "GeometryCollection",
@@ -23780,35 +23777,7 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Tehsil",
-    "proj:code": "EPSG:4326",
-    "table:columns": [
-      {
-        "name": "District",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "STATE",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "Shape_Area",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "Shape_Leng",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "TEHSIL",
-        "type": "str",
-        "description": ""
-      }
-    ],
-    "datetime": "2025-11-10T03:04:12.542097Z"
+    "datetime": "2025-11-11T04:56:03.401659Z"
   },
   "links": [
     {
@@ -23831,12 +23800,12 @@
     }
   ],
   "assets": {
-    "data": {
-      "href": "/content/drive/MyDrive/Pan_india/SOI_tehsil.geojson",
-      "type": "application/geo+json",
-      "title": "Vector Data Link",
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/10JNdMH6a1ZsQwrT_iqasppKcqzMphxGE/view",
+      "type": "text/plain",
+      "title": "Vector File",
       "roles": [
-        "data"
+        "source"
       ]
     }
   },

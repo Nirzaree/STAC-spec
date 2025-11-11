@@ -1,10 +1,7 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
+  "stac_extensions": [],
   "id": "microwatershed_boundaries_v1",
   "geometry": {
     "type": "Polygon",
@@ -1838,20 +1835,7 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Microwatershed boundaries v1",
-    "proj:code": "EPSG:4326",
-    "table:columns": [
-      {
-        "name": "DN",
-        "type": "int",
-        "description": ""
-      },
-      {
-        "name": "uid",
-        "type": "str",
-        "description": ""
-      }
-    ],
-    "datetime": "2025-11-10T03:04:12.446610Z"
+    "datetime": "2025-11-11T04:56:01.753465Z"
   },
   "links": [
     {
@@ -1874,12 +1858,12 @@
     }
   ],
   "assets": {
-    "data": {
-      "href": "/content/drive/MyDrive/Pan_india/Microwatershed_boundries_v1.geojson",
-      "type": "application/geo+json",
-      "title": "Vector Data Link",
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1XlPU8zkIQzaVuCMEnNqrkKmndTdVtvyZ/view",
+      "type": "text/plain",
+      "title": "Vector File",
       "roles": [
-        "data"
+        "source"
       ]
     }
   },
