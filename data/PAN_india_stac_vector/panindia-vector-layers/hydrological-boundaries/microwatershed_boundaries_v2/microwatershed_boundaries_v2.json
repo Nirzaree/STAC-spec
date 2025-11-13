@@ -1,7 +1,10 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "id": "microwatershed_boundaries_v2",
   "geometry": {
     "type": "Polygon",
@@ -2917,7 +2920,25 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Microwatershed boundaries v2",
-    "datetime": "2025-11-13T03:54:36.612227Z"
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "area_in_ha",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "id",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "uid",
+        "type": "str",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-11-13T04:42:56.867538Z"
   },
   "links": [
     {

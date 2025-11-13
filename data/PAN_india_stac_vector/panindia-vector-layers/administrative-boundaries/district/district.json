@@ -1,7 +1,10 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "id": "district",
   "geometry": {
     "type": "MultiPolygon",
@@ -44417,7 +44420,75 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for District",
-    "datetime": "2025-11-13T03:54:37.068876Z"
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "Name",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "altitudeMo",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "begin",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "descriptio",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "drawOrder",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "end",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "extrude",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "icon",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "id",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "snippet",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "tessellate",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "timestamp",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "visibility",
+        "type": "int",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-11-13T04:42:57.387079Z"
   },
   "links": [
     {

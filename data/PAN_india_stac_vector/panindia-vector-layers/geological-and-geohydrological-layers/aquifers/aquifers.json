@@ -1,7 +1,10 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "id": "aquifers",
   "geometry": {
     "type": "MultiPolygon",
@@ -250313,7 +250316,140 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Aquifers",
-    "datetime": "2025-11-13T03:54:37.829085Z"
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "Age",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "Lithology_",
+        "type": "NoneType",
+        "description": ""
+      },
+      {
+        "name": "Major_Aq_1",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "Major_Aqui",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "Principal_",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "Recommende",
+        "type": "NoneType",
+        "description": ""
+      },
+      {
+        "name": "aquifer",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "aquifer0",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "aquifers",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "area_re",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "avg_mbgl",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "m2_perday",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "m3_per_day",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "mbgl",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "newcode14",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "newcode43",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "objectid",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "pa_order",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "per_cm",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "shape_Area",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "shape_Leng",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "state",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "system",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "test",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "yeild__",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "zone_m",
+        "type": "str",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-11-13T04:42:58.048486Z"
   },
   "links": [
     {

@@ -1,7 +1,10 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "id": "state",
   "geometry": {
     "type": "GeometryCollection",
@@ -44149,7 +44152,15 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for State",
-    "datetime": "2025-11-13T03:54:36.662351Z"
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "Name",
+        "type": "str",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-11-13T04:42:56.948165Z"
   },
   "links": [
     {

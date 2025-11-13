@@ -1,7 +1,10 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "id": "sub_basin",
   "geometry": {
     "type": "Polygon",
@@ -64915,7 +64918,40 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Sub-basin",
-    "datetime": "2025-11-13T03:54:36.561711Z"
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "ba_name",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "bacode",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "objectid",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "st_area(sh",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "st_length(",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "sub_basin",
+        "type": "str",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-11-13T04:42:56.799024Z"
   },
   "links": [
     {
