@@ -75,6 +75,7 @@ STAC_FILES_DIR = os.path.join(
     LOCAL_DATA_DIR,
     'CorestackCatalogs_exception_handling' #test folder
 )
+#'CorestackCatalogs_exception_handling'
 
 # %%
 LAYER_DESC_GITHUB_URL = constants.LAYER_DESC_GITHUB_URL
@@ -538,9 +539,6 @@ def generate_raster_item(state,
     )
 
     return raster_item
-
-# %%
-# fs = fsspec.filesystem('s3') 
 
 # %%
 def update_STAC_files(state,
@@ -1321,7 +1319,9 @@ def generate_vector_stac(state,
                          layer_name,
                          layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
                          layer_desc_csv_path='../data/input/metadata/layer_descriptions.csv',
-                         column_desc_csv_path='../data/input/metadata/vector_column_descriptions.csv'):
+                         column_desc_csv_path='../data/input/metadata/vector_column_descriptions.csv',
+                         upload_to_s3=True
+                         ):
     # print(layer_map_csv_path)
 
     vector_item = generate_vector_item(state,
@@ -1337,15 +1337,16 @@ def generate_vector_stac(state,
                                              block,
                                              STAC_item=vector_item)
     
-    upload_folder_to_s3(
-    aws_creds=aws_creds,
-    folderpath=STAC_FILES_DIR,
-    s3_bucket=S3_STAC_BUCKET_NAME)
+    if (upload_to_s3):
+        upload_folder_to_s3(
+        aws_creds=aws_creds,
+        folderpath=STAC_FILES_DIR,
+        s3_bucket=S3_STAC_BUCKET_NAME)
 
-    upload_folder_to_s3(
-    aws_creds=aws_creds,
-    folderpath=THUMBNAIL_DIR,
-    s3_bucket=S3_STAC_BUCKET_NAME)
+        upload_folder_to_s3(
+        aws_creds=aws_creds,
+        folderpath=THUMBNAIL_DIR,
+        s3_bucket=S3_STAC_BUCKET_NAME)
     
     return layer_STAC_generated
 
@@ -1357,7 +1358,9 @@ def generate_raster_stac(state,
                          layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
                          layer_desc_csv_path='../data/input/metadata/layer_descriptions.csv',
                          start_year='',
-                         end_year=''):
+                         end_year='',
+                         upload_to_s3=True
+                         ):
     
     raster_item = generate_raster_item(state,
                                        district,
@@ -1373,16 +1376,17 @@ def generate_raster_stac(state,
                                              block,
                                              STAC_item=raster_item)
     
-    upload_folder_to_s3(
-    aws_creds=aws_creds,
-    folderpath=STAC_FILES_DIR,
-    s3_bucket=S3_STAC_BUCKET_NAME)
+    if (upload_to_s3):
+        upload_folder_to_s3(
+        aws_creds=aws_creds,
+        folderpath=STAC_FILES_DIR,
+        s3_bucket=S3_STAC_BUCKET_NAME)
 
-    upload_folder_to_s3(
-    aws_creds=aws_creds,
-    folderpath=THUMBNAIL_DIR,
-    s3_bucket=S3_STAC_BUCKET_NAME)
-    
+        upload_folder_to_s3(
+        aws_creds=aws_creds,
+        folderpath=THUMBNAIL_DIR,
+        s3_bucket=S3_STAC_BUCKET_NAME)
+        
     return layer_STAC_generated   
 
 
@@ -1419,6 +1423,7 @@ def generate_raster_stac(state,
 #                      district=district,
 #                      block=block,
 #                      layer_name='drainage_lines_vector',
+#                      upload_to_s3=True
 #                     #  layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
 #                     #  layer_desc_csv_path='../data/input/metadata/layer_descriptions.csv',
 #                     #  column_desc_csv_path='../data/input/metadata/vector_column_descriptions.csv'
@@ -1457,5 +1462,8 @@ def generate_raster_stac(state,
 #     folderpath='../data/STAC_output_exception_handling',
 #     s3_bucket='spatio-temporal-asset-catalog'
 # )
+
+# %%
+
 
 
