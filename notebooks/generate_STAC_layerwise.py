@@ -40,6 +40,8 @@ import json
 import tqdm
 import glob
 
+import re
+
 import sys
 sys.path.append('..')
 import constants
@@ -91,6 +93,11 @@ S3_STAC_BUCKET_NAME = constants.S3_STAC_BUCKET_NAME
 
 # %%
 layer_STAC_generated = False #output flag
+
+# %%
+def valid_gee_text(description):
+    description = re.sub(r"[^a-zA-Z0-9 .,:;_-]", "", description)
+    return description.replace(" ", "_")
 
 # %% [markdown]
 # ### Raster flow
@@ -1323,6 +1330,13 @@ def generate_vector_stac(state,
                          upload_to_s3=True
                          ):
     # print(layer_map_csv_path)
+    state = valid_gee_text(state.lower())
+    district = valid_gee_text(district.lower())
+    block = valid_gee_text(block.lower())
+    
+    # print("state=",state)
+    # print("district=",district)
+    # print("block=",block)
 
     vector_item = generate_vector_item(state,
                                         district,
@@ -1361,6 +1375,13 @@ def generate_raster_stac(state,
                          end_year='',
                          upload_to_s3=True
                          ):
+    state = valid_gee_text(state.lower())
+    district = valid_gee_text(district.lower())
+    block = valid_gee_text(block.lower())
+
+    # print("state=",state)
+    # print("district=",district)
+    # print("block=",block)
     
     raster_item = generate_raster_item(state,
                                        district,
@@ -1419,11 +1440,16 @@ def generate_raster_stac(state,
 # block='virpur'
 
 # %%
+# state='Uttar Pradesh'
+# district='Jaunpur'
+# block='Badlapur'
+
+# %%
 # generate_vector_stac(state=state,
 #                      district=district,
 #                      block=block,
 #                      layer_name='drainage_lines_vector',
-#                      upload_to_s3=True
+#                      upload_to_s3=False
 #                     #  layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
 #                     #  layer_desc_csv_path='../data/input/metadata/layer_descriptions.csv',
 #                     #  column_desc_csv_path='../data/input/metadata/vector_column_descriptions.csv'
