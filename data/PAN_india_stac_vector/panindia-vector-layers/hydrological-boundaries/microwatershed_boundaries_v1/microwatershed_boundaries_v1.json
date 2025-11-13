@@ -1,7 +1,10 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "id": "microwatershed_boundaries_v1",
   "geometry": {
     "type": "Polygon",
@@ -1835,7 +1838,20 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Microwatershed boundaries v1",
-    "datetime": "2025-11-11T05:11:23.969465Z"
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "DN",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "uid",
+        "type": "str",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-11-13T04:42:56.844381Z"
   },
   "links": [
     {

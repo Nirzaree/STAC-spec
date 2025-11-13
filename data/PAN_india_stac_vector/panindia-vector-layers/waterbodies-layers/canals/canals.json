@@ -1,7 +1,10 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "id": "canals",
   "geometry": {
     "type": "LineString",
@@ -973,7 +976,90 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Canals",
-    "datetime": "2025-11-11T05:11:26.639444Z"
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "can_type",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "cancode",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "canname",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "cca",
+        "type": "NoneType",
+        "description": ""
+      },
+      {
+        "name": "cn_hdc",
+        "type": "NoneType",
+        "description": ""
+      },
+      {
+        "name": "cn_purp",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "cn_ss",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "cn_st",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "cn_type",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "objectid",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "potential",
+        "type": "NoneType",
+        "description": ""
+      },
+      {
+        "name": "prjcode",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "prjname",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "st_length(",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "state",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "status_yr",
+        "type": "str",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-11-13T04:42:57.541346Z"
   },
   "links": [
     {

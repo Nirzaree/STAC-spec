@@ -1,7 +1,10 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "id": "biogeographic_zone",
   "geometry": {
     "type": "MultiPolygon",
@@ -63337,7 +63340,85 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Biogeographic Zone",
-    "datetime": "2025-11-11T05:11:28.712909Z"
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "__mlocate_",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "__mlocate0",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "__mlocate1",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "__mlocate2",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "__mlocate3",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "__mlocate4",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "__mlocate5",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "__mlocate6",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "__mlocate7",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "__mlocate8",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "prov_code",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "biogeozone",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "biogeoprov",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "zone_code",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "area_sqkm",
+        "type": "float",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-11-13T04:42:58.545053Z"
   },
   "links": [
     {

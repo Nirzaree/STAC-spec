@@ -1,7 +1,10 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "id": "rivers",
   "geometry": {
     "type": "Polygon",
@@ -211,7 +214,50 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Rivers",
-    "datetime": "2025-11-11T05:11:26.622702Z"
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "bacode",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "k50",
+        "type": "NoneType",
+        "description": ""
+      },
+      {
+        "name": "objectid",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "ripcode",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "rivname",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "shape_leng",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "st_area(sh",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "st_length(",
+        "type": "float",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-11-13T04:42:57.518058Z"
   },
   "links": [
     {

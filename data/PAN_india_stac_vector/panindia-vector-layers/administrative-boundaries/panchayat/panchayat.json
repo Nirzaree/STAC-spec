@@ -1,7 +1,10 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "id": "panchayat",
   "geometry": {
     "type": "Polygon",
@@ -4379,7 +4382,150 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Panchayat",
-    "datetime": "2025-11-11T05:11:26.579889Z"
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "ADI 2011",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "ADI 2019",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "District c",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "District n",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "Female_Ill",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Female_Lit",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Female_SC_",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Female_ST_",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Male_Illit",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Male_Liter",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Male_SC_Po",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Male_ST_Po",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Number_of_",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Panchaya_1",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "Panchayat_",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "State cens",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "State name",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "Subdistric",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "Sudistrict",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Total_Fema",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Total_Illi",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Total_Lite",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Total_Male",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Total_Popu",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Total_SC_P",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "Total_ST_P",
+        "type": "float",
+        "description": ""
+      },
+      {
+        "name": "layer",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "path",
+        "type": "str",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-11-13T04:42:57.466620Z"
   },
   "links": [
     {

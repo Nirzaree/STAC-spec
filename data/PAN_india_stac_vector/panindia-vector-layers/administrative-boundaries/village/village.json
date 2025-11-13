@@ -1,7 +1,10 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "id": "village",
   "geometry": {
     "type": "Polygon",
@@ -159,7 +162,135 @@
   "properties": {
     "type": "vector",
     "description": "Vector data for Village",
-    "datetime": "2025-11-11T05:11:26.605287Z"
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "ADI 2011",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "ADI 2019",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Block Name",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "District N",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "Female_Ill",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Female_Lit",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Female_SC_",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Female_ST_",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Male_Illit",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Male_Liter",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Male_SC_Po",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Male_ST_Po",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Number_of_",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "State Name",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "Total_Fema",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Total_Illi",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Total_Lite",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Total_Male",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Total_Popu",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Total_SC_P",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Total_ST_P",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Village ID",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "Village Na",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "layer",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "path",
+        "type": "str",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-11-13T04:42:57.491999Z"
   },
   "links": [
     {
