@@ -97,18 +97,21 @@ layer_STAC_generated = False #output flag
 # %%
 def valid_gee_text(description):
     description = re.sub(r"[^a-zA-Z0-9 .,:;_-]", "", description)
-    return description.replace(" ", "_")
+    return description.replace(" ", "_") #in the main module can be taken from utilities.gee_utils
 
 # %% [markdown]
 # ### Raster flow
 
 # %%
 def read_layer_description(filepath,
-                           layer_name):
-    if (os.path.exists(filepath)):
+                           layer_name,
+                           overwrite_existing = False
+                           ):
+    if ((os.path.exists(filepath)) and (not overwrite_existing)):
         layer_desc_df = pd.read_csv(filepath)
     else:
         #download and save
+        print("STAC:downloading layer description csv from github")
         os.makedirs(os.path.dirname(filepath), exist_ok=True)
         layer_desc_df = pd.read_csv(LAYER_DESC_GITHUB_URL)
         layer_desc_df.to_csv(filepath)
@@ -600,7 +603,7 @@ def update_STAC_files(state,
     else:
         block_catalog = pystac.Catalog(
             id=block,
-            title=f"STAC for {block}",
+            title=f"{block}",
             description=f"STAC catalog for {block} block data in {district}, {state}")
 
         print("created block catalog")
@@ -817,11 +820,13 @@ def add_vector_data_asset(vector_item,
 def add_tabular_extension(vector_item,
                           vector_data_gdf,
                           column_desc_csv_path,
-                          ee_layer_name
+                          ee_layer_name,
+                          overwrite_existing=False
                           ):
-    if (os.path.exists(column_desc_csv_path)):
+    if ((os.path.exists(column_desc_csv_path)) and (not overwrite_existing)):
         vector_column_desc_gdf = pd.read_csv(column_desc_csv_path)
     else:
+        print("STAC:downloading column descriptions csv from github")
         os.makedirs(os.path.dirname(column_desc_csv_path), exist_ok=True)
         vector_column_desc_gdf = pd.read_csv(VECTOR_COLUMN_DESC_GITHUB_URL)
         vector_column_desc_gdf.to_csv(column_desc_csv_path)
