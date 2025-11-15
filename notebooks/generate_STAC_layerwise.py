@@ -69,13 +69,13 @@ STYLE_FILE_DIR = os.path.join(LOCAL_DATA_DIR,'input/style_files/')
 
 # %%
 THUMBNAIL_DIR = os.path.join(LOCAL_DATA_DIR,
-                             'STAC_output_exception_handling')
+                             'STAC_output_overwrite_flag')
 # THUMBNAIL_DIR
 
 # %%
 STAC_FILES_DIR = os.path.join(
     LOCAL_DATA_DIR,
-    'CorestackCatalogs_exception_handling' #test folder
+    'CorestackCatalogs_overwrite_flag' #test folder
 )
 #'CorestackCatalogs_exception_handling'
 
@@ -105,7 +105,7 @@ def valid_gee_text(description):
 # %%
 def read_layer_description(filepath,
                            layer_name,
-                           overwrite_existing = False
+                           overwrite_existing
                            ):
     if ((os.path.exists(filepath)) and (not overwrite_existing)):
         layer_desc_df = pd.read_csv(filepath)
@@ -411,7 +411,7 @@ def read_layer_mapping(layer_map_csv_path, #TODO: update this function for each 
                        district, #
                        block,
                        start_year = '',
-                       end_year = ''
+                    #    end_year = ''
                        ):
     layer_mapping_df = pd.read_csv(layer_map_csv_path)
     layer_display_name = layer_mapping_df[layer_mapping_df['layer_name'] == layer_name]['display_name'].iloc[0]
@@ -425,11 +425,16 @@ def read_layer_mapping(layer_map_csv_path, #TODO: update this function for each 
     gsd = layer_mapping_df[layer_mapping_df['layer_name'] == layer_name]['spatial_resolution_in_meters'].iloc[0]
     
     if (layer_name == 'land_use_land_cover_raster'):
-        start_year = str(int(start_year) % 100) #keep only last 2 digits of the full year
-        end_year = str(int(end_year) % 100)
-        geoserver_layer_name = geoserver_layer_name.format(start_year = start_year,
-                                                    end_year = end_year,
-                                                    block = block)    
+        start_year_modified = str(
+            int(start_year) % 100
+        )  # keep only last 2 digits of the full year
+        end_year_modified = str((int(start_year) + 1) % 100)
+        print("start_year_modified=", start_year_modified)
+        print("end_year_modified=", end_year_modified)
+        geoserver_layer_name = geoserver_layer_name.format(
+            start_year=start_year_modified, end_year=end_year_modified, block=block
+        )
+    # prin
     # print(geoserver_workspace_name,geoserver_layer_name)
     elif ((layer_name == 'tree_canopy_cover_density_raster') |\
           (layer_name == 'tree_canopy_height_raster')):
@@ -455,12 +460,14 @@ def generate_raster_item(state,
                          layer_map_csv_path,
                          layer_desc_csv_path,
                          start_year,
-                         end_year
+                        #  end_year,
+                         overwrite_existing
                          ):    
     
     #1. read layer description
     layer_description = read_layer_description(filepath= layer_desc_csv_path,
-                                               layer_name=layer_name)
+                                               layer_name=layer_name,
+                                               overwrite_existing=overwrite_existing)
     
     #2. get geoserver url parameters from the layer details
     geoserver_workspace_name,geoserver_layer_name,style_file_url,layer_display_name,ee_layer_name,gsd = \
@@ -469,7 +476,7 @@ def generate_raster_item(state,
                            block=block,
                            layer_name=layer_name,
                            start_year=start_year,
-                           end_year=end_year
+                        #    end_year=end_year
                            )
     print(f"geoserver_workspace_name={geoserver_workspace_name}")
     print(f"geoserver_layer_name={geoserver_layer_name}")
@@ -493,12 +500,9 @@ def generate_raster_item(state,
         layer_id = f"{state}_{district}_{block}_{layer_name}_{start_year}"
         start_date = start_year + '-' + constants.AGRI_YEAR_START_DATE
         start_date = pd.to_datetime(start_date)
-        if (end_year == ''): #like in tree layers
-            end_date = str(int(start_year) + 1) + '-' + constants.AGRI_YEAR_END_DATE
-            end_date = pd.to_datetime(end_date)
-    if (end_year != ""):
-        end_date = end_year + '-' + constants.AGRI_YEAR_END_DATE
+        end_date = str(int(start_year) + 1) + '-' + constants.AGRI_YEAR_END_DATE
         end_date = pd.to_datetime(end_date)
+
     print(f"start_date = {start_date}")
     print(f"end_date = {end_date}")
     raster_item,raster_data = create_raster_item(geoserver_url,
@@ -1154,13 +1158,16 @@ def generate_vector_item(state,
                          layer_map_csv_path,
                          layer_desc_csv_path,
                          column_desc_csv_path,
+                         overwrite_existing
                          ):    
     # print(layer_map_csv_path)
     # print(layer_desc_csv_path)
     # print(column_desc_csv_path)
     #1. read layer description
     layer_description = read_layer_description(filepath=layer_desc_csv_path,
-                                               layer_name=layer_name)
+                                               layer_name=layer_name,
+                                               overwrite_existing=overwrite_existing
+                                               )
     
     #2. get geoserver url parameters from the layer details
     geoserver_workspace_name,geoserver_layer_name,style_file_url,layer_display_name,ee_layer_name,_ = \
@@ -1203,7 +1210,9 @@ def generate_vector_item(state,
     vector_item = add_tabular_extension(vector_item=vector_item,
                                         vector_data_gdf=vector_data_gdf,
                                         column_desc_csv_path=column_desc_csv_path,
-                                        ee_layer_name=ee_layer_name)
+                                        ee_layer_name=ee_layer_name,
+                                        overwrite_existing=overwrite_existing
+                                        )
     
     #7. add style file asset
     add_stylefile_asset(STAC_item=vector_item,
@@ -1332,7 +1341,8 @@ def generate_vector_stac(state,
                          layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
                          layer_desc_csv_path='../data/input/metadata/layer_descriptions.csv',
                          column_desc_csv_path='../data/input/metadata/vector_column_descriptions.csv',
-                         upload_to_s3=True
+                         upload_to_s3=True,
+                         overwrite_existing=False
                          ):
     # print(layer_map_csv_path)
     state = valid_gee_text(state.lower())
@@ -1349,7 +1359,9 @@ def generate_vector_stac(state,
                                         layer_name,
                                         layer_map_csv_path,
                                         layer_desc_csv_path,
-                                        column_desc_csv_path)
+                                        column_desc_csv_path,
+                                        overwrite_existing
+                                        )
 
     layer_STAC_generated = update_STAC_files(state,
                                              district,
@@ -1377,8 +1389,9 @@ def generate_raster_stac(state,
                          layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
                          layer_desc_csv_path='../data/input/metadata/layer_descriptions.csv',
                          start_year='',
-                         end_year='',
-                         upload_to_s3=True
+                        #  end_year='',
+                         upload_to_s3=True,
+                         overwrite_existing=False
                          ):
     state = valid_gee_text(state.lower())
     district = valid_gee_text(district.lower())
@@ -1395,7 +1408,9 @@ def generate_raster_stac(state,
                                        layer_map_csv_path,
                                        layer_desc_csv_path,
                                        start_year,
-                                       end_year)
+                                    #    end_year,
+                                       overwrite_existing
+                                       )
     
     layer_STAC_generated = update_STAC_files(state,
                                              district,
@@ -1454,7 +1469,8 @@ def generate_raster_stac(state,
 #                      district=district,
 #                      block=block,
 #                      layer_name='drainage_lines_vector',
-#                      upload_to_s3=False
+#                      upload_to_s3=False,
+#                      overwrite_existing=True
 #                     #  layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
 #                     #  layer_desc_csv_path='../data/input/metadata/layer_descriptions.csv',
 #                     #  column_desc_csv_path='../data/input/metadata/vector_column_descriptions.csv'
