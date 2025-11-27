@@ -130,6 +130,9 @@ def generate_stac_spec():
         district__active_status=True,
         district__state__active_status=True,
     ).select_related("district", "district__state")
+
+    print(active_tehsils)
+
     for tehsil in active_tehsils:
         if (tehsil == 'masalia'):
             state = tehsil.district.state
@@ -339,7 +342,7 @@ def generate_stac_spec():
                     print(
                         f"EXCEPTION IN GENERATING {layer_name_to_generate_vector} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name} and error is:- {e}"
                     )
-        print("========== ALL STAC GENERATED FOR EXISTING LOCATION ==========")
+            # print("========== ALL STAC GENERATED FOR EXISTING LOCATION ==========")
 
 
 generate_stac_spec()
