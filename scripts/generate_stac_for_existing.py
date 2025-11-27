@@ -123,6 +123,14 @@ def generate_stac_spec():
             "dataset_name": "Restoration Raster",
             "layer_name": "restoration_dist_block_raster",
         },
+        "terrain_vector": {
+            "dataset_name": "Terrain Vector",
+            "layer_name": "dist_block_cluster",
+        },
+        "change_in_well_depth_vector": {
+            "dataset_name": "Hydrology",
+            "layer_name": "deltaG_well_depth_dist_block",
+        }        
     }
 
     active_tehsils = TehsilSOI.objects.filter(
@@ -131,7 +139,7 @@ def generate_stac_spec():
         district__state__active_status=True,
     ).select_related("district", "district__state")
 
-    print(active_tehsils)
+    # print(active_tehsils)
 
     for tehsil in active_tehsils:
         if (tehsil.tehsil_name == 'Masalia'):
@@ -312,7 +320,7 @@ def generate_stac_spec():
                         upload_to_s3=upload_s3,
                         generate_stac = True
                     )
-                    print("Vector STAC status =",is_vector_stac_generated)
+                    # print("Vector STAC status =",is_vector_stac_generated)
                     layer_name = layer_obj_and_name[layer_name_to_generate_vector][
                         "layer_name"
                     ]
@@ -329,6 +337,7 @@ def generate_stac_spec():
                         .order_by("-layer_version")
                         .first()
                     )
+                    print(layer_obj)
                     if is_vector_stac_generated:
                         if layer_obj:
                             layer_obj.is_stac_specs_generated = True
