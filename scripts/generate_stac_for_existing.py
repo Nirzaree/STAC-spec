@@ -151,6 +151,7 @@ def generate_stac_spec():
                                     layer_name=layer_name_to_generate_raster,
                                     start_year=year,
                                     upload_to_s3=upload_s3,
+                                    generate_stac = True
                                 )
                             )
                             layer_name = layer_obj_and_name[layer_name_to_generate_raster][
@@ -209,6 +210,7 @@ def generate_stac_spec():
                                     layer_name=layer_name_to_generate_raster,
                                     start_year=year,
                                     upload_to_s3=upload_s3,
+                                    generate_stac = True
                                 )
                             )
                             layer_name = layer_obj_and_name[layer_name_to_generate_raster][
@@ -259,6 +261,7 @@ def generate_stac_spec():
                         block=tehsil.tehsil_name,
                         layer_name=layer_name_to_generate_raster,
                         upload_to_s3=upload_s3,
+                        generate_stac = True
                     )
                     layer_name = layer_obj_and_name[layer_name_to_generate_raster][
                         "layer_name"
@@ -307,6 +310,7 @@ def generate_stac_spec():
                         block=tehsil.tehsil_name,
                         layer_name=layer_name_to_generate_vector,
                         upload_to_s3=upload_s3,
+                        generate_stac = True
                     )
                     layer_name = layer_obj_and_name[layer_name_to_generate_vector][
                         "layer_name"
