@@ -21,11 +21,11 @@ import ee
 from geoadmin.models import TehsilSOI
 from computing.STAC_specs import generate_STAC_layerwise
 from computing.models import Layer
+from utilities.gee_utils import valid_gee_text
 
-import pandas as pd
-layer_mapping_df = pd.read_csv('data/input/metadata/layer_mapping.csv')
 
 def generate_stac_spec():
+    upload_s3 = False
     layer_names_to_generate_rasters = [
         "change_tree_cover_gain_raster",
         "change_tree_cover_loss_raster",
@@ -38,21 +38,92 @@ def generate_stac_spec():
         # "tree_canopy_cover_density_raster",
         # "tree_cover_change_raster",
         # "tree_canopy_height_raster",
-        "wri_restoration_raster",
+        # "wri_restoration_raster", #layer description not available
     ]
 
     layer_names_to_generate_vectors = [
         "admin_boundaries_vector",
-        "aquifer_vector",
+        # "aquifer_vector", #thumbnail not available
         "drainage_lines_vector",
         "surface_water_bodies_vector",
-        "nrega_vector",
-        # "terrain_vector",
+        # "nrega_vector", #unknown
+        "terrain_vector",
         "cropping_intensity_vector",
         "stage_of_groundwater_extraction_vector",
         "drought_frequency_vector",
         # "change_in_well_depth_vector",
     ]
+
+    layer_obj_and_name = {
+        "admin_boundaries_vector": {
+            "dataset_name": "Admin Boundary",
+            "layer_name": "dist_block",
+        },
+        "aquifer_vector": {
+            "dataset_name": "Aquifer",
+            "layer_name": "aquifer_vector_dist_block",
+        },
+        "drainage_lines_vector": {
+            "dataset_name": "Drainage",
+            "layer_name": "dist_block",
+        },
+        "surface_water_bodies_vector": {
+            "dataset_name": "Surface Water Bodies",
+            "layer_name": "surface_waterbodies_dist_block",
+        },
+        "nrega_vector": {
+            "dataset_name": "NREGA Assets",
+            "layer_name": "dist_block",
+        },
+        "cropping_intensity_vector": {
+            "dataset_name": "Cropping Intensity",
+            "layer_name": "dist_block_intensity",
+        },
+        "stage_of_groundwater_extraction_vector": {
+            "dataset_name": "SOGE",
+            "layer_name": "soge_vector_dist_block",
+        },
+        "drought_frequency_vector": {
+            "dataset_name": "Drought",
+            "layer_name": "dist_block_drought",
+        },
+        "change_tree_cover_gain_raster": {
+            "dataset_name": "Change Detection Raster",
+            "layer_name": "change_dist_block_Afforestation",
+        },
+        "change_tree_cover_loss_raster": {
+            "dataset_name": "Change Detection Raster",
+            "layer_name": "change_dist_block_Deforestation",
+        },
+        "change_cropping_reduction_raster": {
+            "dataset_name": "Change Detection Raster",
+            "layer_name": "change_dist_block_Degradation",
+        },
+        "change_urbanization_raster": {
+            "dataset_name": "Change Detection Raster",
+            "layer_name": "change_dist_block_Urbanization",
+        },
+        "change_cropping_intensity_raster": {
+            "dataset_name": "Change Detection Raster",
+            "layer_name": "change_dist_block_CropIntensity",
+        },
+        "land_use_land_cover_raster": {
+            "dataset_name": "LULC_level_3",
+            "layer_name": "LULC_start_year_end_year_block_level_3",
+        },
+        "terrain_raster": {
+            "dataset_name": "Terrain Raster",
+            "layer_name": "dist_block_terrain_raster",
+        },
+        "clart_raster": {
+            "dataset_name": "CLART",
+            "layer_name": "dist_block_clart",
+        },
+        "wri_restoration_raster": {
+            "dataset_name": "Restoration Raster",
+            "layer_name": "restoration_dist_block_raster",
+        },
+    }
 
     active_tehsils = TehsilSOI.objects.filter(
         active_status=True,
@@ -63,103 +134,188 @@ def generate_stac_spec():
         state = tehsil.district.state
         district = tehsil.district
         print(state.state_name, district.district_name, tehsil.tehsil_name)
-        # for layer_name_to_generate_raster in layer_names_to_generate_rasters:
-        #     if layer_name_to_generate_raster == "land_use_land_cover_raster":
-        #         lulc_year_range = [2017, 2018, 2019, 2020, 2021, 2022, 2023]
-        #         for year in lulc_year_range:
-        #             try:
-        #                     is_rater_stac_generated = (
-        #                         generate_STAC_layerwise.generate_raster_stac(
-        #                             state=state.state_name,
-        #                             district=district.district_name,
-        #                             block=tehsil.tehsil_name,
-        #                             layer_name=layer_name_to_generate_raster,
-        #                             start_year=year,
-        #                         )
-        #                     )
-        #                     if is_rater_stac_generated:
-        #                         print(
-        #                             f"stac spec {layer_name_to_generate_raster} generated for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
-        #                         )
-        #                     else:
-        #                         print(
-        #                             f"ISSUE IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
-        #                         )
-        #                 pass
-        #             except Exception as e:
-        #                 print(
-        #                     f"EXCEPTION IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name} and error is:- {e}"
-        #                 )
-        #
-        #     if layer_name_to_generate_raster in [
-        #         "tree_canopy_cover_density_raster",
-        #         "tree_canopy_height_raster",
-        #     ]:
-        #         tree_year_range = [2017, 2018, 2019, 2020, 2021, 2022]
-        #         for year in tree_year_range:
-        #             try:
-        #                 is_rater_stac_generated = (
-        #                     generate_STAC_layerwise.generate_raster_stac(
-        #                         state=state.state_name,
-        #                         district=district.district_name,
-        #                         block=tehsil.tehsil_name,
-        #                         layer_name=layer_name_to_generate_raster,
-        #                         start_year=year,
-        #                     )
-        #                 )
-        #                 if is_rater_stac_generated:
-        #                     print(
-        #                         f"stac spec {layer_name_to_generate_raster} generated for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
-        #                     )
-        #                 else:
-        #                     print(
-        #                         f"ISSUE IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
-        #                     )
-        #                 pass
-        #             except Exception as e:
-        #                 print(
-        #                     f"EXCEPTION IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name} and error is:- {e}"
-        #                 )
-        #
-        #     try:
-        #         is_rater_stac_generated = generate_STAC_layerwise.generate_raster_stac(
-        #             state=state.state_name,
-        #             district=district.district_name,
-        #             block=tehsil.tehsil_name,
-        #             layer_name=layer_name_to_generate_raster,
-        #         )
-        #         if is_rater_stac_generated:
-        #             print(
-        #                 f"stac spec {layer_name_to_generate_raster} generated for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
-        #             )
-        #         else:
-        #             print(
-        #                 f"ISSUE IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
-        #             )
-        #         pass
-        #     except Exception as e:
-        #         print(
-        #             f"EXCEPTION IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name} and error is:- {e}"
-        #         )
+        for layer_name_to_generate_raster in layer_names_to_generate_rasters:
+            if layer_name_to_generate_raster == "land_use_land_cover_raster":
+                lulc_year_range = [2017, 2018, 2019, 2020, 2021, 2022, 2023]
+                for year in lulc_year_range:
+                    try:
+                        is_raster_stac_generated = (
+                            generate_STAC_layerwise.generate_raster_stac(
+                                state=state.state_name,
+                                district=district.district_name,
+                                block=tehsil.tehsil_name,
+                                layer_name=layer_name_to_generate_raster,
+                                start_year=year,
+                                upload_to_s3=upload_s3,
+                            )
+                        )
+                        layer_name = layer_obj_and_name[layer_name_to_generate_raster][
+                            "layer_name"
+                        ]
+                        last_two = str(year)[2:]
+                        formatted_layer_name = (
+                            layer_name.replace(
+                                "block", valid_gee_text(tehsil.tehsil_name.lower())
+                            )
+                            .replace("start_year", last_two)
+                            .replace("end_year", f"{int(last_two) + 1:02d}")
+                            .replace(" ", "_")
+                        )
+                        print(f"{formatted_layer_name = }")
+                        layer_obj = (
+                            Layer.objects.filter(
+                                dataset__name=layer_obj_and_name[
+                                    layer_name_to_generate_raster
+                                ]["dataset_name"],
+                                layer_name=formatted_layer_name,
+                            )
+                            .order_by("-layer_version")
+                            .first()
+                        )
+                        if is_raster_stac_generated:
+                            print(
+                                f"stac spec {layer_name_to_generate_raster} generated for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
+                            )
+                            if layer_obj:
+                                layer_obj.is_stac_specs_generated = True
+                                layer_obj.save()
+                                print("db flag updated.....")
+                            else:
+                                print("db object not found========")
+                        else:
+                            print(
+                                f"ISSUE IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
+                            )
+                    except Exception as e:
+                        print(
+                            f"EXCEPTION IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name} and error is:- {e}"
+                        )
+            if layer_name_to_generate_raster in [
+                "tree_canopy_cover_density_raster",
+                "tree_canopy_height_raster",
+            ]:
+                tree_year_range = [2017, 2018, 2019, 2020, 2021, 2022]
+                for year in tree_year_range:
+                    try:
+                        is_raster_stac_generated = (
+                            generate_STAC_layerwise.generate_raster_stac(
+                                state=state.state_name,
+                                district=district.district_name,
+                                block=tehsil.tehsil_name,
+                                layer_name=layer_name_to_generate_raster,
+                                start_year=year,
+                                upload_to_s3=upload_s3,
+                            )
+                        )
+                        layer_name = layer_obj_and_name[layer_name_to_generate_raster][
+                            "layer_name"
+                        ]
+                        formatted_layer_name = (
+                            layer_name.replace(
+                                "dist", valid_gee_text(district.district_name.lower())
+                            )
+                            .replace(
+                                "block", valid_gee_text(tehsil.tehsil_name.lower())
+                            )
+                            .replace(" ", "_")
+                        )
+                        print(f"{formatted_layer_name = }")
+                        layer_obj = (
+                            Layer.objects.filter(
+                                dataset__name=layer_obj_and_name[
+                                    layer_name_to_generate_raster
+                                ]["dataset_name"],
+                                layer_name=formatted_layer_name,
+                            )
+                            .order_by("-layer_version")
+                            .first()
+                        )
+                        if is_raster_stac_generated:
+                            print(
+                                f"stac spec {layer_name_to_generate_raster} generated for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
+                            )
+                            if layer_obj:
+                                layer_obj.is_stac_specs_generated = True
+                                layer_obj.save()
+                                print("db flag updated.....")
+                            else:
+                                print("db object not found========")
+                        else:
+                            print(
+                                f"ISSUE IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
+                            )
+                    except Exception as e:
+                        print(
+                            f"EXCEPTION IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name} and error is:- {e}"
+                        )
+            try:
+                is_raster_stac_generated = generate_STAC_layerwise.generate_raster_stac(
+                    state=state.state_name,
+                    district=district.district_name,
+                    block=tehsil.tehsil_name,
+                    layer_name=layer_name_to_generate_raster,
+                    upload_to_s3=upload_s3,
+                )
+                layer_name = layer_obj_and_name[layer_name_to_generate_raster][
+                    "layer_name"
+                ]
+                formatted_layer_name = (
+                    layer_name.replace(
+                        "dist", valid_gee_text(district.district_name.lower())
+                    )
+                    .replace("block", valid_gee_text(tehsil.tehsil_name.lower()))
+                    .replace(" ", "_")
+                )
+                print(f"{formatted_layer_name = }")
+                layer_obj = (
+                    Layer.objects.filter(
+                        dataset__name=layer_obj_and_name[layer_name_to_generate_raster][
+                            "dataset_name"
+                        ],
+                        layer_name=formatted_layer_name,
+                    )
+                    .order_by("-layer_version")
+                    .first()
+                )
+                if is_raster_stac_generated:
+                    print(
+                        f"stac spec {layer_name_to_generate_raster} generated for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
+                    )
+                    if layer_obj:
+                        layer_obj.is_stac_specs_generated = True
+                        layer_obj.save()
+                        print("db flag updated.....")
+                    else:
+                        print("db object not found========")
+                else:
+                    print(
+                        f"ISSUE IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
+                    )
+            except Exception as e:
+                print(
+                    f"EXCEPTION IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name} and error is:- {e}"
+                )
         for layer_name_to_generate_vector in layer_names_to_generate_vectors:
-            layer_df = layer_mapping_df[layer_mapping_df['layer_name'] == layer_name_to_generate_vector]
-            db_dataset_name = layer_df['db_dataset_name'].iloc[0]
-            geoserver_layer_name = layer_df['geoserver_layer_name'].iloc[0]
-            geoserver_layer_name = geoserver_layer_name.replace("district", district.district_name.lower())
-            geoserver_layer_name = geoserver_layer_name.replace("block", tehsil.tehsil_name.lower())        
-
             try:
                 is_vector_stac_generated = generate_STAC_layerwise.generate_vector_stac(
                     state=state.state_name,
                     district=district.district_name,
                     block=tehsil.tehsil_name,
                     layer_name=layer_name_to_generate_vector,
+                    upload_to_s3=upload_s3,
                 )
-
+                layer_name = layer_obj_and_name[layer_name_to_generate_vector][
+                    "layer_name"
+                ]
+                formatted_layer_name = layer_name.replace(
+                    "dist", valid_gee_text(district.district_name.lower())
+                ).replace("block", valid_gee_text(tehsil.tehsil_name.lower()))
                 layer_obj = (
                     Layer.objects.filter(
-                        dataset__name=db_dataset_name,
-                        layer_name=geoserver_layer_name,
+                        dataset__name=layer_obj_and_name[layer_name_to_generate_vector][
+                            "dataset_name"
+                        ],
+                        layer_name=formatted_layer_name,
                     )
                     .order_by("-layer_version")
                     .first()
@@ -169,6 +325,8 @@ def generate_stac_spec():
                         layer_obj.is_stac_specs_generated = True
                         layer_obj.save()
                         print("db flag updated.....")
+                    else:
+                        print("db object not found========")
                     print(
                         f"stac spec {layer_name_to_generate_vector} generated for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
                     )
@@ -176,7 +334,6 @@ def generate_stac_spec():
                     print(
                         f"ISSUE IN GENERATING {layer_name_to_generate_vector} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
                     )
-                pass
             except Exception as e:
                 print(
                     f"EXCEPTION IN GENERATING {layer_name_to_generate_vector} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name} and error is:- {e}"
