@@ -134,7 +134,7 @@ def generate_stac_spec():
     print(active_tehsils)
 
     for tehsil in active_tehsils:
-        if (tehsil.lower() == 'masalia'):
+        if (tehsil.tehsil_name == 'Masalia'):
             state = tehsil.district.state
             district = tehsil.district
             print(state.state_name, district.district_name, tehsil.tehsil_name)
