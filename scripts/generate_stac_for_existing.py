@@ -312,6 +312,7 @@ def generate_stac_spec():
                         upload_to_s3=upload_s3,
                         generate_stac = True
                     )
+                    print("Vector STAC status =",is_vector_stac_generated)
                     layer_name = layer_obj_and_name[layer_name_to_generate_vector][
                         "layer_name"
                     ]
