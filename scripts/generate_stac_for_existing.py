@@ -147,7 +147,7 @@ def generate_stac_spec():
         print(state.state_name, district.district_name, tehsil.tehsil_name)
         for layer_name_to_generate_raster in layer_names_to_generate_rasters:
             if layer_name_to_generate_raster == "land_use_land_cover_raster":
-                lulc_year_range = [2017, 2018, 2019, 2020, 2021, 2022, 2023]
+                lulc_year_range = [2017, 2018, 2019, 2020, 2021, 2022]
                 for year in lulc_year_range:
                     try:
                         is_raster_stac_generated = (
@@ -164,13 +164,14 @@ def generate_stac_spec():
                         layer_name = layer_obj_and_name[layer_name_to_generate_raster][
                             "layer_name"
                         ]
-                        last_two = str(year)[2:]
+                        start_year_last_two_digits = str(int(year) % 100)
+                        end_year_last_two_digits = str((int(year) + 1) % 100)
                         formatted_layer_name = (
                             layer_name.replace(
                                 "block", valid_gee_text(tehsil.tehsil_name.lower())
                             )
-                            .replace("start_year", last_two)
-                            .replace("end_year", f"{int(last_two) + 1:02d}")
+                            .replace("start_year", start_year_last_two_digits)
+                            .replace("end_year", end_year_last_two_digits)
                             .replace(" ", "_")
                         )
                         print(f"{formatted_layer_name = }")
