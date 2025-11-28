@@ -166,6 +166,10 @@ def generate_stac_spec():
                         ]
                         start_year_last_two_digits = str(int(year) % 100)
                         end_year_last_two_digits = str((int(year) + 1) % 100)
+
+                        print("start_year last 2 digits = ",start_year_last_two_digits)
+                        print("end_year last 2 digits = ",end_year_last_two_digits)
+
                         formatted_layer_name = (
                             layer_name.replace(
                                 "block", valid_gee_text(tehsil.tehsil_name.lower())
