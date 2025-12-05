@@ -1,0 +1,115 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "drainage_lines",
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        93.1808314161215,
+        22.41777827721593
+      ],
+      [
+        93.18111233948785,
+        22.41777827721593
+      ],
+      [
+        93.1813888037532,
+        22.417778277215934
+      ],
+      [
+        93.18166526801849,
+        22.41805474148125
+      ]
+    ]
+  },
+  "bbox": [
+    93.1808314161215,
+    22.41777827721593,
+    93.18166526801849,
+    22.41805474148125
+  ],
+  "properties": {
+    "type": "vector",
+    "description": "Vector data for Drainage Lines",
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "ORDER",
+        "type": "int",
+        "description": "Strahler order of stream within a network"
+      },
+      {
+        "name": "cat",
+        "type": "int",
+        "description": "category for drainage feature "
+      },
+      {
+        "name": "end_node",
+        "type": "str",
+        "description": "unique identifier for the downstream point of drainage lines"
+      },
+      {
+        "name": "id",
+        "type": "int",
+        "description": "id"
+      },
+      {
+        "name": "network",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "start_node",
+        "type": "str",
+        "description": "unique identifier for the upstream point of drainage lines"
+      },
+      {
+        "name": "stream_typ",
+        "type": "str",
+        "description": "stream type: what values does this take? \nstream type: start or intermediate"
+      },
+      {
+        "name": "type_code",
+        "type": "int",
+        "description": "code to classify the type of drainage feature: what values does this take? \nstart=0, intermediate=1"
+      }
+    ],
+    "datetime": "2025-12-05T10:14:17.591976Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "STAC Catalog for PAN India Vector Layers"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Drainage layers"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Drainage layers"
+    }
+  ],
+  "assets": {
+    "drive-link": {
+      "href": "https://zenodo.org/records/17827623",
+      "type": "application/geo+json",
+      "title": "Vector File",
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "collection": "drainage-layers"
+}
