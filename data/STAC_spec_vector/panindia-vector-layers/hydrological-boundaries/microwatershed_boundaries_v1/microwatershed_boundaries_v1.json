@@ -1851,7 +1851,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-05T10:14:17.739701Z"
+    "datetime": "2025-11-13T04:42:56.844381Z"
   },
   "links": [
     {
@@ -1875,8 +1875,8 @@
   ],
   "assets": {
     "drive-link": {
-      "href": "https://zenodo.org/records/17827623",
-      "type": "application/geo+json",
+      "href": "https://drive.google.com/file/d/1XlPU8zkIQzaVuCMEnNqrkKmndTdVtvyZ/view",
+      "type": "text/plain",
       "title": "Vector File",
       "roles": [
         "source"
