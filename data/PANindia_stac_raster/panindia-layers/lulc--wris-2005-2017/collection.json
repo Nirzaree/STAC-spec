@@ -79,7 +79,7 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "CoREstack Pan India Layers"
+      "title": "CoREstack Pan India Raster Layers"
     }
   ],
   "title": "LULC- WRIS: 2005-2017",
@@ -103,7 +103,7 @@
       ]
     }
   },
-  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
+  "license": "CC-BY-4.0",
   "providers": [
     {
       "name": "CoREstack",

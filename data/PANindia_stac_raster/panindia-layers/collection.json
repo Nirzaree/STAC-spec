@@ -65,7 +65,7 @@
       "title": "STAC Catalog for PAN India Assets"
     }
   ],
-  "title": "CoREstack Pan India Layers",
+  "title": "CoREstack Pan India Raster Layers",
   "extent": {
     "spatial": {
       "bbox": [
@@ -86,7 +86,7 @@
       ]
     }
   },
-  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
+  "license": "CC-BY-4.0",
   "keywords": [
     "social-ecological",
     "sustainability",

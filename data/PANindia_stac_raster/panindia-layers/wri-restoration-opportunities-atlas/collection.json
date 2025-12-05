@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "wri-restoration-opportunities-atlas",
   "stac_version": "1.1.0",
-  "description": "WRI restoration opportunities atlas.",
+  "description": "Landscape restoration opportunities map built by World Resources Institute (WRI) identifies the potential for protection, wide-scale restoration, and mosaic restoration in India. \nFollowing classes are available in the raster map:\n\n1. Protection: Protection areas have forest cover with a density of more than 40 percent.\n2. Wide scale restoration: Areas suitable for wide-scale restoration are those where near contiguous tracts of forest and tree cover can be established. The existing tree density in these areas is less than 40 percent and the population density is less than 200 persons per square kilometre.\n3. Mosaic restoration: Mosaic restoration is the integration of trees in a patchwork of different land uses including rainfed cultivated areas. These areas have tree cover density of less than 40 percent and population density of less than 400 persons per sq.km. \n\nDetails of the datasets used and the methodology can be found at [india.restorationatlas.org](https://india.restorationatlas.org/)",
   "links": [
     {
       "rel": "root",
@@ -19,7 +19,7 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "CoREstack Pan India Layers"
+      "title": "CoREstack Pan India Raster Layers"
     }
   ],
   "title": "WRI restoration opportunities atlas",
@@ -43,7 +43,7 @@
       ]
     }
   },
-  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
+  "license": "CC-BY-4.0",
   "providers": [
     {
       "name": "CoREstack",

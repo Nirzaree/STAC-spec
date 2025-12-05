@@ -19,7 +19,7 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "CoREstack Pan India Layers"
+      "title": "CoREstack Pan India Raster Layers"
     }
   ],
   "title": "Tree Change Analysis (2017-2021)",
@@ -43,7 +43,7 @@
       ]
     }
   },
-  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
+  "license": "CC-BY-4.0",
   "providers": [
     {
       "name": "CoREstack",

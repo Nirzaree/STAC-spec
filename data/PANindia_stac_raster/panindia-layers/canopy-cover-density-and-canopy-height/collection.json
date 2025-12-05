@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "canopy-cover-density-and-canopy-height",
   "stac_version": "1.1.0",
-  "description": "Canopy Cover Density and Canopy Height.",
+  "description": "Tree canopy cover density map for India built by ACT4D research group at IIT Delhi. Tree canopy cover density (CCD) indicates the density of tree cover in a given area, with higher canopy cover percentages signifying a denser canopy and more shade on the ground and vice versa. \n\nThe Pan India map (except ACZ 12-15 currently missing due to insufficient data points for training the respective models)  is available from 2017 onwards at 25m resolution.\nThese are the classes in the current version of the map: \nLow density \nHigh density\nMissing data \n\nInput to the model is Dynamic World output, and timeseries data from Sentinel-2, Sentinel-1 and GEDI as ground truth. Details of methodology can be found  in the technical manual and the codebase at https://github.com/Dhruvi-Goyal/Tree-Health-Monitoring/",
   "links": [
     {
       "rel": "root",
@@ -64,7 +64,7 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "CoREstack Pan India Layers"
+      "title": "CoREstack Pan India Raster Layers"
     }
   ],
   "title": "Canopy Cover Density and Canopy Height",
@@ -88,7 +88,7 @@
       ]
     }
   },
-  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
+  "license": "CC-BY-4.0",
   "providers": [
     {
       "name": "CoREstack",
