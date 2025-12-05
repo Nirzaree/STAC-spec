@@ -44160,7 +44160,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-11-13T04:42:56.948165Z"
+    "datetime": "2025-12-05T11:25:10.838367Z"
   },
   "links": [
     {
@@ -44184,8 +44184,8 @@
   ],
   "assets": {
     "drive-link": {
-      "href": "https://drive.google.com/file/d/1TwH079-5uSKYJJXrKqsdfe3c4sNTwefA/view",
-      "type": "text/plain",
+      "href": "https://zenodo.org/records/17827623",
+      "type": "application/geo+json",
       "title": "Vector File",
       "roles": [
         "source"

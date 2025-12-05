@@ -16,26 +16,6 @@
       "type": "application/geo+json"
     },
     {
-      "rel": "item",
-      "href": "./district/district.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./tehsil/tehsil.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./panchayat/panchayat.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./village/village.json",
-      "type": "application/geo+json"
-    },
-    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",

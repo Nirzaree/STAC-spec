@@ -290,7 +290,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-11-13T04:42:57.491999Z"
+    "datetime": "2025-12-05T11:17:17.155538Z"
   },
   "links": [
     {
@@ -314,8 +314,8 @@
   ],
   "assets": {
     "drive-link": {
-      "href": "https://drive.google.com/file/d/1-aLk8p_5DTwVoqLPGQW6vAKBg4NyunR-/view",
-      "type": "text/plain",
+      "href": "https://zenodo.org/records/17827623",
+      "type": "application/geo+json",
       "title": "Vector File",
       "roles": [
         "source"
