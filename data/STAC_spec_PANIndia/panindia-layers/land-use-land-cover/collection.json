@@ -8,7 +8,7 @@
       "rel": "root",
       "href": "../../catalog.json",
       "type": "application/json",
-      "title": "STAC Catalog for PAN India Raster Assets"
+      "title": "STAC Catalog for PAN India Assets"
     },
     {
       "rel": "item",
@@ -114,7 +114,7 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "CoREstack Pan India Raster Layers"
+      "title": "CoREstack Pan India Layers"
     }
   ],
   "title": "Land Use Land Cover",

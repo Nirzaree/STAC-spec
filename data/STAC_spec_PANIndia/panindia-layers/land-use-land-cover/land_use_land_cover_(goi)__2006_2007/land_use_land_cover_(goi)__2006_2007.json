@@ -47,14 +47,14 @@
       61845,
       54710
     ],
-    "datetime": "2025-12-09T12:29:25.246386Z"
+    "datetime": "2025-12-09T14:10:49.176976Z"
   },
   "links": [
     {
       "rel": "root",
       "href": "../../../catalog.json",
       "type": "application/json",
-      "title": "STAC Catalog for PAN India Raster Assets"
+      "title": "STAC Catalog for PAN India Assets"
     },
     {
       "rel": "collection",

@@ -78,14 +78,14 @@
         "description": "code to classify the type of drainage feature: \nstart=0, intermediate=1"
       }
     ],
-    "datetime": "2025-12-09T12:30:34.401708Z"
+    "datetime": "2025-12-09T14:20:58.588804Z"
   },
   "links": [
     {
       "rel": "root",
       "href": "../../../catalog.json",
       "type": "application/json",
-      "title": "STAC Catalog for PAN India Vector Layers"
+      "title": "STAC Catalog for PAN India Assets"
     },
     {
       "rel": "collection",

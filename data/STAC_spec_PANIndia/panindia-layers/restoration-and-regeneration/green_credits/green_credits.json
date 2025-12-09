@@ -178,14 +178,14 @@
         "description": "path"
       }
     ],
-    "datetime": "2025-12-09T12:30:43.063268Z"
+    "datetime": "2025-12-09T14:21:04.265512Z"
   },
   "links": [
     {
       "rel": "root",
       "href": "../../../catalog.json",
       "type": "application/json",
-      "title": "STAC Catalog for PAN India Vector Layers"
+      "title": "STAC Catalog for PAN India Assets"
     },
     {
       "rel": "collection",

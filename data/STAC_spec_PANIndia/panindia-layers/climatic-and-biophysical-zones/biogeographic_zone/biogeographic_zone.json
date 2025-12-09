@@ -63417,14 +63417,14 @@
         "description": "area in square km "
       }
     ],
-    "datetime": "2025-12-09T12:30:42.901765Z"
+    "datetime": "2025-12-09T14:21:03.843333Z"
   },
   "links": [
     {
       "rel": "root",
       "href": "../../../catalog.json",
       "type": "application/json",
-      "title": "STAC Catalog for PAN India Vector Layers"
+      "title": "STAC Catalog for PAN India Assets"
     },
     {
       "rel": "collection",

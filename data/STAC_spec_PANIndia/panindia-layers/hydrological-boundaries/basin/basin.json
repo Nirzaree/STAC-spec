@@ -5031,14 +5031,14 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-09T12:30:34.495253Z"
+    "datetime": "2025-12-09T14:20:58.688400Z"
   },
   "links": [
     {
       "rel": "root",
       "href": "../../../catalog.json",
       "type": "application/json",
-      "title": "STAC Catalog for PAN India Vector Layers"
+      "title": "STAC Catalog for PAN India Assets"
     },
     {
       "rel": "collection",
