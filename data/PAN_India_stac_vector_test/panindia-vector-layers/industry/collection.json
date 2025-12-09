@@ -1,0 +1,68 @@
+{
+  "type": "Collection",
+  "id": "industry",
+  "stac_version": "1.1.0",
+  "description": "STAC collection Industry for Pan India.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "STAC Catalog for PAN India Vector Layers"
+    },
+    {
+      "rel": "item",
+      "href": "./land_conflict_watch/land_conflict_watch.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./mining/mining.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./industries/industries.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "CoRE stack Pan India Vector Layers"
+    }
+  ],
+  "title": "Industry",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          68,
+          8,
+          98,
+          37
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2005-01-01T00:00:00Z",
+          "2024-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "CoREstack",
+      "roles": [
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://core-stack.org/"
+    }
+  ]
+}

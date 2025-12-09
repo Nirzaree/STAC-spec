@@ -1,0 +1,100 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "industries",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      76.3319349,
+      30.813292
+    ]
+  },
+  "bbox": [
+    76.3319349,
+    30.813292,
+    76.3319349,
+    30.813292
+  ],
+  "properties": {
+    "description": "Industries",
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "UUID",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "COMPANY NAME",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "LOCATION TYPE",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "ADDRESS",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "LEVEL 1",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "LEVEL 2",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "LEVEL 3",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "",
+        "type": "str",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-12-09T03:20:24.779155Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "STAC Catalog for PAN India Vector Layers"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Industry"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Industry"
+    }
+  ],
+  "assets": {
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/16hGbltIYy_ZWoXu0_h3lrwUiSR2iNxQJ/view",
+      "type": "text/plain",
+      "title": "Vector File",
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "collection": "industry"
+}

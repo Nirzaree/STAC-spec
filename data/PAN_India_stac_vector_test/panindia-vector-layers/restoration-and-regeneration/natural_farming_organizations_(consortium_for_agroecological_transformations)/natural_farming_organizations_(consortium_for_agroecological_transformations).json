@@ -1,0 +1,125 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "natural_farming_organizations_(consortium_for_agroecological_transformations)",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      83.4114389,
+      18.1141255
+    ]
+  },
+  "bbox": [
+    83.4114389,
+    18.1141255,
+    83.4114389,
+    18.1141255
+  ],
+  "properties": {
+    "description": "Natural farming organizations (Consortium for Agroecological Transformations)",
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "id",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "created_at",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "organization_name",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "contact_person",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "designation",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "email",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "organization_type",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "domains",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "state",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "district",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "subdistrict",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "block",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "comments",
+        "type": "str",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-12-09T03:20:24.830115Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "STAC Catalog for PAN India Vector Layers"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Restoration and Regeneration"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Restoration and Regeneration"
+    }
+  ],
+  "assets": {
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1kNfYbjY-Prf4raZ1fNv4THN2HTsqoaIp/view",
+      "type": "text/plain",
+      "title": "Vector File",
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "collection": "restoration-and-regeneration"
+}
