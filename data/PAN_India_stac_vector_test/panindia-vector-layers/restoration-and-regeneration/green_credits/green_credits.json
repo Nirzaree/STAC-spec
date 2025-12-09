@@ -5,7 +5,7 @@
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
-  "id": "green_credits_(goi)",
+  "id": "green_credits",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -144,41 +144,41 @@
     15.39919428988244
   ],
   "properties": {
-    "description": "Green Credits (GoI)",
+    "description": "Green Credits",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
         "name": "range",
         "type": "str",
-        "description": ""
+        "description": "range of division "
       },
       {
         "name": "state",
         "type": "str",
-        "description": ""
+        "description": "state name "
       },
       {
         "name": "district",
         "type": "str",
-        "description": ""
+        "description": "district name "
       },
       {
         "name": "division",
         "type": "str",
-        "description": ""
+        "description": "division name "
       },
       {
         "name": "land_info",
         "type": "str",
-        "description": ""
+        "description": "land information "
       },
       {
         "name": "kml_url",
         "type": "str",
-        "description": ""
+        "description": "path"
       }
     ],
-    "datetime": "2025-12-09T03:20:24.814952Z"
+    "datetime": "2025-12-09T08:05:56.007689Z"
   },
   "links": [
     {

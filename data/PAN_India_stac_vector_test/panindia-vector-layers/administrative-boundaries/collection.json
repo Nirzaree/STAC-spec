@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "administrative-boundaries",
   "stac_version": "1.1.0",
-  "description": "STAC collection Administrative boundaries for Pan India.",
+  "description": "STAC collection for Administrative boundaries of Pan India.",
   "links": [
     {
       "rel": "root",

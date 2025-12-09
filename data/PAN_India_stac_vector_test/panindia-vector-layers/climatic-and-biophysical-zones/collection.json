@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "climatic-and-biophysical-zones",
   "stac_version": "1.1.0",
-  "description": "STAC collection Climatic and biophysical zones for Pan India.",
+  "description": "STAC collection for Climatic and biophysical zones of Pan India.",
   "links": [
     {
       "rel": "root",

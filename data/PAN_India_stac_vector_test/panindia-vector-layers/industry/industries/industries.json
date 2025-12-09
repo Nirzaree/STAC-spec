@@ -20,43 +20,43 @@
     30.813292
   ],
   "properties": {
-    "description": "Industries",
+    "description": "The Annual Survey of Industries (ASI) is the principal source of industrial statistics in India. The map has been generated from [Annual Survey of Industries](https://microdata.gov.in/NADA/index.php/catalog/ASI) survey frame 2018, followed by geolocation using Google Places API.",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
         "name": "UUID",
         "type": "str",
-        "description": ""
+        "description": "unique identifier"
       },
       {
         "name": "COMPANY NAME",
         "type": "str",
-        "description": ""
+        "description": "company name "
       },
       {
         "name": "LOCATION TYPE",
         "type": "str",
-        "description": ""
+        "description": "location type"
       },
       {
         "name": "ADDRESS",
         "type": "str",
-        "description": ""
+        "description": "address"
       },
       {
         "name": "LEVEL 1",
         "type": "str",
-        "description": ""
+        "description": "level 1"
       },
       {
         "name": "LEVEL 2",
         "type": "str",
-        "description": ""
+        "description": "level 2"
       },
       {
         "name": "LEVEL 3",
         "type": "str",
-        "description": ""
+        "description": "Level 3"
       },
       {
         "name": "",
@@ -64,7 +64,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-09T03:20:24.779155Z"
+    "datetime": "2025-12-09T08:05:55.967580Z"
   },
   "links": [
     {

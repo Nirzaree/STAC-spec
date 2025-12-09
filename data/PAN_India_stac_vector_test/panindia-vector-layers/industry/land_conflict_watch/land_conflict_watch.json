@@ -20,7 +20,7 @@
     29.643362
   ],
   "properties": {
-    "description": "Land Conflict Watch",
+    "description": "Land Conflict Watch is an independent network of researchers studying land, climate change and natural resource disputes in India to facilitate better decision-making on investments and governance. The map has been generated from data accessed from their [platform](https://www.landconflictwatch.org/) in August 2025.",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -39,7 +39,7 @@
         "description": "title / headline of the conflict"
       }
     ],
-    "datetime": "2025-12-09T03:20:24.721369Z"
+    "datetime": "2025-12-09T08:05:55.882815Z"
   },
   "links": [
     {
