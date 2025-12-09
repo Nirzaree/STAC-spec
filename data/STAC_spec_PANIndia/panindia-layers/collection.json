@@ -107,60 +107,6 @@
       "title": "Restoration and Regeneration"
     },
     {
-      "rel": "child",
-      "href": "./drainage-layers/collection.json",
-      "type": "application/json",
-      "title": "Drainage layers"
-    },
-    {
-      "rel": "child",
-      "href": "./hydrological-boundaries/collection.json",
-      "type": "application/json",
-      "title": "Hydrological boundaries"
-    },
-    {
-      "rel": "child",
-      "href": "./administrative-boundaries/collection.json",
-      "type": "application/json",
-      "title": "Administrative boundaries"
-    },
-    {
-      "rel": "child",
-      "href": "./waterbodies-layers/collection.json",
-      "type": "application/json",
-      "title": "Waterbodies Layers"
-    },
-    {
-      "rel": "child",
-      "href": "./groundwater-layers/collection.json",
-      "type": "application/json",
-      "title": "Groundwater Layers"
-    },
-    {
-      "rel": "child",
-      "href": "./geological-and-geohydrological-layers/collection.json",
-      "type": "application/json",
-      "title": "Geological and geohydrological layers"
-    },
-    {
-      "rel": "child",
-      "href": "./climatic-and-biophysical-zones/collection.json",
-      "type": "application/json",
-      "title": "Climatic and biophysical zones"
-    },
-    {
-      "rel": "child",
-      "href": "./industry/collection.json",
-      "type": "application/json",
-      "title": "Industry"
-    },
-    {
-      "rel": "child",
-      "href": "./restoration-and-regeneration/collection.json",
-      "type": "application/json",
-      "title": "Restoration and Regeneration"
-    },
-    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
