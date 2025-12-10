@@ -54,12 +54,6 @@
     },
     {
       "rel": "child",
-      "href": "./drainage-layers/collection.json",
-      "type": "application/json",
-      "title": "Drainage layers"
-    },
-    {
-      "rel": "child",
       "href": "./hydrological-boundaries/collection.json",
       "type": "application/json",
       "title": "Hydrological boundaries"
@@ -81,12 +75,6 @@
       "href": "./groundwater-layers/collection.json",
       "type": "application/json",
       "title": "Groundwater Layers"
-    },
-    {
-      "rel": "child",
-      "href": "./geological-and-geohydrological-layers/collection.json",
-      "type": "application/json",
-      "title": "Geological and geohydrological layers"
     },
     {
       "rel": "child",

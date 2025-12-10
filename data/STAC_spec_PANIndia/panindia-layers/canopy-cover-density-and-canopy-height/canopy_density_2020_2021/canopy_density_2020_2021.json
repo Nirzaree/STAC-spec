@@ -41,13 +41,14 @@
     0
   ],
   "properties": {
-    "description": "Raster layer: canopy_density_2020_2021",
+    "description": "canopy_density_2020_2021",
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
-      801500,
-      1603000
+      1,
+      801500
     ],
-    "datetime": "2025-12-09T14:27:42.328268Z"
+    "title": "Canopy Density 2020-2021",
+    "datetime": "2025-12-10T02:57:36.687093Z"
   },
   "links": [
     {

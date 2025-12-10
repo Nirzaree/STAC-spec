@@ -41,13 +41,14 @@
     0
   ],
   "properties": {
-    "description": "Raster layer: canopy_height_distribution_2021_2022",
+    "description": "canopy_height_distribution_2021_2022",
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
-      801500,
-      1603000
+      1,
+      801500
     ],
-    "datetime": "2025-12-09T14:27:48.358204Z"
+    "title": "Canopy Height Distribution 2021-2022",
+    "datetime": "2025-12-10T02:57:49.937164Z"
   },
   "links": [
     {

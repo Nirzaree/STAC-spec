@@ -41,13 +41,14 @@
     4246151
   ],
   "properties": {
-    "description": "Raster layer: restoration_opportunities",
+    "description": "restoration_opportunities",
     "proj:code": "EPSG:EPSG:32643",
     "proj:shape": [
-      58070,
-      51122
+      1,
+      58070
     ],
-    "datetime": "2025-12-09T14:27:53.987760Z"
+    "title": "Restoration opportunities",
+    "datetime": "2025-12-10T02:57:56.185960Z"
   },
   "links": [
     {

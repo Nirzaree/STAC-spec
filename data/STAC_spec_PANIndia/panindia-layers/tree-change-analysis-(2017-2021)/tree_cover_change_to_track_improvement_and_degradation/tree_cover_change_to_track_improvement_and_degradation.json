@@ -41,13 +41,14 @@
     0
   ],
   "properties": {
-    "description": "Raster layer: tree_cover_change_to_track_improvement_and_degradation",
+    "description": "tree_cover_change_to_track_improvement_and_degradation",
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
-      801500,
-      1603000
+      1,
+      801500
     ],
-    "datetime": "2025-12-09T14:27:49.100708Z"
+    "title": "Tree Cover Change to track improvement and degradation",
+    "datetime": "2025-12-10T02:57:50.630092Z"
   },
   "links": [
     {
