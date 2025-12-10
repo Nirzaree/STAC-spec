@@ -6,7 +6,7 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
-  "id": "land_use_land_cover_(goi):2014_2015",
+  "id": "land_use_land_cover(goi)_2014_2015",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -41,14 +41,14 @@
     5595613.480211262
   ],
   "properties": {
-    "description": "land_use_land_cover_(goi):2014_2015",
+    "description": "land_use_land_cover(goi)_2014_2015",
     "proj:code": "EPSG:PROJCS[\"WGS_1984_Lambert_Conformal_Conic\", \n  GEOGCS[\"WGS 84\", \n    DATUM[\"WGS_1984\", \n      SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], \n      AUTHORITY[\"EPSG\",\"6326\"]], \n    PRIMEM[\"Greenwich\", 0.0], \n    UNIT[\"degree\", 0.017453292519943295], \n    AXIS[\"Longitude\", EAST], \n    AXIS[\"Latitude\", NORTH], \n    AUTHORITY[\"EPSG\",\"4326\"]], \n  PROJECTION[\"Lambert_Conformal_Conic_2SP\"], \n  PARAMETER[\"central_meridian\", 80.0], \n  PARAMETER[\"latitude_of_origin\", 24.0], \n  PARAMETER[\"standard_parallel_1\", 35.17280555], \n  PARAMETER[\"false_easting\", 4000000.0], \n  PARAMETER[\"false_northing\", 4000000.0], \n  PARAMETER[\"scale_factor\", 1.0], \n  PARAMETER[\"standard_parallel_2\", 12.4729444], \n  UNIT[\"m\", 1.0], \n  AXIS[\"Easting\", EAST], \n  AXIS[\"Northing\", NORTH]]",
     "proj:shape": [
-      1,
-      63819
+      63819,
+      62272
     ],
-    "title": "Land Use Land Cover (GoI):2014-2015",
-    "datetime": "2025-12-10T02:57:25.844349Z"
+    "title": "Land Use Land Cover(GoI)-2014-2015",
+    "datetime": "2025-12-10T03:36:38.678043Z"
   },
   "links": [
     {

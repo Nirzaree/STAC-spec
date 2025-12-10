@@ -44,11 +44,11 @@
     "description": "canopy_density_2017_2018",
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
-      1,
-      801500
+      801500,
+      1603000
     ],
     "title": "Canopy Density 2017-2018",
-    "datetime": "2025-12-10T02:57:27.944862Z"
+    "datetime": "2025-12-10T03:36:41.396044Z"
   },
   "links": [
     {

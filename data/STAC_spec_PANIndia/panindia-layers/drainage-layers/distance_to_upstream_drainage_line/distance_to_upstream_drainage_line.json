@@ -44,11 +44,11 @@
     "description": "Distance to upstream drainage line map for India built by ACT4D research group at IIT Delhi. Spatial indexing technique (e.g. k-d tree) is applied on pixel level digital elevation data (SRTM DEM) to compute the distance of each non-drainage pixel to its nearest upstream drainage line. \nDetails of methodology can be found in the technical manual and the codebase on github.",
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
-      1,
-      104400
+      104400,
+      105463
     ],
     "title": "Distance to Upstream Drainage Line",
-    "datetime": "2025-12-10T02:57:54.408263Z"
+    "datetime": "2025-12-10T03:36:55.448823Z"
   },
   "links": [
     {

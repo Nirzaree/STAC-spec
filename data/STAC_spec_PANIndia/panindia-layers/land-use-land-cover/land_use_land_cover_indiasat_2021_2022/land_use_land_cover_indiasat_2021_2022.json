@@ -6,7 +6,7 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
-  "id": "land_use_land_cover_indiasat:2021_2022",
+  "id": "land_use_land_cover_indiasat_2021_2022",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -41,14 +41,14 @@
     37.0783226781469
   ],
   "properties": {
-    "description": "land_use_land_cover_indiasat:2021_2022",
+    "description": "land_use_land_cover_indiasat_2021_2022",
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
-      1,
-      322830
+      322830,
+      326117
     ],
-    "title": "Land Use Land Cover IndiaSAT:2021-2022",
-    "datetime": "2025-12-10T02:57:20.081558Z"
+    "title": "Land Use Land Cover IndiaSAT-2021-2022",
+    "datetime": "2025-12-10T03:36:32.121821Z"
   },
   "links": [
     {

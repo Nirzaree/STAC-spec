@@ -6,7 +6,7 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
-  "id": "land_use_land_cover_indiasat:2023_2024",
+  "id": "land_use_land_cover_indiasat_2023_2024",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -41,14 +41,14 @@
     37.0783226781469
   ],
   "properties": {
-    "description": "land_use_land_cover_indiasat:2023_2024",
+    "description": "land_use_land_cover_indiasat_2023_2024",
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
-      1,
-      322830
+      322830,
+      326117
     ],
-    "title": "Land Use Land Cover IndiaSAT:2023-2024",
-    "datetime": "2025-12-10T02:57:21.132031Z"
+    "title": "Land Use Land Cover IndiaSAT-2023-2024",
+    "datetime": "2025-12-10T03:36:33.050697Z"
   },
   "links": [
     {

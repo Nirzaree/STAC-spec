@@ -44,11 +44,11 @@
     "description": "restoration_opportunities",
     "proj:code": "EPSG:EPSG:32643",
     "proj:shape": [
-      1,
-      58070
+      58070,
+      51122
     ],
     "title": "Restoration opportunities",
-    "datetime": "2025-12-10T02:57:56.185960Z"
+    "datetime": "2025-12-10T03:36:57.161192Z"
   },
   "links": [
     {
