@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "panindia-layers",
   "stac_version": "1.1.0",
-  "description": "A collection of various geospatial layers for Pan India.",
+  "description": "A collection of various raster and vector layers for Pan India.",
   "links": [
     {
       "rel": "root",
