@@ -42,13 +42,13 @@
   ],
   "properties": {
     "description": "restoration_opportunities",
-    "proj:code": "EPSG:EPSG:32643",
+    "proj:code": "EPSG:4326",
     "proj:shape": [
       58070,
       51122
     ],
     "title": "Restoration opportunities",
-    "datetime": "2025-12-10T05:32:02.549377Z"
+    "datetime": "2025-12-10T08:34:23.634101Z"
   },
   "links": [
     {

@@ -42,13 +42,13 @@
   ],
   "properties": {
     "description": "canopy_height_distribution_2019_2020",
-    "proj:code": "EPSG:EPSG:4326",
+    "proj:code": "EPSG:4326",
     "proj:shape": [
       801500,
       1603000
     ],
     "title": "Canopy Height Distribution 2019-2020",
-    "datetime": "2025-12-10T05:31:53.233786Z"
+    "datetime": "2025-12-10T08:34:15.756831Z"
   },
   "links": [
     {

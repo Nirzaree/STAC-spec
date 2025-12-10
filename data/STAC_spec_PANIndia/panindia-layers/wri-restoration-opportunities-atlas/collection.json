@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "wri-restoration-opportunities-atlas",
   "stac_version": "1.1.0",
-  "description": "WRI restoration opportunities atlas.",
+  "description": "STAC collection for WRI restoration opportunities atlas of Pan India.",
   "links": [
     {
       "rel": "root",
@@ -19,7 +19,7 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "CoREstack Pan India Layers"
+      "title": "Pan-India STACs"
     }
   ],
   "title": "WRI restoration opportunities atlas",
@@ -37,8 +37,8 @@
     "temporal": {
       "interval": [
         [
-          "2017-07-01T00:00:00Z",
-          "2024-06-30T00:00:00Z"
+          null,
+          null
         ]
       ]
     }

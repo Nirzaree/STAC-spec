@@ -42,13 +42,13 @@
   ],
   "properties": {
     "description": "National assessment of wastelands for India by Indian Space Research Organization (ISRO). \nFollowing classes exist in the map: \n\n1. Scrub Land\n2. Waterlogged Area\n3. Degraded Forest\n4. Degraded Land Under Plantation Crop\n5. Sandy Area\n6. Mining/ Industrial Wastelands\n7. Barren Rocky Area\n8. Gullied and Ravinous Land\n9. Salt Affected Area\n10. Degraded Pastures/ Grazing Land\n11. Shifting Cultivation\n12. Snow Covered/ Glacial Area\n        \nDetails of the methodology can be found on [Bhuvan](https://bhuvan-app1.nrsc.gov.in/) portal.",
-    "proj:code": "EPSG:PROJCS[\"unknown\", \n  GEOGCS[\"WGS 84\", \n    DATUM[\"WGS_1984\", \n      SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], \n      AUTHORITY[\"EPSG\",\"6326\"]], \n    PRIMEM[\"Greenwich\", 0.0], \n    UNIT[\"degree\", 0.017453292519943295], \n    AXIS[\"Longitude\", EAST], \n    AXIS[\"Latitude\", NORTH], \n    AUTHORITY[\"EPSG\",\"4326\"]], \n  PROJECTION[\"Lambert_Conformal_Conic_2SP\"], \n  PARAMETER[\"central_meridian\", 80.0], \n  PARAMETER[\"latitude_of_origin\", 24.0], \n  PARAMETER[\"standard_parallel_1\", 35.17280555], \n  PARAMETER[\"false_easting\", 4000000.0], \n  PARAMETER[\"false_northing\", 4000000.0], \n  PARAMETER[\"scale_factor\", 1.0], \n  PARAMETER[\"standard_parallel_2\", 12.4729444], \n  UNIT[\"m\", 1.0], \n  AXIS[\"Easting\", EAST], \n  AXIS[\"Northing\", NORTH]]",
+    "proj:code": "EPSG:4326",
     "proj:shape": [
       58348,
       51037
     ],
     "title": "Wasteland Atlas 2015",
-    "datetime": "2025-12-10T05:31:58.523474Z"
+    "datetime": "2025-12-10T08:34:19.169145Z"
   },
   "links": [
     {

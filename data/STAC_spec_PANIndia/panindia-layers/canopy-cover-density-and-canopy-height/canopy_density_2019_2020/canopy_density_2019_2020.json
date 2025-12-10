@@ -42,13 +42,13 @@
   ],
   "properties": {
     "description": "canopy_density_2019_2020",
-    "proj:code": "EPSG:EPSG:4326",
+    "proj:code": "EPSG:4326",
     "proj:shape": [
       801500,
       1603000
     ],
     "title": "Canopy Density 2019-2020",
-    "datetime": "2025-12-10T05:31:46.786075Z"
+    "datetime": "2025-12-10T08:34:11.697042Z"
   },
   "links": [
     {

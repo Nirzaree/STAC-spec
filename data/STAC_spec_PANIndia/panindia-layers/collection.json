@@ -101,7 +101,7 @@
       "title": "STAC Catalog for PAN India Assets"
     }
   ],
-  "title": "CoREstack Pan India Layers",
+  "title": "Pan-India STACs",
   "extent": {
     "spatial": {
       "bbox": [
@@ -116,8 +116,8 @@
     "temporal": {
       "interval": [
         [
-          "2017-07-01T00:00:00Z",
-          "2024-06-30T00:00:00Z"
+          null,
+          null
         ]
       ]
     }

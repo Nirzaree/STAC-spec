@@ -42,13 +42,13 @@
   ],
   "properties": {
     "description": "Annual Land Use Land Cover maps for India built by Indian Space Research Organization (ISRO) available from 2005 onwards at 56m resolution.\n \nFollowing classes exist in the map: \n1. Built Up\n2. Cropland -  Kharif\n3. Cropland - Rabi\n4. Cropland - Zaid\n5. Cropland - Double/Triple\n6. Fallow Land - Current Fallow\n7. Agriculture Plantation - Plantation\n8. Forest - Evergreen/Semi-Evergreen\n9. Forest - Deciduous\n10. Forest - Degraded/Scrub\n11. Forest - Littoral Swamp\n12. Natural - Grassland\n13. Other - Shifting Cultivation\n14. Wasteland\n15. Sandy Area - Rann\n16. Waterbodies - Max\n17. Waterbodies - Min\n18. Snow Covered / Glacial Area   \n\nDetails of the methodology can be found on [Bhuvan](https://bhuvan-app1.nrsc.gov.in/) portal.",
-    "proj:code": "EPSG:PROJCS[\"WGS_1984_Lambert_Conformal_Conic\", \n  GEOGCS[\"WGS 84\", \n    DATUM[\"WGS_1984\", \n      SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], \n      AUTHORITY[\"EPSG\",\"6326\"]], \n    PRIMEM[\"Greenwich\", 0.0], \n    UNIT[\"degree\", 0.017453292519943295], \n    AXIS[\"Longitude\", EAST], \n    AXIS[\"Latitude\", NORTH], \n    AUTHORITY[\"EPSG\",\"4326\"]], \n  PROJECTION[\"Lambert_Conformal_Conic_2SP\"], \n  PARAMETER[\"central_meridian\", 80.0], \n  PARAMETER[\"latitude_of_origin\", 24.0], \n  PARAMETER[\"standard_parallel_1\", 35.17280555], \n  PARAMETER[\"false_easting\", 4000000.0], \n  PARAMETER[\"false_northing\", 4000000.0], \n  PARAMETER[\"scale_factor\", 1.0], \n  PARAMETER[\"standard_parallel_2\", 12.4729444], \n  UNIT[\"m\", 1.0], \n  AXIS[\"Easting\", EAST], \n  AXIS[\"Northing\", NORTH]]",
+    "proj:code": "EPSG:4326",
     "proj:shape": [
       63819,
       62272
     ],
     "title": "Land Use Land Cover(GoI)-2013-2014",
-    "datetime": "2025-12-10T05:31:42.026472Z"
+    "datetime": "2025-12-10T08:34:07.127567Z"
   },
   "links": [
     {

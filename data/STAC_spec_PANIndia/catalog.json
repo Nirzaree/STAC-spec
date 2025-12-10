@@ -14,7 +14,7 @@
       "rel": "child",
       "href": "./panindia-layers/collection.json",
       "type": "application/json",
-      "title": "CoREstack Pan India Layers"
+      "title": "Pan-India STACs"
     }
   ],
   "title": "STAC Catalog for PAN India Assets"

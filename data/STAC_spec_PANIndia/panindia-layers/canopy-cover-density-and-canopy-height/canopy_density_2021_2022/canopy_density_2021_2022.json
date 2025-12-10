@@ -42,13 +42,13 @@
   ],
   "properties": {
     "description": "canopy_density_2021_2022",
-    "proj:code": "EPSG:EPSG:4326",
+    "proj:code": "EPSG:4326",
     "proj:shape": [
       801500,
       1603000
     ],
     "title": "Canopy Density 2021-2022",
-    "datetime": "2025-12-10T05:31:48.846515Z"
+    "datetime": "2025-12-10T08:34:13.219253Z"
   },
   "links": [
     {

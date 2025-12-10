@@ -24,7 +24,7 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "CoREstack Pan India Layers"
+      "title": "Pan-India STACs"
     }
   ],
   "title": "Geological and geohydrological layers",
@@ -42,8 +42,8 @@
     "temporal": {
       "interval": [
         [
-          "2017-07-01T00:00:00Z",
-          "2024-06-30T00:00:00Z"
+          null,
+          null
         ]
       ]
     }
