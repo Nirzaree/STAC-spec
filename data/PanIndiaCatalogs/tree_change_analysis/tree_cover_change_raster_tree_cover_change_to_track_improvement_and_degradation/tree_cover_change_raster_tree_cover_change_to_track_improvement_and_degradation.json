@@ -43,7 +43,7 @@
   "properties": {
     "title": "Tree cover change",
     "description": "tree_cover_change_raster",
-    "datetime": "2025-12-18T09:10:01.160335Z"
+    "datetime": "2025-12-18T09:18:12.847423Z"
   },
   "links": [
     {
@@ -69,8 +69,7 @@
     "gee_asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/tree_health/overall_change_2017_2021",
       "type": "image/tiff; application=geotiff",
-      "title": "Data for Tree cover change",
-      "description": "tree_cover_change_raster",
+      "title": "Asset Link",
       "classification:classes": [
         {
           "value": -2,

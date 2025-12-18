@@ -42,7 +42,7 @@
   "properties": {
     "title": "Slope percentage",
     "description": "slope_percentage_raster",
-    "datetime": "2025-12-18T09:09:52.620955Z"
+    "datetime": "2025-12-18T09:18:02.568541Z"
   },
   "links": [
     {
@@ -68,8 +68,7 @@
     "gee_asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/slope_percentage_fabdem",
       "type": "image/tiff; application=geotiff",
-      "title": "Data for Slope percentage",
-      "description": "slope_percentage_raster",
+      "title": "Asset Link",
       "raster:bands": [
         {
           "data_type": "PixelType",

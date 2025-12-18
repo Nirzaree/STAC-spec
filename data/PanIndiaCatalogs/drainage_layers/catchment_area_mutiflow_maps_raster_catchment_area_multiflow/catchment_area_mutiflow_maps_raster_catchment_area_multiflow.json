@@ -43,7 +43,7 @@
   "properties": {
     "title": "Catchment Area Multiflow Maps",
     "description": "catchment_area_mutiflow_maps_raster",
-    "datetime": "2025-12-18T09:09:38.071742Z"
+    "datetime": "2025-12-18T09:17:43.651254Z"
   },
   "links": [
     {
@@ -69,8 +69,7 @@
     "gee_asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/catchment_area_multiflow",
       "type": "image/tiff; application=geotiff",
-      "title": "Data for Catchment Area Multiflow Maps",
-      "description": "catchment_area_mutiflow_maps_raster",
+      "title": "Asset Link",
       "classification:classes": [
         {
           "value": 2,

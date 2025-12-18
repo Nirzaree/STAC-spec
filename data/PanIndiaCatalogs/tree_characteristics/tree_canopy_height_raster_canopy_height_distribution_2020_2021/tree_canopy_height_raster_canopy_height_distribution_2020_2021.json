@@ -43,7 +43,7 @@
   "properties": {
     "title": "Canopy height",
     "description": "tree_canopy_height_raster",
-    "datetime": "2025-12-18T09:09:59.778417Z"
+    "datetime": "2025-12-18T09:18:11.558350Z"
   },
   "links": [
     {
@@ -69,8 +69,7 @@
     "gee_asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/tree_health/modal_ch_2020",
       "type": "image/tiff; application=geotiff",
-      "title": "Data for Canopy height",
-      "description": "tree_canopy_height_raster",
+      "title": "Asset Link",
       "classification:classes": [
         {
           "value": 0,

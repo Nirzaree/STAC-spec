@@ -43,7 +43,7 @@
   "properties": {
     "title": "Land Use Land Cover (NRSC)",
     "description": "Annual Land Use Land Cover maps for India built by National Remote Sensing Center, Indian Space Research Organization (ISRO) and available on India Water Resources Information System (WRIS) [portal](https://indiawris.gov.in/wris/#/).\n\nThe annual maps are available from 2005 onwards at 56m resolution.\n \nFollowing classes exist in the map: \n1. Built Up\n2. Cropland -  Kharif\n3. Cropland - Rabi\n4. Cropland - Zaid\n5. Cropland - Double/Triple\n6. Fallow Land - Current Fallow\n7. Agriculture Plantation - Plantation\n8. Forest - Evergreen/Semi-Evergreen\n9. Forest - Deciduous\n10. Forest - Degraded/Scrub\n11. Forest - Littoral Swamp\n12. Natural - Grassland\n13. Other - Shifting Cultivation\n14. Wasteland\n15. Sandy Area - Rann\n16. Waterbodies - Max\n17. Waterbodies - Min\n18. Snow Covered / Glacial Area   \n",
-    "datetime": "2025-12-18T09:09:47.404571Z"
+    "datetime": "2025-12-18T09:17:56.043258Z"
   },
   "links": [
     {
@@ -69,8 +69,7 @@
     "gee_asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/WRIS/lulc250k_2014_2015_pan_india",
       "type": "image/tiff; application=geotiff",
-      "title": "Data for Land Use Land Cover (NRSC)",
-      "description": "Annual Land Use Land Cover maps for India built by National Remote Sensing Center, Indian Space Research Organization (ISRO) and available on India Water Resources Information System (WRIS) [portal](https://indiawris.gov.in/wris/#/).\n\nThe annual maps are available from 2005 onwards at 56m resolution.\n \nFollowing classes exist in the map: \n1. Built Up\n2. Cropland -  Kharif\n3. Cropland - Rabi\n4. Cropland - Zaid\n5. Cropland - Double/Triple\n6. Fallow Land - Current Fallow\n7. Agriculture Plantation - Plantation\n8. Forest - Evergreen/Semi-Evergreen\n9. Forest - Deciduous\n10. Forest - Degraded/Scrub\n11. Forest - Littoral Swamp\n12. Natural - Grassland\n13. Other - Shifting Cultivation\n14. Wasteland\n15. Sandy Area - Rann\n16. Waterbodies - Max\n17. Waterbodies - Min\n18. Snow Covered / Glacial Area   \n",
+      "title": "Asset Link",
       "classification:classes": [
         {
           "value": 0,

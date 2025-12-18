@@ -43,7 +43,7 @@
   "properties": {
     "title": "Land degradation (2015-2016) (GoI)",
     "description": "Assessment of land degradation status conducted for India by Indian Space Research Organization (ISRO). The land degradation mapping addresses 8 major processes\nand 36 land degradation classes. \n\nDetails of the methodology can be found on [Bhuvan](https://bhuvan-app1.nrsc.gov.in/) portal.",
-    "datetime": "2025-12-18T09:09:50.106968Z"
+    "datetime": "2025-12-18T09:17:59.921365Z"
   },
   "links": [
     {
@@ -69,8 +69,7 @@
     "gee_asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/WRIS/Land_degradation_pan_india",
       "type": "image/tiff; application=geotiff",
-      "title": "Data for Land degradation (2015-2016) (GoI)",
-      "description": "Assessment of land degradation status conducted for India by Indian Space Research Organization (ISRO). The land degradation mapping addresses 8 major processes\nand 36 land degradation classes. \n\nDetails of the methodology can be found on [Bhuvan](https://bhuvan-app1.nrsc.gov.in/) portal.",
+      "title": "Asset Link",
       "classification:classes": [
         {
           "value": 1,

@@ -43,7 +43,7 @@
   "properties": {
     "title": "Catchment Area Singleflow Maps",
     "description": "catchment_area_single_flow_maps_raster",
-    "datetime": "2025-12-18T09:09:37.551494Z"
+    "datetime": "2025-12-18T09:17:42.810488Z"
   },
   "links": [
     {
@@ -69,8 +69,7 @@
     "gee_asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/catchment_area_singleflow",
       "type": "image/tiff; application=geotiff",
-      "title": "Data for Catchment Area Singleflow Maps",
-      "description": "catchment_area_single_flow_maps_raster",
+      "title": "Asset Link",
       "classification:classes": [
         {
           "value": 2,
