@@ -42,13 +42,13 @@
   ],
   "properties": {
     "title": "Canopy height: 2018-2019",
-    "description": "Tree canopy height map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). Tree canopy height layer describes how tall are trees in a given pixel. \nThe Pan India map (except ACZ 12-15)  is available from 2017 onwards at 25m resolution.\nThese are the classes in the current version of the map: \n\n1.Short \n2.Medium\n3.Tall \n\nDetails of methodology can be found  in the [technical manual](https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view) and the codebase at https://github.com/Dhruvi-Goyal/Tree-Health-Monitoring/",
+    "description": "Tree canopy height map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). Tree canopy height layer describes how tall trees are in a given pixel. \n\nThe Pan India map (except ACZ 12-15) is available from 2017 onwards at 25m resolution.  \n\nThese are the classes in the current version of the map:\n1. Short\n2. Medium\n3. Tall\n\nDetails of methodology can be found in the [technical manual](https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view) and the codebase at https://github.com/Dhruvi-Goyal/Tree-Health-Monitoring/",
     "proj:code": "EPSG:4326",
     "proj:shape": [
       801500,
       1603000
     ],
-    "datetime": "2025-12-18T21:29:42.039124Z"
+    "datetime": "2025-12-18T22:00:07.025766Z"
   },
   "links": [
     {

@@ -63339,7 +63339,7 @@
   ],
   "properties": {
     "title": "Biogeographic Zones",
-    "description": "Map of biogeographic zones of India, with the following classes: \n\n1.Coasts\n2.Deccan Peninsula\n3.Desert\n4.Gangetic Plain\n5.Himalaya\n6.Islands\n7.North-East\n8.Semi-Arid\n9.Trans-Himalaya\n10.Western Ghats",
+    "description": "Map of biogeographic zones of India with the following classes:\n\n1. Coasts\n2. Deccan Peninsula\n3. Desert\n4. Gangetic Plain\n5. Himalaya\n6. Islands\n7. North-East\n8. Semi-Arid\n9. Trans-Himalaya\n10. Western Ghats",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -63418,7 +63418,7 @@
         "description": "area in square km "
       }
     ],
-    "datetime": "2025-12-18T21:30:54.267100Z"
+    "datetime": "2025-12-18T22:01:21.843615Z"
   },
   "links": [
     {

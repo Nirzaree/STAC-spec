@@ -42,13 +42,13 @@
   ],
   "properties": {
     "title": "Canopy cover density: 2019-2020",
-    "description": "Tree canopy cover density map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). Tree canopy cover density (CCD) indicates the density of tree cover in a given area, with higher canopy cover percentages signifying a denser canopy and more shade on the ground and vice versa. \n\nThe Pan India map (except ACZ 12-15 currently missing due to insufficient data points for training the respective models)  is available from 2017 onwards at 25m resolution.\nThese are the classes in the current version of the map: \n\n1.Low density \n2.High density\n3.Missing data\n\nInput to the model is Dynamic World output, and timeseries data from Sentinel-2, Sentinel-1 and GEDI as ground truth. Details of methodology can be found  in the [technical manual](https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view) and the codebase at https://github.com/Dhruvi-Goyal/Tree-Health-Monitoring/",
+    "description": "Tree canopy cover density map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). Tree canopy cover density (CCD) indicates the density of tree cover in a given area, with higher canopy cover percentages signifying a denser canopy and more shade on the ground and vice versa.\n\nThe Pan India map (except ACZ 12-15 currently missing due to insufficient data points for training the respective models) is available from 2017 onwards at 25m resolution.\n\nThese are the classes in the current version of the map:\n1. Low density\n2. High density\n3. Missing data\n\nInput to the model is Dynamic World output, and timeseries data from Sentinel-2, Sentinel-1, and GEDI as ground truth. Details of methodology can be found in the [technical manual](https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view) and the codebase at https://github.com/Dhruvi-Goyal/Tree-Health-Monitoring/",
     "proj:code": "EPSG:4326",
     "proj:shape": [
       801500,
       1603000
     ],
-    "datetime": "2025-12-18T21:29:38.382297Z"
+    "datetime": "2025-12-18T22:00:01.638391Z"
   },
   "links": [
     {

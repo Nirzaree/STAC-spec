@@ -42,13 +42,13 @@
   ],
   "properties": {
     "title": "Tree cover change",
-    "description": "Tree cover change map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). The tree cover change layer describes the change in canopy cover density (CCD) and canopy height (CH) across different years. The following classes are available in the current version of the map:\n \n1.Tree cover lost (tree cover to no tree cover) \n2.Degradation (reduction in CCD/CH)\n3.No Change \n4.Improvement (increase in CCD/CH)\n5.Tree cover gained (no tree cover to tree cover)\n6.Partially Degraded (increase in CCD and reduction in CH or vice versa)\n7.Missing Data\n\nThere is further categorization based on size of tree cover into large tree patches (LTP) for tree cover area greater than one hectare and small tree patches (STP) for tree cover area less than one hectare. The change classes for this categorization are the following: \n\n1.LTP intact (LTP to LTP)\n2.STP intact (STP to STP)\n3.Fragmentation (LTP to STP)\n4.Defragmentation (STP to LTP)\n\nDetails of methodology can be found in the technical manual and the codebase on [github](https://github.com/Dhruvi-Goyal/Tree-Health-Monitoring/).",
+    "description": "Tree cover change map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). The tree cover change layer describes the change in canopy cover density (CCD) and canopy height (CH) across different years.\n\nThe following classes are available in the current version of the map:\n1. Tree cover lost (tree cover to no tree cover)\n2. Degradation (reduction in CCD/CH)\n3. No Change\n4. Improvement (increase in CCD/CH)\n5. Tree cover gained (no tree cover to tree cover)\n6. Partially Degraded (increase in CCD and reduction in CH or vice versa)\n7. Missing Data\n\nThere is further categorization based on size of tree cover into large tree patches (LTP) for tree cover area greater than one hectare and small tree patches (STP) for tree cover area less than one hectare. The change classes for this categorization are:\n1. LTP intact (LTP to LTP)\n2. STP intact (STP to STP)\n3. Fragmentation (LTP to STP)\n4. Defragmentation (STP to LTP)\n\nDetails of methodology can be found in the technical manual and the codebase on [GitHub](https://github.com/Dhruvi-Goyal/Tree-Health-Monitoring/).",
     "proj:code": "EPSG:4326",
     "proj:shape": [
       801500,
       1603000
     ],
-    "datetime": "2025-12-18T21:29:45.568737Z"
+    "datetime": "2025-12-18T22:00:10.451567Z"
   },
   "links": [
     {

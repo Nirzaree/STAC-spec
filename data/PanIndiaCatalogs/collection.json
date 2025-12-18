@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "PanIndiaCatalogs",
   "stac_version": "1.1.0",
-  "description": "This spatio temporal asset collection contains all data layers generated at Pan India level.",
+  "description": "This spatio temporal asset catalog contains all data layers of CoRE Stack (https://core-stack.org/) generated at Pan India level.",
   "links": [
     {
       "rel": "root",
