@@ -69,6 +69,36 @@
       "href": "./hydrological_boundaries/collection.json",
       "type": "application/json",
       "title": "Hydrological boundaries"
+    },
+    {
+      "rel": "child",
+      "href": "./waterbodies_layers/collection.json",
+      "type": "application/json",
+      "title": "Waterbodies layers"
+    },
+    {
+      "rel": "child",
+      "href": "./groundwater_layers/collection.json",
+      "type": "application/json",
+      "title": "Groundwater layers"
+    },
+    {
+      "rel": "child",
+      "href": "./climatic_and_biophysical_zones/collection.json",
+      "type": "application/json",
+      "title": "Climatic and biophysical zones"
+    },
+    {
+      "rel": "child",
+      "href": "./industry/collection.json",
+      "type": "application/json",
+      "title": "Industry"
+    },
+    {
+      "rel": "child",
+      "href": "./restoration_and_regeneration/collection.json",
+      "type": "application/json",
+      "title": "Restoration and Regeneration"
     }
   ],
   "title": "Pan India Spatio Temporal Asset Catalog",
@@ -86,8 +116,8 @@
     "temporal": {
       "interval": [
         [
-          "2015-01-01T00:00:00Z",
-          null
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
         ]
       ]
     }

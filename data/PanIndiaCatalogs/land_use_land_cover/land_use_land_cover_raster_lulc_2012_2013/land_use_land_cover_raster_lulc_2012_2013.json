@@ -7,9 +7,7 @@
   "properties": {
     "title": "LULC WRIS",
     "description": "Land Use Land Cover (LULC) map for India. Novelty of this approach is intra-annual classes for agriculture and water availability aligned to the agriculture seasons of India.\n\nThe Pan India map is available from 2017 onwards at 10m resolution. These are the classes in the current version of LULC:\n1. builtup\n2. water in kharif only\n3. water in kharif and rabi only\n4. water in kharif, rabi and zaid (perennial water)\n5. cropland\n6. trees and forest\n7. barren land\n8. single kharif cropping\n9. single non-kharif cropping\n10. double cropping\n11. tripple cropping\n12. shrubs and scrubs\n\nInput to the model is Dynamic World output, and timeseries data from Landsat-7, Landsat-8, Sentinel-2, Sentinel-1 and MODIS processed using the IndiaSAT methodology. Details of methodology can be found in our technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/tree/main/computing/lulc).",
-    "ee_layer_name": "LULC 2012 - 2013",
-    "style_file_url": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Land/wris_lulc.qml",
-    "datetime": "2025-12-18T04:06:25.974597Z"
+    "datetime": "2025-12-18T04:53:00.741107Z"
   },
   "links": [
     {
@@ -32,9 +30,9 @@
     }
   ],
   "assets": {
-    "style_file": {
+    "QGIS Style file": {
       "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Land/wris_lulc.qml",
-      "type": "application/json",
+      "type": "application/xml",
       "roles": [
         "metadata",
         "style"
@@ -42,8 +40,8 @@
     },
     "gee_asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/WRIS/lulc250k_2012_2013_pan_india",
-      "type": "text/plain",
-      "title": "Earth Engine Asset Link",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
       "gee:type": "Image",
       "gee:assets": [
         {

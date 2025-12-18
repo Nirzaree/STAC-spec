@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "administrative_boundaries",
   "stac_version": "1.1.0",
-  "description": "Layers for Administrative boundaries",
+  "description": "STAC collection for Administrative boundaries of Pan India.",
   "links": [
     {
       "rel": "root",
@@ -57,8 +57,8 @@
     "temporal": {
       "interval": [
         [
-          "2015-01-01T00:00:00Z",
-          null
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
         ]
       ]
     }

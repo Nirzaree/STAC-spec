@@ -7,9 +7,7 @@
   "properties": {
     "title": "Distance to Upstream drainage line",
     "description": "distance_to_upstream_drainage_lines_map_raster",
-    "ee_layer_name": "Distance to Upstream Drainage Line",
-    "style_file_url": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Hydrology/Distance_to_upstreamDL_style.qml",
-    "datetime": "2025-12-18T04:06:25.127213Z"
+    "datetime": "2025-12-18T04:53:00.011245Z"
   },
   "links": [
     {
@@ -32,9 +30,9 @@
     }
   ],
   "assets": {
-    "style_file": {
+    "QGIS Style file": {
       "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Hydrology/Distance_to_upstreamDL_style.qml",
-      "type": "application/json",
+      "type": "application/xml",
       "roles": [
         "metadata",
         "style"
@@ -42,8 +40,8 @@
     },
     "gee_asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/distance_to_nearest_upstream_DL_raster",
-      "type": "text/plain",
-      "title": "Earth Engine Asset Link",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
       "gee:type": "Image",
       "gee:assets": [
         {

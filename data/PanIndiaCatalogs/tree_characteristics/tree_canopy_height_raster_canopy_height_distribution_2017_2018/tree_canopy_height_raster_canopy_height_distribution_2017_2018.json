@@ -7,9 +7,7 @@
   "properties": {
     "title": "Canopy height",
     "description": "tree_canopy_height_raster",
-    "ee_layer_name": "Canopy Height Distribution 2017-2018",
-    "style_file_url": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Tree%20Health/canopy_height.qml",
-    "datetime": "2025-12-18T04:06:27.712608Z"
+    "datetime": "2025-12-18T04:53:01.885722Z"
   },
   "links": [
     {
@@ -32,9 +30,9 @@
     }
   ],
   "assets": {
-    "style_file": {
+    "QGIS Style file": {
       "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Tree%20Health/canopy_height.qml",
-      "type": "application/json",
+      "type": "application/xml",
       "roles": [
         "metadata",
         "style"
@@ -42,8 +40,8 @@
     },
     "gee_asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/tree_health/modal_ch_2017",
-      "type": "text/plain",
-      "title": "Earth Engine Asset Link",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
       "gee:type": "Image",
       "gee:assets": [
         {

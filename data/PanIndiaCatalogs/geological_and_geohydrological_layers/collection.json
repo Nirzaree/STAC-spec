@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "geological_and_geohydrological_layers",
   "stac_version": "1.1.0",
-  "description": "Layers related to Geological and geohydrological layers.",
+  "description": "STAC collection for Geological and geohydrological layers of Pan India..",
   "links": [
     {
       "rel": "root",
@@ -13,6 +13,16 @@
     {
       "rel": "item",
       "href": "./lineaments_raster_lineament/lineaments_raster_lineament.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./lithology_vector/lithology_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./aquifer_vector/aquifer_vector.json",
       "type": "application/geo+json"
     },
     {
@@ -37,8 +47,8 @@
     "temporal": {
       "interval": [
         [
-          "2015-01-01T00:00:00Z",
-          null
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
         ]
       ]
     }

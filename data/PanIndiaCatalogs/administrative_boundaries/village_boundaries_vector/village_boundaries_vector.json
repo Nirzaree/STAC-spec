@@ -289,7 +289,7 @@
         "description": "file source path"
       }
     ],
-    "datetime": "2025-12-18T04:10:37.377791Z"
+    "datetime": "2025-12-18T04:54:29.242645Z"
   },
   "links": [
     {
@@ -315,7 +315,7 @@
     "drive-link": {
       "href": "https://drive.google.com/file/d/1-aLk8p_5DTwVoqLPGQW6vAKBg4NyunR-/view",
       "type": "text/plain",
-      "title": "Vector File",
+      "title": "Asset File",
       "roles": [
         "source"
       ]

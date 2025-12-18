@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "tree_characteristics",
   "stac_version": "1.1.0",
-  "description": "Layers related to Tree Characteristics.",
+  "description": "STAC collection for Tree Characteristics of Pan India..",
   "links": [
     {
       "rel": "root",
@@ -82,8 +82,8 @@
     "temporal": {
       "interval": [
         [
-          "2015-01-01T00:00:00Z",
-          null
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
         ]
       ]
     }

@@ -1,0 +1,100 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "mining_vector",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      76.3319349,
+      30.813292
+    ]
+  },
+  "bbox": [
+    76.3319349,
+    30.813292,
+    76.3319349,
+    30.813292
+  ],
+  "properties": {
+    "description": "Mining",
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "UUID",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "COMPANY NAME",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "LOCATION TYPE",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "ADDRESS",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "LEVEL 1",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "LEVEL 2",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "LEVEL 3",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "",
+        "type": "str",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-12-18T04:55:07.681073Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Industry"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Industry"
+    }
+  ],
+  "assets": {
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/16hGbltIYy_ZWoXu0_h3lrwUiSR2iNxQJ/view",
+      "type": "text/plain",
+      "title": "Asset File",
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "collection": "industry"
+}

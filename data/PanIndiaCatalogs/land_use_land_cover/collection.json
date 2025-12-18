@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "land_use_land_cover",
   "stac_version": "1.1.0",
-  "description": "Layers related to Land Use Land Cover.",
+  "description": "STAC collection for Land Use Land Cover of Pan India..",
   "links": [
     {
       "rel": "root",
@@ -132,8 +132,8 @@
     "temporal": {
       "interval": [
         [
-          "2015-01-01T00:00:00Z",
-          null
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
         ]
       ]
     }
