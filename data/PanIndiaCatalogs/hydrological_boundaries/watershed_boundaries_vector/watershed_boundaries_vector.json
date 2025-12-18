@@ -6196,13 +6196,14 @@
     23.356695507666945
   ],
   "properties": {
-    "description": "Watershed",
+    "title": "Watershed",
+    "description": "Watershed boundaries of India obtained from [India Water Resources Information System (WRIS)](https://indiawris.gov.in/wris/#/) portal.",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
         "name": "Name",
         "type": "str",
-        "description": "name of the watershed"
+        "description": ""
       },
       {
         "name": "altitudeMo",
@@ -6212,12 +6213,12 @@
       {
         "name": "area_sqkm",
         "type": "float",
-        "description": "area of watershed in sqkm"
+        "description": ""
       },
       {
         "name": "bacode",
         "type": "str",
-        "description": "basin code "
+        "description": ""
       },
       {
         "name": "begin",
@@ -6227,7 +6228,7 @@
       {
         "name": "descriptio",
         "type": "str",
-        "description": "description text "
+        "description": ""
       },
       {
         "name": "end",
@@ -6247,12 +6248,12 @@
       {
         "name": "objectid",
         "type": "float",
-        "description": "object id"
+        "description": ""
       },
       {
         "name": "sbcode",
         "type": "str",
-        "description": "sub-basin code"
+        "description": ""
       },
       {
         "name": "tessellate",
@@ -6262,7 +6263,7 @@
       {
         "name": "timestamp",
         "type": "str",
-        "description": "timestamp of the feature"
+        "description": ""
       },
       {
         "name": "visibility",
@@ -6272,7 +6273,7 @@
       {
         "name": "wscode",
         "type": "str",
-        "description": "watershed code"
+        "description": ""
       },
       {
         "name": "wsconc",
@@ -6280,7 +6281,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-18T04:54:30.830078Z"
+    "datetime": "2025-12-18T06:48:08.364089Z"
   },
   "links": [
     {

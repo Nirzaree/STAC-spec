@@ -23778,7 +23778,8 @@
     7.4478090680354745
   ],
   "properties": {
-    "description": "Tehsil",
+    "title": "Tehsil",
+    "description": "Tehsil boundaries map hosted from  [Survey of India](https://www.surveyofindia.gov.in/).",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -23807,7 +23808,7 @@
         "description": "tehsil name "
       }
     ],
-    "datetime": "2025-12-18T04:54:29.195097Z"
+    "datetime": "2025-12-18T06:48:06.400590Z"
   },
   "links": [
     {

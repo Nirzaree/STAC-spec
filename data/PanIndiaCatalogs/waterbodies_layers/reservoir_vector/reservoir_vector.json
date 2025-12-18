@@ -113054,7 +113054,8 @@
     13.737814794233982
   ],
   "properties": {
-    "description": "Reservoir",
+    "title": "Reservoir",
+    "description": "reservoir_vector",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -113338,7 +113339,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-18T04:54:41.085225Z"
+    "datetime": "2025-12-18T06:48:11.126977Z"
   },
   "links": [
     {

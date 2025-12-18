@@ -22876,7 +22876,8 @@
     5443428.054299995
   ],
   "properties": {
-    "description": "Agro-Ecological Zones",
+    "title": "Agro-Ecological Zones",
+    "description": "Map of Agroecological zones of India, with the following classes: \n1.Western Himalayas Cold Arid Eco-Region\n2.Western Plain Kachchh And Part Of Kathiawar Peninsula Hot Arid Eco-Region\n3.Karnataka Plateau (Rayalseema As Inclusion)\n4.Northern Plain (And Central Highlands) Including Aravallis Hot Semi-Arid Ego-Region\n5.Central Highlands (Malwa) Gujarat Plain And Kathiawar Peninsula Semi-Arid Eco-Region\n6.Deccan Platu Hot Semi-Arid Eco-Region\n7.Eastern Himalayas Warm Perhumid Eco-Region\n8.North Eastern Hills (Purvachal) Warm Perhumid Eco-Region\n9.Eastern Coastal Plain Hot Subhumid To Semi-Arid Ego-Region\n10.Western Ghats And Coastal Plain Hot Humid-Perhumid Eco-Region\n11.Islands Of Andaman-Nicobar And Lakshadweep Hot Humid To Perhumid Island Eco Region\n12.Deccan Plateau (Telangana) And Eastern Ghats Hot Semi Arid Eco-Region\n13.Eastern Ghats And Tamil Nadu Uplands And Deccan (Karnataka) Plateau Hot Semi-Arid Eco-Region\n14.Northern Plain Hot Subhumid (Dry) Eco-Region\n15.Central Highlands (Malwa And Bundelkhand) Hot Subhumid (Dry) Eco-Region\n16.Eastern Plateau (Chhattisgarh Region)\n17.Eastern Plateau (Chhotanagpur) And Eastern Ghats Hot Subhumid Eco-Region\n18.Eastern Plain Hot Suba Humid (Moist) Eco-Region\n19.Western Himalaya Warm Subhumid (To Humid With Inclusion Of Perhumid) Eco-Region\n20.Assam And Bengal Plain Hot Subhumid To Humid (Inclusion Of Perhumid) Eco-Region",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -22910,7 +22911,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-18T04:54:56.856981Z"
+    "datetime": "2025-12-18T06:48:17.112838Z"
   },
   "links": [
     {

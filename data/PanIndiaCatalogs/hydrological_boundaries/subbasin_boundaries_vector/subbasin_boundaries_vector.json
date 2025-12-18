@@ -64916,7 +64916,8 @@
     30.060813184899935
   ],
   "properties": {
-    "description": "Sub-basin",
+    "title": "Sub-basin",
+    "description": "Subbasin boundaries of India obtained from [India Water Resources Information System (WRIS)](https://indiawris.gov.in/wris/#/) portal.",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -64950,7 +64951,7 @@
         "description": "sub basin area name "
       }
     ],
-    "datetime": "2025-12-18T04:54:30.804878Z"
+    "datetime": "2025-12-18T06:48:08.336897Z"
   },
   "links": [
     {

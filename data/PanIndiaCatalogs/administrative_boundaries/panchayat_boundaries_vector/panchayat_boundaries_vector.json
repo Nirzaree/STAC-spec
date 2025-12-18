@@ -4380,7 +4380,8 @@
     32.491690186980875
   ],
   "properties": {
-    "description": "Panchayat",
+    "title": "Panchayat",
+    "description": "(In progress) Panchayat boundaries map aggregated from village boundaries obtained from [SHRUG](https://www.devdatalab.org/shrug). Aggregation was done using Local Government Directory (LGD) data with string matching of village names to resolve between the LGD and SHRUG data. The matching algorithm is described in the [technical manual](https://core-stack.org/core-stack-technical-manual-v2/).",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -4524,7 +4525,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-18T04:54:29.219980Z"
+    "datetime": "2025-12-18T06:48:06.422792Z"
   },
   "links": [
     {

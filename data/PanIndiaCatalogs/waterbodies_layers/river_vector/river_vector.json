@@ -212,13 +212,14 @@
     31.16147875529286
   ],
   "properties": {
-    "description": "River",
+    "title": "River",
+    "description": "river_vector",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
         "name": "bacode",
         "type": "str",
-        "description": ""
+        "description": "basin area code "
       },
       {
         "name": "k50",
@@ -228,7 +229,7 @@
       {
         "name": "objectid",
         "type": "int",
-        "description": ""
+        "description": "object id"
       },
       {
         "name": "ripcode",
@@ -238,7 +239,7 @@
       {
         "name": "rivname",
         "type": "str",
-        "description": ""
+        "description": "river name "
       },
       {
         "name": "shape_leng",
@@ -256,7 +257,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-18T04:54:37.202207Z"
+    "datetime": "2025-12-18T06:48:10.294847Z"
   },
   "links": [
     {

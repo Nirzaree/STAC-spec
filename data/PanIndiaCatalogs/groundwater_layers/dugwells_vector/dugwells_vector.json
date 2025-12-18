@@ -17,7 +17,8 @@
     null
   ],
   "properties": {
-    "description": "Ground water levels in dugwells",
+    "title": "Ground water levels in dugwells",
+    "description": "Map of ground water levels in dugwells hosted from [India Water Resources Information System (WRIS)](https://indiawris.gov.in/wris/#/) portal.",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -171,7 +172,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-18T04:54:46.179340Z"
+    "datetime": "2025-12-18T06:48:13.675030Z"
   },
   "links": [
     {

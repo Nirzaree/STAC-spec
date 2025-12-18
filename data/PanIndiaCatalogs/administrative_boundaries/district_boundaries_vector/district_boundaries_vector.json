@@ -44418,7 +44418,8 @@
     9.256946665728638
   ],
   "properties": {
-    "description": "District",
+    "title": "District",
+    "description": "District boundaries map hosted from  [Survey of India](https://www.surveyofindia.gov.in/).",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -44487,7 +44488,7 @@
         "description": "visibility"
       }
     ],
-    "datetime": "2025-12-18T04:54:28.212622Z"
+    "datetime": "2025-12-18T06:48:06.358737Z"
   },
   "links": [
     {

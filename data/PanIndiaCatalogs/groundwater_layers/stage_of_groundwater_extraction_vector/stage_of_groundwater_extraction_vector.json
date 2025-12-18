@@ -2476,28 +2476,29 @@
     26.86698502694879
   ],
   "properties": {
-    "description": "Stage of Ground Water Extraction",
+    "title": "Stage of Ground Water Extraction",
+    "description": "The stage of groundwater extraction map for India generated from National Compilation on Dynamic Ground Water Resources of India (2022), by Central Ground Water Board, Government of India. Stage of groundwater extraction (SOGE) is defined as the ratio of annual extraction of groundwater resource and annual extractable groundwater resource. \n\nThe Pan India map is available for the years 2011, 2013, 2017, and 2020. The categories in the map currently are: \n1. Safe (<= 70%), \n2. Semi-critical (> 70% and <= 90%), \n3. Critical (> 90% and <= 100%) and \n4. Over Exploited (> 100%)",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
         "name": "agwd_dom_i",
         "type": "float",
-        "description": "annual ground water draft for domestic and industrial"
+        "description": ""
       },
       {
         "name": "agwd_irr",
         "type": "float",
-        "description": "annual ground water draft for irrigation"
+        "description": ""
       },
       {
         "name": "agwd_tot",
         "type": "float",
-        "description": "total annual ground water draft"
+        "description": ""
       },
       {
         "name": "ar_gwr_tot",
         "type": "float",
-        "description": "annual extractable ground water replenishment"
+        "description": ""
       },
       {
         "name": "block",
@@ -2507,12 +2508,12 @@
       {
         "name": "class",
         "type": "str",
-        "description": "ground water resource categorization(Safe, Semi-Critical, Critical, Over-Exploited, Saline)"
+        "description": ""
       },
       {
         "name": "code",
         "type": "float",
-        "description": "code of the class(Safe=1, Semi-Critical=2, Critical=3, Over-Exploited=4, Saline=5)"
+        "description": ""
       },
       {
         "name": "district",
@@ -2522,17 +2523,17 @@
       {
         "name": "gwr_2011_2",
         "type": "float",
-        "description": "ground water resource "
+        "description": ""
       },
       {
         "name": "na_gwa",
         "type": "float",
-        "description": "net annual ground water availability"
+        "description": ""
       },
       {
         "name": "nat_discha",
         "type": "float",
-        "description": "natural discharge"
+        "description": ""
       },
       {
         "name": "objectid",
@@ -2542,7 +2543,7 @@
       {
         "name": "sgw_dev_pe",
         "type": "float",
-        "description": "stage of ground water development in percentage"
+        "description": ""
       },
       {
         "name": "st_area(sh",
@@ -2565,7 +2566,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-18T04:54:47.214790Z"
+    "datetime": "2025-12-18T06:48:13.704556Z"
   },
   "links": [
     {

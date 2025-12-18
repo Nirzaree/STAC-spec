@@ -63338,7 +63338,8 @@
     13.6833838964408
   ],
   "properties": {
-    "description": "Biogeographic Zones",
+    "title": "Biogeographic Zones",
+    "description": "Map of biogeographic zones of India, with the following classes: \n1.Coasts\n2.Deccan Peninsula\n3.Desert\n4.Gangetic Plain\n5.Himalaya\n6.Islands\n7.North-East\n8.Semi-Arid\n9.Trans-Himalaya\n10.Western Ghats",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -63394,30 +63395,30 @@
       {
         "name": "prov_code",
         "type": "str",
-        "description": ""
+        "description": "code for biogeographic provinces inside each zone (10A,10B,1A,1B etc )"
       },
       {
         "name": "biogeozone",
         "type": "str",
-        "description": ""
+        "description": "represents biographic zone (Himalaya,Trans-Himalaya,Deccan Peninsula,Desert,Islands etc.)"
       },
       {
         "name": "biogeoprov",
         "type": "str",
-        "description": ""
+        "description": "biogeographic provinces inside each zone"
       },
       {
         "name": "zone_code",
         "type": "int",
-        "description": ""
+        "description": "code represents each zone (1 → Himalaya\n2 → Trans-Himalaya\n3 → Desert\n4 → Semi-Arid etc.)"
       },
       {
         "name": "area_sqkm",
         "type": "float",
-        "description": ""
+        "description": "area in square km "
       }
     ],
-    "datetime": "2025-12-18T04:55:03.607633Z"
+    "datetime": "2025-12-18T06:48:19.280639Z"
   },
   "links": [
     {

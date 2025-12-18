@@ -144,41 +144,42 @@
     15.39919428988244
   ],
   "properties": {
-    "description": "Green Credits (GoI)",
+    "title": "Green Credits (GoI)",
+    "description": "The Green Credit Rules have been notified by the Government of India as a mechanism to encourage voluntary plantation activity across the country, resulting in award of Green Credits and to build an inventory of degraded land which can be utilised for Afforestation programmes. The map has been built with data accessed from the [platform](https://www.moefcc-gcp.in/about/aboutGCP) (October 2025)",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
         "name": "range",
         "type": "str",
-        "description": ""
+        "description": "range of division "
       },
       {
         "name": "state",
         "type": "str",
-        "description": ""
+        "description": "state name "
       },
       {
         "name": "district",
         "type": "str",
-        "description": ""
+        "description": "district name "
       },
       {
         "name": "division",
         "type": "str",
-        "description": ""
+        "description": "division name "
       },
       {
         "name": "land_info",
         "type": "str",
-        "description": ""
+        "description": "land information "
       },
       {
         "name": "kml_url",
         "type": "str",
-        "description": ""
+        "description": "path"
       }
     ],
-    "datetime": "2025-12-18T04:55:11.213669Z"
+    "datetime": "2025-12-18T06:48:22.977819Z"
   },
   "links": [
     {

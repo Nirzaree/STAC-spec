@@ -1836,7 +1836,8 @@
     28.434505722450755
   ],
   "properties": {
-    "description": "Microwatershed boundaries v1",
+    "title": "Microwatershed boundaries v1",
+    "description": "Microwatershed boundaries delineated from watershed boundaries using digital elevation model (DEM) data . Details are described in the [technical manual](https://core-stack.org/core-stack-technical-manual-v2/).",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -1847,10 +1848,10 @@
       {
         "name": "uid",
         "type": "str",
-        "description": ""
+        "description": "unique identifier"
       }
     ],
-    "datetime": "2025-12-18T04:54:32.129488Z"
+    "datetime": "2025-12-18T06:48:08.390083Z"
   },
   "links": [
     {

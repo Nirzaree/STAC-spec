@@ -20,7 +20,8 @@
     22.186943992982194
   ],
   "properties": {
-    "description": "MWS Connectivity",
+    "title": "MWS Connectivity",
+    "description": "mws_connectivity_vector",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -44,7 +45,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-18T04:54:34.498888Z"
+    "datetime": "2025-12-18T06:48:08.437507Z"
   },
   "links": [
     {

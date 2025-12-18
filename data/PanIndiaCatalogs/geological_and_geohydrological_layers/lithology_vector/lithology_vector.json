@@ -56,7 +56,8 @@
     27.851741384163063
   ],
   "properties": {
-    "description": "Lithology",
+    "title": "Lithology",
+    "description": "Lithology refers to the study of general physical characteristics of rocks. \nThe map has been generated from statewise lithology data from [Bhukosh](https://bhukosh.gsi.gov.in/Bhukosh/Public) portal.",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -160,7 +161,7 @@
         "description": "file source path"
       }
     ],
-    "datetime": "2025-12-18T04:54:48.480897Z"
+    "datetime": "2025-12-18T06:48:13.734108Z"
   },
   "links": [
     {

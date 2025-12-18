@@ -20,7 +20,8 @@
     16.275000929807852
   ],
   "properties": {
-    "description": "Ground water levels in borewells",
+    "title": "Ground water levels in borewells",
+    "description": "Atal Bhujal Yojana is a central government scheme in India aimed to improve groundwater in over-exploited and ground water stressed states. The scheme monitors groundwater levels in deeper aquifers than shallow aquifers to track depletion trends, assess the impact of interventions, and promote data-driven groundwater management. Ground water level data pre and post monsoon from 2015 to 2022 hosted from [Open Government Data](https://www.data.gov.in/catalog/ground-water-level-data-under-atal-bhujal-yojana) (OGD) Platform.",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -644,7 +645,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-18T04:54:44.342477Z"
+    "datetime": "2025-12-18T06:48:12.631559Z"
   },
   "links": [
     {

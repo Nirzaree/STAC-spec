@@ -974,23 +974,24 @@
     17.214436065009004
   ],
   "properties": {
-    "description": "Canal",
+    "title": "Canal",
+    "description": "canal_vector",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
         "name": "can_type",
         "type": "int",
-        "description": ""
+        "description": "canal type"
       },
       {
         "name": "cancode",
         "type": "str",
-        "description": ""
+        "description": "canal unique code"
       },
       {
         "name": "canname",
         "type": "str",
-        "description": ""
+        "description": "name of canal "
       },
       {
         "name": "cca",
@@ -1035,12 +1036,12 @@
       {
         "name": "prjcode",
         "type": "str",
-        "description": ""
+        "description": "project code"
       },
       {
         "name": "prjname",
         "type": "str",
-        "description": ""
+        "description": "project name "
       },
       {
         "name": "st_length(",
@@ -1050,15 +1051,15 @@
       {
         "name": "state",
         "type": "str",
-        "description": ""
+        "description": "state name "
       },
       {
         "name": "status_yr",
         "type": "str",
-        "description": ""
+        "description": "status year"
       }
     ],
-    "datetime": "2025-12-18T04:54:38.362289Z"
+    "datetime": "2025-12-18T06:48:10.316854Z"
   },
   "links": [
     {

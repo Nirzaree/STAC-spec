@@ -2918,26 +2918,27 @@
     26.957406279585683
   ],
   "properties": {
-    "description": "Microwatershed boundaries v2",
+    "title": "Microwatershed boundaries v2",
+    "description": "Microwatershed boundaries delineated from watershed boundaries using digital elevation model (DEM) data . This is an improvement over v1 by merging micro-watersheds smaller than 500ha into an adjacent larger unit. Details are described in the [technical manual](https://core-stack.org/core-stack-technical-manual-v2/).",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
         "name": "area_in_ha",
         "type": "float",
-        "description": "area in hectares"
+        "description": ""
       },
       {
         "name": "id",
         "type": "int",
-        "description": "id"
+        "description": ""
       },
       {
         "name": "uid",
         "type": "str",
-        "description": "unique identifier"
+        "description": ""
       }
     ],
-    "datetime": "2025-12-18T04:54:33.461909Z"
+    "datetime": "2025-12-18T06:48:08.412253Z"
   },
   "links": [
     {

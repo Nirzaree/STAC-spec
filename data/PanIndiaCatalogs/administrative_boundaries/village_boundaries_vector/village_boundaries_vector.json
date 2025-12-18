@@ -160,7 +160,8 @@
     30.636062010195648
   ],
   "properties": {
-    "description": "Village",
+    "title": "Village",
+    "description": "Village boundaries map hosted from [SHRUG](https://www.devdatalab.org/shrug).",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -289,7 +290,7 @@
         "description": "file source path"
       }
     ],
-    "datetime": "2025-12-18T04:54:29.242645Z"
+    "datetime": "2025-12-18T06:48:06.447841Z"
   },
   "links": [
     {
