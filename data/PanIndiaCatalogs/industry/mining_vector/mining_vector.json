@@ -9,15 +9,15 @@
   "geometry": {
     "type": "Point",
     "coordinates": [
-      76.3319349,
-      30.813292
+      77.3041575243169,
+      8.141069975297208
     ]
   },
   "bbox": [
-    76.3319349,
-    30.813292,
-    76.3319349,
-    30.813292
+    77.3041575243169,
+    8.141069975297208,
+    77.3041575243169,
+    8.141069975297208
   ],
   "properties": {
     "title": "Mining",
@@ -25,47 +25,57 @@
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
-        "name": "UUID",
+        "name": "company_na",
+        "type": "str",
+        "description": "company name "
+      },
+      {
+        "name": "company_ty",
+        "type": "NoneType",
+        "description": "type of company "
+      },
+      {
+        "name": "district",
+        "type": "str",
+        "description": "district name "
+      },
+      {
+        "name": "district_o",
         "type": "str",
         "description": ""
       },
       {
-        "name": "COMPANY NAME",
+        "name": "proposal",
+        "type": "str",
+        "description": "description of proposal"
+      },
+      {
+        "name": "sector_moe",
+        "type": "str",
+        "description": "sector category"
+      },
+      {
+        "name": "state",
+        "type": "str",
+        "description": "state name "
+      },
+      {
+        "name": "state_offi",
         "type": "str",
         "description": ""
       },
       {
-        "name": "LOCATION TYPE",
+        "name": "tehsil",
         "type": "str",
-        "description": ""
+        "description": "tehsil name "
       },
       {
-        "name": "ADDRESS",
+        "name": "village",
         "type": "str",
-        "description": ""
-      },
-      {
-        "name": "LEVEL 1",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "LEVEL 2",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "LEVEL 3",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "",
-        "type": "str",
-        "description": ""
+        "description": "village name "
       }
     ],
-    "datetime": "2025-12-18T20:29:48.988155Z"
+    "datetime": "2025-12-18T21:30:56.336332Z"
   },
   "links": [
     {

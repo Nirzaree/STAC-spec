@@ -42,7 +42,12 @@
   "properties": {
     "title": "Slope percentage",
     "description": "Map of per pixel slope computed from digital elevation data (SRTM DEM).",
-    "datetime": "2025-12-18T20:28:42.545503Z"
+    "proj:code": "EPSG:3857",
+    "proj:shape": [
+      116013,
+      108475
+    ],
+    "datetime": "2025-12-18T21:29:35.304185Z"
   },
   "links": [
     {
@@ -74,11 +79,6 @@
           "data_type": "PixelType",
           "spatial_resolution": 30
         }
-      ],
-      "proj:code": "EPSG:3857",
-      "proj:shape": [
-        116013,
-        108475
       ],
       "roles": [
         "data"

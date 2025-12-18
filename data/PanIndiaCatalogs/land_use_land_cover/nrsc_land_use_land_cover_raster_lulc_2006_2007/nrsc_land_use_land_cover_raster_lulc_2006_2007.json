@@ -2,9 +2,9 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
   "id": "nrsc_land_use_land_cover_raster_lulc_2006_2007",
   "geometry": {
@@ -43,7 +43,12 @@
   "properties": {
     "title": "Land Use Land Cover (NRSC): 2006 - 2007",
     "description": "Annual Land Use Land Cover maps for India built by National Remote Sensing Center, Indian Space Research Organization (ISRO) and available on India Water Resources Information System (WRIS) [portal](https://indiawris.gov.in/wris/#/).\n\nThe annual maps are available from 2005 onwards at 56m resolution.\n \nFollowing classes exist in the map: \n1. Built Up\n2. Cropland -  Kharif\n3. Cropland - Rabi\n4. Cropland - Zaid\n5. Cropland - Double/Triple\n6. Fallow Land - Current Fallow\n7. Agriculture Plantation - Plantation\n8. Forest - Evergreen/Semi-Evergreen\n9. Forest - Deciduous\n10. Forest - Degraded/Scrub\n11. Forest - Littoral Swamp\n12. Natural - Grassland\n13. Other - Shifting Cultivation\n14. Wasteland\n15. Sandy Area - Rann\n16. Waterbodies - Max\n17. Waterbodies - Min\n18. Snow Covered / Glacial Area   \n",
-    "datetime": "2025-12-18T20:28:30.129790Z"
+    "proj:wkt2": "PROJCS[\"WGS_1984_Lambert_Conformal_Conic\", \n  GEOGCS[\"WGS 84\", \n    DATUM[\"WGS_1984\", \n      SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], \n      AUTHORITY[\"EPSG\",\"6326\"]], \n    PRIMEM[\"Greenwich\", 0.0], \n    UNIT[\"degree\", 0.017453292519943295], \n    AXIS[\"Longitude\", EAST], \n    AXIS[\"Latitude\", NORTH], \n    AUTHORITY[\"EPSG\",\"4326\"]], \n  PROJECTION[\"Lambert_Conformal_Conic_2SP\"], \n  PARAMETER[\"central_meridian\", 80.0], \n  PARAMETER[\"latitude_of_origin\", 24.0], \n  PARAMETER[\"standard_parallel_1\", 35.17280555], \n  PARAMETER[\"false_easting\", 4000000.0], \n  PARAMETER[\"false_northing\", 4000000.0], \n  PARAMETER[\"scale_factor\", 1.0], \n  PARAMETER[\"standard_parallel_2\", 12.4729444], \n  UNIT[\"m\", 1.0], \n  AXIS[\"Easting\", EAST], \n  AXIS[\"Northing\", NORTH]]",
+    "proj:shape": [
+      61845,
+      54710
+    ],
+    "datetime": "2025-12-18T21:29:25.241636Z"
   },
   "links": [
     {
@@ -70,6 +75,12 @@
       "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/WRIS/lulc250k_2006_2007_pan_india",
       "type": "image/tiff; application=geotiff",
       "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 56
+        }
+      ],
       "classification:classes": [
         {
           "value": 0,
@@ -185,16 +196,6 @@
           "description": "Snow Covered / Glacial Area",
           "color_hint": "E0F3F8"
         }
-      ],
-      "raster:bands": [
-        {
-          "data_type": "PixelType",
-          "spatial_resolution": 56
-        }
-      ],
-      "proj:shape": [
-        61845,
-        54710
       ],
       "roles": [
         "data"

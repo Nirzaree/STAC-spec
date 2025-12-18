@@ -9881,7 +9881,7 @@
   ],
   "properties": {
     "title": "Agro-Climatic Zones",
-    "description": "Map of agroclimatic zones of India, with the following classes: \n1.Western Dry Region\n2.West Coast Plains & Ghat Region\n3.Island region\n4.Western Plateau and Hills Region\n5.Southern Plateau and Hills Region\n6.Gujarat Plains & Hills Region\n7.Central Plateau & Hills Region\n8.Trans Gangetic Plain Region\n9.Western Himalayan Region\n10.Upper Gangetic Plain Region\n11.East Coast Plains & Hills Region\n12.Eastern Plateau & Hills Region\n13.Middle Gangetic Plain Region\n14.Lower Gangetic Plain Region\n15.Eastern Himalayan Region",
+    "description": "Map of agroclimatic zones of India, with the following classes: \n\n1.Western Dry Region\n2.West Coast Plains & Ghat Region\n3.Island region\n4.Western Plateau and Hills Region\n5.Southern Plateau and Hills Region\n6.Gujarat Plains & Hills Region\n7.Central Plateau & Hills Region\n8.Trans Gangetic Plain Region\n9.Western Himalayan Region\n10.Upper Gangetic Plain Region\n11.East Coast Plains & Hills Region\n12.Eastern Plateau & Hills Region\n13.Middle Gangetic Plain Region\n14.Lower Gangetic Plain Region\n15.Eastern Himalayan Region",
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
@@ -9950,7 +9950,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-18T20:29:44.961283Z"
+    "datetime": "2025-12-18T21:30:54.040470Z"
   },
   "links": [
     {

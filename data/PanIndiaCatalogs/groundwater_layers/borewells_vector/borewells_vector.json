@@ -7,17 +7,14 @@
   ],
   "id": "borewells_vector",
   "geometry": {
-    "type": "Point",
-    "coordinates": [
-      81.18333464935793,
-      16.275000929807852
-    ]
+    "type": "MultiPoint",
+    "coordinates": []
   },
   "bbox": [
-    81.18333464935793,
-    16.275000929807852,
-    81.18333464935793,
-    16.275000929807852
+    null,
+    null,
+    null,
+    null
   ],
   "properties": {
     "title": "Ground water levels in borewells",
@@ -25,627 +22,157 @@
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
-        "name": "1994_season1",
-        "type": "NoneType",
-        "description": ""
+        "name": "Aquifer",
+        "type": "str",
+        "description": "geological formation storing/transmitting groundwater (semi-confined,basalt, sandstone,limestone etc)"
       },
       {
-        "name": "1994_season2",
-        "type": "NoneType",
-        "description": ""
+        "name": "Block_Name_With_LGD_Code",
+        "type": "str",
+        "description": "block name with local government directory (LGD) code"
       },
       {
-        "name": "1994_season3",
-        "type": "NoneType",
-        "description": ""
+        "name": "District_Name_With_LGD_Code",
+        "type": "str",
+        "description": "district name with local government directory (LGD) code"
       },
       {
-        "name": "1994_season4",
-        "type": "NoneType",
-        "description": ""
+        "name": "GP_Name_With_LGD_Code",
+        "type": "str",
+        "description": "grampanchayat name with local government directory (LGD) code"
       },
       {
-        "name": "1995_season1",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "1995_season2",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "1995_season3",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "1995_season4",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "1996_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1996_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1996_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1996_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1997_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1997_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1997_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1997_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1998_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1998_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1998_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1998_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1999_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1999_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1999_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "1999_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2000_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2000_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2000_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2000_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2001_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2001_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2001_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2001_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2002_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2002_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2002_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2002_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2003_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2003_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2003_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2003_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2004_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2004_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2004_season3",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "2004_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2005_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2005_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2005_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2005_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2006_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2006_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2006_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2006_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2007_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2007_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2007_season3",
+        "name": "Latitude",
         "type": "float",
-        "description": ""
+        "description": "latitude "
       },
       {
-        "name": "2007_season4",
+        "name": "Longitude",
         "type": "float",
-        "description": ""
+        "description": "longitude"
       },
       {
-        "name": "2008_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2008_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2008_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2008_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2009_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2009_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2009_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2009_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2010_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2010_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2010_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2010_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2011_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2011_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2011_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2011_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2012_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2012_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2012_season3",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "2012_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2013_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2013_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2013_season3",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "2013_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2014_season1",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "2014_season2",
-        "type": "float",
-        "description": ""
+        "name": "Post-monsoon_2015 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2015"
       },
       {
-        "name": "2014_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2014_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2015_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2015_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2015_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2015_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2016_season1",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "2016_season2",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "2016_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2016_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2017_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2017_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2017_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2017_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2018_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2018_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2018_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2018_season4",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2019_season1",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2019_season2",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2019_season3",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "2019_season4",
-        "type": "float",
-        "description": ""
+        "name": "Post-monsoon_2016 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2016"
       },
       {
-        "name": "2020_season1",
-        "type": "float",
-        "description": ""
+        "name": "Post-monsoon_2017 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2017"
       },
       {
-        "name": "2020_season2",
-        "type": "NoneType",
-        "description": ""
+        "name": "Post-monsoon_2018 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2018"
       },
       {
-        "name": "2020_season3",
-        "type": "NoneType",
-        "description": ""
+        "name": "Post-monsoon_2019 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2019"
       },
       {
-        "name": "2020_season4",
-        "type": "float",
-        "description": ""
+        "name": "Post-monsoon_2020 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2020"
       },
       {
-        "name": "2021_season1",
-        "type": "float",
-        "description": ""
+        "name": "Post-monsoon_2021 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2021"
       },
       {
-        "name": "2021_season2",
-        "type": "NoneType",
-        "description": ""
+        "name": "Post-monsoon_2022 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2022"
       },
       {
-        "name": "2021_season3",
-        "type": "float",
-        "description": ""
+        "name": "Pre-monsoon_2015 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2015"
       },
       {
-        "name": "2021_season4",
-        "type": "float",
-        "description": ""
+        "name": "Pre-monsoon_2016 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2016"
       },
       {
-        "name": "2022_season1",
-        "type": "float",
-        "description": ""
+        "name": "Pre-monsoon_2017 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2017"
       },
       {
-        "name": "2022_season2",
-        "type": "float",
-        "description": ""
+        "name": "Pre-monsoon_2018 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2018"
       },
       {
-        "name": "2022_season3",
-        "type": "float",
-        "description": ""
+        "name": "Pre-monsoon_2019 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2019"
       },
       {
-        "name": "2022_season4",
-        "type": "float",
-        "description": ""
+        "name": "Pre-monsoon_2020 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2020"
       },
       {
-        "name": "2023_season1",
-        "type": "float",
-        "description": ""
+        "name": "Pre-monsoon_2021 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2021"
       },
       {
-        "name": "2023_season2",
-        "type": "float",
-        "description": ""
+        "name": "Pre-monsoon_2022 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2022"
       },
       {
-        "name": "2023_season3",
-        "type": "NoneType",
-        "description": ""
+        "name": "SOURCE",
+        "type": "str",
+        "description": "data source ( CGWB, SGWB, Atal Jal)"
       },
       {
-        "name": "2023_season4",
-        "type": "NoneType",
-        "description": ""
+        "name": "Site_Name",
+        "type": "str",
+        "description": "well site name "
       },
       {
-        "name": "objectid",
+        "name": "Sr No",
         "type": "int",
-        "description": ""
+        "description": "serial number "
       },
       {
-        "name": "pointInRegion",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "station_id",
+        "name": "State_Name_With_LGD_Code",
         "type": "str",
-        "description": ""
+        "description": "state name with local government directory (LGD) code"
       },
       {
-        "name": "station_name",
+        "name": "TYPE",
         "type": "str",
-        "description": ""
+        "description": "type of well (borewell )"
+      },
+      {
+        "name": "Village",
+        "type": "str",
+        "description": "village name "
+      },
+      {
+        "name": "Well_Depth (meters)",
+        "type": "float",
+        "description": "well depth in meters"
+      },
+      {
+        "name": "Well_ID",
+        "type": "str",
+        "description": "well id"
       }
     ],
-    "datetime": "2025-12-18T20:29:41.562122Z"
+    "datetime": "2025-12-18T21:30:51.089893Z"
   },
   "links": [
     {

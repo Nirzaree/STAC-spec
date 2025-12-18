@@ -2,9 +2,9 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
   "id": "catchment_area_mutiflow_maps_raster_catchment_area_multiflow",
   "geometry": {
@@ -43,7 +43,12 @@
   "properties": {
     "title": "Catchment Area Multiflow Maps",
     "description": "catchment_area_mutiflow_maps_raster",
-    "datetime": "2025-12-18T20:28:23.084298Z"
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      107774,
+      108709
+    ],
+    "datetime": "2025-12-18T21:29:19.622593Z"
   },
   "links": [
     {
@@ -70,6 +75,12 @@
       "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/catchment_area_multiflow",
       "type": "image/tiff; application=geotiff",
       "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 29.999999999999996
+        }
+      ],
       "classification:classes": [
         {
           "value": 2,
@@ -113,17 +124,6 @@
           "description": "1000 - 2000",
           "color_hint": "e6e32e"
         }
-      ],
-      "raster:bands": [
-        {
-          "data_type": "PixelType",
-          "spatial_resolution": 29.999999999999996
-        }
-      ],
-      "proj:code": "EPSG:4326",
-      "proj:shape": [
-        107774,
-        108709
       ],
       "roles": [
         "data"

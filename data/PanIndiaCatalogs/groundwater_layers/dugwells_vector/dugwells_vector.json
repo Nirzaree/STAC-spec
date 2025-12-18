@@ -7,14 +7,17 @@
   ],
   "id": "dugwells_vector",
   "geometry": {
-    "type": "MultiPoint",
-    "coordinates": []
+    "type": "Point",
+    "coordinates": [
+      81.18333464935793,
+      16.275000929807852
+    ]
   },
   "bbox": [
-    null,
-    null,
-    null,
-    null
+    81.18333464935793,
+    16.275000929807852,
+    81.18333464935793,
+    16.275000929807852
   ],
   "properties": {
     "title": "Ground water levels in dugwells",
@@ -22,157 +25,627 @@
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
-        "name": "Aquifer",
-        "type": "str",
-        "description": ""
+        "name": "1994_season1",
+        "type": "NoneType",
+        "description": "ground water level measured during January (post monsoon) 1994"
       },
       {
-        "name": "Block_Name_With_LGD_Code",
-        "type": "str",
-        "description": ""
+        "name": "1994_season2",
+        "type": "NoneType",
+        "description": "ground water level measured during March/April/May (pre monsoon) 1994"
       },
       {
-        "name": "District_Name_With_LGD_Code",
-        "type": "str",
-        "description": ""
+        "name": "1994_season3",
+        "type": "NoneType",
+        "description": "ground water level measured during August (post monsoon) 1994"
       },
       {
-        "name": "GP_Name_With_LGD_Code",
-        "type": "str",
-        "description": ""
+        "name": "1994_season4",
+        "type": "NoneType",
+        "description": "ground water level measured during November (post monsoon) 1994"
       },
       {
-        "name": "Latitude",
+        "name": "1995_season1",
+        "type": "NoneType",
+        "description": "ground water level measured during January (post monsoon) 1995"
+      },
+      {
+        "name": "1995_season2",
+        "type": "NoneType",
+        "description": "ground water level measured during March/April/May (pre monsoon) 1995"
+      },
+      {
+        "name": "1995_season3",
+        "type": "NoneType",
+        "description": "ground water level measured during August (post monsoon) 1995"
+      },
+      {
+        "name": "1995_season4",
+        "type": "NoneType",
+        "description": "ground water level measured during November (post monsoon) 1995"
+      },
+      {
+        "name": "1996_season1",
         "type": "float",
-        "description": ""
+        "description": "ground water level measured during January (post monsoon) 1996"
       },
       {
-        "name": "Longitude",
+        "name": "1996_season2",
         "type": "float",
-        "description": ""
+        "description": "ground water level measured during March/April/May (pre monsoon) 1996"
       },
       {
-        "name": "Post-monsoon_2015 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1996_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 1996"
       },
       {
-        "name": "Post-monsoon_2016 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1996_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 1996"
       },
       {
-        "name": "Post-monsoon_2017 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1997_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 1997"
       },
       {
-        "name": "Post-monsoon_2018 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1997_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 1997"
       },
       {
-        "name": "Post-monsoon_2019 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1997_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 1997"
       },
       {
-        "name": "Post-monsoon_2020 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1997_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 1997"
       },
       {
-        "name": "Post-monsoon_2021 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1998_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 1998"
       },
       {
-        "name": "Post-monsoon_2022 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1998_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 1998"
       },
       {
-        "name": "Pre-monsoon_2015 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1998_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 1998"
       },
       {
-        "name": "Pre-monsoon_2016 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1998_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 1998"
       },
       {
-        "name": "Pre-monsoon_2017 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1999_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 1999"
       },
       {
-        "name": "Pre-monsoon_2018 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1999_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 1999"
       },
       {
-        "name": "Pre-monsoon_2019 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1999_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 1999"
       },
       {
-        "name": "Pre-monsoon_2020 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "1999_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 1999"
       },
       {
-        "name": "Pre-monsoon_2021 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "2000_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2000"
       },
       {
-        "name": "Pre-monsoon_2022 (meters below ground level)",
-        "type": "str",
-        "description": ""
+        "name": "2000_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2000"
       },
       {
-        "name": "SOURCE",
-        "type": "str",
-        "description": ""
+        "name": "2000_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2000"
       },
       {
-        "name": "Site_Name",
-        "type": "str",
-        "description": ""
+        "name": "2000_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2000"
       },
       {
-        "name": "Sr No",
+        "name": "2001_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2001"
+      },
+      {
+        "name": "2001_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2001"
+      },
+      {
+        "name": "2001_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2001"
+      },
+      {
+        "name": "2001_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2001"
+      },
+      {
+        "name": "2002_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2002"
+      },
+      {
+        "name": "2002_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2002"
+      },
+      {
+        "name": "2002_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2002"
+      },
+      {
+        "name": "2002_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2002"
+      },
+      {
+        "name": "2003_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2003"
+      },
+      {
+        "name": "2003_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2003"
+      },
+      {
+        "name": "2003_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2003"
+      },
+      {
+        "name": "2003_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2003"
+      },
+      {
+        "name": "2004_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2004"
+      },
+      {
+        "name": "2004_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2004"
+      },
+      {
+        "name": "2004_season3",
+        "type": "NoneType",
+        "description": "ground water level measured during August (post monsoon) 2004"
+      },
+      {
+        "name": "2004_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2004"
+      },
+      {
+        "name": "2005_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2005"
+      },
+      {
+        "name": "2005_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2005"
+      },
+      {
+        "name": "2005_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2005"
+      },
+      {
+        "name": "2005_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2005"
+      },
+      {
+        "name": "2006_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2006"
+      },
+      {
+        "name": "2006_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2006"
+      },
+      {
+        "name": "2006_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2006"
+      },
+      {
+        "name": "2006_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2006"
+      },
+      {
+        "name": "2007_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2007"
+      },
+      {
+        "name": "2007_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2007"
+      },
+      {
+        "name": "2007_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2007"
+      },
+      {
+        "name": "2007_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2007"
+      },
+      {
+        "name": "2008_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2008"
+      },
+      {
+        "name": "2008_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2008"
+      },
+      {
+        "name": "2008_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2008"
+      },
+      {
+        "name": "2008_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2008"
+      },
+      {
+        "name": "2009_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2009"
+      },
+      {
+        "name": "2009_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2009"
+      },
+      {
+        "name": "2009_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2009"
+      },
+      {
+        "name": "2009_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2009"
+      },
+      {
+        "name": "2010_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2010"
+      },
+      {
+        "name": "2010_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2010"
+      },
+      {
+        "name": "2010_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2010"
+      },
+      {
+        "name": "2010_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2010"
+      },
+      {
+        "name": "2011_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2011"
+      },
+      {
+        "name": "2011_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2011"
+      },
+      {
+        "name": "2011_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2011"
+      },
+      {
+        "name": "2011_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2011"
+      },
+      {
+        "name": "2012_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2012"
+      },
+      {
+        "name": "2012_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2012"
+      },
+      {
+        "name": "2012_season3",
+        "type": "NoneType",
+        "description": "ground water level measured during August (post monsoon) 2012"
+      },
+      {
+        "name": "2012_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2012"
+      },
+      {
+        "name": "2013_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2013"
+      },
+      {
+        "name": "2013_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2013"
+      },
+      {
+        "name": "2013_season3",
+        "type": "NoneType",
+        "description": "ground water level measured during August (post monsoon) 2013"
+      },
+      {
+        "name": "2013_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2013"
+      },
+      {
+        "name": "2014_season1",
+        "type": "NoneType",
+        "description": "ground water level measured during January (post monsoon) 2014"
+      },
+      {
+        "name": "2014_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2014"
+      },
+      {
+        "name": "2014_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2014"
+      },
+      {
+        "name": "2014_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2014"
+      },
+      {
+        "name": "2015_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2015"
+      },
+      {
+        "name": "2015_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2015"
+      },
+      {
+        "name": "2015_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2015"
+      },
+      {
+        "name": "2015_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2015"
+      },
+      {
+        "name": "2016_season1",
+        "type": "NoneType",
+        "description": "ground water level measured during January (post monsoon) 2016"
+      },
+      {
+        "name": "2016_season2",
+        "type": "NoneType",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2016"
+      },
+      {
+        "name": "2016_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2016"
+      },
+      {
+        "name": "2016_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2016"
+      },
+      {
+        "name": "2017_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2016"
+      },
+      {
+        "name": "2017_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2017"
+      },
+      {
+        "name": "2017_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2017"
+      },
+      {
+        "name": "2017_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2017"
+      },
+      {
+        "name": "2018_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2018"
+      },
+      {
+        "name": "2018_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2018"
+      },
+      {
+        "name": "2018_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2018"
+      },
+      {
+        "name": "2018_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2018"
+      },
+      {
+        "name": "2019_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2019"
+      },
+      {
+        "name": "2019_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2019"
+      },
+      {
+        "name": "2019_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2019"
+      },
+      {
+        "name": "2019_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2019"
+      },
+      {
+        "name": "2020_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2020"
+      },
+      {
+        "name": "2020_season2",
+        "type": "NoneType",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2020"
+      },
+      {
+        "name": "2020_season3",
+        "type": "NoneType",
+        "description": "ground water level measured during August (post monsoon) 2020"
+      },
+      {
+        "name": "2020_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2020"
+      },
+      {
+        "name": "2021_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2021"
+      },
+      {
+        "name": "2021_season2",
+        "type": "NoneType",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2021"
+      },
+      {
+        "name": "2021_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2021"
+      },
+      {
+        "name": "2021_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2021"
+      },
+      {
+        "name": "2022_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2022"
+      },
+      {
+        "name": "2022_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2022"
+      },
+      {
+        "name": "2022_season3",
+        "type": "float",
+        "description": "ground water level measured during August (post monsoon) 2022"
+      },
+      {
+        "name": "2022_season4",
+        "type": "float",
+        "description": "ground water level measured during November (post monsoon) 2022"
+      },
+      {
+        "name": "2023_season1",
+        "type": "float",
+        "description": "ground water level measured during January (post monsoon) 2023"
+      },
+      {
+        "name": "2023_season2",
+        "type": "float",
+        "description": "ground water level measured during March/April/May (pre monsoon) 2023"
+      },
+      {
+        "name": "2023_season3",
+        "type": "NoneType",
+        "description": "ground water level measured during August (post monsoon) 2023"
+      },
+      {
+        "name": "2023_season4",
+        "type": "NoneType",
+        "description": "ground water level measured during November (post monsoon) 2023"
+      },
+      {
+        "name": "objectid",
         "type": "int",
+        "description": "object id "
+      },
+      {
+        "name": "pointInRegion",
+        "type": "NoneType",
         "description": ""
       },
       {
-        "name": "State_Name_With_LGD_Code",
+        "name": "station_id",
         "type": "str",
-        "description": ""
+        "description": "station id"
       },
       {
-        "name": "TYPE",
+        "name": "station_name",
         "type": "str",
-        "description": ""
-      },
-      {
-        "name": "Village",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "Well_Depth (meters)",
-        "type": "float",
-        "description": ""
-      },
-      {
-        "name": "Well_ID",
-        "type": "str",
-        "description": ""
+        "description": "station name "
       }
     ],
-    "datetime": "2025-12-18T20:29:41.585822Z"
+    "datetime": "2025-12-18T21:30:51.106496Z"
   },
   "links": [
     {

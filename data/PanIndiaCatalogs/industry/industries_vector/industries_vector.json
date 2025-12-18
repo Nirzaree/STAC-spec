@@ -9,15 +9,15 @@
   "geometry": {
     "type": "Point",
     "coordinates": [
-      77.3041575243169,
-      8.141069975297208
+      76.3319349,
+      30.813292
     ]
   },
   "bbox": [
-    77.3041575243169,
-    8.141069975297208,
-    77.3041575243169,
-    8.141069975297208
+    76.3319349,
+    30.813292,
+    76.3319349,
+    30.813292
   ],
   "properties": {
     "title": "Industries",
@@ -25,57 +25,47 @@
     "proj:code": "EPSG:4326",
     "table:columns": [
       {
-        "name": "company_na",
+        "name": "UUID",
         "type": "str",
-        "description": ""
+        "description": "unique identifier"
       },
       {
-        "name": "company_ty",
-        "type": "NoneType",
-        "description": ""
-      },
-      {
-        "name": "district",
+        "name": "COMPANY NAME",
         "type": "str",
-        "description": ""
+        "description": "company name "
       },
       {
-        "name": "district_o",
+        "name": "LOCATION TYPE",
         "type": "str",
-        "description": ""
+        "description": "location type"
       },
       {
-        "name": "proposal",
+        "name": "ADDRESS",
         "type": "str",
-        "description": ""
+        "description": "address"
       },
       {
-        "name": "sector_moe",
+        "name": "LEVEL 1",
         "type": "str",
-        "description": ""
+        "description": "level 1"
       },
       {
-        "name": "state",
+        "name": "LEVEL 2",
         "type": "str",
-        "description": ""
+        "description": "level 2"
       },
       {
-        "name": "state_offi",
+        "name": "LEVEL 3",
         "type": "str",
-        "description": ""
+        "description": "Level 3"
       },
       {
-        "name": "tehsil",
-        "type": "str",
-        "description": ""
-      },
-      {
-        "name": "village",
+        "name": "",
         "type": "str",
         "description": ""
       }
     ],
-    "datetime": "2025-12-18T20:29:47.333226Z"
+    "datetime": "2025-12-18T21:30:55.336616Z"
   },
   "links": [
     {

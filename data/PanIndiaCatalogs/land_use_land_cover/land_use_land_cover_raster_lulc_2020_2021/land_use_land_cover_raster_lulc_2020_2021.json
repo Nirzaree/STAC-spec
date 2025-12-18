@@ -2,9 +2,9 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
   "id": "land_use_land_cover_raster_lulc_2020_2021",
   "geometry": {
@@ -43,7 +43,12 @@
   "properties": {
     "title": "LULC IndiaSAT: 2020 - 2021",
     "description": "Land Use Land Cover (LULC) map for India. Novelty of this approach is intra-annual classes for agriculture and water availability aligned to the agriculture seasons of India.\n\nThe Pan India map is available from 2017 onwards at 10m resolution. These are the classes in the current version of LULC:\n1. builtup\n2. water in kharif only\n3. water in kharif and rabi only\n4. water in kharif, rabi and zaid (perennial water)\n5. cropland\n6. trees and forest\n7. barren land\n8. single kharif cropping\n9. single non-kharif cropping\n10. double cropping\n11. tripple cropping\n12. shrubs and scrubs\n\nInput to the model is Dynamic World output, and timeseries data from Landsat-7, Landsat-8, Sentinel-2, Sentinel-1 and MODIS processed using the IndiaSAT methodology. Details of methodology can be found in our technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/tree/main/computing/lulc).",
-    "datetime": "2025-12-18T20:28:27.471666Z"
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      322830,
+      326117
+    ],
+    "datetime": "2025-12-18T21:29:22.548368Z"
   },
   "links": [
     {
@@ -70,6 +75,12 @@
       "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/LULC_v3_river_basin/pan_india_lulc_v3_2020_2021",
       "type": "image/tiff; application=geotiff",
       "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 10
+        }
+      ],
       "classification:classes": [
         {
           "value": 0,
@@ -149,17 +160,6 @@
           "description": "shrubs and scrubs",
           "color_hint": "a9a9a9"
         }
-      ],
-      "raster:bands": [
-        {
-          "data_type": "PixelType",
-          "spatial_resolution": 10
-        }
-      ],
-      "proj:code": "EPSG:4326",
-      "proj:shape": [
-        322830,
-        326117
       ],
       "roles": [
         "data"

@@ -42,7 +42,12 @@
   "properties": {
     "title": "Terrain (SRTM)",
     "description": "Terrain classification map at 30m resolution for India built by ACT4D research group at IIT Delhi. The map is based on Topographic Position Index (TPI) and slope. The algorithm is based on a landform classification method by The Nature Conservency (https://www.jennessent.com/downloads/TPI-poster-TNC_18x22.pdf), with fine tuning of the thresholds done for Indian landscapes.\n\nThe following classes are available in the current version of the map:\n1. V-shape river valleys, Deep narrow canyons\n2. Lateral midslope incised drainages, Local valleys in plains\n3. Upland incised drainages, Stream headwaters\n4. U-shape valleys\n5. Broad flat areas\n6. Broad open slopes\n7. Mesa tops\n8. Upper Slopes\n9. Local ridge/hilltops within broad valleys\n10. Lateral midslope drainage divides, Local ridges in plains\n11. Mountain tops, high ridges\n\nInput to the model is digital elevation data (SRTM Digital Elevation 30m). Details of methodology can be found in our technical manual and the codebase on github\n",
-    "datetime": "2025-12-18T20:28:40.232342Z"
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      107611,
+      108706
+    ],
+    "datetime": "2025-12-18T21:29:33.016560Z"
   },
   "links": [
     {
@@ -74,11 +79,6 @@
           "data_type": "PixelType",
           "spatial_resolution": 30.000000000000004
         }
-      ],
-      "proj:code": "EPSG:4326",
-      "proj:shape": [
-        107611,
-        108706
       ],
       "roles": [
         "data"

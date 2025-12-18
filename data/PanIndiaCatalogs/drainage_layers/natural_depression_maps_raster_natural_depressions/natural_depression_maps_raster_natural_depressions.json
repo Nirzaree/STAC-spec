@@ -2,9 +2,9 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
   "id": "natural_depression_maps_raster_natural_depressions",
   "geometry": {
@@ -43,7 +43,12 @@
   "properties": {
     "title": "Natural Depression Maps",
     "description": "Natural depressions map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). Natural depressions are valuable for planning water structures under MGNREGA as they naturally collect and store water, making them ideal sites for various water conservation interventions. This is computed using pixel level digital elevation data, and r.fill.dir algorithm of GRASS GIS tool. Details of methodology can be found in the [technical manual](https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view) and the codebase on github.\n",
-    "datetime": "2025-12-18T20:28:23.616506Z"
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      104400,
+      105463
+    ],
+    "datetime": "2025-12-18T21:29:20.074660Z"
   },
   "links": [
     {
@@ -70,6 +75,12 @@
       "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/Natural_depression_raster",
       "type": "image/tiff; application=geotiff",
       "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 30.92208190909766
+        }
+      ],
       "classification:classes": [
         {
           "value": 1,
@@ -107,17 +118,6 @@
           "description": "20 - 50",
           "color_hint": "67001f"
         }
-      ],
-      "raster:bands": [
-        {
-          "data_type": "PixelType",
-          "spatial_resolution": 30.92208190909766
-        }
-      ],
-      "proj:code": "EPSG:4326",
-      "proj:shape": [
-        104400,
-        105463
       ],
       "roles": [
         "data"

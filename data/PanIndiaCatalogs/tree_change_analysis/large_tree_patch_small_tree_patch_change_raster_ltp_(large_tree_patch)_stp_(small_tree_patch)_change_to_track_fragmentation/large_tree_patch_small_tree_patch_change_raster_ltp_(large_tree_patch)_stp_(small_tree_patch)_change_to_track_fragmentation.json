@@ -2,9 +2,9 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
   "id": "large_tree_patch_small_tree_patch_change_raster_ltp_(large_tree_patch)_stp_(small_tree_patch)_change_to_track_fragmentation",
   "geometry": {
@@ -43,7 +43,12 @@
   "properties": {
     "title": "LTP STP change",
     "description": "large_tree_patch_small_tree_patch_change_raster",
-    "datetime": "2025-12-18T20:28:52.923109Z"
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      801500,
+      1603000
+    ],
+    "datetime": "2025-12-18T21:29:46.264978Z"
   },
   "links": [
     {
@@ -70,6 +75,12 @@
       "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/tree_health/final_ltp_stp_change_2017_2021",
       "type": "image/tiff; application=geotiff",
       "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 25
+        }
+      ],
       "classification:classes": [
         {
           "value": 0,
@@ -119,17 +130,6 @@
           "description": "Deforestation",
           "color_hint": "ff0000"
         }
-      ],
-      "raster:bands": [
-        {
-          "data_type": "PixelType",
-          "spatial_resolution": 25
-        }
-      ],
-      "proj:code": "EPSG:4326",
-      "proj:shape": [
-        801500,
-        1603000
       ],
       "roles": [
         "data"
