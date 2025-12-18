@@ -1,0 +1,92 @@
+{
+  "type": "Collection",
+  "id": "tree_characteristics",
+  "stac_version": "1.1.0",
+  "description": "Layers related to Tree Characteristics.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_canopy_cover_density_raster_canopy_density_2017_2018/tree_canopy_cover_density_raster_canopy_density_2017_2018.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_canopy_cover_density_raster_canopy_density_2018_2019/tree_canopy_cover_density_raster_canopy_density_2018_2019.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_canopy_cover_density_raster_canopy_density_2019_2020/tree_canopy_cover_density_raster_canopy_density_2019_2020.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_canopy_cover_density_raster_canopy_density_2020_2021/tree_canopy_cover_density_raster_canopy_density_2020_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_canopy_cover_density_raster_canopy_density_2021_2022/tree_canopy_cover_density_raster_canopy_density_2021_2022.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_canopy_height_raster_canopy_height_distribution_2017_2018/tree_canopy_height_raster_canopy_height_distribution_2017_2018.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_canopy_height_raster_canopy_height_distribution_2018_2019/tree_canopy_height_raster_canopy_height_distribution_2018_2019.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_canopy_height_raster_canopy_height_distribution_2019_2020/tree_canopy_height_raster_canopy_height_distribution_2019_2020.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_canopy_height_raster_canopy_height_distribution_2020_2021/tree_canopy_height_raster_canopy_height_distribution_2020_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_canopy_height_raster_canopy_height_distribution_2021_2022/tree_canopy_height_raster_canopy_height_distribution_2021_2022.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    }
+  ],
+  "title": "Tree Characteristics",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          68.0,
+          6.0,
+          97.0,
+          37.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}

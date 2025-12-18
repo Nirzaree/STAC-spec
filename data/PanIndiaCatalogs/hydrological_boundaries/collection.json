@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "hydrological_boundaries",
+  "stac_version": "1.1.0",
+  "description": "Layers for Hydrological boundaries",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./subbasin_boundaries_vector/subbasin_boundaries_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./watershed_boundaries_vector/watershed_boundaries_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    }
+  ],
+  "title": "Hydrological boundaries",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          68.0,
+          6.0,
+          97.0,
+          37.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}

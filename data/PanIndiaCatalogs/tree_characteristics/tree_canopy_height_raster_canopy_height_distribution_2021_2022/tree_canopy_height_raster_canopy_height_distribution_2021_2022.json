@@ -1,0 +1,60 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "tree_canopy_height_raster_canopy_height_distribution_2021_2022",
+  "geometry": null,
+  "properties": {
+    "title": "Canopy height",
+    "description": "tree_canopy_height_raster",
+    "ee_layer_name": "Canopy Height Distribution 2021-2022",
+    "style_file_url": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Tree%20Health/canopy_height.qml",
+    "datetime": "2025-12-18T04:06:28.386290Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Tree Characteristics"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Tree Characteristics"
+    }
+  ],
+  "assets": {
+    "style_file": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Tree%20Health/canopy_height.qml",
+      "type": "application/json",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    },
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/tree_health/modal_ch_2021",
+      "type": "text/plain",
+      "title": "Earth Engine Asset Link",
+      "gee:type": "Image",
+      "gee:assets": [
+        {
+          "name": "Canopy Height Distribution 2021-2022",
+          "type": "ee:Image"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "tree_characteristics"
+}

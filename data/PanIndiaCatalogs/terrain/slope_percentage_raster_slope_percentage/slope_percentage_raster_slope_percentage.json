@@ -1,0 +1,52 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "slope_percentage_raster_slope_percentage",
+  "geometry": null,
+  "properties": {
+    "title": "Slope percentage",
+    "description": "slope_percentage_raster",
+    "ee_layer_name": "Slope Percentage",
+    "style_file_url": "No custom style",
+    "datetime": "2025-12-18T04:06:27.061619Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrain"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrain"
+    }
+  ],
+  "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/slope_percentage_fabdem",
+      "type": "text/plain",
+      "title": "Earth Engine Asset Link",
+      "gee:type": "Image",
+      "gee:assets": [
+        {
+          "name": "Slope Percentage",
+          "type": "ee:Image"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "terrain"
+}

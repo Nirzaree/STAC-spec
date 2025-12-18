@@ -1,0 +1,60 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "catchment_area_single_flow_maps_raster_catchment_area_singleflow",
+  "geometry": null,
+  "properties": {
+    "title": "Catchment Area Singleflow Maps",
+    "description": "catchment_area_single_flow_maps_raster",
+    "ee_layer_name": "Catchment Area Singleflow",
+    "style_file_url": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Catchment/catchment_area_multiflow.qml",
+    "datetime": "2025-12-18T04:06:25.127628Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Drainage Layers"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Drainage Layers"
+    }
+  ],
+  "assets": {
+    "style_file": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Catchment/catchment_area_multiflow.qml",
+      "type": "application/json",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    },
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/catchment_area_singleflow",
+      "type": "text/plain",
+      "title": "Earth Engine Asset Link",
+      "gee:type": "Image",
+      "gee:assets": [
+        {
+          "name": "Catchment Area Singleflow",
+          "type": "ee:Image"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "drainage_layers"
+}

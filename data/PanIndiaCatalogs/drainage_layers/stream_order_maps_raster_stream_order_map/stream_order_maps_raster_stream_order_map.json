@@ -1,0 +1,60 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "stream_order_maps_raster_stream_order_map",
+  "geometry": null,
+  "properties": {
+    "title": "Stream Order",
+    "description": "stream_order_maps_raster",
+    "ee_layer_name": "Stream Order Map",
+    "style_file_url": "https://github.com/core-stack-org/QGIS-Styles/blob/main/Hydrology/Stream_order_raster_style.qml",
+    "datetime": "2025-12-18T04:06:25.126643Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Drainage Layers"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Drainage Layers"
+    }
+  ],
+  "assets": {
+    "style_file": {
+      "href": "https://github.com/core-stack-org/QGIS-Styles/blob/main/Hydrology/Stream_order_raster_style.qml",
+      "type": "application/json",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    },
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/Stream_Order_Raster_India",
+      "type": "text/plain",
+      "title": "Earth Engine Asset Link",
+      "gee:type": "Image",
+      "gee:assets": [
+        {
+          "name": "Stream Order Map",
+          "type": "ee:Image"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "drainage_layers"
+}

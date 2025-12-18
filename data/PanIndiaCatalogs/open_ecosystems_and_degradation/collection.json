@@ -1,0 +1,57 @@
+{
+  "type": "Collection",
+  "id": "open_ecosystems_and_degradation",
+  "stac_version": "1.1.0",
+  "description": "Layers related to Open ecosystems and degradation.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./wasteland_atlas_raster_wasteland_atlas_2015/wasteland_atlas_raster_wasteland_atlas_2015.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./wasteland_atlas_raster_wasteland_atlas_2008/wasteland_atlas_raster_wasteland_atlas_2008.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./land_degradation_raster_land_degradation_(wris)/land_degradation_raster_land_degradation_(wris).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    }
+  ],
+  "title": "Open ecosystems and degradation",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          68.0,
+          6.0,
+          97.0,
+          37.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}

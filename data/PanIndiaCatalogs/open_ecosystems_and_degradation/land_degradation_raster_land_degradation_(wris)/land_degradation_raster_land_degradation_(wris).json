@@ -1,0 +1,60 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "land_degradation_raster_land_degradation_(wris)",
+  "geometry": null,
+  "properties": {
+    "title": "Land degradation (2015-2016) (GoI)",
+    "description": "Assessment of land degradation status conducted for India by Indian Space Research Organization (ISRO). The land degradation mapping addresses 8 major processes\nand 36 land degradation classes. \n\nDetails of the methodology can be found on [Bhuvan](https://bhuvan-app1.nrsc.gov.in/) portal.",
+    "ee_layer_name": "Land degradation (WRIS)",
+    "style_file_url": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Land/wris_land%20degradation.qml",
+    "datetime": "2025-12-18T04:06:26.586804Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Open ecosystems and degradation"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Open ecosystems and degradation"
+    }
+  ],
+  "assets": {
+    "style_file": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Land/wris_land%20degradation.qml",
+      "type": "application/json",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    },
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/WRIS/Land_degradation_pan_india",
+      "type": "text/plain",
+      "title": "Earth Engine Asset Link",
+      "gee:type": "Image",
+      "gee:assets": [
+        {
+          "name": "Land degradation (WRIS)",
+          "type": "ee:Image"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "open_ecosystems_and_degradation"
+}

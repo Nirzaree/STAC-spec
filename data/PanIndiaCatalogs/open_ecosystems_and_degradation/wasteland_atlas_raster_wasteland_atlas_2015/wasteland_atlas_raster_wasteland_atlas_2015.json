@@ -1,0 +1,60 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "wasteland_atlas_raster_wasteland_atlas_2015",
+  "geometry": null,
+  "properties": {
+    "title": "Wasteland Atlas 2015 (GoI)",
+    "description": "National assessment of wastelands for India by Indian Space Research Organization (ISRO). \nFollowing classes exist in the map: \n\n1. Scrub Land\n2. Waterlogged Area\n3. Degraded Forest\n4. Degraded Land Under Plantation Crop\n5. Sandy Area\n6. Mining/ Industrial Wastelands\n7. Barren Rocky Area\n8. Gullied and Ravinous Land\n9. Salt Affected Area\n10. Degraded Pastures/ Grazing Land\n11. Shifting Cultivation\n12. Snow Covered/ Glacial Area\n        \nDetails of the methodology can be found on [Bhuvan](https://bhuvan-app1.nrsc.gov.in/) portal.",
+    "ee_layer_name": "Wasteland Atlas 2015",
+    "style_file_url": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Land/wris_wasteland_1516.qml",
+    "datetime": "2025-12-18T04:06:26.585956Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Open ecosystems and degradation"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Open ecosystems and degradation"
+    }
+  ],
+  "assets": {
+    "style_file": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Land/wris_wasteland_1516.qml",
+      "type": "application/json",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    },
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/WRIS/wasteland_2015_2016_pan_india",
+      "type": "text/plain",
+      "title": "Earth Engine Asset Link",
+      "gee:type": "Image",
+      "gee:assets": [
+        {
+          "name": "Wasteland Atlas 2015",
+          "type": "ee:Image"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "open_ecosystems_and_degradation"
+}

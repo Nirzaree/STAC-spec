@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "tree_change_analysis",
+  "stac_version": "1.1.0",
+  "description": "Layers related to Tree change analysis.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_cover_change_raster_tree_cover_change_to_track_improvement_and_degradation/tree_cover_change_raster_tree_cover_change_to_track_improvement_and_degradation.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./large_tree_patch_small_tree_patch_change_raster_ltp_(large_tree_patch)_stp_(small_tree_patch)_change_to_track_fragmentation/large_tree_patch_small_tree_patch_change_raster_ltp_(large_tree_patch)_stp_(small_tree_patch)_change_to_track_fragmentation.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    }
+  ],
+  "title": "Tree change analysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          68.0,
+          6.0,
+          97.0,
+          37.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}

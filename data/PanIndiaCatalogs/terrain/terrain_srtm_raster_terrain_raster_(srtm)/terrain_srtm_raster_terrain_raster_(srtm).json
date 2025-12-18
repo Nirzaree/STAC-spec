@@ -1,0 +1,60 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "terrain_srtm_raster_terrain_raster_(srtm)",
+  "geometry": null,
+  "properties": {
+    "title": "Terrain (SRTM)",
+    "description": "Terrain classification map at 30m resolution for India built by ACT4D research group at IIT Delhi. The map is based on Topographic Position Index (TPI) and slope. The algorithm is based on a landform classification method by The Nature Conservency (https://www.jennessent.com/downloads/TPI-poster-TNC_18x22.pdf), with fine tuning of the thresholds done for Indian landscapes.\n\nThe following classes are available in the current version of the map:\n1. V-shape river valleys, Deep narrow canyons\n2. Lateral midslope incised drainages, Local valleys in plains\n3. Upland incised drainages, Stream headwaters\n4. U-shape valleys\n5. Broad flat areas\n6. Broad open slopes\n7. Mesa tops\n8. Upper Slopes\n9. Local ridge/hilltops within broad valleys\n10. Lateral midslope drainage divides, Local ridges in plains\n11. Mountain tops, high ridges\n\nInput to the model is digital elevation data (SRTM Digital Elevation 30m). Details of methodology can be found in our technical manual and the codebase on github\n",
+    "ee_layer_name": "Terrain Raster (SRTM)",
+    "style_file_url": "https://github.com/core-stack-org/QGIS-Styles/blob/main/Land/terrain_1-12class.qml",
+    "datetime": "2025-12-18T04:06:26.594575Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrain"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrain"
+    }
+  ],
+  "assets": {
+    "style_file": {
+      "href": "https://github.com/core-stack-org/QGIS-Styles/blob/main/Land/terrain_1-12class.qml",
+      "type": "application/json",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    },
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/terrain/pan_india_terrain_raster",
+      "type": "text/plain",
+      "title": "Earth Engine Asset Link",
+      "gee:type": "Image",
+      "gee:assets": [
+        {
+          "name": "Terrain Raster (SRTM)",
+          "type": "ee:Image"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "terrain"
+}

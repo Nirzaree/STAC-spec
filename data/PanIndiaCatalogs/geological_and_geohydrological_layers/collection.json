@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "geological_and_geohydrological_layers",
+  "stac_version": "1.1.0",
+  "description": "Layers related to Geological and geohydrological layers.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./lineaments_raster_lineament/lineaments_raster_lineament.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    }
+  ],
+  "title": "Geological and geohydrological layers",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          68.0,
+          6.0,
+          97.0,
+          37.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}

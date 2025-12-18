@@ -1,0 +1,60 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "distance_to_upstream_drainage_lines_map_raster_distance_to_upstream_drainage_line",
+  "geometry": null,
+  "properties": {
+    "title": "Distance to Upstream drainage line",
+    "description": "distance_to_upstream_drainage_lines_map_raster",
+    "ee_layer_name": "Distance to Upstream Drainage Line",
+    "style_file_url": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Hydrology/Distance_to_upstreamDL_style.qml",
+    "datetime": "2025-12-18T04:06:25.127213Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Drainage Layers"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Drainage Layers"
+    }
+  ],
+  "assets": {
+    "style_file": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Hydrology/Distance_to_upstreamDL_style.qml",
+      "type": "application/json",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    },
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/distance_to_nearest_upstream_DL_raster",
+      "type": "text/plain",
+      "title": "Earth Engine Asset Link",
+      "gee:type": "Image",
+      "gee:assets": [
+        {
+          "name": "Distance to Upstream Drainage Line",
+          "type": "ee:Image"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "drainage_layers"
+}
