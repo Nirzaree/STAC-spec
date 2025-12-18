@@ -7,7 +7,7 @@
   "properties": {
     "title": "Catchment Area Multiflow Maps",
     "description": "catchment_area_mutiflow_maps_raster",
-    "datetime": "2025-12-18T06:46:11.106400Z"
+    "datetime": "2025-12-18T07:02:46.944815Z"
   },
   "links": [
     {
@@ -30,27 +30,20 @@
     }
   ],
   "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/catchment_area_multiflow",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "roles": [
+        "data"
+      ]
+    },
     "QGIS Style file": {
       "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Catchment/catchment_area_singleflow.qml",
       "type": "application/xml",
       "roles": [
         "metadata",
         "style"
-      ]
-    },
-    "gee_asset": {
-      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/catchment_area_multiflow",
-      "type": "image/tiff; application=geotiff",
-      "title": "Asset Link",
-      "gee:type": "Image",
-      "gee:assets": [
-        {
-          "name": "Catchment Area Multiflow",
-          "type": "ee:Image"
-        }
-      ],
-      "roles": [
-        "data"
       ]
     }
   },

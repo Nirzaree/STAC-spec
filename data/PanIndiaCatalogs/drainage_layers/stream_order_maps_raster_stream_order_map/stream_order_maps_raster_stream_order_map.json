@@ -7,7 +7,7 @@
   "properties": {
     "title": "Stream Order",
     "description": "stream_order_maps_raster",
-    "datetime": "2025-12-18T06:46:11.105232Z"
+    "datetime": "2025-12-18T07:02:46.941739Z"
   },
   "links": [
     {
@@ -30,27 +30,20 @@
     }
   ],
   "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/Stream_Order_Raster_India",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "roles": [
+        "data"
+      ]
+    },
     "QGIS Style file": {
       "href": "https://github.com/core-stack-org/QGIS-Styles/blob/main/Hydrology/Stream_order_raster_style.qml",
       "type": "application/xml",
       "roles": [
         "metadata",
         "style"
-      ]
-    },
-    "gee_asset": {
-      "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/Stream_Order_Raster_India",
-      "type": "image/tiff; application=geotiff",
-      "title": "Asset Link",
-      "gee:type": "Image",
-      "gee:assets": [
-        {
-          "name": "Stream Order Map",
-          "type": "ee:Image"
-        }
-      ],
-      "roles": [
-        "data"
       ]
     }
   },

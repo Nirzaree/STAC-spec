@@ -7,7 +7,7 @@
   "properties": {
     "title": "Wasteland Atlas 2015 (GoI)",
     "description": "National assessment of wastelands for India by Indian Space Research Organization (ISRO). \nFollowing classes exist in the map: \n\n1. Scrub Land\n2. Waterlogged Area\n3. Degraded Forest\n4. Degraded Land Under Plantation Crop\n5. Sandy Area\n6. Mining/ Industrial Wastelands\n7. Barren Rocky Area\n8. Gullied and Ravinous Land\n9. Salt Affected Area\n10. Degraded Pastures/ Grazing Land\n11. Shifting Cultivation\n12. Snow Covered/ Glacial Area\n        \nDetails of the methodology can be found on [Bhuvan](https://bhuvan-app1.nrsc.gov.in/) portal.",
-    "datetime": "2025-12-18T06:46:12.298033Z"
+    "datetime": "2025-12-18T07:02:47.931548Z"
   },
   "links": [
     {
@@ -30,27 +30,20 @@
     }
   ],
   "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/WRIS/wasteland_2015_2016_pan_india",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "roles": [
+        "data"
+      ]
+    },
     "QGIS Style file": {
       "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Land/wris_wasteland_1516.qml",
       "type": "application/xml",
       "roles": [
         "metadata",
         "style"
-      ]
-    },
-    "gee_asset": {
-      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/WRIS/wasteland_2015_2016_pan_india",
-      "type": "image/tiff; application=geotiff",
-      "title": "Asset Link",
-      "gee:type": "Image",
-      "gee:assets": [
-        {
-          "name": "Wasteland Atlas 2015",
-          "type": "ee:Image"
-        }
-      ],
-      "roles": [
-        "data"
       ]
     }
   },

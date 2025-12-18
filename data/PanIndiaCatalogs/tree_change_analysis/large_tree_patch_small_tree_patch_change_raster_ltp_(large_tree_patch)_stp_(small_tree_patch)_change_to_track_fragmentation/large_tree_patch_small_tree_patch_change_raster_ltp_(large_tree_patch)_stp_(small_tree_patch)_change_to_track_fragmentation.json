@@ -7,7 +7,7 @@
   "properties": {
     "title": "LTP STP change",
     "description": "large_tree_patch_small_tree_patch_change_raster",
-    "datetime": "2025-12-18T06:46:13.879079Z"
+    "datetime": "2025-12-18T07:02:49.193746Z"
   },
   "links": [
     {
@@ -30,27 +30,20 @@
     }
   ],
   "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/tree_health/final_ltp_stp_change_2017_2021",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "roles": [
+        "data"
+      ]
+    },
     "QGIS Style file": {
       "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Tree%20Health/ltp_stp_style.qml",
       "type": "application/xml",
       "roles": [
         "metadata",
         "style"
-      ]
-    },
-    "gee_asset": {
-      "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/tree_health/final_ltp_stp_change_2017_2021",
-      "type": "image/tiff; application=geotiff",
-      "title": "Asset Link",
-      "gee:type": "Image",
-      "gee:assets": [
-        {
-          "name": "LTP (Large Tree Patch) - STP (Small Tree Patch) Change to track fragmentation",
-          "type": "ee:Image"
-        }
-      ],
-      "roles": [
-        "data"
       ]
     }
   },
