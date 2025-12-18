@@ -250321,32 +250321,32 @@
       {
         "name": "Age",
         "type": "str",
-        "description": ""
+        "description": "age of lithology"
       },
       {
         "name": "Lithology_",
         "type": "NoneType",
-        "description": ""
+        "description": "lithology type"
       },
       {
         "name": "Major_Aq_1",
         "type": "str",
-        "description": ""
+        "description": "major aquifer 1"
       },
       {
         "name": "Major_Aqui",
         "type": "str",
-        "description": ""
+        "description": "major aquifer"
       },
       {
         "name": "Principal_",
         "type": "str",
-        "description": ""
+        "description": "principal aquifer system name"
       },
       {
         "name": "Recommende",
         "type": "NoneType",
-        "description": ""
+        "description": "recommended groundwater management interventions"
       },
       {
         "name": "aquifer",
@@ -250366,37 +250366,37 @@
       {
         "name": "area_re",
         "type": "float",
-        "description": ""
+        "description": "area in km2"
       },
       {
         "name": "avg_mbgl",
         "type": "str",
-        "description": ""
+        "description": "decadal average depth (in meters below ground level)"
       },
       {
         "name": "m2_perday",
         "type": "str",
-        "description": ""
+        "description": "transmissivity (in m2/day)"
       },
       {
         "name": "m3_per_day",
         "type": "str",
-        "description": ""
+        "description": "Yield (in m3/day)"
       },
       {
         "name": "mbgl",
         "type": "str",
-        "description": ""
+        "description": "Fractures encountered (in m bgl)"
       },
       {
         "name": "newcode14",
         "type": "str",
-        "description": ""
+        "description": "principal aquifer alphabet code"
       },
       {
         "name": "newcode43",
         "type": "str",
-        "description": ""
+        "description": "major aquifer code"
       },
       {
         "name": "objectid",
@@ -250406,12 +250406,12 @@
       {
         "name": "pa_order",
         "type": "float",
-        "description": ""
+        "description": "principal aquifer numeric code"
       },
       {
         "name": "per_cm",
         "type": "str",
-        "description": ""
+        "description": "Quality (EC in Micromhos/cm)"
       },
       {
         "name": "shape_Area",
@@ -250426,7 +250426,7 @@
       {
         "name": "state",
         "type": "str",
-        "description": ""
+        "description": "state name "
       },
       {
         "name": "system",
@@ -250436,20 +250436,20 @@
       {
         "name": "test",
         "type": "str",
-        "description": ""
+        "description": "codes identifying aquifer/lithology test units"
       },
       {
         "name": "yeild__",
         "type": "str",
-        "description": ""
+        "description": "specific yield (in %)"
       },
       {
         "name": "zone_m",
         "type": "str",
-        "description": ""
+        "description": "thickness of weathered zone (in m)"
       }
     ],
-    "datetime": "2025-12-18T09:20:39.312309Z"
+    "datetime": "2025-12-18T20:29:42.081544Z"
   },
   "links": [
     {

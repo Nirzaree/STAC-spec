@@ -43,7 +43,7 @@
   "properties": {
     "title": "Distance to Upstream drainage line",
     "description": "Distance to upstream drainage line map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). Spatial indexing technique (e.g. k-d tree) is applied on pixel level digital elevation data (SRTM DEM) to compute the distance of each non-drainage pixel to its nearest upstream drainage line. \nDetails of methodology can be found in the [technical manual](https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view) and the codebase on github.",
-    "datetime": "2025-12-18T09:17:42.148582Z"
+    "datetime": "2025-12-18T20:28:21.522567Z"
   },
   "links": [
     {

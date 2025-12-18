@@ -17,6 +17,11 @@
     },
     {
       "rel": "item",
+      "href": "./basin_vector/basin_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
       "href": "./watershed_boundaries_vector/watershed_boundaries_vector.json",
       "type": "application/geo+json"
     },

@@ -36,6 +36,11 @@
       "type": "application/geo+json"
     },
     {
+      "rel": "item",
+      "href": "./drainage_lines_vector/drainage_lines_vector.json",
+      "type": "application/geo+json"
+    },
+    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",

@@ -2483,22 +2483,22 @@
       {
         "name": "agwd_dom_i",
         "type": "float",
-        "description": ""
+        "description": "annual ground water draft for domestic and industrial"
       },
       {
         "name": "agwd_irr",
         "type": "float",
-        "description": ""
+        "description": "annual ground water draft for irrigation"
       },
       {
         "name": "agwd_tot",
         "type": "float",
-        "description": ""
+        "description": "total annual ground water draft"
       },
       {
         "name": "ar_gwr_tot",
         "type": "float",
-        "description": ""
+        "description": "annual extractable ground water replenishment"
       },
       {
         "name": "block",
@@ -2508,12 +2508,12 @@
       {
         "name": "class",
         "type": "str",
-        "description": ""
+        "description": "ground water resource categorization(Safe, Semi-Critical, Critical, Over-Exploited, Saline)"
       },
       {
         "name": "code",
         "type": "float",
-        "description": ""
+        "description": "code of the class(Safe=1, Semi-Critical=2, Critical=3, Over-Exploited=4, Saline=5)"
       },
       {
         "name": "district",
@@ -2523,17 +2523,17 @@
       {
         "name": "gwr_2011_2",
         "type": "float",
-        "description": ""
+        "description": "ground water resource "
       },
       {
         "name": "na_gwa",
         "type": "float",
-        "description": ""
+        "description": "net annual ground water availability"
       },
       {
         "name": "nat_discha",
         "type": "float",
-        "description": ""
+        "description": "natural discharge"
       },
       {
         "name": "objectid",
@@ -2543,7 +2543,7 @@
       {
         "name": "sgw_dev_pe",
         "type": "float",
-        "description": ""
+        "description": "stage of ground water development in percentage"
       },
       {
         "name": "st_area(sh",
@@ -2566,7 +2566,7 @@
         "description": ""
       }
     ],
-    "datetime": "2025-12-18T09:20:38.572023Z"
+    "datetime": "2025-12-18T20:29:41.606943Z"
   },
   "links": [
     {

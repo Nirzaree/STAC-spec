@@ -41,8 +41,8 @@
   ],
   "properties": {
     "title": "Slope percentage",
-    "description": "slope_percentage_raster",
-    "datetime": "2025-12-18T09:18:02.568541Z"
+    "description": "Map of per pixel slope computed from digital elevation data (SRTM DEM).",
+    "datetime": "2025-12-18T20:28:42.545503Z"
   },
   "links": [
     {
