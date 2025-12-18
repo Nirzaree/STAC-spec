@@ -1,13 +1,48 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
   "id": "stream_order_maps_raster_stream_order_map",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          68.18625,
+          8.07791666666667
+        ],
+        [
+          68.18625,
+          37.07819444444445
+        ],
+        [
+          97.41513888888888,
+          37.07819444444445
+        ],
+        [
+          97.41513888888888,
+          8.07791666666667
+        ],
+        [
+          68.18625,
+          8.07791666666667
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    68.18625,
+    8.07791666666667,
+    97.41513888888888,
+    37.07819444444445
+  ],
   "properties": {
     "title": "Stream Order",
     "description": "Stream order raster map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). While drainage lines are essential to plan assets such as check dams located on the drainage lines, it is also important to identify areas outside of the drainage lines that are under the influence of drainage lines. We use digital elevation model (DEM) data that provides pixel level information on the elevation and drainage lines (with stream orders) as inputs to compute stream order rasters. Areas with higher stream orders are those downstream of areas with lower stream orders, and can help identify cropping regions like low-land, mid-land, and up-land. Details of methodology can be found in the [technical manual](https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view) and the codebase on github.",
-    "datetime": "2025-12-18T07:35:04.255308Z"
+    "datetime": "2025-12-18T09:09:36.086980Z"
   },
   "links": [
     {
@@ -33,17 +68,21 @@
     "gee_asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/Stream_Order_Raster_India",
       "type": "image/tiff; application=geotiff",
-      "title": "Asset Link",
+      "title": "Data for Stream Order",
+      "description": "Stream order raster map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). While drainage lines are essential to plan assets such as check dams located on the drainage lines, it is also important to identify areas outside of the drainage lines that are under the influence of drainage lines. We use digital elevation model (DEM) data that provides pixel level information on the elevation and drainage lines (with stream orders) as inputs to compute stream order rasters. Areas with higher stream orders are those downstream of areas with lower stream orders, and can help identify cropping regions like low-land, mid-land, and up-land. Details of methodology can be found in the [technical manual](https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view) and the codebase on github.",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 30.92208077590932
+        }
+      ],
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        104401,
+        105224
+      ],
       "roles": [
         "data"
-      ]
-    },
-    "QGIS Style file": {
-      "href": "https://github.com/core-stack-org/QGIS-Styles/blob/main/Hydrology/Stream_order_raster_style.qml",
-      "type": "application/xml",
-      "roles": [
-        "metadata",
-        "style"
       ]
     }
   },

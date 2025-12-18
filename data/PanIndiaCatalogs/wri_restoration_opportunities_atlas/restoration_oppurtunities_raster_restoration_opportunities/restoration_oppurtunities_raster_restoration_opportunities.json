@@ -1,13 +1,49 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
   "id": "restoration_oppurtunities_raster_restoration_opportunities",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -261255.0,
+          761951.0
+        ],
+        [
+          -261255.0,
+          4246151.0
+        ],
+        [
+          2806065.0,
+          4246151.0
+        ],
+        [
+          2806065.0,
+          761951.0
+        ],
+        [
+          -261255.0,
+          761951.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -261255,
+    761951,
+    2806065,
+    4246151
+  ],
   "properties": {
     "title": "Restoration opportunities",
     "description": "restoration_oppurtunities_raster",
-    "datetime": "2025-12-18T07:35:15.114056Z"
+    "datetime": "2025-12-18T09:10:02.249526Z"
   },
   "links": [
     {
@@ -33,14 +69,53 @@
     "gee_asset": {
       "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/WRI/LandscapeRestorationOpportunities",
       "type": "image/tiff; application=geotiff",
-      "title": "Asset Link",
+      "title": "Data for Restoration opportunities",
+      "description": "restoration_oppurtunities_raster",
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "Excluded",
+          "description": "Excluded",
+          "color_hint": "d2d2d2"
+        },
+        {
+          "value": 1,
+          "name": "Mosaic Restoration",
+          "description": "Mosaic Restoration",
+          "color_hint": "d79b0f"
+        },
+        {
+          "value": 2,
+          "name": "Wide scale Restoration",
+          "description": "Wide scale Restoration",
+          "color_hint": "0f077c"
+        },
+        {
+          "value": 3,
+          "name": "Protection",
+          "description": "Protection",
+          "color_hint": "4fbc14"
+        }
+      ],
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 60
+        }
+      ],
+      "proj:code": "EPSG:32643",
+      "proj:shape": [
+        58070,
+        51122
+      ],
       "roles": [
         "data"
       ]
     },
-    "QGIS Style file": {
+    "qgis_style": {
       "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Restoration/Restoration_style.qml",
       "type": "application/xml",
+      "title": "QGIS Style file",
       "roles": [
         "metadata",
         "style"
