@@ -2,12 +2,12 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [],
-  "id": "land_use_land_cover_raster_lulc_2010_2011",
+  "id": "nrsc_land_use_land_cover_raster_lulc_2010_2011",
   "geometry": null,
   "properties": {
-    "title": "LULC WRIS",
-    "description": "Land Use Land Cover (LULC) map for India. Novelty of this approach is intra-annual classes for agriculture and water availability aligned to the agriculture seasons of India.\n\nThe Pan India map is available from 2017 onwards at 10m resolution. These are the classes in the current version of LULC:\n1. builtup\n2. water in kharif only\n3. water in kharif and rabi only\n4. water in kharif, rabi and zaid (perennial water)\n5. cropland\n6. trees and forest\n7. barren land\n8. single kharif cropping\n9. single non-kharif cropping\n10. double cropping\n11. tripple cropping\n12. shrubs and scrubs\n\nInput to the model is Dynamic World output, and timeseries data from Landsat-7, Landsat-8, Sentinel-2, Sentinel-1 and MODIS processed using the IndiaSAT methodology. Details of methodology can be found in our technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/tree/main/computing/lulc).",
-    "datetime": "2025-12-18T07:02:47.407938Z"
+    "title": "Land Use Land Cover (NRSC)",
+    "description": "Annual Land Use Land Cover maps for India built by National Remote Sensing Center, Indian Space Research Organization (ISRO) and available on India Water Resources Information System (WRIS) [portal](https://indiawris.gov.in/wris/#/).\n\nThe annual maps are available from 2005 onwards at 56m resolution.\n \nFollowing classes exist in the map: \n1. Built Up\n2. Cropland -  Kharif\n3. Cropland - Rabi\n4. Cropland - Zaid\n5. Cropland - Double/Triple\n6. Fallow Land - Current Fallow\n7. Agriculture Plantation - Plantation\n8. Forest - Evergreen/Semi-Evergreen\n9. Forest - Deciduous\n10. Forest - Degraded/Scrub\n11. Forest - Littoral Swamp\n12. Natural - Grassland\n13. Other - Shifting Cultivation\n14. Wasteland\n15. Sandy Area - Rann\n16. Waterbodies - Max\n17. Waterbodies - Min\n18. Snow Covered / Glacial Area   \n",
+    "datetime": "2025-12-18T07:35:12.424886Z"
   },
   "links": [
     {

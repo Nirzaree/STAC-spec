@@ -1,0 +1,51 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "nrsc_land_use_land_cover_raster_lulc_2017_2018",
+  "geometry": null,
+  "properties": {
+    "title": "Land Use Land Cover (NRSC)",
+    "description": "Annual Land Use Land Cover maps for India built by National Remote Sensing Center, Indian Space Research Organization (ISRO) and available on India Water Resources Information System (WRIS) [portal](https://indiawris.gov.in/wris/#/).\n\nThe annual maps are available from 2005 onwards at 56m resolution.\n \nFollowing classes exist in the map: \n1. Built Up\n2. Cropland -  Kharif\n3. Cropland - Rabi\n4. Cropland - Zaid\n5. Cropland - Double/Triple\n6. Fallow Land - Current Fallow\n7. Agriculture Plantation - Plantation\n8. Forest - Evergreen/Semi-Evergreen\n9. Forest - Deciduous\n10. Forest - Degraded/Scrub\n11. Forest - Littoral Swamp\n12. Natural - Grassland\n13. Other - Shifting Cultivation\n14. Wasteland\n15. Sandy Area - Rann\n16. Waterbodies - Max\n17. Waterbodies - Min\n18. Snow Covered / Glacial Area   \n",
+    "datetime": "2025-12-18T07:35:13.152727Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Land Use Land Cover"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Land Use Land Cover"
+    }
+  ],
+  "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/WRIS/lulc250k_2017_2018_pan_india",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "roles": [
+        "data"
+      ]
+    },
+    "QGIS Style file": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Land/wris_lulc.qml",
+      "type": "application/xml",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    }
+  },
+  "collection": "land_use_land_cover"
+}

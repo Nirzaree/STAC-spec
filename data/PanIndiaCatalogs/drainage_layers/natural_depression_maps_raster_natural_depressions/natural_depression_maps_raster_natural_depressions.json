@@ -6,8 +6,8 @@
   "geometry": null,
   "properties": {
     "title": "Natural Depression Maps",
-    "description": "natural_depression_maps_raster",
-    "datetime": "2025-12-18T07:02:46.945266Z"
+    "description": "Natural depressions map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). Natural depressions are valuable for planning water structures under MGNREGA as they naturally collect and store water, making them ideal sites for various water conservation interventions. This is computed using pixel level digital elevation data, and r.fill.dir algorithm of GRASS GIS tool. Details of methodology can be found in the [technical manual (https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view) and the codebase on github.\n",
+    "datetime": "2025-12-18T07:35:04.258858Z"
   },
   "links": [
     {

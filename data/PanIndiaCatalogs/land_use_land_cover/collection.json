@@ -47,67 +47,67 @@
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2005_2006/land_use_land_cover_raster_lulc_2005_2006.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2005_2006/nrsc_land_use_land_cover_raster_lulc_2005_2006.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2006_2007/land_use_land_cover_raster_lulc_2006_2007.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2006_2007/nrsc_land_use_land_cover_raster_lulc_2006_2007.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2007_2008/land_use_land_cover_raster_lulc_2007_2008.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2007_2008/nrsc_land_use_land_cover_raster_lulc_2007_2008.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2008_2009/land_use_land_cover_raster_lulc_2008_2009.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2008_2009/nrsc_land_use_land_cover_raster_lulc_2008_2009.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2009_2010/land_use_land_cover_raster_lulc_2009_2010.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2009_2010/nrsc_land_use_land_cover_raster_lulc_2009_2010.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2010_2011/land_use_land_cover_raster_lulc_2010_2011.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2010_2011/nrsc_land_use_land_cover_raster_lulc_2010_2011.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2011_2012/land_use_land_cover_raster_lulc_2011_2012.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2011_2012/nrsc_land_use_land_cover_raster_lulc_2011_2012.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2012_2013/land_use_land_cover_raster_lulc_2012_2013.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2012_2013/nrsc_land_use_land_cover_raster_lulc_2012_2013.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2013_2014/land_use_land_cover_raster_lulc_2013_2014.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2013_2014/nrsc_land_use_land_cover_raster_lulc_2013_2014.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2014_2015/land_use_land_cover_raster_lulc_2014_2015.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2014_2015/nrsc_land_use_land_cover_raster_lulc_2014_2015.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2015_2016/land_use_land_cover_raster_lulc_2015_2016.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2015_2016/nrsc_land_use_land_cover_raster_lulc_2015_2016.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2016_2017/land_use_land_cover_raster_lulc_2016_2017.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2016_2017/nrsc_land_use_land_cover_raster_lulc_2016_2017.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./land_use_land_cover_raster_lulc_2017_2018/land_use_land_cover_raster_lulc_2017_2018.json",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2017_2018/nrsc_land_use_land_cover_raster_lulc_2017_2018.json",
       "type": "application/geo+json"
     },
     {

@@ -7,7 +7,7 @@
   "properties": {
     "title": "LULC IndiaSAT",
     "description": "Land Use Land Cover (LULC) map for India. Novelty of this approach is intra-annual classes for agriculture and water availability aligned to the agriculture seasons of India.\n\nThe Pan India map is available from 2017 onwards at 10m resolution. These are the classes in the current version of LULC:\n1. builtup\n2. water in kharif only\n3. water in kharif and rabi only\n4. water in kharif, rabi and zaid (perennial water)\n5. cropland\n6. trees and forest\n7. barren land\n8. single kharif cropping\n9. single non-kharif cropping\n10. double cropping\n11. tripple cropping\n12. shrubs and scrubs\n\nInput to the model is Dynamic World output, and timeseries data from Landsat-7, Landsat-8, Sentinel-2, Sentinel-1 and MODIS processed using the IndiaSAT methodology. Details of methodology can be found in our technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/tree/main/computing/lulc).",
-    "datetime": "2025-12-18T07:02:47.051799Z"
+    "datetime": "2025-12-18T07:35:07.950570Z"
   },
   "links": [
     {
