@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "geological_and_geohydrological_layers",
   "stac_version": "1.1.0",
-  "description": "STAC collection for Geological and geohydrological layers of Pan India..",
+  "description": "STAC collection for Geological and geohydrological layers of India..",
   "links": [
     {
       "rel": "root",

@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "hydrological_boundaries",
   "stac_version": "1.1.0",
-  "description": "STAC collection for Hydrological boundaries of Pan India.",
+  "description": "STAC collection for Hydrological boundaries of India.",
   "links": [
     {
       "rel": "root",

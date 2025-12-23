@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "land_use_land_cover",
   "stac_version": "1.1.0",
-  "description": "STAC collection for Land Use Land Cover of Pan India..",
+  "description": "STAC collection for Land Use Land Cover of India..",
   "links": [
     {
       "rel": "root",

@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "groundwater_layers",
   "stac_version": "1.1.0",
-  "description": "STAC collection for Groundwater layers of Pan India.",
+  "description": "STAC collection for Groundwater layers of India.",
   "links": [
     {
       "rel": "root",

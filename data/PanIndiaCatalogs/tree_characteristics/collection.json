@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "tree_characteristics",
   "stac_version": "1.1.0",
-  "description": "STAC collection for Tree Characteristics of Pan India..",
+  "description": "STAC collection for Tree Characteristics of India..",
   "links": [
     {
       "rel": "root",

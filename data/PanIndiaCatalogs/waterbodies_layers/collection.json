@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "waterbodies_layers",
   "stac_version": "1.1.0",
-  "description": "STAC collection for Waterbodies layers of Pan India.",
+  "description": "STAC collection for Waterbodies layers of India.",
   "links": [
     {
       "rel": "root",
