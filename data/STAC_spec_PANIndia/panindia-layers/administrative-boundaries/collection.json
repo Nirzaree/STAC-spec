@@ -1,0 +1,79 @@
+{
+  "type": "Collection",
+  "id": "administrative-boundaries",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for Administrative boundaries of Pan India.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "STAC Catalog for PAN India Assets"
+    },
+    {
+      "rel": "item",
+      "href": "./state/state.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./district/district.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tehsil/tehsil.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./panchayat/panchayat.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./village/village.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan-India STACs"
+    }
+  ],
+  "title": "Administrative boundaries",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          68,
+          8,
+          98,
+          37
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "CoREstack",
+      "roles": [
+        "producer",
+        "processor",
+        "host",
+        "licensor"
+      ],
+      "url": "https://core-stack.org/"
+    }
+  ]
+}

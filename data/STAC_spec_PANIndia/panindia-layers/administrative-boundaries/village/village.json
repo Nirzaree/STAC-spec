@@ -1,0 +1,325 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "village",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          75.75331782077943,
+          30.62994859080573
+        ],
+        [
+          75.7540803240488,
+          30.627130452007158
+        ],
+        [
+          75.75570796002086,
+          30.6246512034211
+        ],
+        [
+          75.75898979011043,
+          30.620281252665905
+        ],
+        [
+          75.76196851340478,
+          30.613409796251048
+        ],
+        [
+          75.76437199236294,
+          30.607439080714485
+        ],
+        [
+          75.76466180162323,
+          30.60453175575101
+        ],
+        [
+          75.7644701035524,
+          30.60360868750984
+        ],
+        [
+          75.7645190704139,
+          30.60330099413312
+        ],
+        [
+          75.76773860489621,
+          30.603568600436947
+        ],
+        [
+          75.77474825393385,
+          30.606190552669755
+        ],
+        [
+          75.78991810929638,
+          30.61291926576584
+        ],
+        [
+          75.79076095014759,
+          30.613298346867104
+        ],
+        [
+          75.79059145997874,
+          30.61360152830849
+        ],
+        [
+          75.79174196700554,
+          30.614368539436544
+        ],
+        [
+          75.79211198626187,
+          30.614497789409587
+        ],
+        [
+          75.79192919403081,
+          30.618038333068544
+        ],
+        [
+          75.79097052876514,
+          30.621110699359207
+        ],
+        [
+          75.79063163741526,
+          30.6231707818739
+        ],
+        [
+          75.78923145152892,
+          30.623170755768633
+        ],
+        [
+          75.78681907656924,
+          30.623670202848498
+        ],
+        [
+          75.78553043179782,
+          30.624151788101386
+        ],
+        [
+          75.78432195645867,
+          30.624878609804572
+        ],
+        [
+          75.78322061632147,
+          30.626252016249556
+        ],
+        [
+          75.78119166962915,
+          30.627549596405622
+        ],
+        [
+          75.77581843644467,
+          30.62926188204838
+        ],
+        [
+          75.7711899394266,
+          30.631041084953242
+        ],
+        [
+          75.76730154938834,
+          30.633070001399087
+        ],
+        [
+          75.76435859743043,
+          30.635888174143016
+        ],
+        [
+          75.76334190953399,
+          30.636062010195648
+        ],
+        [
+          75.76184813436836,
+          30.635901497937155
+        ],
+        [
+          75.76125954418531,
+          30.635370854235134
+        ],
+        [
+          75.75868213835739,
+          30.633020965737686
+        ],
+        [
+          75.7535586817605,
+          30.630060133782113
+        ],
+        [
+          75.75331782077943,
+          30.62994859080573
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    75.75331782077943,
+    30.60330099413312,
+    75.79211198626187,
+    30.636062010195648
+  ],
+  "properties": {
+    "description": "Village boundaries map hosted from [SHRUG](https://www.devdatalab.org/shrug).",
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "ADI 2011",
+        "type": "int",
+        "description": "Aggregate Development Index (2011)"
+      },
+      {
+        "name": "ADI 2019",
+        "type": "int",
+        "description": "Aggregate Development Index (2019)"
+      },
+      {
+        "name": "Block Name",
+        "type": "str",
+        "description": "block name "
+      },
+      {
+        "name": "District N",
+        "type": "str",
+        "description": "district name "
+      },
+      {
+        "name": "Female_Ill",
+        "type": "int",
+        "description": "illiterate female population"
+      },
+      {
+        "name": "Female_Lit",
+        "type": "int",
+        "description": "literate female population"
+      },
+      {
+        "name": "Female_SC_",
+        "type": "int",
+        "description": "female SC population "
+      },
+      {
+        "name": "Female_ST_",
+        "type": "int",
+        "description": "female ST population "
+      },
+      {
+        "name": "Male_Illit",
+        "type": "int",
+        "description": "male illeterate population "
+      },
+      {
+        "name": "Male_Liter",
+        "type": "int",
+        "description": "male literate population "
+      },
+      {
+        "name": "Male_SC_Po",
+        "type": "int",
+        "description": "male SC population "
+      },
+      {
+        "name": "Male_ST_Po",
+        "type": "int",
+        "description": "male ST population "
+      },
+      {
+        "name": "Number_of_",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "State Name",
+        "type": "str",
+        "description": "state name "
+      },
+      {
+        "name": "Total_Fema",
+        "type": "int",
+        "description": "total female population "
+      },
+      {
+        "name": "Total_Illi",
+        "type": "int",
+        "description": "total illeterate population "
+      },
+      {
+        "name": "Total_Lite",
+        "type": "int",
+        "description": "total literate population "
+      },
+      {
+        "name": "Total_Male",
+        "type": "int",
+        "description": "total male population "
+      },
+      {
+        "name": "Total_Popu",
+        "type": "int",
+        "description": "total population "
+      },
+      {
+        "name": "Total_SC_P",
+        "type": "int",
+        "description": "total SC population "
+      },
+      {
+        "name": "Total_ST_P",
+        "type": "int",
+        "description": "total ST population "
+      },
+      {
+        "name": "Village ID",
+        "type": "int",
+        "description": "village ID"
+      },
+      {
+        "name": "Village Na",
+        "type": "str",
+        "description": "village name "
+      },
+      {
+        "name": "layer",
+        "type": "str",
+        "description": "name of layer"
+      },
+      {
+        "name": "path",
+        "type": "str",
+        "description": "file source path"
+      }
+    ],
+    "datetime": "2025-12-10T08:36:22.319965Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "STAC Catalog for PAN India Assets"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Administrative boundaries"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Administrative boundaries"
+    }
+  ],
+  "assets": {
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1-aLk8p_5DTwVoqLPGQW6vAKBg4NyunR-/view",
+      "type": "text/plain",
+      "title": "Vector File",
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "collection": "administrative-boundaries"
+}

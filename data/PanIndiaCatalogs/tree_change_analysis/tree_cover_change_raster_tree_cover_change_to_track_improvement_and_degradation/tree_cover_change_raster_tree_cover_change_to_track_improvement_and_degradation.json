@@ -1,0 +1,149 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "tree_cover_change_raster_tree_cover_change_to_track_improvement_and_degradation",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          0.0,
+          -179.99992505544913
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          359.99985011089825,
+          0.0
+        ],
+        [
+          359.99985011089825,
+          -179.99992505544913
+        ],
+        [
+          0.0,
+          -179.99992505544913
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    0,
+    -179.99992505544913,
+    359.99985011089825,
+    0
+  ],
+  "properties": {
+    "title": "Tree cover change",
+    "description": "Tree cover change map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). The tree cover change layer describes the change in canopy cover density (CCD) and canopy height (CH) across different years.\n\nThe following classes are available in the current version of the map:\n1. Tree cover lost (tree cover to no tree cover)\n2. Degradation (reduction in CCD/CH)\n3. No Change\n4. Improvement (increase in CCD/CH)\n5. Tree cover gained (no tree cover to tree cover)\n6. Partially Degraded (increase in CCD and reduction in CH or vice versa)\n7. Missing Data\n\nThere is further categorization based on size of tree cover into large tree patches (LTP) for tree cover area greater than one hectare and small tree patches (STP) for tree cover area less than one hectare. The change classes for this categorization are:\n1. LTP intact (LTP to LTP)\n2. STP intact (STP to STP)\n3. Fragmentation (LTP to STP)\n4. Defragmentation (STP to LTP)\n\nDetails of methodology can be found in the technical manual and the codebase on [GitHub](https://github.com/Dhruvi-Goyal/Tree-Health-Monitoring/).",
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      801500,
+      1603000
+    ],
+    "datetime": "2025-12-22T04:26:22.798042Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Tree change analysis"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Tree change analysis"
+    }
+  ],
+  "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/tree_health/overall_change_2017_2021",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 25
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": -2,
+          "name": "Deforestation",
+          "description": "Deforestation",
+          "color_hint": "ff0000"
+        },
+        {
+          "value": -1,
+          "name": "Degradation",
+          "description": "Degradation",
+          "color_hint": "ffa500"
+        },
+        {
+          "value": 0,
+          "name": "No Change",
+          "description": "No Change",
+          "color_hint": "ffffff"
+        },
+        {
+          "value": 1,
+          "name": "Improvement",
+          "description": "Improvement",
+          "color_hint": "8aff8a"
+        },
+        {
+          "value": 2,
+          "name": "Afforestation",
+          "description": "Afforestation",
+          "color_hint": "007500"
+        },
+        {
+          "value": 3,
+          "name": "Partially Degraded",
+          "description": "Partially Degraded",
+          "color_hint": "dee64c"
+        },
+        {
+          "value": 4,
+          "name": "Partially Degraded",
+          "description": "Partially Degraded",
+          "color_hint": "dee64c"
+        },
+        {
+          "value": 5,
+          "name": "Missing Data",
+          "description": "Missing Data",
+          "color_hint": "000000"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "qgis_style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Tree%20Health/tree_cover_change.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    }
+  },
+  "collection": "tree_change_analysis"
+}

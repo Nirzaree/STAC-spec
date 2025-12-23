@@ -1,0 +1,125 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "restoration_oppurtunities_raster_restoration_opportunities",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -261255.0,
+          761951.0
+        ],
+        [
+          -261255.0,
+          4246151.0
+        ],
+        [
+          2806065.0,
+          4246151.0
+        ],
+        [
+          2806065.0,
+          761951.0
+        ],
+        [
+          -261255.0,
+          761951.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -261255,
+    761951,
+    2806065,
+    4246151
+  ],
+  "properties": {
+    "title": "Restoration opportunities",
+    "description": "Landscape restoration opportunities map built by World Resources Institute (WRI) identifies the potential for protection, wide-scale restoration, and mosaic restoration in India.\n\nFollowing classes are available in the raster map:\n1. Protection: Areas needing protection have forest cover with a density of more than 40 percent.\n2. Wide-scale restoration: Areas suitable for wide-scale restoration are those where near-contiguous tracts of forest and tree cover can be established. The existing tree density in these areas is less than 40 percent and the population density is less than 200 persons per square kilometre.\n3. Mosaic restoration: Mosaic restoration is the integration of trees in a patchwork of different land uses including cultivated areas. These areas have tree cover density of less than 40 percent and population density of less than 400 persons per square kilometre.\n\nDetails of the datasets used and the methodology can be found at india.restorationatlas.org",
+    "proj:code": "EPSG:32643",
+    "proj:shape": [
+      58070,
+      51122
+    ],
+    "datetime": "2025-12-22T04:26:24.028707Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "WRI restoration opportunities atlas"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "WRI restoration opportunities atlas"
+    }
+  ],
+  "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/WRI/LandscapeRestorationOpportunities",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 60
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "Excluded",
+          "description": "Excluded",
+          "color_hint": "d2d2d2"
+        },
+        {
+          "value": 1,
+          "name": "Mosaic Restoration",
+          "description": "Mosaic Restoration",
+          "color_hint": "d79b0f"
+        },
+        {
+          "value": 2,
+          "name": "Wide scale Restoration",
+          "description": "Wide scale Restoration",
+          "color_hint": "0f077c"
+        },
+        {
+          "value": 3,
+          "name": "Protection",
+          "description": "Protection",
+          "color_hint": "4fbc14"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "qgis_style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Restoration/Restoration_style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    }
+  },
+  "collection": "wri_restoration_opportunities_atlas"
+}

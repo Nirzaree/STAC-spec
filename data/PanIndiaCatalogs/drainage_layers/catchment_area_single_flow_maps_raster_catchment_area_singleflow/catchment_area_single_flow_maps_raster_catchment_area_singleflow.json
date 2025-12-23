@@ -1,0 +1,143 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "catchment_area_single_flow_maps_raster_catchment_area_singleflow",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          68.114305556,
+          8.078194446236182
+        ],
+        [
+          68.114305556,
+          37.078194444
+        ],
+        [
+          97.40958333265681,
+          37.078194444
+        ],
+        [
+          97.40958333265681,
+          8.078194446236182
+        ],
+        [
+          68.114305556,
+          8.078194446236182
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    68.114305556,
+    8.078194446236182,
+    97.40958333265681,
+    37.078194444
+  ],
+  "properties": {
+    "title": "Catchment Area Singleflow Maps",
+    "description": "catchment_area_single_flow_maps_raster",
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      104400,
+      105463
+    ],
+    "datetime": "2025-12-22T04:25:55.645967Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Drainage Layers"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Drainage Layers"
+    }
+  ],
+  "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/catchment_area_singleflow",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 30.922080774125515
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 2,
+          "name": "<= 2",
+          "description": "<= 2",
+          "color_hint": "440154"
+        },
+        {
+          "value": 50,
+          "name": "2 - 50",
+          "description": "2 - 50",
+          "color_hint": "45317c"
+        },
+        {
+          "value": 100,
+          "name": "50 - 100",
+          "description": "50 - 100",
+          "color_hint": "375a8c"
+        },
+        {
+          "value": 200,
+          "name": "100 - 200",
+          "description": "100 - 200",
+          "color_hint": "287b8e"
+        },
+        {
+          "value": 500,
+          "name": "200 - 500",
+          "description": "200 - 500",
+          "color_hint": "219889"
+        },
+        {
+          "value": 1000,
+          "name": "500 - 1000",
+          "description": "500 - 1000",
+          "color_hint": "4cbe6c"
+        },
+        {
+          "value": 2000,
+          "name": "1000 - 2000",
+          "description": "1000 - 2000",
+          "color_hint": "e6e32e"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "qgis_style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Catchment/catchment_area_multiflow.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    }
+  },
+  "collection": "drainage_layers"
+}

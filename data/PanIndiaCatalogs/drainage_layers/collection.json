@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "drainage_layers",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for Drainage Layers of India..",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./stream_order_maps_raster_stream_order_map/stream_order_maps_raster_stream_order_map.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./distance_to_upstream_drainage_lines_map_raster_distance_to_upstream_drainage_line/distance_to_upstream_drainage_lines_map_raster_distance_to_upstream_drainage_line.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./catchment_area_single_flow_maps_raster_catchment_area_singleflow/catchment_area_single_flow_maps_raster_catchment_area_singleflow.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./catchment_area_mutiflow_maps_raster_catchment_area_multiflow/catchment_area_mutiflow_maps_raster_catchment_area_multiflow.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./natural_depression_maps_raster_natural_depressions/natural_depression_maps_raster_natural_depressions.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./drainage_lines_vector/drainage_lines_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    }
+  ],
+  "title": "Drainage Layers",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          68.0,
+          6.0,
+          97.0,
+          37.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}

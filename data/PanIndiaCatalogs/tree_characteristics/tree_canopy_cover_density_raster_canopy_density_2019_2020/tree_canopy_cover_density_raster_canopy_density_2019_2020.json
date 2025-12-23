@@ -1,0 +1,119 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "tree_canopy_cover_density_raster_canopy_density_2019_2020",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          0.0,
+          -179.99992505544913
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          359.99985011089825,
+          0.0
+        ],
+        [
+          359.99985011089825,
+          -179.99992505544913
+        ],
+        [
+          0.0,
+          -179.99992505544913
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    0,
+    -179.99992505544913,
+    359.99985011089825,
+    0
+  ],
+  "properties": {
+    "title": "Canopy cover density: 2019-2020",
+    "description": "Tree canopy cover density map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). Tree canopy cover density (CCD) indicates the density of tree cover in a given area, with higher canopy cover percentages signifying a denser canopy and more shade on the ground and vice versa.\n\nThe Pan India map (except ACZ 12-15 currently missing due to insufficient data points for training the respective models) is available from 2017 onwards at 25m resolution.\n\nThese are the classes in the current version of the map:\n1. Low density\n2. High density\n3. Missing data\n\nInput to the model is Dynamic World output, and timeseries data from Sentinel-2, Sentinel-1, and GEDI as ground truth. Details of methodology can be found in the [technical manual](https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view) and the codebase at https://github.com/Dhruvi-Goyal/Tree-Health-Monitoring/",
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      801500,
+      1603000
+    ],
+    "datetime": "2025-12-22T04:26:14.411596Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Tree Characteristics"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Tree Characteristics"
+    }
+  ],
+  "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/tree_health/modal_ccd_2019",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 25
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "Low Density",
+          "description": "Low Density",
+          "color_hint": "ffa500"
+        },
+        {
+          "value": 1,
+          "name": "High Density",
+          "description": "High Density",
+          "color_hint": "007500"
+        },
+        {
+          "value": 2,
+          "name": "Missing Data",
+          "description": "Missing Data",
+          "color_hint": "000000"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "qgis_style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Tree%20Health/ccd_style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    }
+  },
+  "collection": "tree_characteristics"
+}

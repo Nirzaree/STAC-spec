@@ -1,0 +1,149 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "large_tree_patch_small_tree_patch_change_raster_ltp_(large_tree_patch)_stp_(small_tree_patch)_change_to_track_fragmentation",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          0.0,
+          -179.99992505544913
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          359.99985011089825,
+          0.0
+        ],
+        [
+          359.99985011089825,
+          -179.99992505544913
+        ],
+        [
+          0.0,
+          -179.99992505544913
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    0,
+    -179.99992505544913,
+    359.99985011089825,
+    0
+  ],
+  "properties": {
+    "title": "LTP STP change",
+    "description": "large_tree_patch_small_tree_patch_change_raster",
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      801500,
+      1603000
+    ],
+    "datetime": "2025-12-22T04:26:23.558182Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Tree change analysis"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Tree change analysis"
+    }
+  ],
+  "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/corestack-datasets/assets/datasets/tree_health/final_ltp_stp_change_2017_2021",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 25
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "STP Intact",
+          "description": "STP Intact",
+          "color_hint": "ffffff"
+        },
+        {
+          "value": 1,
+          "name": "LTP Intact",
+          "description": "LTP Intact",
+          "color_hint": "ffa500"
+        },
+        {
+          "value": 2,
+          "name": "Defragmentation",
+          "description": "Defragmentation",
+          "color_hint": "8aff8a"
+        },
+        {
+          "value": 3,
+          "name": "Fragmentation",
+          "description": "Fragmentation",
+          "color_hint": "dee64c"
+        },
+        {
+          "value": 4,
+          "name": "Afforestation",
+          "description": "Afforestation",
+          "color_hint": "007500"
+        },
+        {
+          "value": 5,
+          "name": "Afforestation",
+          "description": "Afforestation",
+          "color_hint": "007500"
+        },
+        {
+          "value": 6,
+          "name": "Deforestation",
+          "description": "Deforestation",
+          "color_hint": "ff0000"
+        },
+        {
+          "value": 7,
+          "name": "Deforestation",
+          "description": "Deforestation",
+          "color_hint": "ff0000"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "qgis_style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Tree%20Health/ltp_stp_style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    }
+  },
+  "collection": "tree_change_analysis"
+}

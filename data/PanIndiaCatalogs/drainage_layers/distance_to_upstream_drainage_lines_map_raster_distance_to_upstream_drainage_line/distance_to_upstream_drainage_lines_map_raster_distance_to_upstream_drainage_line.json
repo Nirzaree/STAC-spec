@@ -1,0 +1,149 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "distance_to_upstream_drainage_lines_map_raster_distance_to_upstream_drainage_line",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          68.114305556,
+          8.078194446158314
+        ],
+        [
+          68.114305556,
+          37.078194444
+        ],
+        [
+          97.40958333281377,
+          37.078194444
+        ],
+        [
+          97.40958333281377,
+          8.078194446158314
+        ],
+        [
+          68.114305556,
+          8.078194446158314
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    68.114305556,
+    8.078194446158314,
+    97.40958333281377,
+    37.078194444
+  ],
+  "properties": {
+    "title": "Distance to Upstream drainage line",
+    "description": "Distance to upstream drainage line map for India built by [ACT4D](http://act4d.iitd.ernet.in/) research group at [IIT Delhi](https://home.iitd.ac.in/). Spatial indexing technique (e.g. k-d tree) is applied on pixel level digital elevation data (SRTM DEM) to compute the distance of each non-drainage pixel to its nearest upstream drainage line. \nDetails of methodology can be found in the [technical manual](https://drive.google.com/file/d/1ZxovdpPThkN09cB1TcUYSE2BImI7M3k_/view) and the codebase on github.",
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      104400,
+      105463
+    ],
+    "datetime": "2025-12-22T04:25:55.175147Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Drainage Layers"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Drainage Layers"
+    }
+  ],
+  "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/distance_to_nearest_upstream_DL_raster",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 30.922080774249864
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "0 m",
+          "description": "0 m",
+          "color_hint": "0e10c7"
+        },
+        {
+          "value": 60,
+          "name": "1-60 m",
+          "description": "1-60 m",
+          "color_hint": "5fbcf6"
+        },
+        {
+          "value": 120,
+          "name": "60-120 m",
+          "description": "60-120 m",
+          "color_hint": "145626"
+        },
+        {
+          "value": 240,
+          "name": "120-240 m",
+          "description": "120-240 m",
+          "color_hint": "3df03c"
+        },
+        {
+          "value": 500,
+          "name": "240-500 m",
+          "description": "240-500 m",
+          "color_hint": "f0ee26"
+        },
+        {
+          "value": 1000,
+          "name": "500-1000 m",
+          "description": "500-1000 m",
+          "color_hint": "eb8115"
+        },
+        {
+          "value": 2000,
+          "name": "1000-2000 m",
+          "description": "1000-2000 m",
+          "color_hint": "dd0f08"
+        },
+        {
+          "value": 177944,
+          "name": "2000+ m",
+          "description": "2000+ m",
+          "color_hint": "7d0b1b"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "qgis_style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Hydrology/Distance_to_upstreamDL_style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata",
+        "style"
+      ]
+    }
+  },
+  "collection": "drainage_layers"
+}

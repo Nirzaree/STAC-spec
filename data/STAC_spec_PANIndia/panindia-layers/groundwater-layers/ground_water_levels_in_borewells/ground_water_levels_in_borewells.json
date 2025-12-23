@@ -1,0 +1,207 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "ground_water_levels_in_borewells",
+  "geometry": {
+    "type": "MultiPoint",
+    "coordinates": []
+  },
+  "bbox": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "properties": {
+    "description": "Atal Bhujal Yojana is a central government scheme in India aimed to improve groundwater in over-exploited and ground water stressed states. The scheme monitors groundwater levels in deeper aquifers than shallow aquifers to track depletion trends, assess the impact of interventions, and promote data-driven groundwater management. Ground water level data pre and post monsoon from 2015 to 2022 hosted from [Open Government Data](https://www.data.gov.in/catalog/ground-water-level-data-under-atal-bhujal-yojana) (OGD) Platform.",
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "Aquifer",
+        "type": "str",
+        "description": "geological formation storing/transmitting groundwater (semi-confined,basalt, sandstone,limestone etc)"
+      },
+      {
+        "name": "Block_Name_With_LGD_Code",
+        "type": "str",
+        "description": "block name with local government directory (LGD) code"
+      },
+      {
+        "name": "District_Name_With_LGD_Code",
+        "type": "str",
+        "description": "district name with local government directory (LGD) code"
+      },
+      {
+        "name": "GP_Name_With_LGD_Code",
+        "type": "str",
+        "description": "grampanchayat name with local government directory (LGD) code"
+      },
+      {
+        "name": "Latitude",
+        "type": "float",
+        "description": "latitude "
+      },
+      {
+        "name": "Longitude",
+        "type": "float",
+        "description": "longitude"
+      },
+      {
+        "name": "Post-monsoon_2015 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2015"
+      },
+      {
+        "name": "Post-monsoon_2016 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2016"
+      },
+      {
+        "name": "Post-monsoon_2017 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2017"
+      },
+      {
+        "name": "Post-monsoon_2018 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2018"
+      },
+      {
+        "name": "Post-monsoon_2019 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2019"
+      },
+      {
+        "name": "Post-monsoon_2020 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2020"
+      },
+      {
+        "name": "Post-monsoon_2021 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2021"
+      },
+      {
+        "name": "Post-monsoon_2022 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for post monsoon of 2022"
+      },
+      {
+        "name": "Pre-monsoon_2015 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2015"
+      },
+      {
+        "name": "Pre-monsoon_2016 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2016"
+      },
+      {
+        "name": "Pre-monsoon_2017 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2017"
+      },
+      {
+        "name": "Pre-monsoon_2018 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2018"
+      },
+      {
+        "name": "Pre-monsoon_2019 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2019"
+      },
+      {
+        "name": "Pre-monsoon_2020 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2020"
+      },
+      {
+        "name": "Pre-monsoon_2021 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2021"
+      },
+      {
+        "name": "Pre-monsoon_2022 (meters below ground level)",
+        "type": "str",
+        "description": "ground water level data for pre monsoon of 2022"
+      },
+      {
+        "name": "SOURCE",
+        "type": "str",
+        "description": "data source ( CGWB, SGWB, Atal Jal)"
+      },
+      {
+        "name": "Site_Name",
+        "type": "str",
+        "description": "well site name "
+      },
+      {
+        "name": "Sr No",
+        "type": "int",
+        "description": "serial number "
+      },
+      {
+        "name": "State_Name_With_LGD_Code",
+        "type": "str",
+        "description": "state name with local government directory (LGD) code"
+      },
+      {
+        "name": "TYPE",
+        "type": "str",
+        "description": "type of well (borewell )"
+      },
+      {
+        "name": "Village",
+        "type": "str",
+        "description": "village name "
+      },
+      {
+        "name": "Well_Depth (meters)",
+        "type": "float",
+        "description": "well depth in meters"
+      },
+      {
+        "name": "Well_ID",
+        "type": "str",
+        "description": "well id"
+      }
+    ],
+    "datetime": "2025-12-10T08:36:24.991579Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "STAC Catalog for PAN India Assets"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Groundwater Layers"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Groundwater Layers"
+    }
+  ],
+  "assets": {
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1rps2DNzHqre7-5GGZ2Xj76iJ-n0Krkh_/view",
+      "type": "text/plain",
+      "title": "Vector File",
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "collection": "groundwater-layers"
+}

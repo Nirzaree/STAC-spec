@@ -1,0 +1,59 @@
+{
+  "type": "Collection",
+  "id": "drainage-layers",
+  "stac_version": "1.1.0",
+  "description": "Drainage lines map for India built by ACT4D research group at IIT Delhi. Drainage lines in hydrology refer to the visible channels through which water flows from higher elevations to lower elevations on the surface of earth such as streams and rivers. The Pan India map of drainage lines has been generated using SRTM DEM V4 data on QGIS (r.stream.extract). The drainage lines are labeled by their Strahler order. Details of methodology can be found in the technical manual.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "STAC Catalog for PAN India Assets"
+    },
+    {
+      "rel": "item",
+      "href": "./distance_to_upstream_drainage_line/distance_to_upstream_drainage_line.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "CoREstack Pan India Raster Layers"
+    }
+  ],
+  "title": "Drainage layers",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          68,
+          8,
+          98,
+          37
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "CoREstack",
+      "roles": [
+        "producer",
+        "processor",
+        "host",
+        "licensor"
+      ],
+      "url": "https://core-stack.org/"
+    }
+  ]
+}

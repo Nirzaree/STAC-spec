@@ -1,0 +1,89 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "slope_percentage_raster_slope_percentage",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          7587780.0,
+          753450.0
+        ],
+        [
+          7587780.0,
+          4233840.0
+        ],
+        [
+          10842030.0,
+          4233840.0
+        ],
+        [
+          10842030.0,
+          753450.0
+        ],
+        [
+          7587780.0,
+          753450.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    7587780,
+    753450,
+    10842030,
+    4233840
+  ],
+  "properties": {
+    "title": "Slope percentage",
+    "description": "Map of per pixel slope computed from digital elevation data (SRTM DEM).",
+    "proj:code": "EPSG:3857",
+    "proj:shape": [
+      116013,
+      108475
+    ],
+    "datetime": "2025-12-22T04:26:11.474108Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrain"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrain"
+    }
+  ],
+  "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/slope_percentage_fabdem",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 30
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "terrain"
+}

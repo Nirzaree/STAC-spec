@@ -1,0 +1,57 @@
+{
+  "type": "Collection",
+  "id": "terrain",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for Terrain of India..",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./terrain_srtm_raster_terrain_raster_(srtm)/terrain_srtm_raster_terrain_raster_(srtm).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./terrain_fabdem_raster_terrain_raster_(fabdem)/terrain_fabdem_raster_terrain_raster_(fabdem).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./slope_percentage_raster_slope_percentage/slope_percentage_raster_slope_percentage.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    }
+  ],
+  "title": "Terrain",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          68.0,
+          6.0,
+          97.0,
+          37.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}

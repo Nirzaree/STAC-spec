@@ -1,0 +1,215 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "green_credits_vector",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          74.1802607262613,
+          15.39776345424185
+        ],
+        [
+          74.18077858844701,
+          15.39755362794383
+        ],
+        [
+          74.18132882121739,
+          15.3972617752056
+        ],
+        [
+          74.18150903993579,
+          15.39717355808554
+        ],
+        [
+          74.18174695080154,
+          15.39733201014455
+        ],
+        [
+          74.18187503079002,
+          15.39734752305494
+        ],
+        [
+          74.18206359015984,
+          15.39749742724268
+        ],
+        [
+          74.18232259071199,
+          15.39779766994654
+        ],
+        [
+          74.18284081657534,
+          15.3975968046888
+        ],
+        [
+          74.18277113656977,
+          15.39791018970282
+        ],
+        [
+          74.18214898988016,
+          15.39837052919081
+        ],
+        [
+          74.18242769228995,
+          15.3985136797263
+        ],
+        [
+          74.18293162123138,
+          15.39828545089116
+        ],
+        [
+          74.18284592213467,
+          15.39864028259633
+        ],
+        [
+          74.18247256156259,
+          15.3990165002615
+        ],
+        [
+          74.18224181453238,
+          15.39890043716277
+        ],
+        [
+          74.18182212446773,
+          15.39887274948259
+        ],
+        [
+          74.18151131497956,
+          15.39872758220711
+        ],
+        [
+          74.18108225411764,
+          15.39857442374041
+        ],
+        [
+          74.18082977280834,
+          15.39881083827071
+        ],
+        [
+          74.18076155609462,
+          15.39894162534119
+        ],
+        [
+          74.18046857572742,
+          15.39919428988244
+        ],
+        [
+          74.17967558493986,
+          15.39910317512226
+        ],
+        [
+          74.17940634104664,
+          15.39894120157357
+        ],
+        [
+          74.17948999683325,
+          15.3986543275105
+        ],
+        [
+          74.17953108551458,
+          15.39844017838792
+        ],
+        [
+          74.17964531114949,
+          15.39834717389767
+        ],
+        [
+          74.17986095792544,
+          15.39791374188047
+        ],
+        [
+          74.17989011524324,
+          15.39767343869021
+        ],
+        [
+          74.18012215254726,
+          15.3975166277938
+        ],
+        [
+          74.1802607262613,
+          15.39776345424185
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    74.17940634104664,
+    15.39717355808554,
+    74.18293162123138,
+    15.39919428988244
+  ],
+  "properties": {
+    "title": "Green Credits (GoI)",
+    "description": "The Green Credit Rules have been notified by the Government of India as a mechanism to encourage voluntary plantation activity across the country, resulting in award of Green Credits and to build an inventory of degraded land which can be utilised for Afforestation programmes. The map has been built with data accessed from the [platform](https://www.moefcc-gcp.in/about/aboutGCP) (October 2025)",
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "range",
+        "type": "str",
+        "description": "range of division "
+      },
+      {
+        "name": "state",
+        "type": "str",
+        "description": "state name "
+      },
+      {
+        "name": "district",
+        "type": "str",
+        "description": "district name "
+      },
+      {
+        "name": "division",
+        "type": "str",
+        "description": "division name "
+      },
+      {
+        "name": "land_info",
+        "type": "str",
+        "description": "land information "
+      },
+      {
+        "name": "kml_url",
+        "type": "str",
+        "description": "path"
+      }
+    ],
+    "datetime": "2025-12-22T04:29:35.626064Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Restoration and Regeneration"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Restoration and Regeneration"
+    }
+  ],
+  "assets": {
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1tl6uEOLV8jkmUIXjDwwHc7JpKJB_Vk7i/view",
+      "type": "text/plain",
+      "title": "Asset File",
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "collection": "restoration_and_regeneration"
+}

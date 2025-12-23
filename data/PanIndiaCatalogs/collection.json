@@ -1,0 +1,126 @@
+{
+  "type": "Collection",
+  "id": "PanIndiaCatalogs",
+  "stac_version": "1.1.0",
+  "description": "This spatio temporal asset catalog contains all data layers of CoRE Stack (https://core-stack.org/) generated at Pan India level.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./drainage_layers/collection.json",
+      "type": "application/json",
+      "title": "Drainage Layers"
+    },
+    {
+      "rel": "child",
+      "href": "./geological_and_geohydrological_layers/collection.json",
+      "type": "application/json",
+      "title": "Geological and geohydrological layers"
+    },
+    {
+      "rel": "child",
+      "href": "./land_use_land_cover/collection.json",
+      "type": "application/json",
+      "title": "Land Use Land Cover"
+    },
+    {
+      "rel": "child",
+      "href": "./open_ecosystems_and_degradation/collection.json",
+      "type": "application/json",
+      "title": "Open ecosystems and degradation"
+    },
+    {
+      "rel": "child",
+      "href": "./terrain/collection.json",
+      "type": "application/json",
+      "title": "Terrain"
+    },
+    {
+      "rel": "child",
+      "href": "./tree_characteristics/collection.json",
+      "type": "application/json",
+      "title": "Tree Characteristics"
+    },
+    {
+      "rel": "child",
+      "href": "./tree_change_analysis/collection.json",
+      "type": "application/json",
+      "title": "Tree change analysis"
+    },
+    {
+      "rel": "child",
+      "href": "./wri_restoration_opportunities_atlas/collection.json",
+      "type": "application/json",
+      "title": "WRI restoration opportunities atlas"
+    },
+    {
+      "rel": "child",
+      "href": "./administrative_boundaries/collection.json",
+      "type": "application/json",
+      "title": "Administrative boundaries"
+    },
+    {
+      "rel": "child",
+      "href": "./hydrological_boundaries/collection.json",
+      "type": "application/json",
+      "title": "Hydrological boundaries"
+    },
+    {
+      "rel": "child",
+      "href": "./waterbodies_layers/collection.json",
+      "type": "application/json",
+      "title": "Waterbodies layers"
+    },
+    {
+      "rel": "child",
+      "href": "./groundwater_layers/collection.json",
+      "type": "application/json",
+      "title": "Groundwater layers"
+    },
+    {
+      "rel": "child",
+      "href": "./climatic_and_biophysical_zones/collection.json",
+      "type": "application/json",
+      "title": "Climatic and biophysical zones"
+    },
+    {
+      "rel": "child",
+      "href": "./industry/collection.json",
+      "type": "application/json",
+      "title": "Industry"
+    },
+    {
+      "rel": "child",
+      "href": "./restoration_and_regeneration/collection.json",
+      "type": "application/json",
+      "title": "Restoration and Regeneration"
+    }
+  ],
+  "title": "Pan India Spatio Temporal Asset Catalog",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          68.0,
+          6.0,
+          97.0,
+          37.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}

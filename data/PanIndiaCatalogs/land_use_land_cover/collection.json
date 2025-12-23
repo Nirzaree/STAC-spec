@@ -1,0 +1,142 @@
+{
+  "type": "Collection",
+  "id": "land_use_land_cover",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for Land Use Land Cover of India..",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./land_use_land_cover_raster_lulc_2017_2018/land_use_land_cover_raster_lulc_2017_2018.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./land_use_land_cover_raster_lulc_2018_2019/land_use_land_cover_raster_lulc_2018_2019.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./land_use_land_cover_raster_lulc_2019_2020/land_use_land_cover_raster_lulc_2019_2020.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./land_use_land_cover_raster_lulc_2020_2021/land_use_land_cover_raster_lulc_2020_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./land_use_land_cover_raster_lulc_2021_2022/land_use_land_cover_raster_lulc_2021_2022.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./land_use_land_cover_raster_lulc_2022_2023/land_use_land_cover_raster_lulc_2022_2023.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./land_use_land_cover_raster_lulc_2023_2024/land_use_land_cover_raster_lulc_2023_2024.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2005_2006/nrsc_land_use_land_cover_raster_lulc_2005_2006.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2006_2007/nrsc_land_use_land_cover_raster_lulc_2006_2007.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2007_2008/nrsc_land_use_land_cover_raster_lulc_2007_2008.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2008_2009/nrsc_land_use_land_cover_raster_lulc_2008_2009.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2009_2010/nrsc_land_use_land_cover_raster_lulc_2009_2010.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2010_2011/nrsc_land_use_land_cover_raster_lulc_2010_2011.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2011_2012/nrsc_land_use_land_cover_raster_lulc_2011_2012.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2012_2013/nrsc_land_use_land_cover_raster_lulc_2012_2013.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2013_2014/nrsc_land_use_land_cover_raster_lulc_2013_2014.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2014_2015/nrsc_land_use_land_cover_raster_lulc_2014_2015.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2015_2016/nrsc_land_use_land_cover_raster_lulc_2015_2016.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2016_2017/nrsc_land_use_land_cover_raster_lulc_2016_2017.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./nrsc_land_use_land_cover_raster_lulc_2017_2018/nrsc_land_use_land_cover_raster_lulc_2017_2018.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    }
+  ],
+  "title": "Land Use Land Cover",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          68.0,
+          6.0,
+          97.0,
+          37.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}

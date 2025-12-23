@@ -1,0 +1,111 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "mining_vector",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      77.3041575243169,
+      8.141069975297208
+    ]
+  },
+  "bbox": [
+    77.3041575243169,
+    8.141069975297208,
+    77.3041575243169,
+    8.141069975297208
+  ],
+  "properties": {
+    "title": "Mining",
+    "description": "Map of mining projects data as accompanied in the report: “Harnessing transparency initiatives to improve India’s environmental clearance process for the mineral mining sector” by Pande et al (2019).",
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "company_na",
+        "type": "str",
+        "description": "company name "
+      },
+      {
+        "name": "company_ty",
+        "type": "NoneType",
+        "description": "type of company "
+      },
+      {
+        "name": "district",
+        "type": "str",
+        "description": "district name "
+      },
+      {
+        "name": "district_o",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "proposal",
+        "type": "str",
+        "description": "description of proposal"
+      },
+      {
+        "name": "sector_moe",
+        "type": "str",
+        "description": "sector category"
+      },
+      {
+        "name": "state",
+        "type": "str",
+        "description": "state name "
+      },
+      {
+        "name": "state_offi",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "tehsil",
+        "type": "str",
+        "description": "tehsil name "
+      },
+      {
+        "name": "village",
+        "type": "str",
+        "description": "village name "
+      }
+    ],
+    "datetime": "2025-12-22T04:29:34.449104Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Industry"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Industry"
+    }
+  ],
+  "assets": {
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/16hGbltIYy_ZWoXu0_h3lrwUiSR2iNxQJ/view",
+      "type": "text/plain",
+      "title": "Asset File",
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "collection": "industry"
+}

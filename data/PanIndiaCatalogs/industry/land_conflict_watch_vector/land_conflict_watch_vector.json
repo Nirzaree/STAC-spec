@@ -1,0 +1,76 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "land_conflict_watch_vector",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      79.432182,
+      29.643362
+    ]
+  },
+  "bbox": [
+    79.432182,
+    29.643362,
+    79.432182,
+    29.643362
+  ],
+  "properties": {
+    "title": "Land Conflict Watch",
+    "description": "Land Conflict Watch is an independent network of researchers studying land, climate change and natural resource disputes in India to facilitate better decision-making on investments and governance. The map has been generated from data accessed from their [platform](https://www.landconflictwatch.org/) in August 2025.",
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "Date of publish",
+        "type": "str",
+        "description": "date of publish"
+      },
+      {
+        "name": "Link to conflict",
+        "type": "str",
+        "description": "URL link to the conflict"
+      },
+      {
+        "name": "Title of Conflict",
+        "type": "str",
+        "description": "title / headline of the conflict"
+      }
+    ],
+    "datetime": "2025-12-22T04:29:32.497043Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Industry"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Industry"
+    }
+  ],
+  "assets": {
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1lvybKC3JylZ9XSkHVdhvO3feoZPdXHd-/view",
+      "type": "text/plain",
+      "title": "Asset File",
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "collection": "industry"
+}

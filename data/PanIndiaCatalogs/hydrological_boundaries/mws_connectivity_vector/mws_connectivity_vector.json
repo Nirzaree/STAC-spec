@@ -1,0 +1,81 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "mws_connectivity_vector",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      93.16166619979379,
+      22.186943992982194
+    ]
+  },
+  "bbox": [
+    93.16166619979379,
+    22.186943992982194,
+    93.16166619979379,
+    22.186943992982194
+  ],
+  "properties": {
+    "title": "MWS Connectivity",
+    "description": "mws_connectivity_vector",
+    "proj:code": "EPSG:4326",
+    "table:columns": [
+      {
+        "name": "direction",
+        "type": "int",
+        "description": ""
+      },
+      {
+        "name": "downstream",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "uid",
+        "type": "str",
+        "description": ""
+      },
+      {
+        "name": "upstream",
+        "type": "str",
+        "description": ""
+      }
+    ],
+    "datetime": "2025-12-22T04:29:17.116171Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Hydrological boundaries"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Hydrological boundaries"
+    }
+  ],
+  "assets": {
+    "drive-link": {
+      "href": "https://drive.google.com/file/d/1S960CAJUOqkscvkivnymebA3NP7AOY2V/view",
+      "type": "text/plain",
+      "title": "Asset File",
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "collection": "hydrological_boundaries"
+}

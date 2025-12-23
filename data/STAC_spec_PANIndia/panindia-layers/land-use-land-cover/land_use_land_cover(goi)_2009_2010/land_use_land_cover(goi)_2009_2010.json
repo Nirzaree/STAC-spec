@@ -1,0 +1,214 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "land_use_land_cover(goi)_2009_2010",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          2412612.957648442,
+          2021749.4802112617
+        ],
+        [
+          2412612.957648442,
+          5595613.480211262
+        ],
+        [
+          5899844.957648442,
+          5595613.480211262
+        ],
+        [
+          5899844.957648442,
+          2021749.4802112617
+        ],
+        [
+          2412612.957648442,
+          2021749.4802112617
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    2412612.957648442,
+    2021749.4802112617,
+    5899844.957648442,
+    5595613.480211262
+  ],
+  "properties": {
+    "description": "Annual Land Use Land Cover maps for India built by Indian Space Research Organization (ISRO) available from 2005 onwards at 56m resolution.\n \nFollowing classes exist in the map: \n1. Built Up\n2. Cropland -  Kharif\n3. Cropland - Rabi\n4. Cropland - Zaid\n5. Cropland - Double/Triple\n6. Fallow Land - Current Fallow\n7. Agriculture Plantation - Plantation\n8. Forest - Evergreen/Semi-Evergreen\n9. Forest - Deciduous\n10. Forest - Degraded/Scrub\n11. Forest - Littoral Swamp\n12. Natural - Grassland\n13. Other - Shifting Cultivation\n14. Wasteland\n15. Sandy Area - Rann\n16. Waterbodies - Max\n17. Waterbodies - Min\n18. Snow Covered / Glacial Area   \n\nDetails of the methodology can be found on [Bhuvan](https://bhuvan-app1.nrsc.gov.in/) portal.",
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      63819,
+      62272
+    ],
+    "title": "Land Use Land Cover(GoI)-2009-2010",
+    "datetime": "2025-12-10T08:34:04.967264Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "STAC Catalog for PAN India Assets"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Land Use Land Cover"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Land Use Land Cover"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/WRIS/lulc250k_2009_2010_pan_india",
+      "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 56
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "Background",
+          "description": "Background",
+          "color_hint": "FFFFFF"
+        },
+        {
+          "value": 1,
+          "name": "Built Up",
+          "description": "Built Up",
+          "color_hint": "D73027"
+        },
+        {
+          "value": 2,
+          "name": "Cropland — Kharif",
+          "description": "Cropland — Kharif",
+          "color_hint": "FFE873"
+        },
+        {
+          "value": 3,
+          "name": "Cropland — Rabi",
+          "description": "Cropland — Rabi",
+          "color_hint": "FFC247"
+        },
+        {
+          "value": 4,
+          "name": "Cropland — Zaid",
+          "description": "Cropland — Zaid",
+          "color_hint": "FFE0A3"
+        },
+        {
+          "value": 5,
+          "name": "Cropland — Double/Triple",
+          "description": "Cropland — Double/Triple",
+          "color_hint": "FF9E1B"
+        },
+        {
+          "value": 6,
+          "name": "Fallow Land — Current Fallow",
+          "description": "Fallow Land — Current Fallow",
+          "color_hint": "D7CCC8"
+        },
+        {
+          "value": 7,
+          "name": "Agriculture Plantation — Plantation",
+          "description": "Agriculture Plantation — Plantation",
+          "color_hint": "B5651D"
+        },
+        {
+          "value": 8,
+          "name": "Forest — Evergreen/Semi-Evergreen",
+          "description": "Forest — Evergreen/Semi-Evergreen",
+          "color_hint": "006400"
+        },
+        {
+          "value": 9,
+          "name": "Forest — Deciduous",
+          "description": "Forest — Deciduous",
+          "color_hint": "2E8B57"
+        },
+        {
+          "value": 10,
+          "name": "Forest — Degraded/Scrub",
+          "description": "Forest — Degraded/Scrub",
+          "color_hint": "6B8E23"
+        },
+        {
+          "value": 11,
+          "name": "Forest — Littoral Swamp",
+          "description": "Forest — Littoral Swamp",
+          "color_hint": "007F7F"
+        },
+        {
+          "value": 12,
+          "name": "Natural — Grassland",
+          "description": "Natural — Grassland",
+          "color_hint": "F0C808"
+        },
+        {
+          "value": 13,
+          "name": "Other — Shifting Cultivation",
+          "description": "Other — Shifting Cultivation",
+          "color_hint": "FF7043"
+        },
+        {
+          "value": 14,
+          "name": "Wasteland",
+          "description": "Wasteland",
+          "color_hint": "9E9E9E"
+        },
+        {
+          "value": 15,
+          "name": "Sandy Area — Rann",
+          "description": "Sandy Area — Rann",
+          "color_hint": "F2D8A7"
+        },
+        {
+          "value": 16,
+          "name": "Waterbodies — Max",
+          "description": "Waterbodies — Max",
+          "color_hint": "2C7FB8"
+        },
+        {
+          "value": 17,
+          "name": "Waterbodies — Min",
+          "description": "Waterbodies — Min",
+          "color_hint": "A6CEE3"
+        },
+        {
+          "value": 18,
+          "name": "Snow Covered / Glacial Area",
+          "description": "Snow Covered / Glacial Area",
+          "color_hint": "E0F3F8"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Land/wris_lulc.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata",
+        "visualisation"
+      ]
+    }
+  },
+  "collection": "land-use-land-cover"
+}

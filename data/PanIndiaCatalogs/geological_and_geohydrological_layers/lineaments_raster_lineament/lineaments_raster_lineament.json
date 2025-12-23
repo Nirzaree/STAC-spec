@@ -1,0 +1,89 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "lineaments_raster_lineament",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          68.148,
+          6.758878348
+        ],
+        [
+          68.148,
+          35.23
+        ],
+        [
+          97.41534375,
+          35.23
+        ],
+        [
+          97.41534375,
+          6.758878348
+        ],
+        [
+          68.148,
+          6.758878348
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    68.148,
+    6.758878348,
+    97.41534375,
+    35.23
+  ],
+  "properties": {
+    "title": "Lineaments",
+    "description": "A lineament is a linear feature in a landscape which is an expression of an underlying geological structure such as a fault. Lineament is also an important hydrological variable because of its potential to provide groundwater recharge. \n\nThe map has been generated from state-wise lineaments data available on [Bhuvan](https://bhuvan.nrsc.gov.in/home/index.php) portal. \n",
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      14750,
+      17224
+    ],
+    "datetime": "2025-12-22T04:25:57.221096Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pan India Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Geological and geohydrological layers"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Geological and geohydrological layers"
+    }
+  ],
+  "assets": {
+    "gee_asset": {
+      "href": "https://code.earthengine.google.com/?asset=projects/ext-datasets/assets/datasets/Lineament_pan_india",
+      "type": "image/tiff; application=geotiff",
+      "title": "Asset Link",
+      "raster:bands": [
+        {
+          "data_type": "PixelType",
+          "spatial_resolution": 201.60538827523567
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "geological_and_geohydrological_layers"
+}
