@@ -6,9 +6,9 @@
   "links": [
     {
       "rel": "root",
-      "href": "./collection.json",
+      "href": "../../catalog.json",
       "type": "application/json",
-      "title": "odisha"
+      "title": "CoREStack Spatio Temporal Asset Catalog"
     },
     {
       "rel": "license",
@@ -38,6 +38,12 @@
       "href": "./koraput/catalog.json",
       "type": "application/json",
       "title": "koraput"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Tehsil level Spatio Temporal Asset Catalog"
     }
   ],
   "title": "odisha",
