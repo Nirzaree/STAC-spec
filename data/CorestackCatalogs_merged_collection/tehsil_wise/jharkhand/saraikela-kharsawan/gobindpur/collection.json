@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "gobindpur",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for gobindpur block data in saraikela-kharsawan, jharkhand",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoREStack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_saraikela-kharsawan_gobindpur_aquifer_vector/jharkhand_saraikela-kharsawan_gobindpur_aquifer_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "saraikela-kharsawan"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_saraikela-kharsawan_gobindpur_admin_boundaries_vector/jharkhand_saraikela-kharsawan_gobindpur_admin_boundaries_vector.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "title": "gobindpur",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          85.82986063,
+          22.43259584,
+          86.20445632,
+          22.76272545
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}
