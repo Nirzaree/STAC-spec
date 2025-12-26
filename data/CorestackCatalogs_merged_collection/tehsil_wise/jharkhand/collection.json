@@ -35,9 +35,9 @@
     },
     {
       "rel": "child",
-      "href": "./saraikela-kharsawan/collection.json",
+      "href": "./dumka/collection.json",
       "type": "application/json",
-      "title": "saraikela-kharsawan"
+      "title": "dumka"
     },
     {
       "rel": "parent",
@@ -51,10 +51,10 @@
     "spatial": {
       "bbox": [
         [
-          85.82986063,
-          22.43259584,
-          86.20445632,
-          22.76272545
+          86.935712,
+          24.022986,
+          87.337302,
+          24.252409
         ]
       ]
     },
@@ -72,8 +72,8 @@
     "social-ecological",
     "sustainability",
     "CoRE stack",
-    "gobindpur",
-    "saraikela-kharsawan",
+    "masalia",
+    "dumka",
     "jharkhand"
   ],
   "providers": [

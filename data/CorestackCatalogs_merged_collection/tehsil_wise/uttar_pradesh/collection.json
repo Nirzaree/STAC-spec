@@ -35,6 +35,12 @@
     },
     {
       "rel": "child",
+      "href": "./jaunpur/collection.json",
+      "type": "application/json",
+      "title": "jaunpur"
+    },
+    {
+      "rel": "child",
       "href": "./mirzapur/collection.json",
       "type": "application/json",
       "title": "mirzapur"
@@ -44,12 +50,6 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Tehsil level Spatio Temporal Asset Catalog"
-    },
-    {
-      "rel": "child",
-      "href": "./jaunpur/collection.json",
-      "type": "application/json",
-      "title": "jaunpur"
     }
   ],
   "title": "uttar_pradesh",
@@ -78,8 +78,8 @@
     "social-ecological",
     "sustainability",
     "CoRE stack",
-    "mirzapur",
-    "mirzapur",
+    "badlapur",
+    "jaunpur",
     "uttar_pradesh"
   ],
   "providers": [

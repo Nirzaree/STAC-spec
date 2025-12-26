@@ -1,8 +1,8 @@
 {
   "type": "Collection",
-  "id": "gobindpur",
+  "id": "masalia",
   "stac_version": "1.1.0",
-  "description": "STAC collection for gobindpur block data in saraikela-kharsawan, jharkhand",
+  "description": "STAC collection for masalia block data in dumka, jharkhand",
   "links": [
     {
       "rel": "root",
@@ -12,30 +12,25 @@
     },
     {
       "rel": "item",
-      "href": "./jharkhand_saraikela-kharsawan_gobindpur_aquifer_vector/jharkhand_saraikela-kharsawan_gobindpur_aquifer_vector.json",
+      "href": "./jharkhand_dumka_masalia_admin_boundaries_vector/jharkhand_dumka_masalia_admin_boundaries_vector.json",
       "type": "application/geo+json"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "saraikela-kharsawan"
-    },
-    {
-      "rel": "item",
-      "href": "./jharkhand_saraikela-kharsawan_gobindpur_admin_boundaries_vector/jharkhand_saraikela-kharsawan_gobindpur_admin_boundaries_vector.json",
-      "type": "application/geo+json"
+      "title": "dumka"
     }
   ],
-  "title": "gobindpur",
+  "title": "masalia",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          85.82986063,
-          22.43259584,
-          86.20445632,
-          22.76272545
+          86.935712,
+          24.022986,
+          87.337302,
+          24.252409
         ]
       ]
     },

@@ -15,12 +15,6 @@
       "href": "./tehsil_wise/catalog.json",
       "type": "application/json",
       "title": "Tehsil level Spatio Temporal Asset Catalog"
-    },
-    {
-      "rel": "child",
-      "href": "./tehsil_wise/catalog.json",
-      "type": "application/json",
-      "title": "Tehsil level Spatio Temporal Asset Catalog"
     }
   ],
   "title": "CoREStack Spatio Temporal Asset Catalog"

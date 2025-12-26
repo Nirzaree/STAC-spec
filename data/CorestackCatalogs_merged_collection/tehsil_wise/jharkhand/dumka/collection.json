@@ -1,8 +1,8 @@
 {
   "type": "Collection",
-  "id": "saraikela-kharsawan",
+  "id": "dumka",
   "stac_version": "1.1.0",
-  "description": "STAC collection for data of saraikela-kharsawan district",
+  "description": "STAC collection for data of dumka district",
   "links": [
     {
       "rel": "root",
@@ -12,9 +12,9 @@
     },
     {
       "rel": "child",
-      "href": "./gobindpur/collection.json",
+      "href": "./masalia/collection.json",
       "type": "application/json",
-      "title": "gobindpur"
+      "title": "masalia"
     },
     {
       "rel": "parent",
@@ -23,15 +23,15 @@
       "title": "jharkhand"
     }
   ],
-  "title": "saraikela-kharsawan",
+  "title": "dumka",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          85.82986063,
-          22.43259584,
-          86.20445632,
-          22.76272545
+          86.935712,
+          24.022986,
+          87.337302,
+          24.252409
         ]
       ]
     },

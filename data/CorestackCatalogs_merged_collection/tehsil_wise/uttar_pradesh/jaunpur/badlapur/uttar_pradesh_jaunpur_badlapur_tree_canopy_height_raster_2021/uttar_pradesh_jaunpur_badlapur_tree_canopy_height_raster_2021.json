@@ -5,39 +5,39 @@
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
-  "id": "uttar_pradesh_mirzapur_mirzapur_tree_canopy_height_raster_2021",
+  "id": "uttar_pradesh_jaunpur_badlapur_tree_canopy_height_raster_2021",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
         [
-          82.20635878576043,
-          24.91100148086163
+          82.1573107712475,
+          25.744278738410898
         ],
         [
-          82.20635878576043,
-          25.30230761862409
+          82.1573107712475,
+          26.02778704207902
         ],
         [
-          82.8539542740822,
-          25.30230761862409
+          82.6467129380358,
+          26.02778704207902
         ],
         [
-          82.8539542740822,
-          24.91100148086163
+          82.6467129380358,
+          25.744278738410898
         ],
         [
-          82.20635878576043,
-          24.91100148086163
+          82.1573107712475,
+          25.744278738410898
         ]
       ]
     ]
   },
   "bbox": [
-    82.20635878576043,
-    24.91100148086163,
-    82.8539542740822,
-    25.30230761862409
+    82.1573107712475,
+    25.744278738410898,
+    82.6467129380358,
+    26.02778704207902
   ],
   "properties": {
     "title": "Tree canopy height : 2021",
@@ -47,10 +47,10 @@
     "gsd": 25.0,
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
-      1452,
-      2403
+      1052,
+      1816
     ],
-    "datetime": "2025-12-26T11:52:12.472371Z"
+    "datetime": "2025-12-26T13:29:26.554547Z"
   },
   "links": [
     {
@@ -63,18 +63,18 @@
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "mirzapur"
+      "title": "badlapur"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "mirzapur"
+      "title": "badlapur"
     }
   ],
   "assets": {
     "data": {
-      "href": "https://geoserver.core-stack.org:8443/geoserver/canopy_height/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=canopy_height:tree_health_ch_raster_mirzapur_mirzapur_2021&format=geotiff",
+      "href": "https://geoserver.core-stack.org:8443/geoserver/canopy_height/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=canopy_height:tree_health_ch_raster_jaunpur_badlapur_2021&format=geotiff",
       "type": "image/tiff; application=geotiff",
       "title": "Raster Layer",
       "classification:classes": [
@@ -140,7 +140,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://spatio-temporal-asset-catalog.s3.ap-south-1.amazonaws.com/STAC_output_merged_collection/mirzapur_tree_canopy_height_raster_2021.png",
+      "href": "https://spatio-temporal-asset-catalog.s3.ap-south-1.amazonaws.com/STAC_output_merged_collection/badlapur_tree_canopy_height_raster_2021.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [
@@ -148,5 +148,5 @@
       ]
     }
   },
-  "collection": "mirzapur"
+  "collection": "badlapur"
 }
