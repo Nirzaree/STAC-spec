@@ -44,6 +44,12 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Tehsil level Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./saraikela-kharsawan/collection.json",
+      "type": "application/json",
+      "title": "saraikela-kharsawan"
     }
   ],
   "title": "jharkhand",
@@ -51,8 +57,8 @@
     "spatial": {
       "bbox": [
         [
-          86.935712,
-          24.022986,
+          85.64714007,
+          22.6088418,
           87.337302,
           24.252409
         ]
