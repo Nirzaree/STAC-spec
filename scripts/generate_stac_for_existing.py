@@ -241,70 +241,69 @@ def generate_stac_spec():
                         print(
                             f"EXCEPTION IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name} and error is:- {e}"
                         )
-            elif layer_name_to_generate_raster in [
-                "tree_canopy_cover_density_raster",
-                "tree_canopy_height_raster",
-            ]:
-                tree_year_range = [2017, 2018, 2019, 2020, 2021, 2022]
-                for year in tree_year_range:
-                       #check if STAC specs are generated 
-                       layer_name = layer_obj_and_name[layer_name_to_generate_raster]["layer_name"]
-                       formatted_layer_name = (
-                            layer_name.replace(
-                                "dist", valid_gee_text(district.district_name.lower())
-                            )
-                            .replace(
-                                "block", valid_gee_text(tehsil.tehsil_name.lower())
-                            )
-                            .replace(" ", "_"))                       
-                        print(f"{formatted_layer_name = }")
-                       
-                        layer_obj = (
-                            Layer.objects.filter(
-                                dataset__name=layer_obj_and_name[
-                                    layer_name_to_generate_raster
-                                ]["dataset_name"],
-                                layer_name=formatted_layer_name,
-                            )
-                            .order_by("-layer_version")
-                            .first()
-                        )
-                        if (layer_obj.is_stac_specs_generated == True):
-                                        print(
-                                            f"stac spec {layer_name_to_generate_raster} already exists for for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
-                                        )
-                        else:
-                            try:
-                                is_raster_stac_generated = (
-                                    generate_STAC_layerwise.generate_raster_stac(
-                                        state=state.state_name,
-                                        district=district.district_name,
-                                        block=tehsil.tehsil_name,
-                                        layer_name=layer_name_to_generate_raster,
-                                        start_year=year,
-                                        upload_to_s3=upload_s3,
-                                        generate_stac = True
-                                    )
-                                )
+            # elif layer_name_to_generate_raster in [
+            #     "tree_canopy_cover_density_raster",
+            #     "tree_canopy_height_raster",
+            # ]:
+                
+            #     tree_year_range = [2017, 2018, 2019, 2020, 2021, 2022]
+            #     for year in tree_year_range:
+            #            #check if STAC specs are generated 
+            #            layer_name = layer_obj_and_name[layer_name_to_generate_raster]["layer_name"]
+            #            formatted_layer_name = (
+            #                 layer_name.replace(
+            #                     "dist", valid_gee_text(district.district_name.lower())
+            #                 )
+            #                 .replace(
+            #                     "block", valid_gee_text(tehsil.tehsil_name.lower())
+            #                 )
+            #                 .replace(" ", "_"))
+            #             layer_obj = (
+            #                 Layer.objects.filter(
+            #                     dataset__name=layer_obj_and_name[
+            #                         layer_name_to_generate_raster
+            #                     ]["dataset_name"],
+            #                     layer_name=formatted_layer_name,
+            #                 )
+            #                 .order_by("-layer_version")
+            #                 .first()
+            #             )
+            #             if (layer_obj.is_stac_specs_generated == True):
+            #                                 print(
+            #                                     f"stac spec {layer_name_to_generate_raster} already exists for for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
+            #                                 )                                
+            #             else:
+            #                 try:
+            #                     is_raster_stac_generated = (
+            #                         generate_STAC_layerwise.generate_raster_stac(
+            #                             state=state.state_name,
+            #                             district=district.district_name,
+            #                             block=tehsil.tehsil_name,
+            #                             layer_name=layer_name_to_generate_raster,
+            #                             start_year=year,
+            #                             upload_to_s3=upload_s3,
+            #                             generate_stac = True
+            #                         )
+            #                     )
         
-                                if is_raster_stac_generated:
-                                    print(
-                                        f"stac spec {layer_name_to_generate_raster} generated for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
-                                    )
-                                    if layer_obj:
-                                        layer_obj.is_stac_specs_generated = True
-                                        layer_obj.save()
-                                        print("db flag updated.....")
-                                    else:
-                                        print("db object not found========")
-                                else:
-                                    print(
-                                        f"ISSUE IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
-                                    )
-                            except Exception as e:
-                                print(
-                                    f"EXCEPTION IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name} and error is:- {e}"
-                                )
+            #                     if is_raster_stac_generated:
+            #                         print(
+            #                             f"stac spec {layer_name_to_generate_raster} generated for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
+            #                         )
+            #                         if layer_obj:
+            #                             layer_obj.is_stac_specs_generated = True
+            #                             layer_obj.save()
+            #                             print("db flag updated.....")
+            #                         else:
+            #                             print("db object not found========")
+            #                     else:
+            #                         print(
+            #                             f"ISSUE IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
+            #                         )
+            #                 except Exception as e:
+            #                     print(
+            #                         f"EXCEPTION IN GENERATING {layer_name_to_generate_raster} for {state.state_name}_{district.district_name}_{tehsil.tehsil_name} and error is:- {e}"
+            #                     )
             else:
                     layer_name = layer_obj_and_name[layer_name_to_generate_raster][
                         "layer_name"
