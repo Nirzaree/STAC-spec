@@ -69,13 +69,16 @@ STYLE_FILE_DIR = os.path.join(LOCAL_DATA_DIR,'input/style_files/')
 
 # %%
 THUMBNAIL_DIR = os.path.join(LOCAL_DATA_DIR,
-                             'STAC_output_overwrite_flag')
+                             'STAC_output_merged')
 # THUMBNAIL_DIR
+
+# %%
+TEHSIL_DIRNAME = 'tehsil_wise'
 
 # %%
 STAC_FILES_DIR = os.path.join(
     LOCAL_DATA_DIR,
-    'CorestackCatalogs_overwrite_flag' #test folder
+    'CorestackCatalogs_merged' #test folder
 )
 #'CorestackCatalogs_exception_handling'
 
@@ -431,10 +434,11 @@ def read_layer_mapping(layer_map_csv_path, #TODO: update this function for each 
         end_year_modified = str((int(start_year) + 1) % 100)
         print("start_year_modified=", start_year_modified)
         print("end_year_modified=", end_year_modified)
-        geoserver_layer_name = geoserver_layer_name.format(
-            start_year=start_year_modified, end_year=end_year_modified, block=block
-        )
-    # prin
+        geoserver_layer_name = geoserver_layer_name.format(start_year=start_year_modified,
+                                                           end_year=end_year_modified,
+                                                           block=block,
+                                                           district=district)
+
     # print(geoserver_workspace_name,geoserver_layer_name)
     elif ((layer_name == 'tree_canopy_cover_density_raster') |\
           (layer_name == 'tree_canopy_height_raster')):
@@ -574,6 +578,7 @@ def update_STAC_files(state,
     #                          district,
     #                          block)
     block_dir = os.path.join(STAC_FILES_DIR,
+                             TEHSIL_DIRNAME,
                              state,
                              district,
                              block)
@@ -617,8 +622,9 @@ def update_STAC_files(state,
     
     #3. create district catalog if not existing
     district_dir = os.path.join(STAC_FILES_DIR,
-                             state,
-                             district)
+                                TEHSIL_DIRNAME,
+                                state,
+                                district)
     os.makedirs(district_dir, exist_ok=True)
     district_catalog_path = os.path.join(district_dir,'catalog.json')
 
@@ -644,6 +650,7 @@ def update_STAC_files(state,
 
     #4. create state collection if not existing
     state_dir = os.path.join(STAC_FILES_DIR,
+                             TEHSIL_DIRNAME,
                              state)
     state_collection_path = os.path.join(state_dir, "collection.json")
 
@@ -710,7 +717,27 @@ def update_STAC_files(state,
         state_collection.add_child(district_catalog)
         state_collection.normalize_and_save(state_dir, catalog_type=pystac.CatalogType.SELF_CONTAINED)
         
-    #5. create root catalog if not existing
+    #5. check if tehsil level catalog exists 
+    tehsil_dir = os.path.join(STAC_FILES_DIR,
+                              TEHSIL_DIRNAME)
+    tehsil_catalog_path = os.path.join(tehsil_dir,"catalog.json")
+    if os.path.exists(tehsil_catalog_path):
+    # if fs.exists(root_catalog_path):   
+        tehsil_catalog = pystac.read_file(tehsil_catalog_path)
+        print("loaded tehsil catalog")
+    else:
+        ##os.makedirs(STAC_FILES_DIR, exist_ok=True)
+        tehsil_catalog = pystac.Catalog(
+            id=TEHSIL_DIRNAME, #TODO: check this
+            title=constants.TEHSIL_CATALOG_TITLE,
+            description=constants.TEHSIL_CATALOG_DESCRIPTION
+        )
+        ##root_catalog.set_self_href(root_catalog_path)
+        print("created tehsil catalog")
+    tehsil_catalog.add_child(state_collection)
+    tehsil_catalog.normalize_and_save(tehsil_dir, catalog_type=pystac.CatalogType.SELF_CONTAINED)
+
+    #6. create root catalog if not existing
     root_catalog_path = os.path.join(STAC_FILES_DIR, "catalog.json")
     if os.path.exists(root_catalog_path):
     # if fs.exists(root_catalog_path):   
@@ -725,7 +752,7 @@ def update_STAC_files(state,
         )
         ##root_catalog.set_self_href(root_catalog_path)
         print("created root catalog")
-    root_catalog.add_child(state_collection)
+    root_catalog.add_child(tehsil_catalog)
     root_catalog.normalize_and_save(STAC_FILES_DIR, catalog_type=pystac.CatalogType.SELF_CONTAINED)
     layer_STAC_generated = True 
     return layer_STAC_generated
@@ -1031,6 +1058,7 @@ def generate_vector_thumbnail(vector_gdf,
         # vector_gdf = gpd.read_file(vector_path)
         style_info = parse_vector_style_file(style_file_url,STYLE_FILE_DIR)
 
+        print("style_info=",style_info) #TODO: temporary debug print
         fig, ax = plt.subplots(figsize=(6, 6))
         
         default_fill_color = (0.8, 0.8, 0.8, 1.0) # Light gray
@@ -1068,6 +1096,7 @@ def generate_vector_thumbnail(vector_gdf,
             }
 
             attribute_name = style_info.get('attribute')
+            print("attribute_name = ",attribute_name) #TODO: temporary debug print
 
             if attribute_name not in vector_gdf.columns:
                 print(f"Error: Attribute column '{attribute_name}' not found. Applying default style.")
@@ -1083,6 +1112,8 @@ def generate_vector_thumbnail(vector_gdf,
 
                 outline_colors = vector_gdf['mapped_value'].map(outline_color_map)
                 outline_colors = outline_colors.fillna(rgba_to_hex(default_outline_color))
+
+                print("fill_colors=",fill_color) #TODO : debug print
                 
                 vector_gdf.plot(ax=ax, color=fill_colors, edgecolor=outline_colors, linewidth=default_line_width)
             
@@ -1436,12 +1467,81 @@ def generate_raster_stac(state,
 
 # %%
 # block_district_state_df = pd.DataFrame({
-#     'block' : ['gobindpur','mirzapur','koraput','badlapur'],
-#     'district' : ['saraikela-kharsawan','mirzapur','koraput','jaunpur'],
-#     'state' : ['jharkhand','uttar_pradesh','odisha','uttar_pradesh']
+#     'block' : ['gobindpur','mirzapur','koraput','badlapur','hilsa','masalia'],
+#     'district' : ['saraikela-kharsawan','mirzapur','koraput','jaunpur','nalanda','dumka'],
+#     'state' : ['jharkhand','uttar_pradesh','odisha','uttar_pradesh','bihar','jharkhand']
 # })
 
 # block_district_state_df
+
+# %%
+# block = 'koraput'
+# district = block_district_state_df[block_district_state_df['block'] == block]['district'].iloc[0]
+# state = block_district_state_df[block_district_state_df['block'] == block]['state'].iloc[0]
+# print(state,district,block)
+
+# %%
+# block = 'masalia'
+# state = 'jharkhand'
+# district = 'dumka'
+
+# %% [markdown]
+# <!-- Aquifer: 
+# 
+# 1. Style file has issue : fill color against the categorized column name is none. 
+# 
+# 2. Some data layers are different than others : 2 data layers instead of 1 (masalia vs others (e.g. koraput))  -->
+
+# %%
+# generate_vector_stac(state=state,
+#                      district=district,
+#                      block=block,
+#                      layer_name='aquifer_vector',
+#                      upload_to_s3=False,
+#                      overwrite_existing=False
+#                     #  layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
+#                     #  layer_desc_csv_path='../data/input/metadata/layer_descriptions.csv',
+#                     #  column_desc_csv_path='../data/input/metadata/vector_column_descriptions.csv'
+#                     )
+
+# %% [markdown]
+# Applying categorized style... : masalia
+
+# %%
+# df_masalia_aquifer = gpd.GeoDataFrame.from_file('/home/nirzaree/Downloads/aquifer_vector_dumka_masalia.json')
+
+# %%
+# df_masalia_aquifer.shape
+
+# %%
+# df_masalia_aquifer['geometry'].plot()
+
+# %%
+# df_masalia_aquifer.head()
+
+# %%
+# df_masalia_aquifer.plot()
+        
+
+# %%
+# parse_vector_style_file(style_file_url='https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Hydrology/Aquifer_style.qml',
+#                         STYLE_FILE_DIR='data/input/style_files/Aquifer_style.qml')
+
+# %%
+# parse_vector_style_file(style_file_url='https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Hydrology/Drainage-Layer-Style.qml',
+#                         STYLE_FILE_DIR='data/input/style_files/Aquifer_style.qml')
+
+# %%
+# style_info = parse_vector_style_file(style_file_url,STYLE_FILE_DIR)
+
+# fig, ax = plt.subplots(figsize=(6, 6))
+
+# default_fill_color = (0.8, 0.8, 0.8, 1.0) # Light gray
+# default_outline_color = (0, 0, 0, 1.0)   # Black
+# default_line_width = 1.0
+
+# %% [markdown]
+# Raster URL : 
 
 # %%
 # block = 'badlapur'
@@ -1468,7 +1568,7 @@ def generate_raster_stac(state,
 # generate_vector_stac(state=state,
 #                      district=district,
 #                      block=block,
-#                      layer_name='drainage_lines_vector',
+#                      layer_name='admin_boundaries_vector',
 #                      upload_to_s3=False,
 #                      overwrite_existing=True
 #                     #  layer_map_csv_path='../data/input/metadata/layer_mapping.csv',
@@ -1509,6 +1609,46 @@ def generate_raster_stac(state,
 #     folderpath='../data/STAC_output_exception_handling',
 #     s3_bucket='spatio-temporal-asset-catalog'
 # )
+
+# %%
+# import pystac
+
+# def count_all_stac_items_recursive(catalog_path):
+#     """
+#     Counts all STAC Items recursively within a given STAC Catalog.
+
+#     Args:
+#         catalog_path (str): The path to the root STAC Catalog JSON file or directory.
+
+#     Returns:
+#         int: The total count of STAC Items found.
+#     """
+#     try:
+#         catalog = pystac.Catalog.from_file(catalog_path)
+#     except Exception as e:
+#         print(f"Error loading catalog from {catalog_path}: {e}")
+#         return 0
+
+#     item_count = 0
+#     for _ in catalog.get_all_items():
+#         item_count += 1
+#     return item_count
+
+# # Example usage:
+# # Assuming you have a STAC Catalog at 'path/to/your/stac_catalog/catalog.json'
+# # or 'path/to/your/stac_catalog' if it's a directory containing a root catalog.json
+# # stac_catalog_path = "path/to/your/stac_catalog/catalog.json"
+# # total_items = count_all_stac_items_recursive(stac_catalog_path)
+# # print(f"Total STAC Items: {total_items}")
+
+# %%
+# count_all_stac_items_recursive('https://spatio-temporal-asset-catalog.s3.ap-south-1.amazonaws.com/CorestackCatalogs/catalog.json')
+
+# %%
+# catalog = pystac.Catalog.from_file('https://spatio-temporal-asset-catalog.s3.ap-south-1.amazonaws.com/CorestackCatalogs/catalog.json')
+
+# %%
+# len(list(catalog.get_all_items()))
 
 # %%
 
