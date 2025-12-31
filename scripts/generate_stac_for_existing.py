@@ -38,7 +38,12 @@ def generate_stac_spec():
         # "tree_canopy_cover_density_raster",
         # "tree_cover_change_raster",
         # "tree_canopy_height_raster",
-        "wri_restoration_raster",
+        #"wri_restoration_raster",
+        # "natural_depressions_raster",
+        # "stream_order_raster",
+        # "distance_to_upstream_drainage_line_raster",
+        "catchment_area_singleflow_raster",
+
     ]
 
     layer_names_to_generate_vectors = [
@@ -47,11 +52,11 @@ def generate_stac_spec():
         # "drainage_lines_vector",
         # "surface_water_bodies_vector",
         # "nrega_vector", 
-        "terrain_vector",
+        #"terrain_vector",
         # "cropping_intensity_vector",
-        "stage_of_groundwater_extraction_vector",
+        #"stage_of_groundwater_extraction_vector",
         # "drought_frequency_vector",
-        "change_in_well_depth_vector",
+        #"change_in_well_depth_vector",
     ]
 
     layer_obj_and_name = {
@@ -109,7 +114,7 @@ def generate_stac_spec():
         },
         "land_use_land_cover_raster": {
             "dataset_name": "LULC_level_3",
-            "layer_name": "LULC_start_year_end_year_block_level_3",
+            "layer_name": "LULC_start_year_end_year_dist_block_level_3",
         },
         "terrain_raster": {
             "dataset_name": "Terrain Raster",
@@ -130,6 +135,22 @@ def generate_stac_spec():
         "change_in_well_depth_vector": {
             "dataset_name": "Hydrology",
             "layer_name": "deltaG_well_depth_dist_block",
+        },
+        "natural_depressions_raster": {
+            "dataset_name": "Natural Depression",
+            "layer_name": "natural_depression_dist_block_raster",
+        },
+        "stream_order_raster": {
+            "dataset_name": "Stream Order",
+            "layer_name": "stream_order_dist_block_raster",
+        },
+        "distance_to_upstream_drainage_line_raster": {
+            "dataset_name": "Distance to Drainage Line",
+            "layer_name": "distance_to_drainage_line_dist_block_raster",
+        },
+        "catchment_area_singleflow_raster": {
+            "dataset_name": "Catchment Area",
+            "layer_name": "catchment_area_dist_block_raster",
         }        
     }
 
@@ -147,7 +168,7 @@ def generate_stac_spec():
         print(state.state_name, district.district_name, tehsil.tehsil_name)
         for layer_name_to_generate_raster in layer_names_to_generate_rasters:
             if layer_name_to_generate_raster == "land_use_land_cover_raster":
-                lulc_year_range = [2017, 2018, 2019, 2020, 2021, 2022]
+                lulc_year_range = [2023, 2024]
                 for year in lulc_year_range:
                     print("year = ",year)
 
@@ -174,6 +195,9 @@ def generate_stac_spec():
 
                         formatted_layer_name = (
                             layer_name.replace(
+                                "dist", valid_gee_text(district.district_name.lower())
+                            )
+                            .replace(
                                 "block", valid_gee_text(tehsil.tehsil_name.lower())
                             )
                             .replace("start_year", start_year_last_two_digits)
