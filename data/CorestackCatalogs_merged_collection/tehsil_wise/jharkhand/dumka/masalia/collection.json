@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "masalia",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for masalia block data in dumka, jharkhand",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoREStack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_dumka_masalia_admin_boundaries_vector/jharkhand_dumka_masalia_admin_boundaries_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "dumka"
+    }
+  ],
+  "title": "masalia",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          86.935712,
+          24.022986,
+          87.337302,
+          24.252409
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}
