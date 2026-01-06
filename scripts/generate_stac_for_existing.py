@@ -326,9 +326,10 @@ def generate_stac_spec():
                         .order_by("-layer_version")
                         .first()
                     )
+
                     if (layer_obj.is_stac_specs_generated == True):
                                     print(
-                                        f"stac spec {layer_name_to_generate_raster} already exists for for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
+                                        f"stac spec {layer_name_to_generate_raster} already exists for {state.state_name}_{district.district_name}_{tehsil.tehsil_name}"
                                     )
                     else:
                         try:
