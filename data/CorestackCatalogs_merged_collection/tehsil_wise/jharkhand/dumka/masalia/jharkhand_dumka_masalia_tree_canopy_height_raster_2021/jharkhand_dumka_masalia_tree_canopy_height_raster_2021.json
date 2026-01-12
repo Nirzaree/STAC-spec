@@ -5,39 +5,39 @@
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
-  "id": "jharkhand_saraikela-kharsawan_kharsawan_tree_canopy_height_raster_2021",
+  "id": "jharkhand_dumka_masalia_tree_canopy_height_raster_2021",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
         [
-          85.64672666088137,
-          22.608439744606468
+          86.90769182519993,
+          23.994719891059717
         ],
         [
-          85.64672666088137,
-          22.914316098849167
+          86.90769182519993,
+          24.285504548529207
         ],
         [
-          85.94667413424888,
-          22.914316098849167
+          87.35505283669146,
+          24.285504548529207
         ],
         [
-          85.94667413424888,
-          22.608439744606468
+          87.35505283669146,
+          23.994719891059717
         ],
         [
-          85.64672666088137,
-          22.608439744606468
+          86.90769182519993,
+          23.994719891059717
         ]
       ]
     ]
   },
   "bbox": [
-    85.64672666088137,
-    22.608439744606468,
-    85.94667413424888,
-    22.914316098849167
+    86.90769182519993,
+    23.994719891059717,
+    87.35505283669146,
+    24.285504548529207
   ],
   "properties": {
     "title": "Tree canopy height : 2021",
@@ -47,10 +47,10 @@
     "gsd": 25.0,
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
-      1135,
-      1113
+      1079,
+      1660
     ],
-    "datetime": "2026-01-12T09:59:03.893688Z"
+    "datetime": "2026-01-12T09:53:22.394425Z"
   },
   "links": [
     {
@@ -63,18 +63,18 @@
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "kharsawan"
+      "title": "masalia"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "kharsawan"
+      "title": "masalia"
     }
   ],
   "assets": {
     "data": {
-      "href": "https://geoserver.core-stack.org:8443/geoserver/canopy_height/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=canopy_height:tree_health_ch_raster_saraikela-kharsawan_kharsawan_2021&format=geotiff",
+      "href": "https://geoserver.core-stack.org:8443/geoserver/canopy_height/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=canopy_height:tree_health_ch_raster_dumka_masalia_2021&format=geotiff",
       "type": "image/tiff; application=geotiff",
       "title": "Raster Layer",
       "classification:classes": [
@@ -92,8 +92,8 @@
         },
         {
           "value": 0,
-          "name": "No_Change",
-          "description": "No_Change",
+          "name": "No Change",
+          "description": "No Change",
           "color_hint": "ffffff"
         },
         {
@@ -110,20 +110,20 @@
         },
         {
           "value": 3,
-          "name": "Partially_Degraded",
-          "description": "Partially_Degraded",
+          "name": "Partially Degraded",
+          "description": "Partially Degraded",
           "color_hint": "dee64c"
         },
         {
           "value": 4,
-          "name": "Partially_Degraded",
-          "description": "Partially_Degraded",
+          "name": "Partially Degraded",
+          "description": "Partially Degraded",
           "color_hint": "dee64c"
         },
         {
           "value": 5,
-          "name": "Missing_Data",
-          "description": "Missing_Data",
+          "name": "Missing Data",
+          "description": "Missing Data",
           "color_hint": "000000"
         }
       ],
@@ -140,7 +140,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_merged_collection/kharsawan_tree_canopy_height_raster_2021.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_merged_collection/masalia_tree_canopy_height_raster_2021.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [
@@ -148,5 +148,5 @@
       ]
     }
   },
-  "collection": "kharsawan"
+  "collection": "masalia"
 }
