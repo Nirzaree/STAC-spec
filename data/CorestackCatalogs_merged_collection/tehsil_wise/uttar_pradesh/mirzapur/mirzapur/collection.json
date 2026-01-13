@@ -16,15 +16,15 @@
       "type": "application/geo+json"
     },
     {
-      "rel": "item",
-      "href": "./uttar_pradesh_mirzapur_mirzapur_admin_boundaries_vector/uttar_pradesh_mirzapur_mirzapur_admin_boundaries_vector.json",
-      "type": "application/geo+json"
-    },
-    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
       "title": "mirzapur"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_mirzapur_mirzapur_admin_boundaries_vector/uttar_pradesh_mirzapur_mirzapur_admin_boundaries_vector.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "item",

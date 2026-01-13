@@ -48755,11 +48755,6 @@
   "properties": {
     "title": "Aquifer",
     "description": "Aquifer map for India generated with data from India Water Resources Information System (WRIS) ArcGIS portal. Ground water is the water present beneath the Earth\u2019s surface in rock and soil pore spaces and in the fractures of rock formation. A unit of rock or an unconsolidated deposit is called an aquifer when it can yield a usable quantity of water. \n\nBased on the hydrogeological characteristics, the entire nation is divided into 14 principal aquifers: \n1. Alluvium\n2. Laterite\n3. Basalt\n4. Sandstone\n5. Shale\n6. Limestone\n7. Granite\n8. Schist\n9. Quartzite\n10. Charnockite\n11. Khondalite\n12. Banded Gneissic Complex\n13. Gneiss\n14. Intrusive\n\nEach major aquifer is uniquely identified by its region-specific aquifer properties such as aquifer thickness, specific yield, transmissivity and whether it is an unconfined and confined aquifer.",
-    "keywords": [
-      "social-ecological",
-      "sustainability",
-      "CoRE stack"
-    ],
     "table:columns": [
       {
         "name": "%_area_aquifer",
@@ -48917,7 +48912,7 @@
         "description": ""
       }
     ],
-    "datetime": "2026-01-13T06:28:58.322455Z"
+    "datetime": "2026-01-13T10:23:40.600456Z"
   },
   "links": [
     {

@@ -11,15 +11,15 @@
       "title": "CoREStack Spatio Temporal Asset Catalog"
     },
     {
-      "rel": "item",
-      "href": "./jharkhand_saraikela-kharsawan_kharsawan_aquifer_vector/jharkhand_saraikela-kharsawan_kharsawan_aquifer_vector.json",
-      "type": "application/geo+json"
-    },
-    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
       "title": "saraikela-kharsawan"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_tree_canopy_height_raster_2021/jharkhand_saraikela-kharsawan_kharsawan_tree_canopy_height_raster_2021.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
@@ -28,7 +28,7 @@
     },
     {
       "rel": "item",
-      "href": "./jharkhand_saraikela-kharsawan_kharsawan_tree_canopy_height_raster_2021/jharkhand_saraikela-kharsawan_kharsawan_tree_canopy_height_raster_2021.json",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_surface_water_bodies_vector/jharkhand_saraikela-kharsawan_kharsawan_surface_water_bodies_vector.json",
       "type": "application/geo+json"
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "rel": "item",
-      "href": "./jharkhand_saraikela-kharsawan_kharsawan_surface_water_bodies_vector/jharkhand_saraikela-kharsawan_kharsawan_surface_water_bodies_vector.json",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_aquifer_vector/jharkhand_saraikela-kharsawan_kharsawan_aquifer_vector.json",
       "type": "application/geo+json"
     }
   ],

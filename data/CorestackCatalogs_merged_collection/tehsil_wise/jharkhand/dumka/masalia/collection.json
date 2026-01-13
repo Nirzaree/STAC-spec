@@ -18,22 +18,12 @@
     },
     {
       "rel": "item",
-      "href": "./jharkhand_dumka_masalia_aquifer_vector/jharkhand_dumka_masalia_aquifer_vector.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./jharkhand_dumka_masalia_nrega_vector/jharkhand_dumka_masalia_nrega_vector.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./jharkhand_dumka_masalia_surface_water_bodies_vector/jharkhand_dumka_masalia_surface_water_bodies_vector.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
       "href": "./jharkhand_dumka_masalia_tree_canopy_height_raster_2021/jharkhand_dumka_masalia_tree_canopy_height_raster_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_dumka_masalia_aquifer_vector/jharkhand_dumka_masalia_aquifer_vector.json",
       "type": "application/geo+json"
     },
     {
@@ -44,6 +34,16 @@
     {
       "rel": "item",
       "href": "./jharkhand_dumka_masalia_drainage_lines_vector/jharkhand_dumka_masalia_drainage_lines_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_dumka_masalia_surface_water_bodies_vector/jharkhand_dumka_masalia_surface_water_bodies_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_dumka_masalia_nrega_vector/jharkhand_dumka_masalia_nrega_vector.json",
       "type": "application/geo+json"
     }
   ],
