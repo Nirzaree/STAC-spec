@@ -11,20 +11,10 @@
       "title": "CoREStack Spatio Temporal Asset Catalog"
     },
     {
-      "rel": "item",
-      "href": "./uttar_pradesh_jaunpur_badlapur_aquifer_vector/uttar_pradesh_jaunpur_badlapur_aquifer_vector.json",
-      "type": "application/geo+json"
-    },
-    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
       "title": "jaunpur"
-    },
-    {
-      "rel": "item",
-      "href": "./uttar_pradesh_jaunpur_badlapur_admin_boundaries_vector/uttar_pradesh_jaunpur_badlapur_admin_boundaries_vector.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "item",
@@ -34,6 +24,21 @@
     {
       "rel": "item",
       "href": "./uttar_pradesh_jaunpur_badlapur_tree_canopy_height_raster_2021/uttar_pradesh_jaunpur_badlapur_tree_canopy_height_raster_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_aquifer_vector/uttar_pradesh_jaunpur_badlapur_aquifer_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_admin_boundaries_vector/uttar_pradesh_jaunpur_badlapur_admin_boundaries_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_surface_water_bodies_vector/uttar_pradesh_jaunpur_badlapur_surface_water_bodies_vector.json",
       "type": "application/geo+json"
     }
   ],

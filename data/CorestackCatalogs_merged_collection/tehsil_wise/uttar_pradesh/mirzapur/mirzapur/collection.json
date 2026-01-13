@@ -25,6 +25,11 @@
       "href": "../collection.json",
       "type": "application/json",
       "title": "mirzapur"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_mirzapur_mirzapur_cropping_intensity_vector/uttar_pradesh_mirzapur_mirzapur_cropping_intensity_vector.json",
+      "type": "application/geo+json"
     }
   ],
   "title": "mirzapur",

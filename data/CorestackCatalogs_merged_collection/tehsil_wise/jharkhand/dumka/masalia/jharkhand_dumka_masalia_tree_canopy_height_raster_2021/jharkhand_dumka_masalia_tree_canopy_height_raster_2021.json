@@ -50,7 +50,7 @@
       1079,
       1660
     ],
-    "datetime": "2026-01-12T09:53:22.394425Z"
+    "datetime": "2026-01-13T09:21:53.386082Z"
   },
   "links": [
     {
@@ -92,8 +92,8 @@
         },
         {
           "value": 0,
-          "name": "No Change",
-          "description": "No Change",
+          "name": "No_Change",
+          "description": "No_Change",
           "color_hint": "ffffff"
         },
         {
@@ -110,20 +110,20 @@
         },
         {
           "value": 3,
-          "name": "Partially Degraded",
-          "description": "Partially Degraded",
+          "name": "Partially_Degraded",
+          "description": "Partially_Degraded",
           "color_hint": "dee64c"
         },
         {
           "value": 4,
-          "name": "Partially Degraded",
-          "description": "Partially Degraded",
+          "name": "Partially_Degraded",
+          "description": "Partially_Degraded",
           "color_hint": "dee64c"
         },
         {
           "value": 5,
-          "name": "Missing Data",
-          "description": "Missing Data",
+          "name": "Missing_Data",
+          "description": "Missing_Data",
           "color_hint": "000000"
         }
       ],

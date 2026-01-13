@@ -35,6 +35,11 @@
       "rel": "item",
       "href": "./jharkhand_saraikela-kharsawan_kharsawan_admin_boundaries_vector/jharkhand_saraikela-kharsawan_kharsawan_admin_boundaries_vector.json",
       "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_surface_water_bodies_vector/jharkhand_saraikela-kharsawan_kharsawan_surface_water_bodies_vector.json",
+      "type": "application/geo+json"
     }
   ],
   "title": "kharsawan",
