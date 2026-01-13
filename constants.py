@@ -16,7 +16,7 @@ GITHUB_DATA_URL="https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-
 
 
 STAC_VERSION="1.0.0"
-ROOT_CATALOG_TITLE="CoREStack Spatio Temporal Asset Catalog"
+ROOT_CATALOG_TITLE="CoRE Stack Spatio Temporal Asset Catalog"
 ROOT_CATALOG_DESCRIPTION="This spatio temporal asset catalog contains all data layers of CoREStack (https://core-stack.org/). The data layers are generated at an administrative block level, and some layers are available for Pan India."
 
 TEHSIL_CATALOG_TITLE="Tehsil level Spatio Temporal Asset Catalog"
