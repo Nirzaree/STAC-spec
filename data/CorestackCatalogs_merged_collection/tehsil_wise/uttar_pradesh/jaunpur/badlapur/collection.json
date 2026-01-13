@@ -38,6 +38,11 @@
     },
     {
       "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_cropping_intensity_vector/uttar_pradesh_jaunpur_badlapur_cropping_intensity_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
       "href": "./uttar_pradesh_jaunpur_badlapur_surface_water_bodies_vector/uttar_pradesh_jaunpur_badlapur_surface_water_bodies_vector.json",
       "type": "application/geo+json"
     }
