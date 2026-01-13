@@ -11,15 +11,15 @@
       "title": "CoREStack Spatio Temporal Asset Catalog"
     },
     {
-      "rel": "item",
-      "href": "./uttar_pradesh_mirzapur_mirzapur_aquifer_vector/uttar_pradesh_mirzapur_mirzapur_aquifer_vector.json",
-      "type": "application/geo+json"
-    },
-    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
       "title": "mirzapur"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_mirzapur_mirzapur_surface_water_bodies_vector/uttar_pradesh_mirzapur_mirzapur_surface_water_bodies_vector.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
@@ -30,6 +30,11 @@
       "rel": "item",
       "href": "./uttar_pradesh_mirzapur_mirzapur_cropping_intensity_vector/uttar_pradesh_mirzapur_mirzapur_cropping_intensity_vector.json",
       "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_mirzapur_mirzapur_aquifer_vector/uttar_pradesh_mirzapur_mirzapur_aquifer_vector.json",
+      "type": "application/geo+json"
     }
   ],
   "title": "mirzapur",
@@ -39,7 +44,7 @@
         [
           82.20677417,
           24.91140565,
-          82.85356232,
+          82.85359354,
           25.30217009
         ]
       ]

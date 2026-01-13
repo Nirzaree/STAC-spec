@@ -23,12 +23,7 @@
     },
     {
       "rel": "item",
-      "href": "./jharkhand_saraikela-kharsawan_kharsawan_nrega_vector/jharkhand_saraikela-kharsawan_kharsawan_nrega_vector.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./jharkhand_saraikela-kharsawan_kharsawan_surface_water_bodies_vector/jharkhand_saraikela-kharsawan_kharsawan_surface_water_bodies_vector.json",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_aquifer_vector/jharkhand_saraikela-kharsawan_kharsawan_aquifer_vector.json",
       "type": "application/geo+json"
     },
     {
@@ -38,7 +33,12 @@
     },
     {
       "rel": "item",
-      "href": "./jharkhand_saraikela-kharsawan_kharsawan_aquifer_vector/jharkhand_saraikela-kharsawan_kharsawan_aquifer_vector.json",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_surface_water_bodies_vector/jharkhand_saraikela-kharsawan_kharsawan_surface_water_bodies_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_nrega_vector/jharkhand_saraikela-kharsawan_kharsawan_nrega_vector.json",
       "type": "application/geo+json"
     }
   ],
