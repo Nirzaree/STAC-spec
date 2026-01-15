@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "giridih",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for giridih block data in giridih, jharkhand",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoREStack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_giridih_giridih_nrega_vector/jharkhand_giridih_giridih_nrega_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "giridih"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_giridih_giridih_drainage_lines_vector/jharkhand_giridih_giridih_drainage_lines_vector.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "title": "giridih",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          86.06333471,
+          24.04083309,
+          86.43333308,
+          24.32499823
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "social-ecological",
+    "sustainability",
+    "CoRE stack",
+    "giridih",
+    "giridih",
+    "jharkhand"
+  ],
+  "providers": [
+    {
+      "name": "CoRE Stack",
+      "roles": [
+        "producer",
+        "processor",
+        "host",
+        "licensor"
+      ],
+      "url": "https://core-stack.org/"
+    }
+  ]
+}

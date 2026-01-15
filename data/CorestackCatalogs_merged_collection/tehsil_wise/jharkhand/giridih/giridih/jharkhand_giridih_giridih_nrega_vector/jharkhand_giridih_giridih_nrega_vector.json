@@ -4,39 +4,39 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
-  "id": "jharkhand_dumka_masalia_nrega_vector",
+  "id": "jharkhand_giridih_giridih_nrega_vector",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
         [
-          86.93794678,
-          24.027235
+          86.0991517,
+          24.0510233
         ],
         [
-          86.93794678,
-          24.2475467
+          86.0991517,
+          24.2730333
         ],
         [
-          87.3282266,
-          24.2475467
+          86.38117867,
+          24.2730333
         ],
         [
-          87.3282266,
-          24.027235
+          86.38117867,
+          24.0510233
         ],
         [
-          86.93794678,
-          24.027235
+          86.0991517,
+          24.0510233
         ]
       ]
     ]
   },
   "bbox": [
-    86.93794678,
-    24.027235,
-    87.3282266,
-    24.2475467
+    86.0991517,
+    24.0510233,
+    86.38117867,
+    24.2730333
   ],
   "properties": {
     "title": "NREGA Works",
@@ -94,7 +94,7 @@
       },
       {
         "name": "creation_t",
-        "type": "datetime64[ms]",
+        "type": "object",
         "description": "time of creation of asset"
       },
       {
@@ -159,7 +159,7 @@
       },
       {
         "name": "Skilled",
-        "type": "float64",
+        "type": "int32",
         "description": "expenditure of skilled labour"
       },
       {
@@ -238,7 +238,7 @@
         "description": ""
       }
     ],
-    "datetime": "2026-01-15T02:23:09.583577Z"
+    "datetime": "2026-01-15T01:56:29.607869Z"
   },
   "links": [
     {
@@ -251,18 +251,18 @@
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "masalia"
+      "title": "giridih"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "masalia"
+      "title": "giridih"
     }
   ],
   "assets": {
     "data": {
-      "href": "https://geoserver.core-stack.org:8443/geoserver/nrega_assets/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=nrega_assets:dumka_masalia&outputFormat=application/json",
+      "href": "https://geoserver.core-stack.org:8443/geoserver/nrega_assets/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=nrega_assets:giridih_giridih&outputFormat=application/json",
       "type": "application/geo+json",
       "title": "Vector Layer",
       "roles": [
@@ -278,7 +278,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_merged_collection/masalia_nrega_vector.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_merged_collection/giridih_nrega_vector.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [
@@ -286,5 +286,5 @@
       ]
     }
   },
-  "collection": "masalia"
+  "collection": "giridih"
 }

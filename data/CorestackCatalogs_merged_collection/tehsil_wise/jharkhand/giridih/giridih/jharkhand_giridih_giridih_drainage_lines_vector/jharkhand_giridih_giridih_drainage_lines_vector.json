@@ -4,39 +4,39 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
-  "id": "jharkhand_dumka_masalia_drainage_lines_vector",
+  "id": "jharkhand_giridih_giridih_drainage_lines_vector",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
         [
-          86.90944468,
-          24.00083496
+          86.06333471,
+          24.04083309
         ],
         [
-          86.90944468,
-          24.28388977
+          86.06333471,
+          24.32499823
         ],
         [
-          87.35444512,
-          24.28388977
+          86.43333308,
+          24.32499823
         ],
         [
-          87.35444512,
-          24.00083496
+          86.43333308,
+          24.04083309
         ],
         [
-          86.90944468,
-          24.00083496
+          86.06333471,
+          24.04083309
         ]
       ]
     ]
   },
   "bbox": [
-    86.90944468,
-    24.00083496,
-    87.35444512,
-    24.28388977
+    86.06333471,
+    24.04083309,
+    86.43333308,
+    24.32499823
   ],
   "properties": {
     "title": "Drainage Lines",
@@ -88,7 +88,7 @@
         "description": ""
       }
     ],
-    "datetime": "2026-01-15T02:23:36.209592Z"
+    "datetime": "2026-01-15T02:06:55.348458Z"
   },
   "links": [
     {
@@ -101,18 +101,18 @@
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "masalia"
+      "title": "giridih"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "masalia"
+      "title": "giridih"
     }
   ],
   "assets": {
     "data": {
-      "href": "https://geoserver.core-stack.org:8443/geoserver/drainage/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=drainage:dumka_masalia&outputFormat=application/json",
+      "href": "https://geoserver.core-stack.org:8443/geoserver/drainage/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=drainage:giridih_giridih&outputFormat=application/json",
       "type": "application/geo+json",
       "title": "Vector Layer",
       "roles": [
@@ -128,7 +128,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_merged_collection/masalia_drainage_lines_vector.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_merged_collection/giridih_drainage_lines_vector.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [
@@ -136,5 +136,5 @@
       ]
     }
   },
-  "collection": "masalia"
+  "collection": "giridih"
 }
