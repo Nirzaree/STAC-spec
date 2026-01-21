@@ -50,7 +50,7 @@
       1135,
       1113
     ],
-    "datetime": "2025-12-29T03:28:00.352765Z"
+    "datetime": "2026-01-12T09:59:03.893688Z"
   },
   "links": [
     {
@@ -92,8 +92,8 @@
         },
         {
           "value": 0,
-          "name": "No Change",
-          "description": "No Change",
+          "name": "No_Change",
+          "description": "No_Change",
           "color_hint": "ffffff"
         },
         {
@@ -110,20 +110,20 @@
         },
         {
           "value": 3,
-          "name": "Partially Degraded",
-          "description": "Partially Degraded",
+          "name": "Partially_Degraded",
+          "description": "Partially_Degraded",
           "color_hint": "dee64c"
         },
         {
           "value": 4,
-          "name": "Partially Degraded",
-          "description": "Partially Degraded",
+          "name": "Partially_Degraded",
+          "description": "Partially_Degraded",
           "color_hint": "dee64c"
         },
         {
           "value": 5,
-          "name": "Missing Data",
-          "description": "Missing Data",
+          "name": "Missing_Data",
+          "description": "Missing_Data",
           "color_hint": "000000"
         }
       ],
@@ -140,7 +140,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://spatio-temporal-asset-catalog.s3.ap-south-1.amazonaws.com/STAC_output_merged_collection/kharsawan_tree_canopy_height_raster_2021.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/STAC_output_merged_collection/kharsawan_tree_canopy_height_raster_2021.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [

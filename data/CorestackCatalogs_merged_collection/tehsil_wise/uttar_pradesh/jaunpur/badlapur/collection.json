@@ -11,8 +11,19 @@
       "title": "CoREStack Spatio Temporal Asset Catalog"
     },
     {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "jaunpur"
+    },
+    {
       "rel": "item",
-      "href": "./uttar_pradesh_jaunpur_badlapur_aquifer_vector/uttar_pradesh_jaunpur_badlapur_aquifer_vector.json",
+      "href": "./uttar_pradesh_jaunpur_badlapur_land_use_land_cover_raster_2021/uttar_pradesh_jaunpur_badlapur_land_use_land_cover_raster_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_tree_canopy_height_raster_2021/uttar_pradesh_jaunpur_badlapur_tree_canopy_height_raster_2021.json",
       "type": "application/geo+json"
     },
     {
@@ -22,14 +33,28 @@
     },
     {
       "rel": "item",
-      "href": "./uttar_pradesh_jaunpur_badlapur_tree_canopy_height_raster_2021/uttar_pradesh_jaunpur_badlapur_tree_canopy_height_raster_2021.json",
+      "href": "./uttar_pradesh_jaunpur_badlapur_cropping_intensity_vector/uttar_pradesh_jaunpur_badlapur_cropping_intensity_vector.json",
       "type": "application/geo+json"
     },
     {
-      "rel": "parent",
-      "href": "../collection.json",
-      "type": "application/json",
-      "title": "jaunpur"
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_surface_water_bodies_vector/uttar_pradesh_jaunpur_badlapur_surface_water_bodies_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_nrega_vector/uttar_pradesh_jaunpur_badlapur_nrega_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_drainage_lines_vector/uttar_pradesh_jaunpur_badlapur_drainage_lines_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_jaunpur_badlapur_aquifer_vector/uttar_pradesh_jaunpur_badlapur_aquifer_vector.json",
+      "type": "application/geo+json"
     }
   ],
   "title": "badlapur",
@@ -38,9 +63,9 @@
       "bbox": [
         [
           82.1573107712475,
-          25.744278738410898,
+          25.74333125,
           82.6467129380358,
-          26.02778704207902
+          26.0283347
         ]
       ]
     },

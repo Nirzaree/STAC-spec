@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "dumka",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for data of dumka district",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./masalia/collection.json",
+      "type": "application/json",
+      "title": "masalia"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "jharkhand"
+    }
+  ],
+  "title": "dumka",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          86.93794678,
+          24.027235,
+          87.3282266,
+          24.2475467
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "social-ecological",
+    "sustainability",
+    "CoRE stack",
+    "dumka",
+    "jharkhand"
+  ],
+  "providers": [
+    {
+      "name": "CoRE Stack",
+      "roles": [
+        "producer",
+        "processor",
+        "host",
+        "licensor"
+      ],
+      "url": "https://core-stack.org/"
+    }
+  ]
+}

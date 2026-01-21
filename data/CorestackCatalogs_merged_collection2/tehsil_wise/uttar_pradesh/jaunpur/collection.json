@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "jaunpur",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for data of jaunpur district",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./badlapur/collection.json",
+      "type": "application/json",
+      "title": "badlapur"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "uttar_pradesh"
+    }
+  ],
+  "title": "jaunpur",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          82.2173483,
+          25.78839961,
+          82.5905117,
+          26.00335553
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "social-ecological",
+    "sustainability",
+    "CoRE stack",
+    "jaunpur",
+    "uttar_pradesh"
+  ],
+  "providers": [
+    {
+      "name": "CoRE Stack",
+      "roles": [
+        "producer",
+        "processor",
+        "host",
+        "licensor"
+      ],
+      "url": "https://core-stack.org/"
+    }
+  ]
+}

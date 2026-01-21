@@ -50,6 +50,12 @@
       "href": "./saraikela-kharsawan/collection.json",
       "type": "application/json",
       "title": "saraikela-kharsawan"
+    },
+    {
+      "rel": "child",
+      "href": "./giridih/collection.json",
+      "type": "application/json",
+      "title": "giridih"
     }
   ],
   "title": "jharkhand",
@@ -60,7 +66,7 @@
           85.64714007,
           22.6088418,
           87.337302,
-          24.252409
+          24.2730333
         ]
       ]
     },

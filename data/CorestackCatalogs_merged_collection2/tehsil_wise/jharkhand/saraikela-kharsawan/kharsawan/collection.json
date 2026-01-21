@@ -1,0 +1,77 @@
+{
+  "type": "Collection",
+  "id": "kharsawan",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for kharsawan block data in saraikela-kharsawan, jharkhand",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_nrega_vector/jharkhand_saraikela-kharsawan_kharsawan_nrega_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "saraikela-kharsawan"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_land_use_land_cover_raster_2021/jharkhand_saraikela-kharsawan_kharsawan_land_use_land_cover_raster_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_land_use_land_cover_raster_2018/jharkhand_saraikela-kharsawan_kharsawan_land_use_land_cover_raster_2018.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "title": "kharsawan",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          85.6469961554666,
+          22.608709239191704,
+          85.94640463966363,
+          22.91404660426393
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2024-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "social-ecological",
+    "sustainability",
+    "CoRE stack",
+    "kharsawan",
+    "saraikela-kharsawan",
+    "jharkhand"
+  ],
+  "providers": [
+    {
+      "name": "CoRE Stack",
+      "roles": [
+        "producer",
+        "processor",
+        "host",
+        "licensor"
+      ],
+      "url": "https://core-stack.org/"
+    }
+  ]
+}
