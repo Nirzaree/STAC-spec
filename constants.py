@@ -1,8 +1,8 @@
 # constants.py
 from datetime import datetime , timezone
 
-DEFAULT_START_DATE = datetime(2017, 7, 1) 
-DEFAULT_END_DATE = datetime(2024, 6, 30)
+DEFAULT_START_DATE = datetime(2017, 7, 1)
+DEFAULT_END_DATE = datetime(2025, 6, 30)
 
 SRTM_DEM_START_DATE = datetime(2020,2,11) #used for terrain raster as it 
 #uses SRTMGL1_003 product
