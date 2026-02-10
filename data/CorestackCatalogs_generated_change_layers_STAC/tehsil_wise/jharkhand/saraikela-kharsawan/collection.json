@@ -1,41 +1,37 @@
 {
   "type": "Collection",
-  "id": "balrampur",
+  "id": "saraikela-kharsawan",
   "stac_version": "1.1.0",
-  "description": "STAC collection for balrampur block data in balrampur, uttar_pradesh",
+  "description": "STAC collection for data of saraikela-kharsawan district",
   "links": [
     {
       "rel": "root",
-      "href": "../../../../catalog.json",
+      "href": "../../../catalog.json",
       "type": "application/json",
       "title": "CoRE Stack Spatio Temporal Asset Catalog"
     },
     {
-      "rel": "item",
-      "href": "./uttar_pradesh_balrampur_balrampur_change_tree_cover_gain_raster_/uttar_pradesh_balrampur_balrampur_change_tree_cover_gain_raster_.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./uttar_pradesh_balrampur_balrampur_change_tree_cover_gain_raster/uttar_pradesh_balrampur_balrampur_change_tree_cover_gain_raster.json",
-      "type": "application/geo+json"
+      "rel": "child",
+      "href": "./kharsawan/collection.json",
+      "type": "application/json",
+      "title": "kharsawan"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "balrampur"
+      "title": "jharkhand"
     }
   ],
-  "title": "balrampur",
+  "title": "saraikela-kharsawan",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          80.99983152765948,
-          25.9998494367429,
-          83.00011017080843,
-          29.0002224857021
+          84.99984982478689,
+          21.999831139615495,
+          87.00012846793584,
+          24.000289445821256
         ]
       ]
     },
@@ -53,9 +49,8 @@
     "social-ecological",
     "sustainability",
     "CoRE stack",
-    "balrampur",
-    "balrampur",
-    "uttar_pradesh"
+    "saraikela-kharsawan",
+    "jharkhand"
   ],
   "providers": [
     {
