@@ -23,12 +23,17 @@
     },
     {
       "rel": "item",
-      "href": "./bihar_nalanda_hilsa_change_tree_cover_gain_raster/bihar_nalanda_hilsa_change_tree_cover_gain_raster.json",
+      "href": "./bihar_nalanda_hilsa_change_tree_cover_loss_raster/bihar_nalanda_hilsa_change_tree_cover_loss_raster.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./bihar_nalanda_hilsa_change_tree_cover_loss_raster/bihar_nalanda_hilsa_change_tree_cover_loss_raster.json",
+      "href": "./bihar_nalanda_hilsa_change_urbanization_raster/bihar_nalanda_hilsa_change_urbanization_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_change_tree_cover_gain_raster/bihar_nalanda_hilsa_change_tree_cover_gain_raster.json",
       "type": "application/geo+json"
     },
     {
@@ -38,7 +43,67 @@
     },
     {
       "rel": "item",
-      "href": "./bihar_nalanda_hilsa_change_urbanization_raster/bihar_nalanda_hilsa_change_urbanization_raster.json",
+      "href": "./bihar_nalanda_hilsa_change_tree_cover_loss_raster_2021/bihar_nalanda_hilsa_change_tree_cover_loss_raster_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_change_cropping_reduction_raster_2021/bihar_nalanda_hilsa_change_cropping_reduction_raster_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_change_urbanization_raster_2021/bihar_nalanda_hilsa_change_urbanization_raster_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_change_cropping_intensity_raster_2021/bihar_nalanda_hilsa_change_cropping_intensity_raster_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_terrain_raster/bihar_nalanda_hilsa_terrain_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_clart_raster/bihar_nalanda_hilsa_clart_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_wri_restoration_raster/bihar_nalanda_hilsa_wri_restoration_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_catchment_area_singleflow_raster/bihar_nalanda_hilsa_catchment_area_singleflow_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_distance_to_upstream_drainage_line_raster/bihar_nalanda_hilsa_distance_to_upstream_drainage_line_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_stream_order_raster/bihar_nalanda_hilsa_stream_order_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_slope_percentage_raster/bihar_nalanda_hilsa_slope_percentage_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_land_use_land_cover_raster_2024/bihar_nalanda_hilsa_land_use_land_cover_raster_2024.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_land_use_land_cover_raster_2017/bihar_nalanda_hilsa_land_use_land_cover_raster_2017.json",
       "type": "application/geo+json"
     }
   ],
@@ -47,10 +112,10 @@
     "spatial": {
       "bbox": [
         [
-          85.11905626298955,
-          24.970829278783988,
-          85.56318333945823,
-          25.489336860777776
+          85.11824777923385,
+          24.970290289613516,
+          85.56399182321397,
+          25.48987584994825
         ]
       ]
     },

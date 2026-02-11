@@ -1,0 +1,170 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "bihar_nalanda_hilsa_stream_order_raster",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          85.11878676840432,
+          24.970559784198752
+        ],
+        [
+          85.11878676840432,
+          25.489606355363012
+        ],
+        [
+          85.56345283404349,
+          25.489606355363012
+        ],
+        [
+          85.56345283404349,
+          24.970559784198752
+        ],
+        [
+          85.11878676840432,
+          24.970559784198752
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    85.11878676840432,
+    24.970559784198752,
+    85.56345283404349,
+    25.489606355363012
+  ],
+  "properties": {
+    "title": "Stream Order",
+    "description": "Stream order raster map for India. While drainage lines are essential to plan assets such as check dams located on the drainage lines, it is also important to identify areas outside of the drainage lines that are under the influence of drainage lines. We use digital elevation model (DEM) data that provides pixel level information on the elevation and drainage lines (with stream orders) as inputs to compute stream order rasters. Areas with higher stream orders are those downstream of areas with lower stream orders, and can help identify cropping regions like low-land, mid-land, and up-land. Details of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/blob/main/computing/misc/).",
+    "keywords": [
+      "stream order"
+    ],
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      1926,
+      1650
+    ],
+    "datetime": "2026-02-11T15:34:23.924021Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/stream_order/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=stream_order:stream_order_nalanda_hilsa_raster&format=geotiff",
+      "type": "image/tiff; application=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 1,
+          "name": "1",
+          "description": "1",
+          "color_hint": "f7fbff"
+        },
+        {
+          "value": 2,
+          "name": "2",
+          "description": "2",
+          "color_hint": "e4eff9"
+        },
+        {
+          "value": 3,
+          "name": "3",
+          "description": "3",
+          "color_hint": "d1e2f3"
+        },
+        {
+          "value": 4,
+          "name": "4",
+          "description": "4",
+          "color_hint": "bad6eb"
+        },
+        {
+          "value": 5,
+          "name": "5",
+          "description": "5",
+          "color_hint": "9ac8e0"
+        },
+        {
+          "value": 6,
+          "name": "6",
+          "description": "6",
+          "color_hint": "73b2d8"
+        },
+        {
+          "value": 7,
+          "name": "7",
+          "description": "7",
+          "color_hint": "529dcc"
+        },
+        {
+          "value": 8,
+          "name": "8",
+          "description": "8",
+          "color_hint": "3585bf"
+        },
+        {
+          "value": 9,
+          "name": "9",
+          "description": "9",
+          "color_hint": "1d6cb1"
+        },
+        {
+          "value": 10,
+          "name": "10",
+          "description": "10",
+          "color_hint": "08519c"
+        },
+        {
+          "value": 11,
+          "name": "11",
+          "description": "11",
+          "color_hint": "08306b"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/refs/heads/main/Hydrology/Stream_order_raster_style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output/bihar_nalanda_hilsa_stream_order_raster.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "hilsa"
+}

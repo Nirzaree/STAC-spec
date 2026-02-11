@@ -1,0 +1,155 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "uttar_pradesh_balrampur_balrampur_distance_to_upstream_drainage_line_raster",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          82.00208189015164,
+          27.277972422988157
+        ],
+        [
+          82.00208189015164,
+          27.846336503250576
+        ],
+        [
+          82.46642106051303,
+          27.846336503250576
+        ],
+        [
+          82.46642106051303,
+          27.277972422988157
+        ],
+        [
+          82.00208189015164,
+          27.277972422988157
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    82.00208189015164,
+    27.277972422988157,
+    82.46642106051303,
+    27.846336503250576
+  ],
+  "properties": {
+    "title": "Distance to Upstream Drainage Line",
+    "description": "Distance to upstream drainage line map for India. Spatial indexing technique (e.g. k-d tree) is applied on pixel level digital elevation data (SRTM DEM) to compute the distance of each non-drainage pixel to its nearest upstream drainage line. \nDetails of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/blob/main/computing/misc/).",
+    "gsd": 30.0,
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
+    "keywords": [
+      "distance to upstream drainage line"
+    ],
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      2109,
+      1723
+    ],
+    "datetime": "2026-02-11T15:35:34.632900Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "balrampur"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "balrampur"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/distance_nearest_upstream_DL/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=distance_nearest_upstream_DL:distance_to_drainage_line_balrampur_balrampur_raster&format=geotiff",
+      "type": "image/tiff; application=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "less_than_equal_to_0.0000",
+          "description": "less_than_equal_to_0.0000",
+          "color_hint": "0e10c7"
+        },
+        {
+          "value": 60,
+          "name": "0.0000-60.0000",
+          "description": "0.0000-60.0000",
+          "color_hint": "5fbcf6"
+        },
+        {
+          "value": 120,
+          "name": "60.0000-120.0000",
+          "description": "60.0000-120.0000",
+          "color_hint": "145626"
+        },
+        {
+          "value": 240,
+          "name": "120.0000-240.0000",
+          "description": "120.0000-240.0000",
+          "color_hint": "3df03c"
+        },
+        {
+          "value": 500,
+          "name": "240.0000-500.0000",
+          "description": "240.0000-500.0000",
+          "color_hint": "f0ee26"
+        },
+        {
+          "value": 1000,
+          "name": "500.0000-1000.0000",
+          "description": "500.0000-1000.0000",
+          "color_hint": "eb8115"
+        },
+        {
+          "value": 2000,
+          "name": "1000.0000-2000.0000",
+          "description": "1000.0000-2000.0000",
+          "color_hint": "dd0f08"
+        },
+        {
+          "value": 999999,
+          "name": "greater_than_2000.0000",
+          "description": "greater_than_2000.0000",
+          "color_hint": "7d0b1b"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/refs/heads/main/Hydrology/Distance_to_upstreamDL_style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output/uttar_pradesh_balrampur_balrampur_distance_to_upstream_drainage_line_raster.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "balrampur"
+}

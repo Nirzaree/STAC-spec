@@ -1,0 +1,128 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "bihar_nalanda_hilsa_wri_restoration_raster",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          85.11824777923385,
+          24.970290289613516
+        ],
+        [
+          85.11824777923385,
+          25.48987584994825
+        ],
+        [
+          85.56399182321397,
+          25.48987584994825
+        ],
+        [
+          85.56399182321397,
+          24.970290289613516
+        ],
+        [
+          85.11824777923385,
+          24.970290289613516
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    85.11824777923385,
+    24.970290289613516,
+    85.56399182321397,
+    25.48987584994825
+  ],
+  "properties": {
+    "title": "Landscape restoration opportunities",
+    "description": "Landscape restoration opportunities map built by World Resources Institute (WRI) identifies the potential for protection, wide-scale restoration, and mosaic restoration in India. \nFollowing classes are available in the raster map:\n\n1. Protection: Protection areas have forest cover with a density of more than 40 percent.\n2. Wide scale restoration: Areas suitable for wide-scale restoration are those where near contiguous tracts of forest and tree cover can be established. The existing tree density in these areas is less than 40 percent and the population density is less than 200 persons per square kilometre.\n3. Mosaic restoration: Mosaic restoration is the integration of trees in a patchwork of different land uses including rainfed cultivated areas. These areas have tree cover density of less than 40 percent and population density of less than 400 persons per sq.km. \n\nDetails of the datasets used and the methodology can be found at [india.restorationatlas.org](https://india.restorationatlas.org/)",
+    "keywords": [
+      "landscape restoration opportunities"
+    ],
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      964,
+      827
+    ],
+    "datetime": "2026-02-11T15:33:13.725734Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/restoration/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=restoration:restoration_nalanda_hilsa_raster&format=geotiff",
+      "type": "image/tiff; application=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "Excluded",
+          "description": "Excluded",
+          "color_hint": "d2d2d2"
+        },
+        {
+          "value": 1,
+          "name": "Mosaic_Restoration",
+          "description": "Mosaic_Restoration",
+          "color_hint": "d79b0f"
+        },
+        {
+          "value": 2,
+          "name": "Wide_scale_Restoration",
+          "description": "Wide_scale_Restoration",
+          "color_hint": "0f077c"
+        },
+        {
+          "value": 3,
+          "name": "Protection",
+          "description": "Protection",
+          "color_hint": "4fbc14"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Restoration/Restoration_style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output/bihar_nalanda_hilsa_wri_restoration_raster.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "hilsa"
+}
