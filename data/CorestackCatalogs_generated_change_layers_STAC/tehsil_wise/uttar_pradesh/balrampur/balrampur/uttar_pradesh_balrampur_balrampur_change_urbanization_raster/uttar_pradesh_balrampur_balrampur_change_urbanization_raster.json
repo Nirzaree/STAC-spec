@@ -5,7 +5,7 @@
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
-  "id": "uttar_pradesh_balrampur_balrampur_change_urbanization_raster_2024",
+  "id": "uttar_pradesh_balrampur_balrampur_change_urbanization_raster",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -40,20 +40,20 @@
     29.0002224857021
   ],
   "properties": {
-    "title": "Land use change : Urbanization : 2024",
+    "title": "Land use change : Urbanization",
     "description": "Built-up change detection map for India. The various change detection maps are Change in Land use layers are computing by using IndiaSAT Land Use Land Cover outputs and computing the change in pixel classes across the years. Currently the layer is computed for the period of 2017-2024 and two composite images are generated using the mode of the first three years (2017-2019) and the last three years (2022-2024) and a transition matrix is prepared for the classes for these outputs. \n\nUrbanization layer includes the transition of built-up, green, water, and barren areas to built-up. Following are the classes in this layer: \n1. Built Up - Built Up\n2. Water - Built Up\n3. Trees/Crops - Built Up\n4. Barren/Shrubs and Scrubs - Built Up\n\nDetails of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/tree/main/computing/change_detection).",
-    "start_datetime": "2024-07-01T00:00:00Z",
-    "end_datetime": "2025-06-30T00:00:00Z",
     "gsd": 10.0,
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
     "keywords": [
-      "land use change : urbanization"
+      "land use, change, urbanization"
     ],
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       33400,
       22267
     ],
-    "datetime": "2026-02-11T15:37:49.728264Z"
+    "datetime": "2026-02-12T02:57:17.654550Z"
   },
   "links": [
     {
@@ -125,7 +125,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output/uttar_pradesh_balrampur_balrampur_change_urbanization_raster_2024.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output/uttar_pradesh_balrampur_balrampur_change_urbanization_raster.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [

@@ -5,7 +5,7 @@
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ],
-  "id": "uttar_pradesh_balrampur_balrampur_change_cropping_intensity_raster_2024",
+  "id": "uttar_pradesh_balrampur_balrampur_change_cropping_intensity_raster",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -40,20 +40,20 @@
     29.0002224857021
   ],
   "properties": {
-    "title": "Land Use Change : Cropping intensity : 2024",
+    "title": "Land Use Change : Cropping intensity",
     "description": "Cropping intensity change detection map for India. The various change detection maps are Change in Land use layers are computing by using IndiaSAT Land Use Land Cover outputs and computing the change in pixel classes across the years. Currently the layer is computed for the period of 2017-2024 and two composite images are generated using the mode of the first three years (2017-2019) and the last three years (2022-2024) and a transition matrix is prepared for the classes for these outputs. \n\nCropping intensity change layer includes transitions from single to double cropping, single to triple cropping, double to single cropping, double to triple cropping, triple to double cropping and triple to single cropping. Following are the classes in this layer: \n1. Double - Single\n2. Tripple/annual/perennial - Single\n3. Tripple/annual/perennial - Double\n4. Single - Double\n5. Single - Tripple/annual/perennial\n6. Double - Tripple/annual/perennial\n7. Single - Single\n8. Double - Double\n9. Tripple/annual/perennial - Tripple/annual/perennial \n\nDetails of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/tree/main/computing/change_detection).",
-    "start_datetime": "2024-07-01T00:00:00Z",
-    "end_datetime": "2025-06-30T00:00:00Z",
     "gsd": 10.0,
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
     "keywords": [
-      "land use change : cropping intensity"
+      "land use, change, cropping intensity"
     ],
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       33400,
       22267
     ],
-    "datetime": "2026-02-11T15:37:36.938580Z"
+    "datetime": "2026-02-12T02:57:42.327837Z"
   },
   "links": [
     {
@@ -155,7 +155,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output/uttar_pradesh_balrampur_balrampur_change_cropping_intensity_raster_2024.png",
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output/uttar_pradesh_balrampur_balrampur_change_cropping_intensity_raster.png",
       "type": "image/png",
       "title": "Thumbnail",
       "roles": [

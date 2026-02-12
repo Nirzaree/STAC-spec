@@ -336,6 +336,9 @@ def create_raster_item(describe_url,
                                   properties={
                                         "title" : layer_title,
                                         "description" : layer_description,
+                                        "gsd": gsd,
+                                        "start_datetime": constants.DEFAULT_START_DATE.strftime('%Y-%m-%dT%H:%M:%SZ'), 
+                                        "end_datetime": constants.DEFAULT_END_DATE.strftime('%Y-%m-%dT%H:%M:%SZ'),
                                         "keywords": [theme]
                                   })            
     
@@ -618,7 +621,7 @@ def generate_raster_item(state, district, block, layer_name, layer_map_csv_path,
                                              overwrite_existing=overwrite_existing)
     
     #2. get geoserver url parameters from the layer details
-    geoserver_workspace_name, geoserver_layer_name, style_file_url, layer_display_name, ee_layer_name, gsd = \
+    geoserver_workspace_name, geoserver_layer_name, style_file_url, layer_display_name, ee_layer_name, gsd ,theme = \
         read_layer_mapping(layer_map_csv_path=layer_map_csv_path,
                           district=district, block=block, layer_name=layer_name, start_year=start_year)
 
@@ -652,6 +655,7 @@ def generate_raster_item(state, district, block, layer_name, layer_map_csv_path,
                                      layer_title=layer_title,
                                      layer_description=layer_description,
                                      display_name=layer_display_name,
+                                     theme=theme,
                                      start_date=start_date,
                                      end_date=end_date,
                                      gsd=gsd)

@@ -11,16 +11,6 @@
       "title": "CoRE Stack Spatio Temporal Asset Catalog"
     },
     {
-      "rel": "item",
-      "href": "./uttar_pradesh_balrampur_balrampur_change_tree_cover_gain_raster_/uttar_pradesh_balrampur_balrampur_change_tree_cover_gain_raster_.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./uttar_pradesh_balrampur_balrampur_change_tree_cover_gain_raster/uttar_pradesh_balrampur_balrampur_change_tree_cover_gain_raster.json",
-      "type": "application/geo+json"
-    },
-    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
@@ -44,11 +34,6 @@
     {
       "rel": "item",
       "href": "./uttar_pradesh_balrampur_balrampur_catchment_area_singleflow_raster/uttar_pradesh_balrampur_balrampur_catchment_area_singleflow_raster.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
-      "href": "./uttar_pradesh_balrampur_balrampur_wri_restoration_raster/uttar_pradesh_balrampur_balrampur_wri_restoration_raster.json",
       "type": "application/geo+json"
     },
     {
@@ -78,27 +63,32 @@
     },
     {
       "rel": "item",
-      "href": "./uttar_pradesh_balrampur_balrampur_change_cropping_intensity_raster_2024/uttar_pradesh_balrampur_balrampur_change_cropping_intensity_raster_2024.json",
+      "href": "./uttar_pradesh_balrampur_balrampur_change_tree_cover_gain_raster/uttar_pradesh_balrampur_balrampur_change_tree_cover_gain_raster.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./uttar_pradesh_balrampur_balrampur_change_urbanization_raster_2024/uttar_pradesh_balrampur_balrampur_change_urbanization_raster_2024.json",
+      "href": "./uttar_pradesh_balrampur_balrampur_change_tree_cover_loss_raster/uttar_pradesh_balrampur_balrampur_change_tree_cover_loss_raster.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./uttar_pradesh_balrampur_balrampur_change_cropping_reduction_raster_2024/uttar_pradesh_balrampur_balrampur_change_cropping_reduction_raster_2024.json",
+      "href": "./uttar_pradesh_balrampur_balrampur_change_cropping_reduction_raster/uttar_pradesh_balrampur_balrampur_change_cropping_reduction_raster.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./uttar_pradesh_balrampur_balrampur_change_tree_cover_loss_raster_2024/uttar_pradesh_balrampur_balrampur_change_tree_cover_loss_raster_2024.json",
+      "href": "./uttar_pradesh_balrampur_balrampur_change_urbanization_raster/uttar_pradesh_balrampur_balrampur_change_urbanization_raster.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./uttar_pradesh_balrampur_balrampur_change_tree_cover_gain_raster_2024/uttar_pradesh_balrampur_balrampur_change_tree_cover_gain_raster_2024.json",
+      "href": "./uttar_pradesh_balrampur_balrampur_change_cropping_intensity_raster/uttar_pradesh_balrampur_balrampur_change_cropping_intensity_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./uttar_pradesh_balrampur_balrampur_wri_restoration_raster/uttar_pradesh_balrampur_balrampur_wri_restoration_raster.json",
       "type": "application/geo+json"
     }
   ],

@@ -46,14 +46,14 @@
     "start_datetime": "2017-07-01T00:00:00Z",
     "end_datetime": "2025-06-30T00:00:00Z",
     "keywords": [
-      "land use change : tree cover gain"
+      "land use, change, tree cover gain"
     ],
     "proj:code": "EPSG:EPSG:4326",
     "proj:shape": [
       5772,
       4944
     ],
-    "datetime": "2026-02-11T15:29:13.837439Z"
+    "datetime": "2026-02-12T02:55:05.233826Z"
   },
   "links": [
     {
