@@ -1,0 +1,137 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "bihar_nalanda_hilsa_clart_raster",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          85.15329999999999,
+          24.998232983999994
+        ],
+        [
+          85.15329999999999,
+          25.434899999999995
+        ],
+        [
+          85.536355862,
+          25.434899999999995
+        ],
+        [
+          85.536355862,
+          24.998232983999994
+        ],
+        [
+          85.15329999999999,
+          24.998232983999994
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    85.15329999999999,
+    24.998232983999994,
+    85.536355862,
+    25.434899999999995
+  ],
+  "properties": {
+    "title": "CLART",
+    "description": "Composite Land Assessment and Restoration Tool (CLART) is a tool built by the Foundation for Ecological Security (FES) with the goal of empowering rural communities for planning the sites for soil and water conservation measures. This map is intended to reproduce CLART in a reprogrammable/reconfigurable manner to allow dynamic scoring based on community requirements for their landscape. The recharge score is computed as a weighted index based on underlying layers.\n\nThe Pan India map has the following classes: \n1. Good recharge \n2. Moderate recharge\n3. Regeneration\n4. High runoff zone \n5. Surface water harvesting \n\nDetails of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/tree/main/computing/clart).",
+    "gsd": 30.0,
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
+    "keywords": [
+      "clart"
+    ],
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      1572,
+      1379
+    ],
+    "datetime": "2026-02-11T15:32:54.394504Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/clart/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=clart:nalanda_hilsa_clart&format=geotiff",
+      "type": "image/tiff; application=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 1,
+          "name": "Good_recharge",
+          "description": "Good_recharge",
+          "color_hint": "4ee323"
+        },
+        {
+          "value": 2,
+          "name": "Moderate_recharge",
+          "description": "Moderate_recharge",
+          "color_hint": "f3ff33"
+        },
+        {
+          "value": 3,
+          "name": "Surface_water_harvesting",
+          "description": "Surface_water_harvesting",
+          "color_hint": "f21223"
+        },
+        {
+          "value": 4,
+          "name": "Regeneration",
+          "description": "Regeneration",
+          "color_hint": "b40f7d"
+        },
+        {
+          "value": 5,
+          "name": "High_runoff_zone",
+          "description": "High_runoff_zone",
+          "color_hint": "1774de"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Hydrology/CLART-Layer-Style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output/bihar_nalanda_hilsa_clart_raster.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "hilsa"
+}

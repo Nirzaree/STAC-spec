@@ -1,0 +1,146 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "bihar_nalanda_hilsa_slope_percentage_raster",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          85.11878676840432,
+          24.970559784198752
+        ],
+        [
+          85.11878676840432,
+          25.489606355363012
+        ],
+        [
+          85.56345283404349,
+          25.489606355363012
+        ],
+        [
+          85.56345283404349,
+          24.970559784198752
+        ],
+        [
+          85.11878676840432,
+          24.970559784198752
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    85.11878676840432,
+    24.970559784198752,
+    85.56345283404349,
+    25.489606355363012
+  ],
+  "properties": {
+    "title": "Slope Percentage",
+    "description": "Map of per pixel slope computed from digital elevation data (SRTM DEM).",
+    "keywords": [
+      "slope percentage"
+    ],
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      1926,
+      1650
+    ],
+    "datetime": "2026-02-11T15:34:35.804180Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/slope_percentage/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=slope_percentage:nalanda_hilsa_slope_percentage_raster&format=geotiff",
+      "type": "image/tiff; application=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "0",
+          "description": "0",
+          "color_hint": "ced4da"
+        },
+        {
+          "value": 1,
+          "name": "1",
+          "description": "1",
+          "color_hint": "adb5bd"
+        },
+        {
+          "value": 2,
+          "name": "2",
+          "description": "2",
+          "color_hint": "6c757d"
+        },
+        {
+          "value": 3,
+          "name": "3",
+          "description": "3",
+          "color_hint": "495057"
+        },
+        {
+          "value": 4,
+          "name": "4",
+          "description": "4",
+          "color_hint": "343a40"
+        },
+        {
+          "value": 5,
+          "name": "5",
+          "description": "5",
+          "color_hint": "212529"
+        },
+        {
+          "value": 6,
+          "name": "6",
+          "description": "6",
+          "color_hint": "ffffff"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/refs/heads/main/Land/slope_percentage_style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output/bihar_nalanda_hilsa_slope_percentage_raster.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "hilsa"
+}

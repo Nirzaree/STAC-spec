@@ -12,7 +12,7 @@
     },
     {
       "rel": "item",
-      "href": "./jharkhand_saraikela-kharsawan_kharsawan_change_tree_cover_gain_raster/jharkhand_saraikela-kharsawan_kharsawan_change_tree_cover_gain_raster.json",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_wri_restoration_raster/jharkhand_saraikela-kharsawan_kharsawan_wri_restoration_raster.json",
       "type": "application/geo+json"
     },
     {
@@ -20,6 +20,16 @@
       "href": "../collection.json",
       "type": "application/json",
       "title": "saraikela-kharsawan"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_change_tree_cover_gain_raster/jharkhand_saraikela-kharsawan_kharsawan_change_tree_cover_gain_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_saraikela-kharsawan_kharsawan_change_tree_cover_loss_raster/jharkhand_saraikela-kharsawan_kharsawan_change_tree_cover_loss_raster.json",
+      "type": "application/geo+json"
     }
   ],
   "title": "kharsawan",

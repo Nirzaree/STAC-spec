@@ -1,0 +1,161 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "bihar_nalanda_hilsa_catchment_area_singleflow_raster",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          85.11878676840432,
+          24.970559784198752
+        ],
+        [
+          85.11878676840432,
+          25.489606355363012
+        ],
+        [
+          85.56345283404349,
+          25.489606355363012
+        ],
+        [
+          85.56345283404349,
+          24.970559784198752
+        ],
+        [
+          85.11878676840432,
+          24.970559784198752
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    85.11878676840432,
+    24.970559784198752,
+    85.56345283404349,
+    25.489606355363012
+  ],
+  "properties": {
+    "title": "Catchment Area",
+    "description": "Catchment area map for India. The catchment area of a point represents the total land area from which rain water drains into that point. The pan-India catchment area map has been built using digital elevation data and r.watershed tool of GRASS GIS to compute flow accumulation. Details of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/blob/main/computing/misc/).",
+    "gsd": 30.0,
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
+    "keywords": [
+      "catchment area"
+    ],
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      1926,
+      1650
+    ],
+    "datetime": "2026-02-11T15:33:28.925034Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/catchment_area_singleflow/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=catchment_area_singleflow:catchment_area_nalanda_hilsa_raster&format=geotiff",
+      "type": "image/tiff; application=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "less_than_equal_to_zero_ha",
+          "description": "less_than_equal_to_zero_ha",
+          "color_hint": "ffffff"
+        },
+        {
+          "value": 2,
+          "name": "0-2_ha",
+          "description": "0-2_ha",
+          "color_hint": "440154"
+        },
+        {
+          "value": 50,
+          "name": "2_50_ha",
+          "description": "2_50_ha",
+          "color_hint": "45317c"
+        },
+        {
+          "value": 100,
+          "name": "50-100_ha",
+          "description": "50-100_ha",
+          "color_hint": "375a8c"
+        },
+        {
+          "value": 200,
+          "name": "100-200_ha",
+          "description": "100-200_ha",
+          "color_hint": "287b8e"
+        },
+        {
+          "value": 500,
+          "name": "200-500_ha",
+          "description": "200-500_ha",
+          "color_hint": "219889"
+        },
+        {
+          "value": 1000,
+          "name": "500-1000_ha",
+          "description": "500-1000_ha",
+          "color_hint": "4cbe6c"
+        },
+        {
+          "value": 2000,
+          "name": "1000-2000_ha",
+          "description": "1000-2000_ha",
+          "color_hint": "e6e32e"
+        },
+        {
+          "value": 999999,
+          "name": "greater_than_2000_ha",
+          "description": "greater_than_2000_ha",
+          "color_hint": "fde725"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/refs/heads/main/Catchment/catchment_area_singleflow.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output/bihar_nalanda_hilsa_catchment_area_singleflow_raster.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "hilsa"
+}
