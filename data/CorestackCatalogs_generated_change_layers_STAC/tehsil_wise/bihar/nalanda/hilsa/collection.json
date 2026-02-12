@@ -11,12 +11,6 @@
       "title": "CoRE Stack Spatio Temporal Asset Catalog"
     },
     {
-      "rel": "parent",
-      "href": "../collection.json",
-      "type": "application/json",
-      "title": "nalanda"
-    },
-    {
       "rel": "item",
       "href": "./bihar_nalanda_hilsa_terrain_raster/bihar_nalanda_hilsa_terrain_raster.json",
       "type": "application/geo+json"
@@ -90,6 +84,12 @@
       "rel": "item",
       "href": "./bihar_nalanda_hilsa_wri_restoration_raster/bihar_nalanda_hilsa_wri_restoration_raster.json",
       "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "nalanda"
     }
   ],
   "title": "hilsa",

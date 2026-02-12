@@ -11,12 +11,6 @@
       "title": "CoRE Stack Spatio Temporal Asset Catalog"
     },
     {
-      "rel": "parent",
-      "href": "../collection.json",
-      "type": "application/json",
-      "title": "balrampur"
-    },
-    {
       "rel": "item",
       "href": "./uttar_pradesh_balrampur_balrampur_slope_percentage_raster/uttar_pradesh_balrampur_balrampur_slope_percentage_raster.json",
       "type": "application/geo+json"
@@ -90,6 +84,12 @@
       "rel": "item",
       "href": "./uttar_pradesh_balrampur_balrampur_wri_restoration_raster/uttar_pradesh_balrampur_balrampur_wri_restoration_raster.json",
       "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "balrampur"
     }
   ],
   "title": "balrampur",
