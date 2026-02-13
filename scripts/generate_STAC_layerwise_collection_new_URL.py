@@ -226,7 +226,7 @@ def generate_raster_url(
         f"{geoserver_base_url}/{workspace}/wcs?"
         f"service=WCS&version=2.0.1&request=GetCoverage&"
         f"CoverageId={workspace}:{layer_name}&"
-        f"format={output_format}"
+        f"format={output_format}&compression=LZW"
     )
     print("Raster URL:", wcs_url)
     return wcs_url
@@ -1685,7 +1685,7 @@ def get_all_files_in_folder(folderpath: str):
 def upload_folder_to_s3(aws_creds, folderpath, s3_bucket):
     filepaths = get_all_files_in_folder(folderpath=folderpath)
     for filepath in tqdm.tqdm(filepaths):
-        s3_prefix = filepath.split("data/")[1]
+        s3_prefix = filepath.split("data/STAC_specs/")[1]
         upload_file_to_s3(
             aws_creds=aws_creds,
             filepath=filepath,
