@@ -1,0 +1,10 @@
+pystac_client
+pandas
+geopandas
+pystac
+rasterio
+matplotlib
+boto3
+tqdm
+odc
+odc.stac
