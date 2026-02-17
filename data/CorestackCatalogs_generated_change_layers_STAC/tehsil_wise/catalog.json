@@ -1,0 +1,39 @@
+{
+  "type": "Catalog",
+  "id": "tehsil_wise",
+  "stac_version": "1.1.0",
+  "description": "This spatio temporal asset catalog contains all data layers of CoREStack (https://core-stack.org/). The data layers are generated at an administrative tehsil level.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./uttar_pradesh/collection.json",
+      "type": "application/json",
+      "title": "uttar_pradesh"
+    },
+    {
+      "rel": "child",
+      "href": "./bihar/collection.json",
+      "type": "application/json",
+      "title": "bihar"
+    },
+    {
+      "rel": "child",
+      "href": "./jharkhand/collection.json",
+      "type": "application/json",
+      "title": "jharkhand"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    }
+  ],
+  "title": "Tehsil level Spatio Temporal Asset Catalog"
+}

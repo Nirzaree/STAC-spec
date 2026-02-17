@@ -1,0 +1,137 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "uttar_pradesh_balrampur_balrampur_change_cropping_reduction_raster",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          80.99983152765948,
+          25.9998494367429
+        ],
+        [
+          80.99983152765948,
+          29.0002224857021
+        ],
+        [
+          83.00011017080843,
+          29.0002224857021
+        ],
+        [
+          83.00011017080843,
+          25.9998494367429
+        ],
+        [
+          80.99983152765948,
+          25.9998494367429
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    80.99983152765948,
+    25.9998494367429,
+    83.00011017080843,
+    29.0002224857021
+  ],
+  "properties": {
+    "title": "Land Use change : Cropping reduction",
+    "description": "Cropland change detection map for India. The various change detection maps are Change in Land use layers are computing by using IndiaSAT Land Use Land Cover outputs and computing the change in pixel classes across the years. Currently the layer is computed for the period of 2017-2024 and two composite images are generated using the mode of the first three years (2017-2019) and the last three years (2022-2024) and a transition matrix is prepared for the classes for these outputs. \n\nDegradation layer includes the transition of crops area into built-up, barren and shrubs. Following are the classes in this layer: \n1. Crops - Crops\n2. Crops - Built Up\n3. Crops - Barren\n4. Crops - Shrubs and Scrubs\n\nDetails of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/tree/main/computing/change_detection).",
+    "gsd": 10.0,
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
+    "keywords": [
+      "land use, change, cropping area reduction"
+    ],
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      33400,
+      22267
+    ],
+    "datetime": "2026-02-12T02:56:56.639131Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "balrampur"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "balrampur"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/change_detection/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=change_detection:change_balrampur_balrampur_Degradation&format=geotiff",
+      "type": "image/tiff; application=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "Background",
+          "description": "Background",
+          "color_hint": "f7fcf5"
+        },
+        {
+          "value": 1,
+          "name": "Crops-Crops",
+          "description": "Crops-Crops",
+          "color_hint": "eee05d"
+        },
+        {
+          "value": 2,
+          "name": "Crops-Built_Up",
+          "description": "Crops-Built_Up",
+          "color_hint": "ff0000"
+        },
+        {
+          "value": 3,
+          "name": "Crops-Barren",
+          "description": "Crops-Barren",
+          "color_hint": "a9a9a9"
+        },
+        {
+          "value": 4,
+          "name": "Crops-Shrubs_and_Scrubs",
+          "description": "Crops-Shrubs_and_Scrubs",
+          "color_hint": "eaa4f0"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Land/change_cropping_reduction.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output/uttar_pradesh_balrampur_balrampur_change_cropping_reduction_raster.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "balrampur"
+}

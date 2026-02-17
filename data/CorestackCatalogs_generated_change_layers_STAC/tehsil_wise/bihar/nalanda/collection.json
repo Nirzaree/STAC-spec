@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "nalanda",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for data of nalanda district",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./hilsa/collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "bihar"
+    }
+  ],
+  "title": "nalanda",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          85.11905626298955,
+          24.970829278783988,
+          85.56318333945823,
+          25.489336860777776
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2025-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "social-ecological",
+    "sustainability",
+    "CoRE stack",
+    "nalanda",
+    "bihar"
+  ],
+  "providers": [
+    {
+      "name": "CoRE Stack",
+      "roles": [
+        "producer",
+        "processor",
+        "host",
+        "licensor"
+      ],
+      "url": "https://core-stack.org/"
+    }
+  ]
+}

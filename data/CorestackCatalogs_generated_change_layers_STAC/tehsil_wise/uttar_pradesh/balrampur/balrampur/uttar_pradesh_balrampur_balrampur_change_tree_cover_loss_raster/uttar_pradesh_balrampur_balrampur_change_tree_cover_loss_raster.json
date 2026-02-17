@@ -1,0 +1,143 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "uttar_pradesh_balrampur_balrampur_change_tree_cover_loss_raster",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          80.99983152765948,
+          25.9998494367429
+        ],
+        [
+          80.99983152765948,
+          29.0002224857021
+        ],
+        [
+          83.00011017080843,
+          29.0002224857021
+        ],
+        [
+          83.00011017080843,
+          25.9998494367429
+        ],
+        [
+          80.99983152765948,
+          25.9998494367429
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    80.99983152765948,
+    25.9998494367429,
+    83.00011017080843,
+    29.0002224857021
+  ],
+  "properties": {
+    "title": "Land Use Change : Tree cover loss",
+    "description": "Tree cover change detection map for India. The various change detection maps are Change in Land use layers are computing by using IndiaSAT Land Use Land Cover outputs and computing the change in pixel classes across the years. Currently the layer is computed for the period of 2017-2022 and two composite images are generated using the mode of the first three years (2017-2019) and the last three years (2022-2024) and a transition matrix is prepared for the classes for these outputs. \n\nDeforestation (tree cover loss) layer includes trees to built-up, barren, shrubs and Crops from the previous output to the current output. Following are the classes in this layer: \n1. Trees - Trees\n2. Trees - Built Up\n3. Trees - Crops\n4. Trees - Barren\n5. Trees - Shrubs and Scrubs\n\nDetails of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/tree/main/computing/change_detection).",
+    "gsd": 10.0,
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
+    "keywords": [
+      "land use, change, tree cover loss"
+    ],
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      33400,
+      22267
+    ],
+    "datetime": "2026-02-12T02:56:29.815893Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "balrampur"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "balrampur"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/change_detection/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=change_detection:change_balrampur_balrampur_Deforestation&format=geotiff",
+      "type": "image/tiff; application=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "Background",
+          "description": "Background",
+          "color_hint": "f7fcf5"
+        },
+        {
+          "value": 1,
+          "name": "Trees-Trees",
+          "description": "Trees-Trees",
+          "color_hint": "73bb53"
+        },
+        {
+          "value": 2,
+          "name": "Trees-Built_Up",
+          "description": "Trees-Built_Up",
+          "color_hint": "ff0000"
+        },
+        {
+          "value": 3,
+          "name": "Trees-Crops",
+          "description": "Trees-Crops",
+          "color_hint": "eee05d"
+        },
+        {
+          "value": 4,
+          "name": "Trees-Barren",
+          "description": "Trees-Barren",
+          "color_hint": "a9a9a9"
+        },
+        {
+          "value": 5,
+          "name": "Trees-Shrubs_and_Scrubs",
+          "description": "Trees-Shrubs_and_Scrubs",
+          "color_hint": "eaa4f0"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Land/change_tree_cover_loss.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output/uttar_pradesh_balrampur_balrampur_change_tree_cover_loss_raster.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "balrampur"
+}
