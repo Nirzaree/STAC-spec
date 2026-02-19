@@ -1,0 +1,77 @@
+{
+  "type": "Collection",
+  "id": "hilsa",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for hilsa block data in nalanda, bihar",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_aquifer_vector/bihar_nalanda_hilsa_aquifer_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "nalanda"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_drainage_lines_vector/bihar_nalanda_hilsa_drainage_lines_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_nalanda_hilsa_nrega_vector/bihar_nalanda_hilsa_nrega_vector.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "title": "hilsa",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          85.1192003,
+          24.97096141,
+          85.57138885,
+          25.48920266
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2025-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "social-ecological",
+    "sustainability",
+    "CoRE stack",
+    "hilsa",
+    "nalanda",
+    "bihar"
+  ],
+  "providers": [
+    {
+      "name": "CoRE Stack",
+      "roles": [
+        "producer",
+        "processor",
+        "host",
+        "licensor"
+      ],
+      "url": "https://core-stack.org/"
+    }
+  ]
+}

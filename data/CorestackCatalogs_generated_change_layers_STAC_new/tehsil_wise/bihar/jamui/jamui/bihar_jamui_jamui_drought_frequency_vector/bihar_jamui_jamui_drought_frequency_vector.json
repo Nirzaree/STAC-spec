@@ -1,0 +1,1355 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "bihar_jamui_jamui_drought_frequency_vector",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          85.7859296,
+          24.36325145
+        ],
+        [
+          85.7859296,
+          25.16957755
+        ],
+        [
+          86.64130555,
+          25.16957755
+        ],
+        [
+          86.64130555,
+          24.36325145
+        ],
+        [
+          85.7859296,
+          24.36325145
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    85.7859296,
+    24.36325145,
+    86.64130555,
+    25.16957755
+  ],
+  "properties": {
+    "title": "Drought frequency",
+    "description": "Drought frequency map for India. The Department of Agriculture, Cooperation & Farmers Welfare under the Ministry of Agriculture & Farmers Welfare, Government of India released the \"Manual for Drought Management\" in 2016 for the prevention, mitigation and management of droughts in India. The manual introduces scientific indices and parameters such as Vegetation Condition Index (VCI) for more accurate determination and assessment of drought. This map is an attempt to implement the methodology of the drought manual using various remote sensing products.\n\nFollowing are the output classes in the model: \n1. Severe\n2. Moderate\n3. Mild\n\nInput to the model is Rainfall data  (CHIRPS), Vegetation data (Landsat), Crop data (MODIS), Land use land cover (IndiaSAT). Details of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/tree/main/computing/drought).",
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
+    "keywords": [
+      "climate, drought frequency"
+    ],
+    "table:columns": [
+      {
+        "name": "id",
+        "type": "object",
+        "description": ""
+      },
+      {
+        "name": "area_in_ha",
+        "type": "float64",
+        "description": "area in hectares"
+      },
+      {
+        "name": "avg_dryspell",
+        "type": "float64",
+        "description": "average dry spell"
+      },
+      {
+        "name": "drlb_2017",
+        "type": "object",
+        "description": "drought labels 2017"
+      },
+      {
+        "name": "drlb_2018",
+        "type": "object",
+        "description": "drought labels 2018"
+      },
+      {
+        "name": "drlb_2019",
+        "type": "object",
+        "description": "drought labels 2019"
+      },
+      {
+        "name": "drlb_2020",
+        "type": "object",
+        "description": "drought labels 2020"
+      },
+      {
+        "name": "drlb_2021",
+        "type": "object",
+        "description": "drought labels 2021"
+      },
+      {
+        "name": "drlb_2022",
+        "type": "object",
+        "description": "drought labels 2022"
+      },
+      {
+        "name": "drysp_2017",
+        "type": "int32",
+        "description": "dryspell length 2017"
+      },
+      {
+        "name": "drysp_2018",
+        "type": "int32",
+        "description": "dryspell length 2018"
+      },
+      {
+        "name": "drysp_2019",
+        "type": "int32",
+        "description": "dryspell length 2019"
+      },
+      {
+        "name": "drysp_2020",
+        "type": "int32",
+        "description": "dryspell length 2020"
+      },
+      {
+        "name": "drysp_2021",
+        "type": "int32",
+        "description": "dryspell length 2021"
+      },
+      {
+        "name": "drysp_2022",
+        "type": "int32",
+        "description": "dryspell length 2022"
+      },
+      {
+        "name": "frth0_2017",
+        "type": "int32",
+        "description": "frequency of drought for 2017 at threshold 0"
+      },
+      {
+        "name": "frth0_2018",
+        "type": "int32",
+        "description": "frequency of drought for 2018 at threshold 0"
+      },
+      {
+        "name": "frth0_2019",
+        "type": "int32",
+        "description": "frequency of drought for 2019 at threshold 0"
+      },
+      {
+        "name": "frth0_2020",
+        "type": "int32",
+        "description": "frequency of drought for 2020 at threshold 0"
+      },
+      {
+        "name": "frth0_2021",
+        "type": "int32",
+        "description": "frequency of drought for 2021 at threshold 0"
+      },
+      {
+        "name": "frth0_2022",
+        "type": "int32",
+        "description": "frequency of drought for 2022 at threshold 0"
+      },
+      {
+        "name": "frth1_2017",
+        "type": "int32",
+        "description": "frequency of drought for 2017 at threshold 1"
+      },
+      {
+        "name": "frth1_2018",
+        "type": "int32",
+        "description": "frequency of drought for 2018 at threshold 1"
+      },
+      {
+        "name": "frth1_2019",
+        "type": "int32",
+        "description": "frequency of drought for 2019 at threshold 1"
+      },
+      {
+        "name": "frth1_2020",
+        "type": "int32",
+        "description": "frequency of drought for 2020 at threshold 1"
+      },
+      {
+        "name": "frth1_2021",
+        "type": "int32",
+        "description": "frequency of drought for 2021 at threshold 1"
+      },
+      {
+        "name": "frth1_2022",
+        "type": "int32",
+        "description": "frequency of drought for 2022 at threshold 1"
+      },
+      {
+        "name": "frth2_2017",
+        "type": "int32",
+        "description": "frequency of drought for 2017 at threshold 2"
+      },
+      {
+        "name": "frth2_2018",
+        "type": "int32",
+        "description": "frequency of drought for 2018 at threshold 2"
+      },
+      {
+        "name": "frth2_2019",
+        "type": "int32",
+        "description": "frequency of drought for 2019 at threshold 2"
+      },
+      {
+        "name": "frth2_2020",
+        "type": "int32",
+        "description": "frequency of drought for 2020 at threshold 2"
+      },
+      {
+        "name": "frth2_2021",
+        "type": "int32",
+        "description": "frequency of drought for 2021 at threshold 2"
+      },
+      {
+        "name": "frth2_2022",
+        "type": "int32",
+        "description": "frequency of drought for 2022 at threshold 2"
+      },
+      {
+        "name": "frth3_2017",
+        "type": "int32",
+        "description": "frequency of drought for 2017 at threshold 3"
+      },
+      {
+        "name": "frth3_2018",
+        "type": "int32",
+        "description": "frequency of drought for 2018 at threshold 3"
+      },
+      {
+        "name": "frth3_2019",
+        "type": "int32",
+        "description": "frequency of drought for 2019 at threshold 3"
+      },
+      {
+        "name": "frth3_2020",
+        "type": "int32",
+        "description": "frequency of drought for 2020 at threshold 3"
+      },
+      {
+        "name": "frth3_2021",
+        "type": "int32",
+        "description": "frequency of drought for 2021 at threshold 3"
+      },
+      {
+        "name": "frth3_2022",
+        "type": "int32",
+        "description": "frequency of drought for 2022 at threshold 3"
+      },
+      {
+        "name": "inth0_2017",
+        "type": "float64",
+        "description": "intensity of drought 2017 at threshold 0"
+      },
+      {
+        "name": "inth0_2018",
+        "type": "float64",
+        "description": "intensity of drought 2018 at threshold 0"
+      },
+      {
+        "name": "inth0_2019",
+        "type": "float64",
+        "description": "intensity of drought 2019 at threshold 0"
+      },
+      {
+        "name": "inth0_2020",
+        "type": "float64",
+        "description": "intensity of drought 2020 at threshold 0"
+      },
+      {
+        "name": "inth0_2021",
+        "type": "float64",
+        "description": "intensity of drought 2021 at threshold 0"
+      },
+      {
+        "name": "inth0_2022",
+        "type": "float64",
+        "description": "intensity of drought 2022 at threshold 0"
+      },
+      {
+        "name": "inth1_2017",
+        "type": "float64",
+        "description": "intensity of drought 2017 at threshold 1"
+      },
+      {
+        "name": "inth1_2018",
+        "type": "float64",
+        "description": "intensity of drought 2018 at threshold 1"
+      },
+      {
+        "name": "inth1_2019",
+        "type": "float64",
+        "description": "intensity of drought 2019 at threshold 1"
+      },
+      {
+        "name": "inth1_2020",
+        "type": "float64",
+        "description": "intensity of drought 2020 at threshold 1"
+      },
+      {
+        "name": "inth1_2021",
+        "type": "float64",
+        "description": "intensity of drought 2021 at threshold 1"
+      },
+      {
+        "name": "inth1_2022",
+        "type": "float64",
+        "description": "intensity of drought 2022 at threshold 1"
+      },
+      {
+        "name": "inth2_2017",
+        "type": "int32",
+        "description": "intensity of drought 2017 at threshold 2"
+      },
+      {
+        "name": "inth2_2018",
+        "type": "int32",
+        "description": "intensity of drought 2018 at threshold 2"
+      },
+      {
+        "name": "inth2_2019",
+        "type": "int32",
+        "description": "intensity of drought 2019 at threshold 2"
+      },
+      {
+        "name": "inth2_2020",
+        "type": "int32",
+        "description": "intensity of drought 2020 at threshold 2"
+      },
+      {
+        "name": "inth2_2021",
+        "type": "int32",
+        "description": "intensity of drought 2021 at threshold 2"
+      },
+      {
+        "name": "inth2_2022",
+        "type": "int32",
+        "description": "intensity of drought 2022 at threshold 2"
+      },
+      {
+        "name": "inth3_2017",
+        "type": "int32",
+        "description": "intensity of drought 2017 at threshold 3"
+      },
+      {
+        "name": "inth3_2018",
+        "type": "int32",
+        "description": "intensity of drought 2018 at threshold 3"
+      },
+      {
+        "name": "inth3_2019",
+        "type": "int32",
+        "description": "intensity of drought 2019 at threshold 3"
+      },
+      {
+        "name": "inth3_2020",
+        "type": "int32",
+        "description": "intensity of drought 2020 at threshold 3"
+      },
+      {
+        "name": "inth3_2021",
+        "type": "int32",
+        "description": "intensity of drought 2021 at threshold 3"
+      },
+      {
+        "name": "inth3_2022",
+        "type": "int32",
+        "description": "intensity of drought 2022 at threshold 3"
+      },
+      {
+        "name": "kh_cr_2017",
+        "type": "float64",
+        "description": "kharif cropped sqkm for 2017"
+      },
+      {
+        "name": "kh_cr_2018",
+        "type": "float64",
+        "description": "kharif cropped sqkm for 2018"
+      },
+      {
+        "name": "kh_cr_2019",
+        "type": "float64",
+        "description": "kharif cropped sqkm for 2019"
+      },
+      {
+        "name": "kh_cr_2020",
+        "type": "float64",
+        "description": "kharif cropped sqkm for 2020"
+      },
+      {
+        "name": "kh_cr_2021",
+        "type": "float64",
+        "description": "kharif cropped sqkm for 2021"
+      },
+      {
+        "name": "kh_cr_2022",
+        "type": "float64",
+        "description": "kharif cropped sqkm for 2022"
+      },
+      {
+        "name": "m_ons_2017",
+        "type": "object",
+        "description": "monsoon onset for 2017"
+      },
+      {
+        "name": "m_ons_2018",
+        "type": "object",
+        "description": "monsoon onset for 2018"
+      },
+      {
+        "name": "m_ons_2019",
+        "type": "object",
+        "description": "monsoon onset for 2019"
+      },
+      {
+        "name": "m_ons_2020",
+        "type": "object",
+        "description": "monsoon onset for 2020"
+      },
+      {
+        "name": "m_ons_2021",
+        "type": "object",
+        "description": "monsoon onset for 2021"
+      },
+      {
+        "name": "m_ons_2022",
+        "type": "object",
+        "description": "monsoon onset for 2022"
+      },
+      {
+        "name": "pcr_k_2017",
+        "type": "float64",
+        "description": "percent of area cropped kharif for 2017"
+      },
+      {
+        "name": "pcr_k_2018",
+        "type": "float64",
+        "description": "percent of area cropped kharif for 2018"
+      },
+      {
+        "name": "pcr_k_2019",
+        "type": "float64",
+        "description": "percent of area cropped kharif for 2019"
+      },
+      {
+        "name": "pcr_k_2020",
+        "type": "float64",
+        "description": "percent of area cropped kharif for 2020"
+      },
+      {
+        "name": "pcr_k_2021",
+        "type": "float64",
+        "description": "percent of area cropped kharif for 2021"
+      },
+      {
+        "name": "pcr_k_2022",
+        "type": "float64",
+        "description": "percent of area cropped kharif for 2022"
+      },
+      {
+        "name": "rd17-10-1",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-10-15",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-10-22",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-10-29",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-10-8",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-5-28",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-6-11",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-6-18",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-6-25",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-6-4",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-7-16",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-7-2",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-7-23",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-7-30",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-7-9",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-8-13",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-8-20",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-8-27",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-8-6",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-9-10",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-9-17",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-9-24",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd17-9-3",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-10-10",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-10-17",
+        "type": "int32",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-10-24",
+        "type": "int32",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-10-3",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-10-31",
+        "type": "int32",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-5-30",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-6-13",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-6-20",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-6-27",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-6-6",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-7-11",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-7-18",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-7-25",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-7-4",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-8-1",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-8-15",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-8-22",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-8-29",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-8-8",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-9-12",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-9-19",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-9-26",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd18-9-5",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-10-16",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-10-2",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-10-23",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-10-30",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-10-9",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-5-29",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-6-12",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-6-19",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-6-26",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-6-5",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-7-10",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-7-17",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-7-24",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-7-3",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-7-31",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-8-14",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-8-21",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-8-28",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-8-7",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-9-11",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-9-18",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-9-25",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd19-9-4",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-10-16",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-10-2",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-10-23",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-10-30",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-10-9",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-5-29",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-6-12",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-6-19",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-6-26",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-6-5",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-7-10",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-7-17",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-7-24",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-7-3",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-7-31",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-8-14",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-8-21",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-8-28",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-8-7",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-9-11",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-9-18",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-9-25",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd20-9-4",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-10-16",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-10-2",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-10-23",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-10-30",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-10-9",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-5-29",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-6-12",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-6-19",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-6-26",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-6-5",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-7-10",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-7-17",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-7-24",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-7-3",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-7-31",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-8-14",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-8-21",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-8-28",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-8-7",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-9-11",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-9-18",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-9-25",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd21-9-4",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-10-16",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-10-2",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-10-23",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-10-30",
+        "type": "int32",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-10-9",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-5-29",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-6-12",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-6-19",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-6-26",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-6-5",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-7-10",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-7-17",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-7-24",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-7-3",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-7-31",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-8-14",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-8-21",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-8-28",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-8-7",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-9-11",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-9-18",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-9-25",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "rd22-9-4",
+        "type": "float64",
+        "description": "rainfall deviation "
+      },
+      {
+        "name": "t_wks_2017",
+        "type": "int32",
+        "description": "total weeks analysed in 2017"
+      },
+      {
+        "name": "t_wks_2018",
+        "type": "int32",
+        "description": "total weeks analysed in 2018"
+      },
+      {
+        "name": "t_wks_2019",
+        "type": "int32",
+        "description": "total weeks analysed in 2019"
+      },
+      {
+        "name": "t_wks_2020",
+        "type": "int32",
+        "description": "total weeks analysed in 2020"
+      },
+      {
+        "name": "t_wks_2021",
+        "type": "int32",
+        "description": "total weeks analysed in 2021"
+      },
+      {
+        "name": "t_wks_2022",
+        "type": "int32",
+        "description": "total weeks analysed in 2022"
+      },
+      {
+        "name": "uid",
+        "type": "object",
+        "description": "unique identifier"
+      },
+      {
+        "name": "w_mld_2017",
+        "type": "int32",
+        "description": "number of weeks in mild drought for 2017"
+      },
+      {
+        "name": "w_mld_2018",
+        "type": "int32",
+        "description": "number of weeks in mild drought for 2018"
+      },
+      {
+        "name": "w_mld_2019",
+        "type": "int32",
+        "description": "number of weeks in mild drought for 2019"
+      },
+      {
+        "name": "w_mld_2020",
+        "type": "int32",
+        "description": "number of weeks in mild drought for 2020"
+      },
+      {
+        "name": "w_mld_2021",
+        "type": "int32",
+        "description": "number of weeks in mild drought for 2021"
+      },
+      {
+        "name": "w_mld_2022",
+        "type": "int32",
+        "description": "number of weeks in mild drought for 2022"
+      },
+      {
+        "name": "w_mod_2017",
+        "type": "int32",
+        "description": "number of weeks in moderate drought for 2017"
+      },
+      {
+        "name": "w_mod_2018",
+        "type": "int32",
+        "description": "number of weeks in moderate drought for 2018"
+      },
+      {
+        "name": "w_mod_2019",
+        "type": "int32",
+        "description": "number of weeks in moderate drought for 2019"
+      },
+      {
+        "name": "w_mod_2020",
+        "type": "int32",
+        "description": "number of weeks in moderate drought for 2020"
+      },
+      {
+        "name": "w_mod_2021",
+        "type": "int32",
+        "description": "number of weeks in moderate drought for 2021"
+      },
+      {
+        "name": "w_mod_2022",
+        "type": "int32",
+        "description": "number of weeks in moderate drought for 2022"
+      },
+      {
+        "name": "w_no_2017",
+        "type": "int32",
+        "description": "number of weeks in no drought for 2017"
+      },
+      {
+        "name": "w_no_2018",
+        "type": "int32",
+        "description": "number of weeks in no drought for 2018"
+      },
+      {
+        "name": "w_no_2019",
+        "type": "int32",
+        "description": "number of weeks in no drought for 2019"
+      },
+      {
+        "name": "w_no_2020",
+        "type": "int32",
+        "description": "number of weeks in no drought for 2020"
+      },
+      {
+        "name": "w_no_2021",
+        "type": "int32",
+        "description": "number of weeks in no drought for 2021"
+      },
+      {
+        "name": "w_no_2022",
+        "type": "int32",
+        "description": "number of weeks in no drought for 2022"
+      },
+      {
+        "name": "w_sev_2017",
+        "type": "int32",
+        "description": "number of weeks in severe drought for 2017"
+      },
+      {
+        "name": "w_sev_2018",
+        "type": "int32",
+        "description": "number of weeks in severe drought for 2018"
+      },
+      {
+        "name": "w_sev_2019",
+        "type": "int32",
+        "description": "number of weeks in severe drought for 2019"
+      },
+      {
+        "name": "w_sev_2020",
+        "type": "int32",
+        "description": "number of weeks in severe drought for 2020"
+      },
+      {
+        "name": "w_sev_2021",
+        "type": "int32",
+        "description": "number of weeks in severe drought for 2021"
+      },
+      {
+        "name": "w_sev_2022",
+        "type": "int32",
+        "description": "number of weeks in severe drought for 2022"
+      },
+      {
+        "name": "geometry",
+        "type": "geometry",
+        "description": ""
+      }
+    ],
+    "datetime": "2026-02-19T05:05:44.853414Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "jamui"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "jamui"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/cropping_drought/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cropping_drought:jamui_jamui_drought&outputFormat=application/json",
+      "type": "application/geo+json",
+      "title": "Vector Layer",
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Agriculture/Drought_style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output_new/bihar_jamui_jamui_drought_frequency_vector.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "jamui"
+}

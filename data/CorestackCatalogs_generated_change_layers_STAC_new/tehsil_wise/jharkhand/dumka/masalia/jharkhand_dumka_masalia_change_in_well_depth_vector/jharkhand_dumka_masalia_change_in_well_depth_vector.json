@@ -1,0 +1,185 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "jharkhand_dumka_masalia_change_in_well_depth_vector",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          86.90810692,
+          23.99512281
+        ],
+        [
+          86.90810692,
+          24.28509821
+        ],
+        [
+          87.35465919,
+          24.28509821
+        ],
+        [
+          87.35465919,
+          23.99512281
+        ],
+        [
+          86.90810692,
+          23.99512281
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    86.90810692,
+    23.99512281,
+    87.35465919,
+    24.28509821
+  ],
+  "properties": {
+    "title": "Annual water balance",
+    "description": "Annual water balance map for India. Data to compute the water balance for each microwatershed as rainfall - evapotranspiration - runoff, along with the specific yield obtained from aquifer data are used to estimate the change in depth to water. Note that this only takes the vertical flux into account and hence is likely to suffer from accuracy issues in the absence of accounting for lateral flow through the underlying aquifer. \n\nThe vector data contains timeseries of annual mean precipitation (in mm), runoff (in mm), evapotranspiration (in mm), water balance (in mm), and cumulative water balance since 2017 as an indicator of cumulative surplus or deficit, for each microwatershed.\n\nDetails of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/blob/main/computing/mws/well_depth.py).",
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
+    "keywords": [
+      "hydrology, water balance, annual"
+    ],
+    "table:columns": [
+      {
+        "name": "2017_2018",
+        "type": "object",
+        "description": "annual mean precipitation (in mm), runoff (in mm), evapotranspiration (in mm), water balance (in mm), and cumulative water balance since 2017 as an indicator of cumulative surplus or deficit, for each microwatershed"
+      },
+      {
+        "name": "2018_2019",
+        "type": "object",
+        "description": "annual mean precipitation (in mm), runoff (in mm), evapotranspiration (in mm), water balance (in mm), and cumulative water balance since 2017 as an indicator of cumulative surplus or deficit, for each microwatershed"
+      },
+      {
+        "name": "2019_2020",
+        "type": "object",
+        "description": "annual mean precipitation (in mm), runoff (in mm), evapotranspiration (in mm), water balance (in mm), and cumulative water balance since 2017 as an indicator of cumulative surplus or deficit, for each microwatershed"
+      },
+      {
+        "name": "2020_2021",
+        "type": "object",
+        "description": "annual mean precipitation (in mm), runoff (in mm), evapotranspiration (in mm), water balance (in mm), and cumulative water balance since 2017 as an indicator of cumulative surplus or deficit, for each microwatershed"
+      },
+      {
+        "name": "2021_2022",
+        "type": "object",
+        "description": "annual mean precipitation (in mm), runoff (in mm), evapotranspiration (in mm), water balance (in mm), and cumulative water balance since 2017 as an indicator of cumulative surplus or deficit, for each microwatershed"
+      },
+      {
+        "name": "2022_2023",
+        "type": "object",
+        "description": "annual mean precipitation (in mm), runoff (in mm), evapotranspiration (in mm), water balance (in mm), and cumulative water balance since 2017 as an indicator of cumulative surplus or deficit, for each microwatershed"
+      },
+      {
+        "name": "2023_2024",
+        "type": "object",
+        "description": "annual mean precipitation (in mm), runoff (in mm), evapotranspiration (in mm), water balance (in mm), and cumulative water balance since 2017 as an indicator of cumulative surplus or deficit, for each microwatershed"
+      },
+      {
+        "name": "2024_2025",
+        "type": "object",
+        "description": "annual mean precipitation (in mm), runoff (in mm), evapotranspiration (in mm), water balance (in mm), and cumulative water balance since 2017 as an indicator of cumulative surplus or deficit, for each microwatershed"
+      },
+      {
+        "name": "Net2017_22",
+        "type": "float64",
+        "description": "net change in depth to water between 2017 to 2022"
+      },
+      {
+        "name": "Net2018_23",
+        "type": "float64",
+        "description": "net change in depth to water between 2018 to 2023"
+      },
+      {
+        "name": "Net2019_24",
+        "type": "float64",
+        "description": "net change in depth to water between 2019 to 2024"
+      },
+      {
+        "name": "Net2020_25",
+        "type": "float64",
+        "description": "net change in depth to water between 2020 to 2025"
+      },
+      {
+        "name": "area_in_ha",
+        "type": "float64",
+        "description": "area in hectares"
+      },
+      {
+        "name": "id",
+        "type": "int32",
+        "description": "id"
+      },
+      {
+        "name": "uid",
+        "type": "object",
+        "description": "unique identifier"
+      },
+      {
+        "name": "weighted_a",
+        "type": "float64",
+        "description": "weighted average yield of aquifer "
+      },
+      {
+        "name": "geometry",
+        "type": "geometry",
+        "description": ""
+      }
+    ],
+    "datetime": "2026-02-19T05:32:48.262962Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "masalia"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "masalia"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/mws_layers/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=mws_layers:deltaG_well_depth_dumka_masalia&outputFormat=application/json",
+      "type": "application/geo+json",
+      "title": "Vector Layer",
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/refs/heads/main/Climate/MWS-Well-Depth-20_25.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output_new/jharkhand_dumka_masalia_change_in_well_depth_vector.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "masalia"
+}

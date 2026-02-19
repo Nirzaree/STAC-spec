@@ -1491,10 +1491,19 @@ def generate_vector_thumbnail(vector_gdf, style_file_url, output_path, STYLE_FIL
 
     try:
         # vector_gdf = gpd.read_file(vector_path)
+        vector_gdf = vector_gdf[vector_gdf.geometry.type.isin(['Polygon', 'MultiPolygon', 'Point', 'LineString'])] ## filtering was made due to issue observed while generating thumbnail in few data where different types appears
+        
+        vector_gdf = vector_gdf[vector_gdf.geometry.notnull() & ~vector_gdf.geometry.is_empty]
+        vector_gdf = vector_gdf.reset_index(drop=True)
+        
+        if vector_gdf.empty:
+            print("No valid polygon data remaining after filtering.")
+            return
+        
         style_info = parse_vector_style_file(style_file_url, STYLE_FILE_DIR)
 
         print("style_info=", style_info)  # TODO: temporary debug print
-        fig, ax = plt.subplots(figsize=(6, 6))
+        fig, ax = plt.subplots(figsize=(3, 3))
 
         default_fill_color = (0.8, 0.8, 0.8, 1.0)  # Light gray
         default_outline_color = (0, 0, 0, 1.0)  # Black
