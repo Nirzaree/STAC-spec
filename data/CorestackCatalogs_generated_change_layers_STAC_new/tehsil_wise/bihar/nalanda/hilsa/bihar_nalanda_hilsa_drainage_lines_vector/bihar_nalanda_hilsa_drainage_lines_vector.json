@@ -1,0 +1,145 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "bihar_nalanda_hilsa_drainage_lines_vector",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          85.12611193,
+          24.97666463
+        ],
+        [
+          85.12611193,
+          25.48361091
+        ],
+        [
+          85.57138885,
+          25.48361091
+        ],
+        [
+          85.57138885,
+          24.97666463
+        ],
+        [
+          85.12611193,
+          24.97666463
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    85.12611193,
+    24.97666463,
+    85.57138885,
+    25.48361091
+  ],
+  "properties": {
+    "title": "Drainage Lines",
+    "description": "Drainage lines map for India. Drainage lines in hydrology refer to the visible channels through which water flows from higher elevations to lower elevations on the surface of earth such as streams and rivers. The Pan India map of drainage lines has been generated using SRTM DEM V4 data on QGIS (r.stream.extract). The drainage lines are labeled by their Strahler order. Details of methodology can be found in the technical manual. Details of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/blob/main/computing/misc/drainage_lines.py).",
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
+    "keywords": [
+      "hydrology, drainage"
+    ],
+    "table:columns": [
+      {
+        "name": "ORDER",
+        "type": "int32",
+        "description": "Strahler order of stream within a network"
+      },
+      {
+        "name": "cat",
+        "type": "int32",
+        "description": "category for drainage feature "
+      },
+      {
+        "name": "end_node",
+        "type": "object",
+        "description": "unique identifier for the downstream point of drainage lines"
+      },
+      {
+        "name": "id",
+        "type": "int32",
+        "description": "id"
+      },
+      {
+        "name": "network",
+        "type": "int32",
+        "description": ""
+      },
+      {
+        "name": "start_node",
+        "type": "object",
+        "description": "unique identifier for the upstream point of drainage lines"
+      },
+      {
+        "name": "stream_typ",
+        "type": "object",
+        "description": "stream type: start or intermediate"
+      },
+      {
+        "name": "type_code",
+        "type": "int32",
+        "description": "code to classify the type of drainage feature: \nstart=0, intermediate=1"
+      },
+      {
+        "name": "geometry",
+        "type": "geometry",
+        "description": ""
+      }
+    ],
+    "datetime": "2026-02-19T06:18:46.912078Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "hilsa"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/drainage/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=drainage:nalanda_hilsa&outputFormat=application/json",
+      "type": "application/geo+json",
+      "title": "Vector Layer",
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Hydrology/Drainage-Layer-Style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output_new/bihar_nalanda_hilsa_drainage_lines_vector.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "hilsa"
+}

@@ -23,6 +23,11 @@
     },
     {
       "rel": "item",
+      "href": "./bihar_nalanda_hilsa_drainage_lines_vector/bihar_nalanda_hilsa_drainage_lines_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
       "href": "./bihar_nalanda_hilsa_nrega_vector/bihar_nalanda_hilsa_nrega_vector.json",
       "type": "application/geo+json"
     }
@@ -34,7 +39,7 @@
         [
           85.1192003,
           24.97096141,
-          85.56305927,
+          85.57138885,
           25.48920266
         ]
       ]
