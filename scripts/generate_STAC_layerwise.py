@@ -1059,7 +1059,7 @@ def generate_vector_thumbnail(vector_gdf,
         style_info = parse_vector_style_file(style_file_url,STYLE_FILE_DIR)
 
         print("style_info=",style_info) #TODO: temporary debug print
-        fig, ax = plt.subplots(figsize=(6, 6))
+        fig, ax = plt.subplots(figsize=(3, 3))
         
         default_fill_color = (0.8, 0.8, 0.8, 1.0) # Light gray
         default_outline_color = (0, 0, 0, 1.0)   # Black
