@@ -1,0 +1,92 @@
+{
+  "type": "Collection",
+  "id": "masalia",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for masalia block data in dumka, jharkhand",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_dumka_masalia_change_cropping_reduction_raster/jharkhand_dumka_masalia_change_cropping_reduction_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_dumka_masalia_change_tree_cover_loss_raster/jharkhand_dumka_masalia_change_tree_cover_loss_raster.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_dumka_masalia_land_use_land_cover_raster_2021/jharkhand_dumka_masalia_land_use_land_cover_raster_2021.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "dumka"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_dumka_masalia_aquifer_vector/jharkhand_dumka_masalia_aquifer_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_dumka_masalia_change_in_well_depth_vector/jharkhand_dumka_masalia_change_in_well_depth_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./jharkhand_dumka_masalia_nrega_vector/jharkhand_dumka_masalia_nrega_vector.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "title": "masalia",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          85.99985439906874,
+          22.999835713897344,
+          88.00013304221767,
+          25.000294020103105
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2025-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "social-ecological",
+    "sustainability",
+    "CoRE stack",
+    "masalia",
+    "dumka",
+    "jharkhand"
+  ],
+  "providers": [
+    {
+      "name": "CoRE Stack",
+      "roles": [
+        "producer",
+        "processor",
+        "host",
+        "licensor"
+      ],
+      "url": "https://core-stack.org/"
+    }
+  ]
+}

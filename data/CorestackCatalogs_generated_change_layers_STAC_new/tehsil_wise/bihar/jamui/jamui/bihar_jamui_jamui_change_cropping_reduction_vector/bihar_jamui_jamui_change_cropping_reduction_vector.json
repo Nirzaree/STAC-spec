@@ -1,0 +1,145 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "bihar_jamui_jamui_change_cropping_reduction_vector",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          85.7859296,
+          24.36325145
+        ],
+        [
+          85.7859296,
+          25.16957755
+        ],
+        [
+          86.64130555,
+          25.16957755
+        ],
+        [
+          86.64130555,
+          24.36325145
+        ],
+        [
+          85.7859296,
+          24.36325145
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    85.7859296,
+    24.36325145,
+    86.64130555,
+    25.16957755
+  ],
+  "properties": {
+    "title": "Land Use Change: Cropping reduction",
+    "description": "",
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
+    "keywords": [
+      "land use, change, cropping area reduction"
+    ],
+    "table:columns": [
+      {
+        "name": "area_in_ha",
+        "type": "float64",
+        "description": "area in hectares which is idenitified as Cropping reduction"
+      },
+      {
+        "name": "f_ba",
+        "type": "float64",
+        "description": "Crops to Barren"
+      },
+      {
+        "name": "f_bu",
+        "type": "float64",
+        "description": "Crops to Built Up"
+      },
+      {
+        "name": "f_f",
+        "type": "float64",
+        "description": "Crops to Crops"
+      },
+      {
+        "name": "f_sc",
+        "type": "float64",
+        "description": "Crops to Shrubs and Scrubs"
+      },
+      {
+        "name": "id",
+        "type": "int32",
+        "description": "id"
+      },
+      {
+        "name": "total_deg",
+        "type": "float64",
+        "description": "total cropping reduction"
+      },
+      {
+        "name": "uid",
+        "type": "object",
+        "description": "unique identifier"
+      },
+      {
+        "name": "geometry",
+        "type": "geometry",
+        "description": ""
+      }
+    ],
+    "datetime": "2026-02-19T05:03:53.542543Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "jamui"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "jamui"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/change_detection/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=change_detection:change_vector_jamui_jamui_Degradation&outputFormat=application/json",
+      "type": "application/geo+json",
+      "title": "Vector Layer",
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/refs/heads/main/Land/change_cropping_reduction_vector.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output_new/bihar_jamui_jamui_change_cropping_reduction_vector.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "jamui"
+}

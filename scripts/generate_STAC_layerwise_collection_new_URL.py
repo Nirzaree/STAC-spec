@@ -1336,7 +1336,7 @@ def generate_vector_thumbnail(vector_gdf, style_file_url, output_path, STYLE_FIL
 
     try:
         # vector_gdf = gpd.read_file(vector_path)
-        vector_gdf = vector_gdf[vector_gdf.geometry.type.isin(['Polygon', 'MultiPolygon'])]
+        vector_gdf = vector_gdf[vector_gdf.geometry.type.isin(['Polygon', 'MultiPolygon', 'Point'])]
         
         vector_gdf = vector_gdf[vector_gdf.geometry.notnull() & ~vector_gdf.geometry.is_empty]
         vector_gdf = vector_gdf.reset_index(drop=True)

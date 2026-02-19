@@ -1,0 +1,295 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "jharkhand_dumka_masalia_nrega_vector",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          86.93794678,
+          24.027235
+        ],
+        [
+          86.93794678,
+          24.2475467
+        ],
+        [
+          87.3282266,
+          24.2475467
+        ],
+        [
+          87.3282266,
+          24.027235
+        ],
+        [
+          86.93794678,
+          24.027235
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    86.93794678,
+    24.027235,
+    87.3282266,
+    24.2475467
+  ],
+  "properties": {
+    "title": "NREGA Works",
+    "description": "Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA) assets categorization map for India. Permissible works under the scheme have been categorized from the natural resource management (NRM) lens through keyword matching, with the goal of helping in examining the current distribution of assets and facilitate the planning of new assets to ensure water security and sustainable livelihoods in rural India. \n\nThe Pan India map is available from 2017 onwards. These are the classes in the current version of the map:\n1. Soil and water conservation\n2. Irrigation on farms\n3. Other on-farm works\n4. Plantations\n5. Land restoration\n6. Off-farm livelihood assets\n7. Community assets\n\nInput to the keyword matching algorithm is MGNREGS permissible work list and MGNREGA assets obtained from Bhuvan. Details of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/blob/main/computing/misc/nrega.py).",
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
+    "keywords": [
+      "nrega, assets"
+    ],
+    "table:columns": [
+      {
+        "name": "id",
+        "type": "object",
+        "description": ""
+      },
+      {
+        "name": "State",
+        "type": "object",
+        "description": "state name "
+      },
+      {
+        "name": "District",
+        "type": "object",
+        "description": "district name "
+      },
+      {
+        "name": "Block",
+        "type": "object",
+        "description": "block name"
+      },
+      {
+        "name": "Asset ID",
+        "type": "int64",
+        "description": "unique id assigned by the NREGA officials for each asset"
+      },
+      {
+        "name": "Work Code",
+        "type": "object",
+        "description": "unique work code assigned to each work (there can be multiple works for each asset)"
+      },
+      {
+        "name": "image_path",
+        "type": "object",
+        "description": "path to the first image uploaded of the work"
+      },
+      {
+        "name": "image_pa_1",
+        "type": "object",
+        "description": "path to the second image uploaded of the work"
+      },
+      {
+        "name": "observer_n",
+        "type": "object",
+        "description": "name of the observer"
+      },
+      {
+        "name": "Gram_panch",
+        "type": "object",
+        "description": "name of the gram panchayat as per Bhuvan data"
+      },
+      {
+        "name": "creation_t",
+        "type": "datetime64[ms]",
+        "description": "time of creation of asset"
+      },
+      {
+        "name": "lat",
+        "type": "float64",
+        "description": "latitude of the location of work"
+      },
+      {
+        "name": "lon",
+        "type": "float64",
+        "description": "longitude of the location of work"
+      },
+      {
+        "name": "Panchayat_",
+        "type": "float64",
+        "description": "unique identifier of the panchayat"
+      },
+      {
+        "name": "Panchayat",
+        "type": "object",
+        "description": "name of the panchayat as per MIS data"
+      },
+      {
+        "name": "Asset Name",
+        "type": "object",
+        "description": "name of the asset"
+      },
+      {
+        "name": "Work Name",
+        "type": "object",
+        "description": "name of the work"
+      },
+      {
+        "name": "Work Type",
+        "type": "object",
+        "description": "type of the work"
+      },
+      {
+        "name": "Estimated",
+        "type": "float64",
+        "description": "estimated cost before the start of work "
+      },
+      {
+        "name": "Start Loca",
+        "type": "int32",
+        "description": "location (name) where the work has been started "
+      },
+      {
+        "name": "End Locati",
+        "type": "object",
+        "description": "location (name) where the work has been ended"
+      },
+      {
+        "name": "Unskilled",
+        "type": "float64",
+        "description": "expenditure of unskilled labour"
+      },
+      {
+        "name": "Semi-Skill",
+        "type": "float64",
+        "description": "expenditure of semi-skilled labour"
+      },
+      {
+        "name": "Skilled",
+        "type": "float64",
+        "description": "expenditure of skilled labour"
+      },
+      {
+        "name": "Material",
+        "type": "float64",
+        "description": "expenditure on the material"
+      },
+      {
+        "name": "Total_Expe",
+        "type": "float64",
+        "description": "total expenditure of the work"
+      },
+      {
+        "name": "Unskilled_",
+        "type": "int32",
+        "description": "total persondays employment provided to unskilled labour"
+      },
+      {
+        "name": "Semi-ski_1",
+        "type": "int32",
+        "description": "total persondays employment provided to semi-skilled labour"
+      },
+      {
+        "name": "Total_pers",
+        "type": "int32",
+        "description": "total persondays employment provided"
+      },
+      {
+        "name": "Unskille_1",
+        "type": "int32",
+        "description": "number of unskilled persons involved in the work"
+      },
+      {
+        "name": "Semi-ski_2",
+        "type": "int32",
+        "description": "number of semi-skilled persons involved in the work"
+      },
+      {
+        "name": "Total_pe_1",
+        "type": "int32",
+        "description": "number of skilled persons involved in the work"
+      },
+      {
+        "name": "Work_start",
+        "type": "object",
+        "description": "start date of the work"
+      },
+      {
+        "name": "HyperLink",
+        "type": "object",
+        "description": "hyperlink of the NREGA website from where the work details were fetched"
+      },
+      {
+        "name": "WorkCatego",
+        "type": "object",
+        "description": "work category"
+      },
+      {
+        "name": "Unnamed_ 0",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "Unnamed__1",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "Contingenc",
+        "type": "float64",
+        "description": ""
+      },
+      {
+        "name": "geometry",
+        "type": "geometry",
+        "description": ""
+      }
+    ],
+    "datetime": "2026-02-19T05:44:49.706537Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "masalia"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "masalia"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/nrega_assets/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=nrega_assets:dumka_masalia&outputFormat=application/json",
+      "type": "application/geo+json",
+      "title": "Vector Layer",
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/NREGA/NREG-Assets-Classified-Style.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output_new/jharkhand_dumka_masalia_nrega_vector.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "masalia"
+}

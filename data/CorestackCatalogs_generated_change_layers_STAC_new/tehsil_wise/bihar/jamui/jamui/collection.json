@@ -1,0 +1,137 @@
+{
+  "type": "Collection",
+  "id": "jamui",
+  "stac_version": "1.1.0",
+  "description": "STAC collection for jamui block data in jamui, bihar",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_aquifer_vector/bihar_jamui_jamui_aquifer_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "jamui"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_admin_boundaries_vector/bihar_jamui_jamui_admin_boundaries_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_drainage_lines_vector/bihar_jamui_jamui_drainage_lines_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_surface_water_bodies_vector/bihar_jamui_jamui_surface_water_bodies_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_nrega_vector/bihar_jamui_jamui_nrega_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_change_tree_cover_gain_vector/bihar_jamui_jamui_change_tree_cover_gain_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_change_tree_cover_loss_vector/bihar_jamui_jamui_change_tree_cover_loss_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_change_cropping_intensity_vector/bihar_jamui_jamui_change_cropping_intensity_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_change_cropping_reduction_vector/bihar_jamui_jamui_change_cropping_reduction_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_change_urbanization_vector/bihar_jamui_jamui_change_urbanization_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_terrain_vector/bihar_jamui_jamui_terrain_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_cropping_intensity_vector/bihar_jamui_jamui_cropping_intensity_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_stage_of_groundwater_extraction_vector/bihar_jamui_jamui_stage_of_groundwater_extraction_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_drought_frequency_vector/bihar_jamui_jamui_drought_frequency_vector.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./bihar_jamui_jamui_change_in_well_depth_vector/bihar_jamui_jamui_change_in_well_depth_vector.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "title": "jamui",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          85.7859296,
+          24.36325145,
+          86.64277706,
+          25.16957873
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-01T00:00:00Z",
+          "2025-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "social-ecological",
+    "sustainability",
+    "CoRE stack",
+    "jamui",
+    "jamui",
+    "bihar"
+  ],
+  "providers": [
+    {
+      "name": "CoRE Stack",
+      "roles": [
+        "producer",
+        "processor",
+        "host",
+        "licensor"
+      ],
+      "url": "https://core-stack.org/"
+    }
+  ]
+}

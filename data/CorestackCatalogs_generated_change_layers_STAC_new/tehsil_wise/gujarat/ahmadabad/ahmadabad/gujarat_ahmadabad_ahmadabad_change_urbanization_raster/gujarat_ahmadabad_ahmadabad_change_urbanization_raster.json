@@ -1,0 +1,137 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+  ],
+  "id": "gujarat_ahmadabad_ahmadabad_change_urbanization_raster",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          72.40484072073231,
+          22.891139564518884
+        ],
+        [
+          72.40484072073231,
+          23.197285413346815
+        ],
+        [
+          72.73443259847576,
+          23.197285413346815
+        ],
+        [
+          72.73443259847576,
+          22.891139564518884
+        ],
+        [
+          72.40484072073231,
+          22.891139564518884
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    72.40484072073231,
+    22.891139564518884,
+    72.73443259847576,
+    23.197285413346815
+  ],
+  "properties": {
+    "title": "Land use change : Urbanization",
+    "description": "Built-up change detection map for India. The various change detection maps are Change in Land use layers are computing by using IndiaSAT Land Use Land Cover outputs and computing the change in pixel classes across the years. Currently the layer is computed for the period of 2017-2022 and two composite images are generated using the mode of the first three years (2017-2019) and the last three years (2020-2022) and a transition matrix is prepared for the classes for these outputs. \n\nUrbanization layer includes the transition of built-up, green, water, and barren areas to built-up. Following are the classes in this layer: \n1. Built Up - Built Up\n2. Water - Built Up\n3. Trees/Crops - Built Up\n4. Barren/Shrubs and Scrubs - Built Up\n\nDetails of methodology can be found in the technical manual and the codebase on [github](https://github.com/core-stack-org/core-stack-backend/tree/main/computing/change_detection).",
+    "gsd": 10.0,
+    "start_datetime": "2017-07-01T00:00:00Z",
+    "end_datetime": "2025-06-30T00:00:00Z",
+    "keywords": [
+      "land use, change, urbanization"
+    ],
+    "proj:code": "EPSG:EPSG:4326",
+    "proj:shape": [
+      3408,
+      3669
+    ],
+    "datetime": "2026-02-16T11:18:54.124208Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "CoRE Stack Spatio Temporal Asset Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "ahmadabad"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "ahmadabad"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://geoserver.core-stack.org:8443/geoserver/change_detection/wcs?service=WCS&version=2.0.1&request=GetCoverage&CoverageId=change_detection:change_ahmadabad_ahmadabad_Urbanization&format=geotiff&compression=LZW",
+      "type": "image/tiff; application=geotiff",
+      "title": "Raster Layer",
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "Background",
+          "description": "Background",
+          "color_hint": "ffffff"
+        },
+        {
+          "value": 1,
+          "name": "Built_Up-Built_Up",
+          "description": "Built_Up-Built_Up",
+          "color_hint": "ff0000"
+        },
+        {
+          "value": 2,
+          "name": "Water-Built_Up",
+          "description": "Water-Built_Up",
+          "color_hint": "1ca3ec"
+        },
+        {
+          "value": 3,
+          "name": "Trees_or_Crops-Built_Up",
+          "description": "Trees_or_Crops-Built_Up",
+          "color_hint": "73bb53"
+        },
+        {
+          "value": 4,
+          "name": "Barren_or_Shrubs_and_Scrubs-Built_Up",
+          "description": "Barren_or_Shrubs_and_Scrubs-Built_Up",
+          "color_hint": "a9a9a9"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "style": {
+      "href": "https://raw.githubusercontent.com/core-stack-org/QGIS-Styles/main/Land/change_urbanization.qml",
+      "type": "application/xml",
+      "title": "QGIS Style file",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/generated_change_layers_STAC_output_new/gujarat_ahmadabad_ahmadabad_change_urbanization_raster.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "ahmadabad"
+}
