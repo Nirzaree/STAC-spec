@@ -14,14 +14,12 @@ NO_DATA_CLASSNAMES_LIST = ['clear','background','No data']
 BASE_URL="https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/"
 GITHUB_DATA_URL="https://raw.githubusercontent.com/Nirzaree/STAC-spec/stac-spec-common/data/"
 
-
 STAC_VERSION="1.0.0"
 ROOT_CATALOG_TITLE="CoRE Stack Spatio Temporal Asset Catalog"
 ROOT_CATALOG_DESCRIPTION="This spatio temporal asset catalog contains all data layers of CoREStack (https://core-stack.org/). The data layers are generated at an administrative block level, and some layers are available for Pan India."
 
 TEHSIL_CATALOG_TITLE="Tehsil level Spatio Temporal Asset Catalog"
 TEHSIL_CATALOG_DESCRIPTION="This spatio temporal asset catalog contains all data layers of CoREStack (https://core-stack.org/). The data layers are generated at an administrative tehsil level."
-
 
 GEOSERVER_BASE_URL = "https://geoserver.core-stack.org:8443/geoserver"
 
@@ -42,5 +40,6 @@ VECTOR_COLUMN_DESC_GITHUB_URL = 'https://github.com/core-stack-org/layers_metada
 
 S3_STAC_BUCKET_URL='https://spatio-temporal-asset-catalog.s3.ap-south-1.amazonaws.com/'
 S3_STAC_BUCKET_NAME='spatio-temporal-asset-catalog'
+S3_STAC_URI='s3://spatio-temporal-asset-catalog/'
 
 AWS_CREDS_FILEPATH='/home/nirzaree/Documents/.aws_credentials.json'
